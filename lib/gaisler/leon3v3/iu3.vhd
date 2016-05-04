@@ -4330,12 +4330,6 @@ begin
     if ISETS > 1 then de_inst1 := r.d.inst(conv_integer(r.d.set));
     else de_inst1 := r.d.inst(0); end if;
 
-    --pvilla mod
-    decode_checkpoint_enable(de_inst1,de_chkp_en);
-
-    checkpoint_enable <= de_chkp_en;
-    --end pvilla mod
-
     de_nrexen := '0'; de_nbufpos16:="10"; de_ncnt16:="0"; de_rexhold:='0';
     de_rexbubble := '0'; de_rexbaddr1:='0'; de_reximmexp:='0'; de_reximmval:=(others => '0');
     de_rexmaskpv := '0'; de_rexillinst:='0'; de_rexnostep:='0';
@@ -4467,6 +4461,11 @@ begin
       v.d.rexpos := "10";
     end if;
 
+    --pvilla mod
+    decode_checkpoint_enable(de_inst1,de_chkp_en);
+    --end pvilla mod
+
+
     rfi.wren <= (xc_wreg and holdn);
     rfi.raddr1 <= de_raddr1; rfi.raddr2 <= de_raddr2;
     rfi.ren1 <= de_ren1;
@@ -4542,6 +4541,9 @@ begin
     ici.rbranch <= v.f.branch;
     ici.su <= v.a.su;
 
+    --pvilla mod
+    checkpoint_enable <= de_chkp_en and (not (r.f.branch or v.f.branch) );
+    --end pvilla mod
     
     if (ico.mds and de_hold_pc) = '0' then
       v.d.rexbuf := de_inst1;
