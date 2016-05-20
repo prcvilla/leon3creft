@@ -165,6 +165,8 @@ signal gnd, vcc : std_logic;
 attribute sync_set_reset : string;
 attribute sync_set_reset of rst : signal is "true";
 
+signal recov_pin : std_ulogic := '1';
+
 begin
 
    gnd <= '0'; vcc <= '1';
@@ -179,7 +181,8 @@ begin
          ilramstart, dlram, dlramsize, dlramstart, mmuen, itlbnum, dtlbnum,
          tlb_type, tlb_rep, lddel, disas, tbuf, pwd, svt, rstaddr, smp,
          cached, clk2x, scantest, mmupgsz, bp, npasi, pwrpsr, rex, altwin)
-       port map (gclk2, rst, holdn, ahbi, ahbo, ahbsi, ahbso, rfi, rfo, crami, cramo, 
+       port map (gclk2, rst, holdn, recov_pin, -- pvilla mod
+                 ahbi, ahbo, ahbsi, ahbso, rfi, rfo, crami, cramo, 
                  tbi, tbo, tbi_2p, tbo_2p, fpi, fpo, cpi, cpo, irqi, irqo, dbgi, dbgo, clk, clk2, clken
                  );
   

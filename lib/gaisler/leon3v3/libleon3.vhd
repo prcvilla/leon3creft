@@ -98,6 +98,7 @@ package libleon3 is
       clk        : in  std_ulogic;
       rstn       : in  std_ulogic;
       holdn      : out std_ulogic;
+      recovn : in  std_ulogic; -- pvilla mod
       ahbi       : in  ahb_mst_in_type;
       ahbo       : out ahb_mst_out_type;
       ahbsi      : in  ahb_slv_in_type;

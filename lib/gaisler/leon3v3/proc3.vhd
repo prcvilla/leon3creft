@@ -100,6 +100,7 @@ entity proc3 is
     clk        : in  std_ulogic;
     rstn       : in  std_ulogic;
     holdn      : out std_ulogic;
+    recovn : in  std_ulogic; -- pvilla mod
     ahbi       : in  ahb_mst_in_type;
     ahbo       : out ahb_mst_out_type;
     ahbsi      : in  ahb_slv_in_type;
@@ -153,7 +154,8 @@ begin
     generic map (nwindows, isets, dsets, fpu, v8, cp, mac, dsu, nwp, pclow*(1-rex),
                  notag, hindex, lddel, IRFWT, disas, tbuf, pwd, svt, rstaddr, smp, fabtech,
                  clk2x, bp, npasi, pwrpsr, rex, altwin)
-    port map (clk, rstn, holdnx, ici, ico, dci, dco, rfi, rfo, irqi, irqo,
+    port map (clk, rstn, holdnx, recovn, --pvilla mod
+               ici, ico, dci, dco, rfi, rfo, irqi, irqo,
               dbgi, dbgo, muli, mulo, divi, divo, fpo, fpi, cpo, cpi, tbo, tbi, tbo_2p, tbi_2p, sclk);
 
 -- multiply and divide units

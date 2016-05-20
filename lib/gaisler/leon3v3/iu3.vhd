@@ -77,6 +77,7 @@ entity iu3 is
     clk   : in  std_ulogic;
     rstn  : in  std_ulogic;
     holdn : in  std_ulogic;
+    recovn : in  std_ulogic; -- pvilla mod
     ici   : out icache_in_type;
     ico   : in  icache_out_type;
     dci   : out dcache_in_type;
@@ -3759,28 +3760,27 @@ end;
   signal disasen : std_ulogic;
 
 --pvilla mod
-
   signal checkpoint_enable : std_ulogic;
 
   signal r_chkp : registers;
+  signal wpr_chkp : watchpoint_registers;
+  signal dsur_chkp : dsu_registers;
+  signal ir_chkp : irestart_register;
 
 procedure decode_checkpoint_enable(inst : word; chkp_en : out std_ulogic) is
   variable op : std_logic_vector(1 downto 0);
   variable op3 : std_logic_vector(5 downto 0);
-  variable store : std_ulogic;
 begin
     op := inst(31 downto 30);
     op3 := inst(24 downto 19);
 
-    case op3 is
-      when  ST|STB|STH|ISTD|STA|STBA|STHA|STDA|STF|STFSR|STDFQ|STDF|STC|STCSR|STDCQ|STDC =>
-        store := '1';
-      when others =>
-        store := '0';
-    end case;
-
-    if ( (store='1') and (op=LDST) ) then
-      chkp_en := '1';
+    if ( op=LDST ) then
+      case op3 is
+        when  ST|STB|STH|ISTD|STA|STBA|STHA|STDA|STF|STFSR|STDFQ|STDF|STC|STCSR|STDCQ|STDC =>
+          chkp_en := '1';
+        when others =>
+          chkp_en := '0';
+      end case;
     else
       chkp_en := '0';
     end if;
@@ -3788,9 +3788,7 @@ end;
 --end pvilla mod
 
 begin
--- start of the architecture !!!!
-
-
+-- here's the architecture !!!!
 
   BPRED <= '0' when bp = 0 else not r.d.rexen when bp = 1 else not (r.w.s.dbp or r.d.rexen);
   BLOCKBPMISS <= '0' when bp = 0 else '1' when bp = 1 else r.w.s.dbprepl;
@@ -4696,6 +4694,11 @@ begin
           r.x.set <= rin.x.set;
         end if;
       end if;
+--pvilla mod
+      if recovn = '0' then
+        r <= r_chkp;
+      end if;
+--end pvilla mod
       if rstn = '0' then
         if RESET_ALL then
           r <= RRES;
@@ -4761,9 +4764,17 @@ begin
       if rising_edge(clk) then 
         if holdn = '1' then
           dsur <= dsuin;
+          if (checkpoint_enable = '1') then --pvilla mod
+            dsur_chkp <= dsuin;
+          end if;
         else
           dsur.crdy <= dsuin.crdy;
         end if;
+--pvilla mod
+        if recovn = '0' then
+          dsur <= dsur_chkp;
+        end if;
+--end pvilla mod
         if rstn = '0' then
           if RESET_ALL then
             dsur <= DRES;
@@ -4787,14 +4798,23 @@ begin
   generate
     dsureg : process(clk) begin
       if rising_edge(clk) then 
-        if holdn = '1' then ir <= irin; end if;
+        if holdn = '1' then 
+          ir <= irin;
+          if (checkpoint_enable = '1') then --pvilla mod
+            ir_chkp <= irin;
+          end if;
+        end if;
+--pvilla mod
+        if recovn = '0' then
+          ir <= ir_chkp;
+        end if;
+--end pvilla mod
         if RESET_ALL and rstn = '0' then ir <= IRES; end if;
       end if;
     end process;
   end generate;
 
-  nirreg : if not (DBGUNIT or PWRD2
-    )
+  nirreg : if not (DBGUNIT or PWRD2)
   generate
     ir.pwd <= '0'; ir.addr <= (others => '0');
   end generate;
@@ -4803,7 +4823,17 @@ begin
     wpg0 : if nwp > i generate
       wpreg : process(clk) begin
         if rising_edge(clk) then
-          if holdn = '1' then wpr(i) <= wprin(i); end if;
+          if holdn = '1' then 
+            wpr(i) <= wprin(i);
+            if (checkpoint_enable = '1') then --pvilla mod
+              wpr_chkp(i) <= wprin(i);
+            end if;
+          end if;
+--pvilla mod
+          if recovn = '0' then
+            wpr(i) <= wpr_chkp(i);
+          end if;
+--end pvilla mod
           if rstn = '0' then
             if RESET_ALL then
               wpr(i) <= wpr_none;
