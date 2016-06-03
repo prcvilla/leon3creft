@@ -78,6 +78,7 @@ entity iu3 is
     rstn  : in  std_ulogic;
     holdn : in  std_ulogic;
     recovn : in  std_ulogic; -- pvilla mod
+    chkp : in  std_ulogic; -- pvilla mod
     ici   : out icache_in_type;
     ico   : in  icache_out_type;
     dci   : out dcache_in_type;
@@ -3766,25 +3767,26 @@ end;
   signal wpr_chkp : watchpoint_registers;
   signal dsur_chkp : dsu_registers;
   signal ir_chkp : irestart_register;
+  signal rp_chkp : pwd_register_type;
 
-procedure decode_checkpoint_enable(inst : word; chkp_en : out std_ulogic) is
-  variable op : std_logic_vector(1 downto 0);
-  variable op3 : std_logic_vector(5 downto 0);
-begin
-    op := inst(31 downto 30);
-    op3 := inst(24 downto 19);
-
-    if ( op=LDST ) then
-      case op3 is
-        when  ST|STB|STH|ISTD|STA|STBA|STHA|STDA|STF|STFSR|STDFQ|STDF|STC|STCSR|STDCQ|STDC =>
-          chkp_en := '1';
-        when others =>
-          chkp_en := '0';
-      end case;
-    else
-      chkp_en := '0';
-    end if;
-end;
+--procedure decode_checkpoint_enable(inst : word; chkp_en : out std_ulogic) is
+--  variable op : std_logic_vector(1 downto 0);
+--  variable op3 : std_logic_vector(5 downto 0);
+--begin
+--    op := inst(31 downto 30);
+--    op3 := inst(24 downto 19);
+--
+--    if ( op=LDST ) then
+--      case op3 is
+--        when  ST|STB|STH|ISTD|STA|STBA|STHA|STDA|STF|STFSR|STDFQ|STDF|STC|STCSR|STDCQ|STDC =>
+--          chkp_en := '1';
+--        when others =>
+--          chkp_en := '0';
+--      end case;
+--    else
+--      chkp_en := '0';
+--    end if;
+--end;
 --end pvilla mod
 
 begin
@@ -3825,7 +3827,7 @@ begin
   variable de_reximmexp: std_ulogic;
   variable de_reximmval: std_logic_vector(31 downto 13);
 --pvilla mod
-  variable de_chkp_en: std_ulogic;
+--  variable de_chkp_en: std_ulogic;
 --end pvilla mod
 
   variable ra_op1, ra_op2 : word;
@@ -4460,7 +4462,7 @@ begin
     end if;
 
     --pvilla mod
-    decode_checkpoint_enable(de_inst1,de_chkp_en);
+    --decode_checkpoint_enable(de_inst1,de_chkp_en);
     --end pvilla mod
 
 
@@ -4540,7 +4542,7 @@ begin
     ici.su <= v.a.su;
 
     --pvilla mod
-    checkpoint_enable <= de_chkp_en and (not (r.f.branch or v.f.branch) );
+    --checkpoint_enable <= de_chkp_en and (not (r.f.branch or v.f.branch) );
     --end pvilla mod
     
     if (ico.mds and de_hold_pc) = '0' then
@@ -4571,7 +4573,12 @@ begin
 -- OUTPUTS
 -----------------------------------------------------------------------
 
-    rin <= v; wprin <= vwpr; dsuin <= vdsu; irin <= vir;
+    if recovn='0' then -- added by me, lol
+      rin <= r_chkp;
+    else
+      rin <= v; --original
+    end if;
+    wprin <= vwpr; dsuin <= vdsu; irin <= vir;
     muli.start <= r.a.mulstart and not r.a.ctrl.annul and 
         not r.a.ctrl.trap and not ra_bpannul;
     muli.signed <= r.e.ctrl.inst(19);
@@ -4654,10 +4661,21 @@ begin
 
   end process;
 
+  checkpoint_enable <= chkp;
+
   preg : process (sclk)
   begin 
     if rising_edge(sclk) then 
       rp <= rpin;
+--pvilla mod
+      if (checkpoint_enable = '1') then
+        rp_chkp <= rpin;
+      end if;
+      if recovn = '0' then
+        rp <= rp_chkp;
+        --rpin <= rp_chkp;
+      end if;
+--end pvilla mod
       if rstn = '0' then
         rp.error <= PRES.error;
         if RESET_ALL then
@@ -4697,6 +4715,7 @@ begin
 --pvilla mod
       if recovn = '0' then
         r <= r_chkp;
+        --rin <= r_chkp;
       end if;
 --end pvilla mod
       if rstn = '0' then
@@ -4773,6 +4792,7 @@ begin
 --pvilla mod
         if recovn = '0' then
           dsur <= dsur_chkp;
+          --dsuin <= dsur_chkp;
         end if;
 --end pvilla mod
         if rstn = '0' then
@@ -4807,6 +4827,7 @@ begin
 --pvilla mod
         if recovn = '0' then
           ir <= ir_chkp;
+          --irin <= ir_chkp;
         end if;
 --end pvilla mod
         if RESET_ALL and rstn = '0' then ir <= IRES; end if;
@@ -4832,6 +4853,7 @@ begin
 --pvilla mod
           if recovn = '0' then
             wpr(i) <= wpr_chkp(i);
+            --wprin(i) <= wpr_chkp(i);
           end if;
 --end pvilla mod
           if rstn = '0' then
