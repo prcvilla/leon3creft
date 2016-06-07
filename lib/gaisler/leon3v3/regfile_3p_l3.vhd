@@ -36,7 +36,6 @@ entity regfile_3p_l3 is
            wrfst : integer := 0; numregs : integer := 64;
            testen : integer := 0);
   port (
-    rstn   : in  std_ulogic;
     wclk   : in  std_ulogic;
     waddr  : in  std_logic_vector((abits -1) downto 0);
     wdata  : in  std_logic_vector((dbits -1) downto 0);
@@ -66,17 +65,6 @@ signal vgnd : std_logic_vector(dbits-1 downto 0);
 signal write2, renable2 : std_ulogic;
 
 
-component chk_regfile is
-  generic (abits : integer := 6; dbits : integer := 8);
-    port (
-    rstn   : in  std_ulogic;
-    wclk   : in  std_ulogic;
-    waddr  : in  std_logic_vector((abits -1) downto 0);
-    wdata  : in  std_logic_vector((dbits -1) downto 0);
-    we     : in  std_ulogic
-  );
-end component;
-
 begin
 
   vcc <= '1'; gnd <= '0'; vgnd <= (others => '0');
@@ -99,9 +87,6 @@ begin
                  );
   end generate;
 
-
-  chk_regfile_inst : chk_regfile generic map( abits, dbits)
-      port map (rstn, wclk, waddr, wdata, we);
 
 
 end;

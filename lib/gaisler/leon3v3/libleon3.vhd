@@ -99,6 +99,7 @@ package libleon3 is
       rstn       : in  std_ulogic;
       holdn      : out std_ulogic;
       recovn : in  std_ulogic; -- pvilla mod
+      chkp : in  std_ulogic; -- pvilla mod
       ahbi       : in  ahb_mst_in_type;
       ahbo       : out ahb_mst_out_type;
       ahbsi      : in  ahb_slv_in_type;
@@ -176,7 +177,6 @@ package libleon3 is
       numregs :     integer := 64;
       testen  :     integer := 0);
     port (
-      rstn    : in  std_ulogic;
       wclk    : in  std_ulogic;
       waddr   : in  std_logic_vector((abits -1) downto 0);
       wdata   : in  std_logic_vector((dbits -1) downto 0);

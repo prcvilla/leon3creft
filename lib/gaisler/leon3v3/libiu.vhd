@@ -186,6 +186,7 @@ package libiu is
       rstn    : in  std_ulogic;
       holdn   : in  std_ulogic;
       recovn : in  std_ulogic; -- pvilla mod
+      chkp : in  std_ulogic; -- pvilla mod
       ici     : out icache_in_type;
       ico     : in  icache_out_type;
       dci     : out dcache_in_type;

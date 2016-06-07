@@ -166,10 +166,23 @@ attribute sync_set_reset : string;
 attribute sync_set_reset of rst : signal is "true";
 
 signal recov_pin : std_ulogic := '1';
+signal chkp_pin : std_ulogic := '1';
+signal ahbo_sig  : ahb_mst_out_type;
+
+component chk_control
+  port (
+    rstn   : in  std_ulogic;
+    wclk   : in  std_ulogic;
+    we     : in  std_ulogic;
+    chkp_en: out std_ulogic
+  );
+end component;
 
 begin
 
    gnd <= '0'; vcc <= '1';
+
+   ahbo <= ahbo_sig;
 
    vhdl : if netlist = 0 generate
      -- leon3 processor core (iu, caches & mul/div)
@@ -181,11 +194,16 @@ begin
          ilramstart, dlram, dlramsize, dlramstart, mmuen, itlbnum, dtlbnum,
          tlb_type, tlb_rep, lddel, disas, tbuf, pwd, svt, rstaddr, smp,
          cached, clk2x, scantest, mmupgsz, bp, npasi, pwrpsr, rex, altwin)
-       port map (gclk2, rst, holdn, recov_pin, -- pvilla mod
-                 ahbi, ahbo, ahbsi, ahbso, rfi, rfo, crami, cramo, 
+       port map (gclk2, rst, holdn, recov_pin, chkp_pin, -- pvilla mod
+                 ahbi, ahbo_sig, ahbsi, ahbso, rfi, rfo, crami, cramo, 
                  tbi, tbo, tbi_2p, tbo_2p, fpi, fpo, cpi, cpo, irqi, irqo, dbgi, dbgo, clk, clk2, clken
                  );
-  
+     -- checkpoint controller
+     chkp0 : chk_control 
+       port map (
+                 rstn, gclk2, ahbo_sig.hwrite, chkp_pin
+                );
+
      -- IU register file
      rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
                                       scantest)
