@@ -1,1 +1,2 @@
+chk_control.vhd
 chk_regfile.vhd

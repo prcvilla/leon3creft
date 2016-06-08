@@ -37,10 +37,10 @@ begin
 		case(CS) is
 			when sidle =>
 				if (we='0') then NS <= sidle;
-				else              NS <= swriteon; end if;
+				else             NS <= swriteon; end if;
 			when swriteon =>
 				if (we='0') then NS <= schkpen;
-				else              NS <= swriteon; end if;
+				else             NS <= swriteon; end if;
 			when schkpen =>
 				NS <= sidle;
 			when others =>

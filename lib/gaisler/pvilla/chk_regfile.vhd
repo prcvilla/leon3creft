@@ -14,10 +14,10 @@ entity chk_regfile is
     rec_waddr  : out  std_logic_vector((abits -1) downto 0);
     rec_wdata  : out  std_logic_vector((dbits -1) downto 0);
     rec_we     : out  std_ulogic;
+    rec_holdn  : out std_ulogic;
 
     chkp   : in  std_ulogic;
-    recovn : in  std_ulogic;
-    holdn  : out std_ulogic
+    recovn : in  std_ulogic
   );
 end;
 
@@ -30,7 +30,10 @@ architecture beh of chk_regfile is
 	signal CS, NS : states;
 
 	signal addr : unsigned((abits-1) downto 0);
+	signal holdn : std_ulogic;
 begin
+
+	rec_holdn <= holdn;
 
 	process(wclk)
 	begin
@@ -52,6 +55,7 @@ begin
 				CS <= NS;
 				case(CS) is
 					when sidle =>
+						addr <= (others=>'1');
 					when sinit =>
 						addr <= (others=>'1');
 					when saddr =>
@@ -65,7 +69,7 @@ begin
 	end process;
 
 
-	holdn <= '0' when CS=sidle else '1';
+	holdn <= '1' when CS=sidle else '0';
 	rec_we <= '1' when CS=saddr else '0';
 	rec_waddr <= STD_LOGIC_VECTOR(addr);
 	rec_wdata <= regfile_bkp(to_integer(addr));
