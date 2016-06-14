@@ -69,7 +69,7 @@ begin
 	end process;
 
 
-	holdn <= '1' when CS=sidle else '0';
+	holdn <= '1' when (CS=sidle or CS=sinit) else '0';
 	rec_we <= '1' when CS=saddr else '0';
 	rec_waddr <= STD_LOGIC_VECTOR(addr);
 	rec_wdata <= regfile_bkp(to_integer(addr));

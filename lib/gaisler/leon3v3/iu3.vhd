@@ -4695,9 +4695,7 @@ begin
       if (holdn = '1') then
         r <= rin;
 --pvilla mod
-        if (checkpoint_enable = '1') then
-          r_chkp <= rin; -- save the register
-        end if;
+        -- checkpoint was here
 --end pvilla mod
       else
         r.x.ipend <= rin.x.ipend;
@@ -4713,7 +4711,10 @@ begin
         end if;
       end if;
 --pvilla mod
-      if recovn = '0' then
+      if (checkpoint_enable = '1') then
+        r_chkp <= rin; -- save the register
+      end if;
+      if (recovn = '0') then
         r <= r_chkp;
         --rin <= r_chkp;
       end if;
@@ -4721,6 +4722,7 @@ begin
       if rstn = '0' then
         if RESET_ALL then
           r <= RRES;
+          r_chkp <= RRES; --pvilla mod
           if DYNRST then
             r.f.pc(31 downto 12) <= irqi.rstvec;
             r.w.s.tba <= irqi.rstvec;
