@@ -1,0 +1,15 @@
+/opt/microsemi/Libero_v11.7/Synplify/bin/m_proasic  -mp  1  -prjfile  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis   -part A3PE1500  -package PQFP208  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synlog/report/leon3mp_premap.xml  -top_level_module  work.leon3mp  -oedif  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.edn  -conchk_prepass  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp_cck_prepass.rpt   -freq 100.000   /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_mult.srs  -flow prepass  -gcc_prepass  -osrd  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_prem.srd  -qsap  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.sap  -devicelib  /opt/microsemi/Libero_v11.7/Synplify/lib/proasic/proasic3e.v  -ologparam  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/syntmp/leon3mp.plg  -osyn  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_prem.srd  -prjdir  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/  -prjname  leon3mp_syn  -log  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synlog/leon3mp_premap.srr 
+rc:1 success:1
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/scratchproject.prs|o|1457731790|14492
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.edn|o|1457731769|7165274
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp_cck_prepass.rpt|o|0|0
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_mult.srs|i|1457731815|108361
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_prem.srd|o|1457731819|1117131
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.sap|o|1457731819|96853
+/opt/microsemi/Libero_v11.7/Synplify/lib/proasic/proasic3e.v|i|1449250473|52634
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/syntmp/leon3mp.plg|o|1457731815|0
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_prem.srd|o|1457731819|1117131
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synlog/leon3mp_premap.srr|o|1457731819|12264
+/opt/microsemi/Libero_v11.7/Synplify/linux_a_64/m_proasic|i|1449769638|19824208
+/opt/microsemi/Libero_v11.7/Synplify/linux/m_proasic|i|1449769664|17926956
+/opt/microsemi/Libero_v11.7/Synplify/bin/m_proasic|i|1449250470|345

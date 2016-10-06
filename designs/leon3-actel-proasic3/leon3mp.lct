@@ -1,0 +1,8 @@
+[Device]
+Family = ;
+PartNumber = A3PE1500StdPQFP;
+Package = ;
+PartType = A3PE1500;
+Speed = Std;
+Operating_condition = COM;
+Status = Production;

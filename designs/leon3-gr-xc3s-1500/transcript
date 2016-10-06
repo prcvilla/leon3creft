@@ -1,0 +1,85 @@
+# ERROR: No extended dataflow license exists
+# vsim -quiet testbench 
+# Start time: 10:34:59 on Oct 05,2016
+# ** Warning: Design size of 153642 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized inout port /testbench/cpu/emdio has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/etxd(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/etx_en has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/etx_er has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/emdc has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txdp(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txdn(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txsp(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/cpu/spw_txsn(0) has no driver.
+# This port will contribute value (U) to the signal network.
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/testbench/from_ata'.
+# Executing ONERROR command at macro ./wave.do line 34
+# ** Error: (vish-4014) No objects found matching '/testbench/to_ata'.
+# Executing ONERROR command at macro ./wave.do line 35
+do run_and_force.do
+# running for 3000ns...
+# LEON3 GR-XC3S-1500 Demonstration design
+# GRLIB Version 1.5.0, build 4164
+# Target technology: spartan3  , memory library: spartan3  
+# ahbctrl: AHB arbiter/multiplexer rev 1
+# ahbctrl: Common I/O area disabled
+# ahbctrl: AHB masters: 3, AHB slaves: 8
+# ahbctrl: Configuration area at 0xfffff000, 4 kbyte
+# ahbctrl: mst0: Cobham Gaisler          LEON3 SPARC V8 Processor       
+# ahbctrl: mst1: Cobham Gaisler          AHB Debug UART                 
+# ahbctrl: mst2: Cobham Gaisler          JTAG Debug Link                
+# ahbctrl: slv0: European Space Agency   LEON2 Memory Controller        
+# ahbctrl:       memory at 0x00000000, size 512 Mbyte, cacheable, prefetch
+# ahbctrl:       memory at 0x20000000, size 512 Mbyte
+# ahbctrl:       memory at 0x40000000, size 1024 Mbyte, cacheable, prefetch
+# ahbctrl: slv1: Cobham Gaisler          AHB/APB Bridge                 
+# ahbctrl:       memory at 0x80000000, size 1 Mbyte
+# ahbctrl: slv2: Cobham Gaisler          LEON3 Debug Support Unit       
+# ahbctrl:       memory at 0x90000000, size 256 Mbyte
+# apbctrl: APB Bridge at 0x80000000 rev 1
+# apbctrl: slv0: European Space Agency   LEON2 Memory Controller        
+# apbctrl:       I/O ports at 0x80000000, size 256 byte 
+# apbctrl: slv1: Cobham Gaisler          Generic UART                   
+# apbctrl:       I/O ports at 0x80000100, size 256 byte 
+# apbctrl: slv2: Cobham Gaisler          Multi-processor Interrupt Ctrl.
+# apbctrl:       I/O ports at 0x80000200, size 256 byte 
+# apbctrl: slv3: Cobham Gaisler          Modular Timer Unit             
+# apbctrl:       I/O ports at 0x80000300, size 256 byte 
+# apbctrl: slv7: Cobham Gaisler          AHB Debug UART                 
+# apbctrl:       I/O ports at 0x80000700, size 256 byte 
+# apbctrl: slv8: Cobham Gaisler          General Purpose I/O port       
+# apbctrl:       I/O ports at 0x80000800, size 256 byte 
+# grgpio8: 18-bit GPIO Unit rev 3
+# gptimer3: Timer Unit rev 1, 8-bit scaler, 2 32-bit timers, irq 8
+# irqmp: Multi-processor Interrupt Controller rev 4, #cpu 1, eirq 0
+# apbuart1: Generic UART rev 1, fifo 4, irq 2, scaler bits 12
+# ahbjtag AHB Debug JTAG rev 1
+# ahbuart7: AHB Debug UART rev 0
+# dsu3_2: LEON3 Debug support unit + AHB Trace Buffer, 2 kbytes
+# leon3_0: LEON3 SPARC V8 processor rev 3: iuft: 0, fpft: 0, cacheft: 0
+# leon3_0: icache 0*0 kbyte, dcache 0*0 kbyte
+# clkgen_spartan3e: spartan3/e sdram/pci clock generator, version 1
+# clkgen_spartan3e: Frequency 50000 KHz, DCM divisor 4/5
+# var initialization...
+# 0
+# 4300
+# 538690000  iteration no: 1
+# 549340000  iteration no: 2
+# will force in  4300 ns
+# applying force...
+# ERROR, try again.
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./run_and_force.do PAUSED at line 41
+# End time: 14:00:11 on Oct 05,2016, Elapsed time: 3:25:12
+# Errors: 6, Warnings: 10

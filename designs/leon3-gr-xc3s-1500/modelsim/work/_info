@@ -1,0 +1,480 @@
+m255
+K4
+z0
+13
+cModel Technology
+Z0 d/home/pvilla/phd/4-cr_mod
+Eahbrom
+Z1 w1464115600
+Z2 DPx5 grlib 7 devices 0 22 :UCX8o]77aX]Sb=7Qe;CQ1
+Z3 DPx5 grlib 7 version 0 22 Z:R_8;>LQJz7LC95mOXc13
+Z4 DPx5 grlib 6 stdlib 0 22 Nf?1UicA<WfjC]ZZ^b]bT2
+Z5 DPx5 grlib 6 config 0 22 eU26W<A@6mDGHLG4mLUm70
+Z6 DPx5 grlib 12 config_types 0 22 bScSTLnnUMX@nH^jf90C`1
+Z7 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z8 DPx5 grlib 4 amba 0 22 XObGH1I?m`G5^EFE:POO_3
+Z9 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z10 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z11 8ahbrom.vhd
+Z12 Fahbrom.vhd
+l0
+L18
+VUmJa`bjQ>[g4V3jF@_2gL1
+!s100 4jgoUaUMAdQ`oX]h6ze^02
+Z13 OV;C;10.3d;59
+31
+Z14 !s110 1465931804
+!i10b 1
+Z15 !s108 1465931804.750867
+Z16 !s90 -quiet|-explicit|-93|-work|work|ahbrom.vhd|
+Z17 !s107 ahbrom.vhd|
+!i113 1
+Z18 o-quiet -explicit -93 -work work
+Z19 tShow_source 1 Show_Warning1 0 Show_Warning5 0 Explicit 1 Quiet 1
+Artl
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z20 DEx4 work 6 ahbrom 0 22 UmJa`bjQ>[g4V3jF@_2gL1
+l46
+L34
+Vd1:MgTL<U>J`e?Dn<iLmR1
+!s100 F>^nWDTCI>kzVg`T0b;<`0
+R13
+31
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R18
+R19
+Pconfig
+R6
+R5
+R9
+R10
+Z21 DPx7 techmap 7 gencomp 0 22 _j`jU8Vc66ES6_OE3gg730
+w1464115683
+R0
+8config.vhd
+Fconfig.vhd
+l0
+L7
+VD]GY3S6Xi0LFazLL81ecX1
+!s100 D=aR>[C3DNb<b5WefJ:aH0
+R13
+31
+R14
+!i10b 1
+!s108 1465931804.677898
+!s90 -quiet|-explicit|-93|-work|work|config.vhd|
+!s107 config.vhd|
+!i113 1
+R18
+R19
+Ecpu_disas
+Z22 w1464193540
+Z23 DPx5 grlib 5 stdio 0 22 kToN;Q]_aAAze1Lhl;K8d3
+Z24 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z25 DPx5 grlib 7 testlib 0 22 2ETVY1ellYI]^3BKMWCQ`1
+Z26 DPx5 grlib 11 sparc_disas 0 22 fLU<gP^cb76A2z5;5ZUIG2
+Z27 DPx5 grlib 5 sparc 0 22 :>H]6`Rbz:lMePXD?0X[R3
+R3
+R4
+R7
+R9
+R10
+R0
+Z28 8../../lib/work/debug/cpu_disas.vhd
+Z29 F../../lib/work/debug/cpu_disas.vhd
+l0
+L37
+VmD2bF6<AF?cYJj@m;`;2J2
+!s100 e?^P0FoN:`@Cdh93UJ4N22
+R13
+31
+R14
+!i10b 1
+Z30 !s108 1465931804.613058
+Z31 !s90 -quiet|-explicit|-93|-work|work|../../lib/work/debug/cpu_disas.vhd|
+Z32 !s107 ../../lib/work/debug/cpu_disas.vhd|
+!i113 1
+R18
+R19
+Abehav
+R23
+R24
+R25
+R26
+R27
+R3
+R4
+R7
+R9
+R10
+DEx4 work 9 cpu_disas 0 22 mD2bF6<AF?cYJj@m;`;2J2
+l54
+L53
+VGHB[dzoAO0K`_0d_O6?Qh2
+!s100 nLW`PNAUhb1g8hn0YP_Qd2
+R13
+31
+R14
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R18
+R19
+Pdebug
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R22
+R0
+8../../lib/work/debug/debug.vhd
+F../../lib/work/debug/debug.vhd
+l0
+L32
+VB1R;N]V02]KIgkVEe>UbF2
+!s100 Z[kYcla23>WV4DYFahJAn0
+R13
+31
+R14
+!i10b 1
+!s108 1465931804.444536
+!s90 -quiet|-explicit|-93|-work|work|../../lib/work/debug/debug.vhd|
+!s107 ../../lib/work/debug/debug.vhd|
+!i113 1
+R18
+R19
+Egaisler_cpu_disas
+R22
+R23
+R24
+R25
+R26
+R27
+R3
+R4
+R7
+R9
+R10
+R0
+R28
+R29
+l0
+L91
+V?N>WI0@<T4iekD`Bma1WH1
+!s100 l97_:YGmGbA9[dmXmhUAA3
+R13
+31
+R14
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R18
+R19
+Abehav
+R23
+R24
+R25
+R26
+R27
+R3
+R4
+R7
+R9
+R10
+DEx4 work 17 gaisler_cpu_disas 0 22 ?N>WI0@<T4iekD`Bma1WH1
+l108
+L107
+V37:ALl?InE=]SXAQW4bol2
+!s100 ?E_GkQgCn05=mDNiiN0P<2
+R13
+31
+R14
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R18
+R19
+Egrtestmod
+R22
+R21
+R2
+R5
+R6
+R8
+R23
+R3
+R7
+R4
+Z33 DPx7 gaisler 3 sim 0 22 P;<>[Eh0<Zm@cZl4X2:T;0
+R9
+R10
+R0
+Z34 8../../lib/work/debug/grtestmod.vhd
+Z35 F../../lib/work/debug/grtestmod.vhd
+l0
+L70
+VXVH1VbbON;A=zQcVj[kSY3
+!s100 gCBhZGcI7KmzXB:aiAjH;2
+R13
+31
+R14
+!i10b 1
+Z36 !s108 1465931804.511057
+Z37 !s90 -quiet|-explicit|-93|-work|work|../../lib/work/debug/grtestmod.vhd|
+Z38 !s107 ../../lib/work/debug/grtestmod.vhd|
+!i113 1
+R18
+R19
+Asim
+R24
+R25
+R21
+R2
+R5
+R6
+R8
+R23
+R3
+R7
+R4
+R33
+R9
+R10
+DEx4 work 9 grtestmod 0 22 XVH1VbbON;A=zQcVj[kSY3
+l106
+L92
+VCF8VQe]TF[R[hkVWjH^YB0
+!s100 2HM?9IhRkSB3FJC8:82eK2
+R13
+31
+R14
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R18
+R19
+Eleon3mp
+R1
+Z39 DPx4 work 6 config 0 22 D]GY3S6Xi0LFazLL81ecX1
+Z40 DPx3 esa 10 memoryctrl 0 22 <hAUCLBa3D2M@4I`BzO_`2
+Z41 DPx7 gaisler 5 grusb 0 22 ggNC`4RnaY`bb8WDD8o0P0
+Z42 DPx7 gaisler 9 spacewire 0 22 IXMnJ3G0kJo9VR77]bH[I2
+Z43 DPx7 gaisler 4 jtag 0 22 19<_R^84?`cgU`=zmQoXh0
+Z44 DPx7 gaisler 3 net 0 22 zBz]ami092zaKIGI^oM?<1
+Z45 DPx7 gaisler 3 can 0 22 5?o9cYOSffg4CfOGDTnOB1
+R2
+Z46 DPx7 gaisler 4 misc 0 22 HEjl<1V8b^z[dGFgVHK0N3
+Z47 DPx7 gaisler 4 uart 0 22 c8U0k0ba:ICel@cDl?cN^1
+Z48 DPx7 gaisler 5 leon3 0 22 ^cnBJenijkGinVB@kzhk?1
+Z49 DPx7 gaisler 7 memctrl 0 22 Mk07@7?>HdzHlU=URYCdO0
+R21
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+R0
+Z50 8leon3mp.vhd
+Z51 Fleon3mp.vhd
+l0
+L48
+VV6IA9hZKd@7<Q][dcKePG2
+!s100 P6zjX8>CW17fl0lekg<AT0
+R13
+31
+Z52 !s110 1465931805
+!i10b 1
+Z53 !s108 1465931804.915181
+Z54 !s90 -quiet|-explicit|-93|-work|work|leon3mp.vhd|
+Z55 !s107 leon3mp.vhd|
+!i113 1
+R18
+R19
+Artl
+Z56 DPx7 techmap 9 allclkgen 0 22 IK48Bb4N6[NDFQe_G4AXj2
+Z57 DEx4 work 10 vga_clkgen 0 22 WWf8[Hj]LHN3gm@iaR<?Q1
+R20
+R39
+R40
+R41
+R42
+R43
+R44
+R45
+R2
+R46
+R47
+R48
+R49
+R21
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 leon3mp 0 22 V6IA9hZKd@7<Q][dcKePG2
+l252
+L154
+V]?G><jGEDmQ_?_[gRe3g40
+!s100 N=Ynl322QZg^S?fDEnWze2
+R13
+31
+R52
+!i10b 1
+R53
+R54
+R55
+!i113 1
+R18
+R19
+Etestbench
+Z58 w1464115420
+R39
+Z59 DPx4 work 5 debug 0 22 B1R;N]V02]KIgkVEe>UbF2
+Z60 DPx6 micron 10 components 0 22 b39b@k]lemF^j04c_IgWa2
+R23
+R33
+R21
+R2
+R46
+R47
+R3
+R4
+R5
+R6
+R7
+R8
+Z61 DPx7 gaisler 7 libdcom 0 22 SCOdg0zMJ77?TeZCfVizJ1
+R9
+R10
+R0
+Z62 8testbench.vhd
+Z63 Ftestbench.vhd
+l0
+L38
+VZ<IOXT^TJ2nQVB<G]`1iA1
+!s100 Ig;ALa9NliQK5717_@cY_2
+R13
+31
+R52
+!i10b 1
+Z64 !s108 1465931805.095347
+Z65 !s90 -quiet|-explicit|-93|-work|work|testbench.vhd|
+Z66 !s107 testbench.vhd|
+!i113 1
+R18
+R19
+Abehav
+R39
+R59
+R60
+R23
+R33
+R21
+R2
+R46
+R47
+R3
+R4
+R5
+R6
+R7
+R8
+R61
+R9
+R10
+DEx4 work 9 testbench 0 22 Z<IOXT^TJ2nQVB<G]`1iA1
+l258
+L57
+VX[6G9cgWQj9T7DZg=2`Ll3
+!s100 P:>;>0A885P;16JfG86=E3
+R13
+31
+R52
+!i10b 1
+R64
+R65
+R66
+!i113 1
+R18
+R19
+Evga_clkgen
+R1
+R56
+R6
+R5
+R21
+DEx6 unisim 4 bufg 0 22 =W62jOA>BCcHVJY]V`:B=3
+R9
+R10
+R0
+Z67 8vga_clkgen.vhd
+Z68 Fvga_clkgen.vhd
+l0
+L32
+VWWf8[Hj]LHN3gm@iaR<?Q1
+!s100 7R]>CzlI3Lf?V@[Fj73jd1
+R13
+31
+R14
+!i10b 1
+Z69 !s108 1465931804.833527
+Z70 !s90 -quiet|-explicit|-93|-work|work|vga_clkgen.vhd|
+Z71 !s107 vga_clkgen.vhd|
+!i113 1
+R18
+R19
+Astruct
+R56
+R6
+R5
+R21
+R9
+R10
+R57
+l47
+L43
+VLM5eU7e3AR4XM22l8;N?B0
+!s100 aX1ak?F`gGg?I223cJM190
+R13
+31
+R14
+!i10b 1
+R69
+R70
+R71
+!i113 1
+R18
+R19

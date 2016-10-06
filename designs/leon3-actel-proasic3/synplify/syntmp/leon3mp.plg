@@ -1,0 +1,80 @@
+@P:  Worst Slack : -2.129
+@P:  clk - Estimated Frequency : NA
+@P:  clk - Requested Frequency : 40.0 MHz
+@P:  clk - Estimated Period : NA
+@P:  clk - Requested Period : 25.000
+@P:  clk - Slack : NA
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Estimated Frequency : 28.2 MHz
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Requested Frequency : 30.0 MHz
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Estimated Period : 35.462
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Requested Period : 33.333
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Slack : -2.129
+@P:  clkm - Estimated Frequency : NA
+@P:  clkm - Requested Frequency : 30.0 MHz
+@P:  clkm - Estimated Period : NA
+@P:  clkm - Requested Period : 33.333
+@P:  clkm - Slack : NA
+@P:  System - Estimated Frequency : 56.7 MHz
+@P:  System - Requested Frequency : 30.0 MHz
+@P:  System - Estimated Period : 17.647
+@P:  System - Requested Period : 33.333
+@P:  System - Slack : 4.657
+@P:  Worst Slack(min analysis) : 1.839
+@P:  clk - Estimated Frequency(min analysis) : NA
+@P:  clk - Requested Frequency(min analysis) : 40.0 MHz
+@P:  clk - Estimated Period(min analysis) : NA
+@P:  clk - Requested Period(min analysis) : 25.000
+@P:  clk - Slack(min analysis) : NA
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Estimated Frequency(min analysis) : 28.2 MHz
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Requested Frequency(min analysis) : 30.0 MHz
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Estimated Period(min analysis) : 35.462
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Requested Period(min analysis) : 33.333
+@P:  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock - Slack(min analysis) : -2.129
+@P:  clkm - Estimated Frequency(min analysis) : NA
+@P:  clkm - Requested Frequency(min analysis) : 30.0 MHz
+@P:  clkm - Estimated Period(min analysis) : NA
+@P:  clkm - Requested Period(min analysis) : 33.333
+@P:  clkm - Slack(min analysis) : NA
+@P:  System - Estimated Frequency(min analysis) : 56.7 MHz
+@P:  System - Requested Frequency(min analysis) : 30.0 MHz
+@P:  System - Estimated Period(min analysis) : 17.647
+@P:  System - Requested Period(min analysis) : 33.333
+@P:  System - Slack(min analysis) : 4.657
+@P:  Total Area : 12302.0
+@P:  Total Area : 48.0
+@P:  Total Area : 4.0
+@P:  Total Area : 1.0
+@P:  Total Area : 1.0
+@P:  Total Area : 1.0
+@P:  Total Area : 1.0
+@P:  Total Area : 96.0
+@P:  Total Area : 779.0
+@P:  Total Area : 537.0
+@P:  Total Area : 460.0
+@P:  Total Area : 313.0
+@P:  Total Area : 313.0
+@P:  Total Area : 1069.0
+@P:  Total Area : 386.0
+@P:  Total Area : 674.0
+@P:  Total Area : 9.0
+@P:  Total Area : 441.0
+@P:  Total Area : 441.0
+@P:  Total Area : 8219.0
+@P:  Total Area : 8219.0
+@P:  Total Area : 143.0
+@P:  Total Area : 143.0
+@P:  Total Area : 51.0
+@P:  Total Area : 51.0
+@P:  Total Area : 92.0
+@P:  Total Area : 92.0
+@P:  Total Area : 8075.0
+@P:  Total Area : 1006.0
+@P:  Total Area : 202.0
+@P:  Total Area : 673.0
+@P:  Total Area : 131.0
+@P:  Total Area : 7069.0
+@P:  Total Area : 329.0
+@P:  Total Area : 7.0
+@P:  Total Area : 0.0
+@P:  Total Area : 12302.0
+@P:  CPU Time : 0h:00m:47s

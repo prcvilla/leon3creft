@@ -1,0 +1,59 @@
+Synopsys Microsemi Technology Pre-mapping, Version map201209sp1actp1, Build 006R, Built Sep 30 2013 12:30:50
+Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09A-SP4 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+
+Reading constraint file: /home/pvilla/phd/grlib-gpl-1.5.0-b4164/boards/a3pe-proto-kit/default.sdc
+Adding property syn_input_delay1, value "r=15.00,f=15.00,rs=0.0,fs=0.0,improve=0.00,route=0.00,ref=*" to view:work.leon3mp(rtl)
+Adding property syn_output_delay2, value "r=8.00,f=8.00,rs=0.0,fs=0.0,improve=0.00,route=0.00,ref=*" to view:work.leon3mp(rtl)
+Adding property syn_noarrayports, value 1 to view:work.leon3mp(rtl)
+Adding property syn_edif_bit_format, value "%n<%i>" to view:work.leon3mp(rtl)
+Adding property syn_edif_scalar_format, value "%n" to view:work.leon3mp(rtl)
+Adding property syn_global_buffers, value 12 to view:work.leon3mp(rtl)
+@L: /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp_scck.rpt 
+Printing clock  summary report in "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+@W: BN522 |Property syn_clock_priority is not supported for this target technology
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.tt[0],  because it is equivalent to instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.trap
+Finished Pre Mapping Phase.@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri31 on net gpioi_tri31 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri30 on net gpioi_tri30 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri29 on net gpioi_tri29 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri28 on net gpioi_tri28 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri27 on net gpioi_tri27 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri26 on net gpioi_tri26 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri25 on net gpioi_tri25 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri24 on net gpioi_tri24 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri23 on net gpioi_tri23 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri22 on net gpioi_tri22 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri21 on net gpioi_tri21 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri20 on net gpioi_tri20 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri19 on net gpioi_tri19 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri18 on net gpioi_tri18 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri17 on net gpioi_tri17 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri16 on net gpioi_tri16 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri15 on net gpioi_tri15 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri14 on net gpioi_tri14 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri13 on net gpioi_tri13 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri12 on net gpioi_tri12 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri11 on net gpioi_tri11 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri10 on net gpioi_tri10 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri9 on net gpioi_tri9 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri8 on net gpioi_tri8 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":456:12:456:23|Tristate driver gpioi_tri7 on net gpioi_tri7 has its enable tied to GND (module leon3mp) 
+@N: BN225 |Writing default property annotation file /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 91MB peak: 157MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Mar 11 16:38:43 2016
+
+###########################################################]

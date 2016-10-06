@@ -1,0 +1,263 @@
+Microsemi Libero Software
+Version: 11.7.0.119
+Release: v11.7
+
+Info: The design leon3mp.adb was last modified by software version 11.7.0.119.
+Opened an existing Libero design leon3mp.adb.
+'BA_NAME' set to 'leon3mp_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+
+ Netlist Reading Time = 1.0 seconds
+Imported the file:
+   /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.edn
+
+The Import command succeeded ( 00:00:04 )
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      :
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.edn
+Format      : EDIF
+Topcell     : leon3mp
+Speed grade : Std
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: proasic3_syncram_work_leon3mp_rtl_0 is not an Actel cell defined in the cell library.
+Warning: proasic3_syncram_2p_work_leon3mp_rtl_0 is not an Actel cell defined in the cell
+         library.
+Warning: proasic3_syncram_work_leon3mp_rtl_1 is not an Actel cell defined in the cell library.
+Error: CMP002: Net: ahbso_7_hrdata[0] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[1] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[2] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[3] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[4] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[5] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[6] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[7] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[8] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[9] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[10] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[11] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[12] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[13] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[14] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[15] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[16] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[17] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[18] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[19] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[20] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[21] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[22] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[23] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[24] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[25] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[26] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[27] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[28] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[29] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[30] is not driven
+Error: CMP002: Net: ahbso_7_hrdata[31] is not driven
+Warning: CMP201: Net clkgen0/Core_GLB drives no load.
+Warning: CMP201: Net clkgen0/Core_GLC drives no load.
+Warning: CMP201: Net clkgen0/LOCK drives no load.
+Warning: CMP201: Net clkgen0/Core_YB drives no load.
+Warning: CMP201: Net clkgen0/Core_YC drives no load.
+Warning: CMP201: Net ocram_ahbram0/ramsel[3] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[8] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[5] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[1] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[2] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[7] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[0] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[4] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[6] drives no load.
+Warning: CMP201: Net ocram_ahbram0/haddr_1[3] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/bs_1[3] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/bs_1[0] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/bs_1[1] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/bs_1[2] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/dstate_RNIP39MH2[0] drives no load.
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[30] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[17] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[19] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[20] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[22] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[13] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[8] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[5] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[29] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[21] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[18] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[6] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[2] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[0] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[12] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[3] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[16] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[31] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[28] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[15] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[7] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[27] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[14] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[23] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[4] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[9] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/ldataout[11] is not driven
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[621] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[635] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[623] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[618] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[622] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[627] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[611] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[722] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[720] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[633] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[619] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[612] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[614] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[615] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[616] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[617] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[620] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[624] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[625] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[636] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[641] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[632] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[639] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[610] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[613] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[626] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[628] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[629] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[630] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[631] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[634] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[637] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[638] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[640] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[698] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[704] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[701] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[702] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[705] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[699] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[700] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[706] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/un1_p0_2[707] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/de_ren1_1_iv drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/de_ren2_1_iv drives no load.
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[0] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[1] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[2] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[3] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[4] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[5] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[6] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[7] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[8] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[9] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[10] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[11] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[12] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[13] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[14] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[15] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[16] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[17] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[18] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[19] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[20] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[21] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[22] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[23] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[24] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[25] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[26] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[27] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[28] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[29] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[30] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x1/dataoutx[31] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[0] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[1] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[2] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[3] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[4] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[5] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[6] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[7] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[8] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[9] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[10] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[11] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[12] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[13] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[14] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[15] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[16] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[17] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[18] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[19] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[20] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[21] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[22] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[23] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[24] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[25] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[26] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[27] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[28] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[29] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[30] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_rf0/s1_rhu/s1_dp_x0/dataoutx[31] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_cmem0/ldataout[26] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_cmem0/ld0_ldata0/ldataout[24] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_cmem0/ld0_ldata0/ldataout[10] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_cmem0/ld0_ldata0/ldataout[1] is not driven
+Error: CMP002: Net: l3_cpu_0_u0/leon3x0/vhdl_cmem0/ld0_ldata0/ldataout[25] is not driven
+
+There were 128 error(s) and 69 warning(s) in this design.
+
+The Compile command failed ( 00:00:01 )
+Error: Failure when executing Tcl script. [ Line 21 ]
+
+The Execute Script command failed ( 00:00:07 )
+Warning: The database was closed without a save, modifications are lost
+Design closed.
+

@@ -1,0 +1,49 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance r\.cmiss of view:PrimLib.dff(prim) in hierarchy view:gaisler.mmu_icache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":381:4:381:5|Removing sequential instance r\.hcache of view:PrimLib.sdffrse(prim) in hierarchy view:gaisler.mmu_acache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance dcache0.r\.diag_op of view:PrimLib.sdffr(prim) in hierarchy view:gaisler.mmu_cache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance icache0.r\.vaddress[31:2] of view:PrimLib.dff(prim) in hierarchy view:gaisler.mmu_cache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.asi[3:0] of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.icache0.r\.su of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.lock2 of view:PrimLib.sdffre(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r\.hmasterlockd of view:PrimLib.sdffre(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.asi[4:0] of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.w\.s\.asr18[31:0] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.clkcount[2:0] of view:PrimLib.dff(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.forceerr[0] of view:PrimLib.sdffr(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.newaddr[31:2] of view:PrimLib.dff(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.setaddr[0] of view:PrimLib.sdffrse(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":381:4:381:5|No possible illegal states for state machine l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.a0.r\.bo[0:3],safe FSM implementation is disabled
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Removing sequential instance apb0.apbx.r\.p_0\.haddr[0] of view:PrimLib.dff(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Removing sequential instance apb0.apbx.r\.p_0\.haddr[1] of view:PrimLib.dff(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN115 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Removing instance l3\.dsugen\.dsu0.x0.un1_r\.timer_0 of view:VhdlGenLib.ADD__const_cin_w30_0(fbk) because there are no references to its outputs 
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|No possible illegal states for state machine r\.x\.rstate[0:3],safe FSM implementation is disabled
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_0[29:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_1[29:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_2[29:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF179 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":402:9:402:30|Found 4 bit by 4 bit '<' comparator, 'comb\.irq_trap\.op_gt\.un2_irl'
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[5] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[6] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[7] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":335:4:335:5|No possible illegal states for state machine r\.rxstate[0:3],safe FSM implementation is disabled
+@N: MF179 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":402:9:402:30|Found 14 bit by 14 bit '<' comparator, 'uartop\.op_gt\.v\.brate2'
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 6-bit decrementor, 'un5_newlen[5:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un5_newaddr[29:0]'
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|No possible illegal states for state machine r\.txstate[0:3],safe FSM implementation is disabled
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 12-bit decrementor, 'un4_scaler[11:0]'
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 9-bit decrementor, 'un6_scaler[8:0]'
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 32-bit decrementor, 'un11_res[31:0]'
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.holdn on CLKINT  I_960 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.rst on CLKINT  I_961 
+@N: FP130 |Promoting Net resetn_c on CLKINT  I_962 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1 on CLKINT  I_963 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rsel2[2] on CLKINT  I_964 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

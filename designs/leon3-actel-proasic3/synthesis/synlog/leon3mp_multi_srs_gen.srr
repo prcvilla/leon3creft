@@ -1,0 +1,10 @@
+Synopsys Netlist Linker, version comp201503sp1p1, Build 240R, built Dec  1 2015
+@N|Running in 64-bit mode
+File /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 155MB peak: 156MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Mar 11 18:30:15 2016
+
+###########################################################]

@@ -1,0 +1,4 @@
+@E: CD541 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":103:4:103:6|Expecting ;
+@E: CD218 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":162:7:162:9|Declaration hides port tck
+@E|Parse errors encountered - exiting
+

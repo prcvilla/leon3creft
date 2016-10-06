@@ -1,0 +1,86 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Fri Mar 11 17:12:51 2016
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : mainPLL
+Family                          : PA3
+Output Format                   : VHDL
+Type                            : Static PLL
+PowerDown                       : Active Low
+Lock                            : Active High
+Input Freq(Mhz)                 : 40.000000
+CLKA Source                     : Hardwired I/O
+Feedback Delay Value Index      : 1
+Feedback Mux Select             : 1
+XDLY Mux Select                 : No
+Primary Freq(Mhz)               : 30.000000
+Primary PhaseShift              : 0
+Primary Delay Value Index       : 1
+Primary Mux Select              : 4
+Secondary1 Freq(Mhz)            : 0.000000
+Use GLB                         : NO
+Use YB                          : NO
+GLB Delay Value Index           : 32
+YB Delay Value Index            : 32
+Secondary1 PhaseShift           : 0
+Secondary1 Mux Select           : 0
+Secondary2 Freq(Mhz)            : 0.000000
+Use GLC                         : NO
+Use YC                          : NO
+GLC Delay Value Index           : 32
+YC Delay Value Index            : 32
+Secondary2 PhaseShift           : 0
+Secondary2 Mux Select           : 0
+Lock Control                    : Yes
+
+Configuration Bits:
+FINDIV[6:0]     0000111
+FBDIV[6:0]      0000101
+OADIV[4:0]      00000
+OBDIV[4:0]      00000
+OCDIV[4:0]      00000
+OAMUX[2:0]      100
+OBMUX[2:0]      000
+OCMUX[2:0]      000
+FBSEL[1:0]      01
+FBDLY[4:0]      00000
+XDLYSEL         0
+DLYGLA[4:0]     00000
+DLYGLB[4:0]     00000
+DLYGLC[4:0]     00000
+DLYYB[4:0]      00000
+DLYYC[4:0]      00000
+VCOSEL[2:0]     001
+
+Primary Clock Frequency 30.000
+Primary Clock Phase Shift 0.000
+Primary Clock Output Delay from CLKA 1.695
+
+
+**************
+Compile Report
+**************
+
+
+Netlist Resource Report
+=======================
+
+    CORE                       Used:      0  Total:  38400   (0.00%)
+    IO (W/ clocks)             Used:      0  Total:    147   (0.00%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      1  Total:     18   (5.56%)
+    PLL                        Used:      1  Total:      2   (50.00%)
+    RAM/FIFO                   Used:      0  Total:     60   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Wrote VHDL netlist to /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/smartgen/mainPLL/mainPLL.vhd.
+
+ ** Log Ended:   Fri Mar 11 17:12:52 2016
+

@@ -1,0 +1,84 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1659R, Built Dec 10 2015 09:39:16
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@L: /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp_scck.rpt 
+Printing clock  summary report in "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 210MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 194MB peak: 210MB)
+
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Removing sequential instance r\.rtsn of view:PrimLib.sdffse(prim) in hierarchy view:gaisler.apbuart(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/gptimer.vhd":569:4:569:5|Removing sequential instance r\.wdogn of view:PrimLib.dff(prim) in hierarchy view:gaisler.gptimer(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance r\.flush2 of view:PrimLib.dff(prim) in hierarchy view:gaisler.mmu_dcache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance r\.vaddr[31:0] of view:PrimLib.dffe(prim) in hierarchy view:gaisler.mmu_dcache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":156:4:156:5|Removing sequential instance r1\.wdata[31:0] of view:PrimLib.dff(prim) in hierarchy view:techmap.memrwcol_0(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":156:4:156:5|Removing sequential instance r1\.wdata[31:0] of view:PrimLib.dff(prim) in hierarchy view:techmap.memrwcol_1(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbmst.vhd":173:4:173:5|Removing sequential instance r\.start of view:PrimLib.sdffr(prim) in hierarchy view:grlib.ahbmst(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Removing sequential instance r\.pwd[0] of view:PrimLib.dff(prim) in hierarchy view:gaisler.dsu3x(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance r\.su of view:PrimLib.dffe(prim) in hierarchy view:gaisler.mmu_dcache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":156:4:156:5|Removing sequential instance r1\.wren of view:PrimLib.dff(prim) in hierarchy view:techmap.memrwcol_0(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":156:4:156:5|Removing sequential instance r1\.wren of view:PrimLib.dff(prim) in hierarchy view:techmap.memrwcol_1(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.cpurst[0] of view:PrimLib.sdffr(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance r\.dlock of view:PrimLib.dffe(prim) in hierarchy view:gaisler.mmu_dcache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.su of view:PrimLib.dffe(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/ahbrom.vhd":65:4:65:5|Removing sequential instance addr[8:2] of view:PrimLib.dff(prim) in hierarchy view:work.ahbrom(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.setaddrboot of view:PrimLib.dffe(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 204MB peak: 210MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                          Requested     Requested     Clock        Clock              
+Clock                          Frequency     Period        Type         Group              
+-------------------------------------------------------------------------------------------
+mainPLL|GLA_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+===========================================================================================
+
+@W: MT530 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Found inferred clock mainPLL|GLA_inferred_clock which controls 2239 sequential elements including ahb0.r\.hmasterlock. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":102:4:102:6|Tristate driver led_1 on net led[5] has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri31 on net gpioi_tri31 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri30 on net gpioi_tri30 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri29 on net gpioi_tri29 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri28 on net gpioi_tri28 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri27 on net gpioi_tri27 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri26 on net gpioi_tri26 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri25 on net gpioi_tri25 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri24 on net gpioi_tri24 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri23 on net gpioi_tri23 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri22 on net gpioi_tri22 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri21 on net gpioi_tri21 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri20 on net gpioi_tri20 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri19 on net gpioi_tri19 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri18 on net gpioi_tri18 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri17 on net gpioi_tri17 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri16 on net gpioi_tri16 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri15 on net gpioi_tri15 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri14 on net gpioi_tri14 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri13 on net gpioi_tri13 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri12 on net gpioi_tri12 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri11 on net gpioi_tri11 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri10 on net gpioi_tri10 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri9 on net gpioi_tri9 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri8 on net gpioi_tri8 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri7 on net gpioi_tri7 has its enable tied to GND (module leon3mp) 
+@N: BN225 |Writing default property annotation file /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/leon3mp.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 106MB peak: 210MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Fri Mar 11 18:30:19 2016
+
+###########################################################]

@@ -1,0 +1,224 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Mar 11 18:31:47 2016
+#
+
+
+Top view:               leon3mp
+Operating conditions:   PA3.COMWC-2
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.596
+
+                               Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                 Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------
+mainPLL|GLA_inferred_clock     100.0 MHz     30.9 MHz      10.000        32.358        -22.358     inferred     Inferred_clkgroup_0
+System                         100.0 MHz     140.4 MHz     10.000        7.120         2.880       system       system_clkgroup    
+===================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------
+System                      System                      |  0.000       1.596  |  No paths    -      |  No paths    -      |  No paths    -    
+System                      mainPLL|GLA_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+mainPLL|GLA_inferred_clock  System                      |  0.000       1.935  |  No paths    -      |  No paths    -      |  No paths    -    
+mainPLL|GLA_inferred_clock  mainPLL|GLA_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+==============================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: mainPLL|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                         Starting                                                         Arrival          
+Instance                                                 Reference                      Type       Pin     Net            Time        Slack
+                                                         Clock                                                                             
+-------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[0]     mainPLL|GLA_inferred_clock     DFN1E1     Q       rd_1[0]        0.580       1.935
+dcomgen\.dcom0.dcom0.r\.data[30]                         mainPLL|GLA_inferred_clock     DFN1E1     Q       hwdata[30]     0.580       2.001
+dcomgen\.dcom0.dcom0.r\.data[31]                         mainPLL|GLA_inferred_clock     DFN1E1     Q       hwdata[31]     0.580       2.001
+ocram\.ahbram0.r\.addr[2]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[2]        0.580       2.220
+ocram\.ahbram0.r\.addr[3]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[3]        0.580       2.220
+ocram\.ahbram0.r\.addr[4]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[4]        0.580       2.220
+ocram\.ahbram0.r\.addr[5]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[5]        0.580       2.220
+ocram\.ahbram0.r\.addr[6]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[6]        0.580       2.220
+ocram\.ahbram0.r\.addr[7]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[7]        0.580       2.220
+ocram\.ahbram0.r\.addr[8]                                mainPLL|GLA_inferred_clock     DFN1E0     Q       addr[8]        0.580       2.220
+===========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                  Starting                                                                                                Required          
+Instance                                                          Reference                      Type                                       Pin            Net            Time         Slack
+                                                                  Clock                                                                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     mainPLL|GLA_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[0]       waddr[0]       0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     mainPLL|GLA_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[0]       waddr[0]       0.000        1.935
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        datain[6]      hwdata[30]     0.000        2.001
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        datain[7]      hwdata[31]     0.000        2.001
+ocram\.ahbram0.aram.nosbw\.rx\.0\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[0]     haddr_1[0]     0.000        2.220
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[0]     haddr_1[0]     0.000        2.220
+ocram\.ahbram0.aram.nosbw\.rx\.2\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[0]     haddr_1[0]     0.000        2.220
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[0]     haddr_1[0]     0.000        2.220
+ocram\.ahbram0.aram.nosbw\.rx\.0\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[1]     haddr_1[1]     0.000        2.220
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0                    mainPLL|GLA_inferred_clock     proasic3_syncram_work_leon3mp_rtl_0        address[1]     haddr_1[1]     0.000        2.220
+============================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.935
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (non-critical) :                 1.935
+
+    Number of logic level(s):                1
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[0] / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0 / waddr[0]
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                                               Pin          Pin               Arrival     No. of    
+Name                                                              Type                                       Name         Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[0]              DFN1E1                                     Q            Out     0.580     0.580       -         
+rd_1[0]                                                           Net                                        -            -       0.270     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd_RNIAELLS[0]     AO1                                        A            In      -         0.851       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd_RNIAELLS[0]     AO1                                        Y            Out     0.520     1.370       -         
+waddr[0]                                                          Net                                        -            -       0.565     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[0]     In      -         1.935       -         
+==================================================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                             Starting                                                                               Arrival          
+Instance                                                     Reference     Type                                    Pin             Net              Time        Slack
+                                                             Clock                                                                                                   
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[3]      ldataout[3]      0.000       1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[9]      ldataout[9]      0.000       1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[11]     ldataout[11]     0.000       1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[12]     ldataout[12]     0.000       1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[19]     ldataout[19]     0.000       1.647
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[22]     ldataout[22]     0.000       1.647
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[27]     ldataout[27]     0.000       1.878
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[28]     ldataout[28]     0.000       1.878
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[10]     ldataout[10]     0.000       2.459
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[16]     ldataout[16]     0.000       2.476
+=====================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                             Starting                                                                               Required          
+Instance                                                     Reference     Type                                    Pin            Net               Time         Slack
+                                                             Clock                                                                                                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[3]      un1_p0_2[613]     0.000        1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[9]      un1_p0_2[619]     0.000        1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[11]     un1_p0_2[621]     0.000        1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[12]     un1_p0_2[622]     0.000        1.596
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[19]     un1_p0_2[629]     0.000        1.647
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[22]     un1_p0_2[632]     0.000        1.647
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[27]     un1_p0_2[637]     0.000        1.878
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[28]     un1_p0_2[638]     0.000        1.878
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[10]     un1_p0_2[620]     0.000        2.459
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     datain[16]     un1_p0_2[626]     0.000        2.476
+======================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.596
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     1.596
+
+    Number of logic level(s):                2
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0 / dataout[3]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0 / datain[3]
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                                                   Pin            Pin               Arrival     No. of    
+Name                                                                     Type                                    Name           Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0                 proasic3_syncram_work_leon3mp_rtl_1     dataout[3]     Out     0.000     0.000       -         
+ldataout[3]                                                              Net                                     -              -       0.270     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0_RNIU7UU3_2      NOR2B                                   B              In      -         0.270       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0_RNIU7UU3_2      NOR2B                                   Y              Out     0.516     0.786       -         
+un1_cmem0_m[515]                                                         Net                                     -              -       0.225     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIBPD8H1[3]     OR3                                     A              In      -         1.011       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIBPD8H1[3]     OR3                                     Y              Out     0.360     1.371       -         
+un1_p0_2[613]                                                            Net                                     -              -       0.225     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0                 proasic3_syncram_work_leon3mp_rtl_1     datain[3]      In      -         1.596       -         
+========================================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

@@ -1,0 +1,1553 @@
+#OPTIONS:"|-mixedhdl|-top|leon3mp|-layerid|0|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-sm|-encrypt|-pro|-lite|-ll|2000|-ui|-fid2|-ram|-sharing|off|-ignore_undefined_lib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|eth|-lib|opencores|-lib|opencores|-lib|opencores|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|esa|-lib|esa|-lib|work|-lib|work|-lib|work"
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/linux_a_64/c_vhdl":1395218381
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/location.map":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/std.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/snps_haps_pkg.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/std1164.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/numeric.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/umr_capim.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/arith.vhd":1395218356
+#CUR:"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/unsigned.vhd":1395218356
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/version.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/config_types.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/sparc/sparc.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/modgen/multlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/modgen/leaves.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/dftlib/dftlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddr_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allmem.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allmul.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/alltap.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/comp/ethcomp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_rstgen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/can/cancomp.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_comp.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/arith.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/cmvalidbits.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/canmux.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/word_aligner.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/config.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/stdlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/amba.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/devices.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/defmst.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrldp.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlsp.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/ahbctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/dma2ahb_pkg.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/dma2ahb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/ahbmst.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/dftlib/synciotest.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/gencomp/gencomp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/gencomp/netcomp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/memory_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/mul_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allclkgen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allddr.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grgates.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddr_ireg.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddr_oreg.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddrphy_datapath.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddr_phy_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/memrwcol.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_2p.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncreg.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/fifo_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/techbuf.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allpads.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkgen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkmux.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkinv.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkand.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkpad_ds.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad_ds.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iodpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_ds.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad_ds.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/lvds_combo.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/odpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad_ds.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/skew_outpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddrphy.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram64.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_dp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncfifo_2p.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/regfile_3p.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/tap.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/nandtree.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grlfpw_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grfpw_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/leon3_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/leon4_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/mul_61x61.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/cpu_disas_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ringosc.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grpci2_phy_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/system_monitor.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad_ddr.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad_ddr.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_ddr.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram128bw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram256bw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram128.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram156bw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/techmult.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/spictrl_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/scanreg.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncrambw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_2pbw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/sdram_phy.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/serdes.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_tm.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad_tm.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_pkg.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_edcl_ahb_mst.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_ahb_mst.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_tx.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_rx.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/grethc.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/wrapper/greth_gen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/wrapper/greth_gbit_gen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/can/can_top.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/mul32.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/div32.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/memctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdctrl64.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdmctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/srctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuiface.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/libmmu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutlbcam.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmulrue.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmulru.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutlb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutw.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3/leon3.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3/grfpushwx.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/tbufmem.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/tbufmem_2p.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3x.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3_mb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libfpu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libiu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libcache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libleon3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/regfile_3p_l3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_acache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_icache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_dcache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/cachemem.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_cache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grfpwx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grlfpwx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/iu3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/proc3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grfpwxsh.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3x.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3cg.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3s.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3sh.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/l3stat.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon4/leon4.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/irqmp/irqmp.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/l2cache/pkg/l2cache.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_mod.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_oc.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_mc.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_rd.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/misc.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/rstgen.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbdpram.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace_mmb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace_mb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbstat.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/logan.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/apbps2.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/charrom_package.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/charrom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/apbvga.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/svgactrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grsysmon.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gracectrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpreg.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahb_mst_iface.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgprbank.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/net/net.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/uart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/libdcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/dcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/dcom_uart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/ahbuart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtag.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/libjtagcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtagcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/bscanregs.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/bscanregsbd.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtagcom2.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/ahbjtag.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/ahbjtag_bsd.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/ethernet_mac.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_mb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_gbit.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/grethm.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/comma_detect.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/elastic_buffer.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/sgmii.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/gmii_to_mii.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greths.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_gbit_mb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/grethm_mb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greths_mb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/rgmii.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_pkg.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_pads.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_stdlogic.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_nlw.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spimctrl.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spictrlx.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spictrl.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahbx.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahb_apb.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_pkg.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/apbmem.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_ahbmst.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_alignram.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_1p.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/subsys/subsys.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/subsys/leon_dsu_stat_base.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/esa/memoryctrl/memoryctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/esa/memoryctrl/mctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/config.vhd":1457724101
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd":1457725089
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":1455814448
+0			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/version.vhd" vhdl
+1			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/config_types.vhd" vhdl
+2			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/config.vhd" vhdl
+3			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/stdlib/stdlib.vhd" vhdl
+4			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/sparc/sparc.vhd" vhdl
+5			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/modgen/multlib.vhd" vhdl
+6			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/modgen/leaves.vhd" vhdl
+7			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/amba.vhd" vhdl
+8			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/devices.vhd" vhdl
+9			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/defmst.vhd" vhdl
+10			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrl.vhd" vhdl
+11			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd" vhdl
+12			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrldp.vhd" vhdl
+13			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlsp.vhd" vhdl
+14			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/ahbctrl.vhd" vhdl
+15			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/dma2ahb_pkg.vhd" vhdl
+16			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/dma2ahb.vhd" vhdl
+17			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/ahbmst.vhd" vhdl
+18			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/dftlib/dftlib.vhd" vhdl
+19			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/dftlib/synciotest.vhd" vhdl
+20			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/gencomp/gencomp.vhd" vhdl
+21			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/gencomp/netcomp.vhd" vhdl
+22			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/memory_inferred.vhd" vhdl
+23			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddr_inferred.vhd" vhdl
+24			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/mul_inferred.vhd" vhdl
+25			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddr_phy_inferred.vhd" vhdl
+26			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/ddrphy_datapath.vhd" vhdl
+27			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/inferred/fifo_inferred.vhd" vhdl
+28			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allclkgen.vhd" vhdl
+29			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/techbuf.vhd" vhdl
+30			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allddr.vhd" vhdl
+31			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allmem.vhd" vhdl
+32			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allmul.vhd" vhdl
+33			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/allpads.vhd" vhdl
+34			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/alltap.vhd" vhdl
+35			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkgen.vhd" vhdl
+36			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkmux.vhd" vhdl
+37			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkinv.vhd" vhdl
+38			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkand.vhd" vhdl
+39			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grgates.vhd" vhdl
+40			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddr_ireg.vhd" vhdl
+41			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddr_oreg.vhd" vhdl
+42			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkpad.vhd" vhdl
+43			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/clkpad_ds.vhd" vhdl
+44			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad.vhd" vhdl
+45			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad_ds.vhd" vhdl
+46			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iodpad.vhd" vhdl
+47			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad.vhd" vhdl
+48			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_ds.vhd" vhdl
+49			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/lvds_combo.vhd" vhdl
+50			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/odpad.vhd" vhdl
+51			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad.vhd" vhdl
+52			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad_ds.vhd" vhdl
+53			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad.vhd" vhdl
+54			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad_ds.vhd" vhdl
+55			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/skew_outpad.vhd" vhdl
+56			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ddrphy.vhd" vhdl
+57			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd" vhdl
+58			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram64.vhd" vhdl
+59			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_2p.vhd" vhdl
+60			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_dp.vhd" vhdl
+61			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncfifo_2p.vhd" vhdl
+62			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/regfile_3p.vhd" vhdl
+63			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/tap.vhd" vhdl
+64			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/nandtree.vhd" vhdl
+65			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grlfpw_net.vhd" vhdl
+66			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grfpw_net.vhd" vhdl
+67			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/leon3_net.vhd" vhdl
+68			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/leon4_net.vhd" vhdl
+69			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/mul_61x61.vhd" vhdl
+70			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/cpu_disas_net.vhd" vhdl
+71			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/ringosc.vhd" vhdl
+72			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/grpci2_phy_net.vhd" vhdl
+73			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/system_monitor.vhd" vhdl
+74			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad_ddr.vhd" vhdl
+75			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad_ddr.vhd" vhdl
+76			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_ddr.vhd" vhdl
+77			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram128bw.vhd" vhdl
+78			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram256bw.vhd" vhdl
+79			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram128.vhd" vhdl
+80			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram156bw.vhd" vhdl
+81			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/techmult.vhd" vhdl
+82			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/spictrl_net.vhd" vhdl
+83			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/scanreg.vhd" vhdl
+84			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncrambw.vhd" vhdl
+85			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram_2pbw.vhd" vhdl
+86			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/sdram_phy.vhd" vhdl
+87			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncreg.vhd" vhdl
+88			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/serdes.vhd" vhdl
+89			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad_tm.vhd" vhdl
+90			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/toutpad_tm.vhd" vhdl
+91			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/memrwcol.vhd" vhdl
+92			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/comp/ethcomp.vhd" vhdl
+93			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_pkg.vhd" vhdl
+94			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_rstgen.vhd" vhdl
+95			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_edcl_ahb_mst.vhd" vhdl
+96			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/eth_ahb_mst.vhd" vhdl
+97			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_tx.vhd" vhdl
+98			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/greth_rx.vhd" vhdl
+99			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/core/grethc.vhd" vhdl
+100			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/wrapper/greth_gen.vhd" vhdl
+101			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/eth/wrapper/greth_gbit_gen.vhd" vhdl
+102			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/can/cancomp.vhd" vhdl
+103			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/can/can_top.vhd" vhdl
+104			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_comp.vhd" vhdl
+105			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/arith.vhd" vhdl
+106			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/mul32.vhd" vhdl
+107			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/arith/div32.vhd" vhdl
+108			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/memctrl.vhd" vhdl
+109			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdctrl.vhd" vhdl
+110			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdctrl64.vhd" vhdl
+111			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/sdmctrl.vhd" vhdl
+112			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/memctrl/srctrl.vhd" vhdl
+113			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd" vhdl
+114			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuiface.vhd" vhdl
+115			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/libmmu.vhd" vhdl
+116			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutlbcam.vhd" vhdl
+117			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmulrue.vhd" vhdl
+118			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmulru.vhd" vhdl
+119			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutlb.vhd" vhdl
+120			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmutw.vhd" vhdl
+121			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmu.vhd" vhdl
+122			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3/leon3.vhd" vhdl
+123			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3/grfpushwx.vhd" vhdl
+124			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/tbufmem.vhd" vhdl
+125			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/tbufmem_2p.vhd" vhdl
+126			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3x.vhd" vhdl
+127			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3.vhd" vhdl
+128			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/dsu3_mb.vhd" vhdl
+129			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libfpu.vhd" vhdl
+130			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libiu.vhd" vhdl
+131			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libcache.vhd" vhdl
+132			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/libleon3.vhd" vhdl
+133			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/regfile_3p_l3.vhd" vhdl
+134			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_acache.vhd" vhdl
+135			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_icache.vhd" vhdl
+136			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_dcache.vhd" vhdl
+137			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/cachemem.vhd" vhdl
+138			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/mmu_cache.vhd" vhdl
+139			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grfpwx.vhd" vhdl
+140			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grlfpwx.vhd" vhdl
+141			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/iu3.vhd" vhdl
+142			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/proc3.vhd" vhdl
+143			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/grfpwxsh.vhd" vhdl
+144			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3x.vhd" vhdl
+145			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3cg.vhd" vhdl
+146			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3s.vhd" vhdl
+147			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/leon3sh.vhd" vhdl
+148			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/l3stat.vhd" vhdl
+149			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon3v3/cmvalidbits.vhd" vhdl
+150			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/leon4/leon4.vhd" vhdl
+151			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/irqmp/irqmp.vhd" vhdl
+152			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/l2cache/pkg/l2cache.vhd" vhdl
+153			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can.vhd" vhdl
+154			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_mod.vhd" vhdl
+155			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_oc.vhd" vhdl
+156			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_mc.vhd" vhdl
+157			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/canmux.vhd" vhdl
+158			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/can/can_rd.vhd" vhdl
+159			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/misc.vhd" vhdl
+160			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/rstgen.vhd" vhdl
+161			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd" vhdl
+162			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd" vhdl
+163			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbdpram.vhd" vhdl
+164			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace_mmb.vhd" vhdl
+165			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace_mb.vhd" vhdl
+166			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbtrace.vhd" vhdl
+167			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd" vhdl
+168			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbstat.vhd" vhdl
+169			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/logan.vhd" vhdl
+170			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/apbps2.vhd" vhdl
+171			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/charrom_package.vhd" vhdl
+172			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/charrom.vhd" vhdl
+173			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/apbvga.vhd" vhdl
+174			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/svgactrl.vhd" vhdl
+175			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grsysmon.vhd" vhdl
+176			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gracectrl.vhd" vhdl
+177			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpreg.vhd" vhdl
+178			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahb_mst_iface.vhd" vhdl
+179			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgprbank.vhd" vhdl
+180			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/net/net.vhd" vhdl
+181			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/uart.vhd" vhdl
+182			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/libdcom.vhd" vhdl
+183			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd" vhdl
+184			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/dcom.vhd" vhdl
+185			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/dcom_uart.vhd" vhdl
+186			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/ahbuart.vhd" vhdl
+187			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtag.vhd" vhdl
+188			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/libjtagcom.vhd" vhdl
+189			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtagcom.vhd" vhdl
+190			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/bscanregs.vhd" vhdl
+191			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/bscanregsbd.vhd" vhdl
+192			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/jtagcom2.vhd" vhdl
+193			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/ahbjtag.vhd" vhdl
+194			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/jtag/ahbjtag_bsd.vhd" vhdl
+195			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/ethernet_mac.vhd" vhdl
+196			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth.vhd" vhdl
+197			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_mb.vhd" vhdl
+198			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_gbit.vhd" vhdl
+199			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greths.vhd" vhdl
+200			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greth_gbit_mb.vhd" vhdl
+201			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/greths_mb.vhd" vhdl
+202			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/grethm.vhd" vhdl
+203			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/grethm_mb.vhd" vhdl
+204			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/rgmii.vhd" vhdl
+205			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/comma_detect.vhd" vhdl
+206			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/sgmii.vhd" vhdl
+207			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/elastic_buffer.vhd" vhdl
+208			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/gmii_to_mii.vhd" vhdl
+209			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/greth/adapters/word_aligner.vhd" vhdl
+210			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_pkg.vhd" vhdl
+211			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_pads.vhd" vhdl
+212			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_nlw.vhd" vhdl
+213			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/gr1553b/gr1553b_stdlogic.vhd" vhdl
+214			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi.vhd" vhdl
+215			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spimctrl.vhd" vhdl
+216			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spictrlx.vhd" vhdl
+217			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spictrl.vhd" vhdl
+218			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahbx.vhd" vhdl
+219			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahb.vhd" vhdl
+220			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/spi/spi2ahb_apb.vhd" vhdl
+221			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_pkg.vhd" vhdl
+222			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/apbmem.vhd" vhdl
+223			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_ahbmst.vhd" vhdl
+224			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_alignram.vhd" vhdl
+225			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac.vhd" vhdl
+226			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/grdmac/grdmac_1p.vhd" vhdl
+227			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/subsys/subsys.vhd" vhdl
+228			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/subsys/leon_dsu_stat_base.vhd" vhdl
+229			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/esa/memoryctrl/memoryctrl.vhd" vhdl
+230			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/esa/memoryctrl/mctrl.vhd" vhdl
+231			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/config.vhd" vhdl
+232			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd" vhdl
+233			"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 -1
+20 -1
+21 -1
+22 -1
+23 -1
+24 -1
+25 -1
+26 -1
+27 -1
+28 -1
+29 -1
+30 -1
+31 -1
+32 -1
+33 -1
+34 -1
+35 -1
+36 -1
+37 -1
+38 -1
+39 -1
+40 -1
+41 -1
+42 -1
+43 -1
+44 -1
+45 -1
+46 -1
+47 -1
+48 -1
+49 -1
+50 -1
+51 -1
+52 -1
+53 -1
+54 -1
+55 -1
+56 -1
+57 -1
+58 -1
+59 -1
+60 -1
+61 -1
+62 -1
+63 -1
+64 -1
+65 -1
+66 -1
+67 -1
+68 -1
+69 -1
+70 -1
+71 -1
+72 -1
+73 -1
+74 -1
+75 -1
+76 -1
+77 -1
+78 -1
+79 -1
+80 -1
+81 -1
+82 -1
+83 -1
+84 -1
+85 -1
+86 -1
+87 -1
+88 -1
+89 -1
+90 -1
+91 -1
+92 -1
+93 -1
+94 -1
+95 -1
+96 -1
+97 -1
+98 -1
+99 -1
+100 -1
+101 -1
+102 -1
+103 -1
+104 -1
+105 -1
+106 -1
+107 -1
+108 -1
+109 -1
+110 -1
+111 -1
+112 -1
+113 -1
+114 -1
+115 -1
+116 -1
+117 -1
+118 -1
+119 -1
+120 -1
+121 -1
+122 -1
+123 -1
+124 -1
+125 -1
+126 -1
+127 -1
+128 -1
+129 -1
+130 -1
+131 -1
+132 -1
+133 -1
+134 -1
+135 -1
+136 -1
+137 -1
+138 -1
+139 -1
+140 -1
+141 -1
+142 -1
+143 -1
+144 -1
+145 -1
+146 -1
+147 -1
+148 -1
+149 -1
+150 -1
+151 -1
+152 -1
+153 -1
+154 -1
+155 -1
+156 -1
+157 -1
+158 -1
+159 -1
+160 -1
+161 -1
+162 -1
+163 -1
+164 -1
+165 -1
+166 -1
+167 -1
+168 -1
+169 -1
+170 -1
+171 -1
+172 -1
+173 -1
+174 -1
+175 -1
+176 -1
+177 -1
+178 -1
+179 -1
+180 -1
+181 -1
+182 -1
+183 -1
+184 -1
+185 -1
+186 -1
+187 -1
+188 -1
+189 -1
+190 -1
+191 -1
+192 -1
+193 -1
+194 -1
+195 -1
+196 -1
+197 -1
+198 -1
+199 -1
+200 -1
+201 -1
+202 -1
+203 -1
+204 -1
+205 -1
+206 -1
+207 -1
+208 -1
+209 -1
+210 -1
+211 -1
+212 -1
+213 -1
+214 -1
+215 -1
+216 -1
+217 -1
+218 -1
+219 -1
+220 -1
+221 -1
+222 -1
+223 -1
+224 -1
+225 -1
+226 -1
+227 -1
+228 -1
+229 -1
+230 -1
+231 -1
+232 -1
+233 -1
+#Dependency Lists(Users Of)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 -1
+18 -1
+19 -1
+20 -1
+21 -1
+22 -1
+23 -1
+24 -1
+25 -1
+26 -1
+27 -1
+28 -1
+29 -1
+30 -1
+31 -1
+32 -1
+33 -1
+34 -1
+35 -1
+36 -1
+37 -1
+38 -1
+39 -1
+40 -1
+41 -1
+42 -1
+43 -1
+44 -1
+45 -1
+46 -1
+47 -1
+48 -1
+49 -1
+50 -1
+51 -1
+52 -1
+53 -1
+54 -1
+55 -1
+56 -1
+57 -1
+58 -1
+59 -1
+60 -1
+61 -1
+62 -1
+63 -1
+64 -1
+65 -1
+66 -1
+67 -1
+68 -1
+69 -1
+70 -1
+71 -1
+72 -1
+73 -1
+74 -1
+75 -1
+76 -1
+77 -1
+78 -1
+79 -1
+80 -1
+81 -1
+82 -1
+83 -1
+84 -1
+85 -1
+86 -1
+87 -1
+88 -1
+89 -1
+90 -1
+91 -1
+92 -1
+93 -1
+94 -1
+95 -1
+96 -1
+97 -1
+98 -1
+99 -1
+100 -1
+101 -1
+102 -1
+103 -1
+104 -1
+105 -1
+106 -1
+107 -1
+108 -1
+109 -1
+110 -1
+111 -1
+112 -1
+113 -1
+114 -1
+115 -1
+116 -1
+117 -1
+118 -1
+119 -1
+120 -1
+121 -1
+122 -1
+123 -1
+124 -1
+125 -1
+126 -1
+127 -1
+128 -1
+129 -1
+130 -1
+131 -1
+132 -1
+133 -1
+134 -1
+135 -1
+136 -1
+137 -1
+138 -1
+139 -1
+140 -1
+141 -1
+142 -1
+143 -1
+144 -1
+145 -1
+146 -1
+147 -1
+148 -1
+149 -1
+150 -1
+151 -1
+152 -1
+153 -1
+154 -1
+155 -1
+156 -1
+157 -1
+158 -1
+159 -1
+160 -1
+161 -1
+162 -1
+163 -1
+164 -1
+165 -1
+166 -1
+167 -1
+168 -1
+169 -1
+170 -1
+171 -1
+172 -1
+173 -1
+174 -1
+175 -1
+176 -1
+177 -1
+178 -1
+179 -1
+180 -1
+181 -1
+182 -1
+183 -1
+184 -1
+185 -1
+186 -1
+187 -1
+188 -1
+189 -1
+190 -1
+191 -1
+192 -1
+193 -1
+194 -1
+195 -1
+196 -1
+197 -1
+198 -1
+199 -1
+200 -1
+201 -1
+202 -1
+203 -1
+204 -1
+205 -1
+206 -1
+207 -1
+208 -1
+209 -1
+210 -1
+211 -1
+212 -1
+213 -1
+214 -1
+215 -1
+216 -1
+217 -1
+218 -1
+219 -1
+220 -1
+221 -1
+222 -1
+223 -1
+224 -1
+225 -1
+226 -1
+227 -1
+228 -1
+229 -1
+230 -1
+231 -1
+232 -1
+233 -1
+#Design Unit to File Association
+module work leon3mp 233
+arch work leon3mp rtl 233
+module work ahbrom 232
+arch work ahbrom rtl 232
+module esa mctrl 230
+arch esa mctrl rtl 230
+module gaisler leon_dsu_stat_base 228
+arch gaisler leon_dsu_stat_base rtl 228
+module gaisler grdmac_1p 226
+arch gaisler grdmac_1p rtl 226
+module gaisler grdmac 225
+arch gaisler grdmac rtl 225
+module gaisler grdmac_alignram 224
+arch gaisler grdmac_alignram rtl 224
+module gaisler grdmac_ahbmst 223
+arch gaisler grdmac_ahbmst rtl 223
+module gaisler apbmem 222
+arch gaisler apbmem rtl 222
+module gaisler spi2ahb_apb 220
+arch gaisler spi2ahb_apb rtl 220
+module gaisler spi2ahb 219
+arch gaisler spi2ahb rtl 219
+module gaisler spi2ahbx 218
+arch gaisler spi2ahbx rtl 218
+module gaisler spictrl 217
+arch gaisler spictrl rtl 217
+module gaisler spictrlx 216
+arch gaisler spictrlx rtl 216
+module gaisler spimctrl 215
+arch gaisler spimctrl rtl 215
+module gaisler gr1553b_stdlogic 213
+arch gaisler gr1553b_stdlogic rtl 213
+module gaisler gr1553b_nlw 212
+arch gaisler gr1553b_nlw rtl 212
+module gaisler gr1553b_pads 211
+arch gaisler gr1553b_pads rtl 211
+module gaisler word_aligner 209
+arch gaisler word_aligner word_arch 209
+module gaisler gmii_to_mii 208
+arch gaisler gmii_to_mii rtl 208
+module gaisler elastic_buffer 207
+arch gaisler elastic_buffer arch 207
+module gaisler sgmii 206
+arch gaisler sgmii rtl 206
+module gaisler comma_detect 205
+arch gaisler comma_detect arch 205
+module gaisler rgmii 204
+arch gaisler rgmii rtl 204
+module gaisler grethm_mb 203
+arch gaisler grethm_mb rtl 203
+module gaisler grethm 202
+arch gaisler grethm rtl 202
+module gaisler greths_mb 201
+arch gaisler greths_mb rtl 201
+module gaisler greth_gbit_mb 200
+arch gaisler greth_gbit_mb rtl 200
+module gaisler greths 199
+arch gaisler greths rtl 199
+module gaisler greth_gbit 198
+arch gaisler greth_gbit rtl 198
+module gaisler greth_mb 197
+arch gaisler greth_mb rtl 197
+module gaisler greth 196
+arch gaisler greth rtl 196
+module gaisler ahbjtag_bsd 194
+arch gaisler ahbjtag_bsd struct 194
+module gaisler ahbjtag 193
+arch gaisler ahbjtag struct 193
+module gaisler jtagcom2 192
+arch gaisler jtagcom2 rtl 192
+module gaisler bscanregsbd 191
+arch gaisler bscanregsbd rtl 191
+module gaisler bscanregs 190
+arch gaisler bscanregs hier 190
+module gaisler jtagcom 189
+arch gaisler jtagcom rtl 189
+module gaisler ahbuart 186
+arch gaisler ahbuart struct 186
+module gaisler dcom_uart 185
+arch gaisler dcom_uart rtl 185
+module gaisler dcom 184
+arch gaisler dcom struct 184
+module gaisler apbuart 183
+arch gaisler apbuart rtl 183
+module gaisler grgprbank 179
+arch gaisler grgprbank rtl 179
+module gaisler ahb_mst_iface 178
+arch gaisler ahb_mst_iface rtl 178
+module gaisler grgpreg 177
+arch gaisler grgpreg rtl 177
+module gaisler gracectrl 176
+arch gaisler gracectrl rtl 176
+module gaisler grsysmon 175
+arch gaisler grsysmon rtl 175
+module gaisler svgactrl 174
+arch gaisler svgactrl rtl 174
+module gaisler apbvga 173
+arch gaisler apbvga rtl 173
+module gaisler charrom 172
+arch gaisler charrom rtl 172
+module gaisler apbps2 170
+arch gaisler apbps2 rtl 170
+module gaisler logan 169
+arch gaisler logan rtl 169
+module gaisler ahbstat 168
+arch gaisler ahbstat rtl 168
+module gaisler grgpio 167
+arch gaisler grgpio rtl 167
+module gaisler ahbtrace 166
+arch gaisler ahbtrace rtl 166
+module gaisler ahbtrace_mb 165
+arch gaisler ahbtrace_mb rtl 165
+module gaisler ahbtrace_mmb 164
+arch gaisler ahbtrace_mmb rtl 164
+module gaisler ahbdpram 163
+arch gaisler ahbdpram rtl 163
+module gaisler ahbram 162
+arch gaisler ahbram rtl 162
+module gaisler gptimer 161
+arch gaisler gptimer rtl 161
+module gaisler rstgen 160
+arch gaisler rstgen rtl 160
+module gaisler can_rd 158
+arch gaisler can_rd rtl 158
+module gaisler canmux 157
+arch gaisler canmux rtl 157
+module gaisler can_mc 156
+arch gaisler can_mc rtl 156
+module gaisler can_oc 155
+arch gaisler can_oc rtl 155
+module gaisler can_mod 154
+arch gaisler can_mod rtl 154
+module gaisler irqmp 151
+arch gaisler irqmp rtl 151
+module gaisler cmvalidbits 149
+arch gaisler cmvalidbits rtl 149
+module gaisler l3stat 148
+arch gaisler l3stat rtl 148
+module gaisler leon3sh 147
+arch gaisler leon3sh rtl 147
+module gaisler leon3s 146
+arch gaisler leon3s rtl 146
+module gaisler leon3cg 145
+arch gaisler leon3cg rtl 145
+module gaisler leon3x 144
+arch gaisler leon3x rtl 144
+module gaisler grfpwxsh 143
+arch gaisler grfpwxsh rtl 143
+module gaisler proc3 142
+arch gaisler proc3 rtl 142
+module gaisler iu3 141
+arch gaisler iu3 rtl 141
+module gaisler grlfpwx 140
+arch gaisler grlfpwx rtl 140
+module gaisler grfpwx 139
+arch gaisler grfpwx rtl 139
+module gaisler mmu_cache 138
+arch gaisler mmu_cache rtl 138
+module gaisler cachemem 137
+arch gaisler cachemem rtl 137
+module gaisler mmu_dcache 136
+arch gaisler mmu_dcache rtl 136
+module gaisler mmu_icache 135
+arch gaisler mmu_icache rtl 135
+module gaisler mmu_acache 134
+arch gaisler mmu_acache rtl 134
+module gaisler regfile_3p_l3 133
+arch gaisler regfile_3p_l3 rtl 133
+module gaisler dsu3_mb 128
+arch gaisler dsu3_mb rtl 128
+module gaisler dsu3 127
+arch gaisler dsu3 rtl 127
+module gaisler dsu3x 126
+arch gaisler dsu3x rtl 126
+module gaisler tbufmem_2p 125
+arch gaisler tbufmem_2p rtl 125
+module gaisler tbufmem 124
+arch gaisler tbufmem rtl 124
+module gaisler grfpushwx 123
+arch gaisler grfpushwx rtl 123
+module gaisler mmu 121
+arch gaisler mmu rtl 121
+module gaisler mmutw 120
+arch gaisler mmutw rtl 120
+module gaisler mmutlb 119
+arch gaisler mmutlb rtl 119
+module gaisler mmulru 118
+arch gaisler mmulru rtl 118
+module gaisler mmulrue 117
+arch gaisler mmulrue rtl 117
+module gaisler mmutlbcam 116
+arch gaisler mmutlbcam rtl 116
+module gaisler srctrl 112
+arch gaisler srctrl rtl 112
+module gaisler sdmctrl 111
+arch gaisler sdmctrl rtl 111
+module gaisler sdctrl64 110
+arch gaisler sdctrl64 rtl 110
+module gaisler sdctrl 109
+arch gaisler sdctrl rtl 109
+module gaisler div32 107
+arch gaisler div32 rtl 107
+module gaisler mul32 106
+arch gaisler mul32 rtl 106
+module opencores can_acf 103
+arch opencores can_acf rtl 103
+module opencores can_btl 103
+arch opencores can_btl rtl 103
+module opencores can_fifo 103
+arch opencores can_fifo rtl 103
+module opencores can_crc 103
+arch opencores can_crc rtl 103
+module opencores can_ibo 103
+arch opencores can_ibo rtl 103
+module opencores can_bsp 103
+arch opencores can_bsp rtl 103
+module opencores can_register 103
+arch opencores can_register rtl 103
+module opencores can_register_asyn 103
+arch opencores can_register_asyn rtl 103
+module opencores can_register_asyn_syn 103
+arch opencores can_register_asyn_syn rtl 103
+module opencores can_register_syn 103
+arch opencores can_register_syn rtl 103
+module opencores can_registers 103
+arch opencores can_registers rtl 103
+module opencores can_top 103
+arch opencores can_top rtl 103
+module eth greth_gbit_gen 101
+arch eth greth_gbit_gen rtl 101
+module eth greth_gen 100
+arch eth greth_gen rtl 100
+module eth grethc 99
+arch eth grethc rtl 99
+module eth greth_rx 98
+arch eth greth_rx rtl 98
+module eth greth_tx 97
+arch eth greth_tx rtl 97
+module eth eth_ahb_mst 96
+arch eth eth_ahb_mst rtl 96
+module eth eth_edcl_ahb_mst 95
+arch eth eth_edcl_ahb_mst rtl 95
+module eth eth_rstgen 94
+arch eth eth_rstgen rtl 94
+module techmap memrwcol 91
+arch techmap memrwcol rtl 91
+module techmap toutpad_tm 90
+arch techmap toutpad_tm rtl 90
+module techmap toutpad_tmvv 90
+arch techmap toutpad_tmvv rtl 90
+module techmap iopad_tm 89
+arch techmap iopad_tm rtl 89
+module techmap iopad_tmvv 89
+arch techmap iopad_tmvv rtl 89
+module techmap serdes 88
+arch techmap serdes rtl 88
+module techmap syncreg 87
+arch techmap syncreg tmap 87
+module techmap sdram_phy 86
+arch techmap sdram_phy rtl 86
+module techmap syncram_2pbw 85
+arch techmap syncram_2pbw rtl 85
+module techmap syncrambw 84
+arch techmap syncrambw rtl 84
+module techmap scanregi 83
+arch techmap scanregi tmap 83
+module techmap scanrego 83
+arch techmap scanrego tmap 83
+module techmap scanregto 83
+arch techmap scanregto tmap 83
+module techmap scanregio 83
+arch techmap scanregio tmap 83
+module techmap spictrl_net 82
+arch techmap spictrl_net rtl 82
+module techmap techmult 81
+arch techmap techmult rtl 81
+module techmap syncram156bw 80
+arch techmap syncram156bw rtl 80
+module techmap syncram128 79
+arch techmap syncram128 rtl 79
+module techmap syncram256bw 78
+arch techmap syncram256bw rtl 78
+module techmap syncram128bw 77
+arch techmap syncram128bw rtl 77
+module techmap iopad_ddr 76
+arch techmap iopad_ddr rtl 76
+module techmap iopad_ddrv 76
+arch techmap iopad_ddrv rtl 76
+module techmap iopad_ddrvv 76
+arch techmap iopad_ddrvv rtl 76
+module techmap outpad_ddr 75
+arch techmap outpad_ddr rtl 75
+module techmap outpad_ddrv 75
+arch techmap outpad_ddrv rtl 75
+module techmap inpad_ddr 74
+arch techmap inpad_ddr rtl 74
+module techmap inpad_ddrv 74
+arch techmap inpad_ddrv rtl 74
+module techmap system_monitor 73
+arch techmap system_monitor struct 73
+module techmap grpci2_phy_net 72
+arch techmap grpci2_phy_net struct 72
+module techmap ringosc 71
+arch techmap ringosc rtl 71
+module techmap cpu_disas_net 70
+arch techmap cpu_disas_net behav 70
+module techmap fpu_disas_net 70
+arch techmap fpu_disas_net behav 70
+module techmap mul_61x61 69
+arch techmap mul_61x61 rtl 69
+module techmap leon4_net 68
+arch techmap leon4_net rtl 68
+module techmap leon3_net 67
+arch techmap leon3_net rtl 67
+module techmap grfpw_net 66
+arch techmap grfpw_net rtl 66
+module techmap grlfpw_net 65
+arch techmap grlfpw_net rtl 65
+module techmap nandtree 64
+arch techmap nandtree rtl 64
+module techmap tap 63
+arch techmap tap rtl 63
+module techmap regfile_3p 62
+arch techmap regfile_3p rtl 62
+module techmap syncfifo_2p 61
+arch techmap syncfifo_2p rtl 61
+module techmap syncram_dp 60
+arch techmap syncram_dp rtl 60
+module techmap syncram_2p 59
+arch techmap syncram_2p rtl 59
+module techmap syncram64 58
+arch techmap syncram64 rtl 58
+module techmap syncram 57
+arch techmap syncram rtl 57
+module techmap ddrphy 56
+arch techmap ddrphy rtl 56
+module techmap ddrphy_wo_pads 56
+arch techmap ddrphy_wo_pads rtl 56
+module techmap ddrpads 56
+arch techmap ddrpads rtl 56
+module techmap ddr2pads 56
+arch techmap ddr2pads rtl 56
+module techmap ddr2phy 56
+arch techmap ddr2phy rtl 56
+module techmap ddr2phy_wo_pads 56
+arch techmap ddr2phy_wo_pads rtl 56
+module techmap lpddr2phy_wo_pads 56
+arch techmap lpddr2phy_wo_pads tmap 56
+module techmap skew_outpad 55
+arch techmap skew_outpad rtl 55
+module techmap toutpad_ds 54
+arch techmap toutpad_ds rtl 54
+module techmap toutpad_dsv 54
+arch techmap toutpad_dsv rtl 54
+module techmap toutpad_dsvv 54
+arch techmap toutpad_dsvv rtl 54
+module techmap toutpad 53
+arch techmap toutpad rtl 53
+module techmap toutpadv 53
+arch techmap toutpadv rtl 53
+module techmap toutpadvv 53
+arch techmap toutpadvv rtl 53
+module techmap outpad_ds 52
+arch techmap outpad_ds rtl 52
+module techmap outpad_dsv 52
+arch techmap outpad_dsv rtl 52
+module techmap outpad 51
+arch techmap outpad rtl 51
+module techmap outpadv 51
+arch techmap outpadv rtl 51
+module techmap odpad 50
+arch techmap odpad rtl 50
+module techmap odpadv 50
+arch techmap odpadv rtl 50
+module techmap lvds_combo 49
+arch techmap lvds_combo rtl 49
+module techmap iopad_ds 48
+arch techmap iopad_ds rtl 48
+module techmap iopad_dsv 48
+arch techmap iopad_dsv rtl 48
+module techmap iopad_dsvv 48
+arch techmap iopad_dsvv rtl 48
+module techmap iopad 47
+arch techmap iopad rtl 47
+module techmap iopadv 47
+arch techmap iopadv rtl 47
+module techmap iopadvv 47
+arch techmap iopadvv rtl 47
+module techmap iodpad 46
+arch techmap iodpad rtl 46
+module techmap iodpadv 46
+arch techmap iodpadv rtl 46
+module techmap inpad_ds 45
+arch techmap inpad_ds rtl 45
+module techmap inpad_dsv 45
+arch techmap inpad_dsv rtl 45
+module techmap inpad 44
+arch techmap inpad rtl 44
+module techmap inpadv 44
+arch techmap inpadv rtl 44
+module techmap clkpad_ds 43
+arch techmap clkpad_ds rtl 43
+module techmap clkpad 42
+arch techmap clkpad rtl 42
+module techmap ddr_oreg 41
+arch techmap ddr_oreg rtl 41
+module techmap ddr_ireg 40
+arch techmap ddr_ireg rtl 40
+module techmap grmux2 39
+arch techmap grmux2 rtl 39
+module techmap grmux2v 39
+arch techmap grmux2v rtl 39
+module techmap grdff 39
+arch techmap grdff rtl 39
+module techmap gror2 39
+arch techmap gror2 rtl 39
+module techmap grand12 39
+arch techmap grand12 rtl 39
+module techmap grnand2 39
+arch techmap grnand2 rtl 39
+module techmap clkand 38
+arch techmap clkand rtl 38
+module techmap clkrand 38
+arch techmap clkrand rtl 38
+module techmap clkinv 37
+arch techmap clkinv rtl 37
+module techmap clkmux 36
+arch techmap clkmux rtl 36
+module techmap clkgen 35
+arch techmap clkgen struct 35
+module techmap techbuf 29
+arch techmap techbuf rtl 29
+module techmap generic_fifo 27
+arch techmap generic_fifo rtl_fifo 27
+module techmap ddrphy_datapath 26
+arch techmap ddrphy_datapath rtl 26
+module techmap generic_ddr_phy_wo_pads 25
+arch techmap generic_ddr_phy_wo_pads rtl 25
+module techmap generic_ddr2_phy_wo_pads 25
+arch techmap generic_ddr2_phy_wo_pads rtl 25
+module techmap gen_mul_61x61 24
+arch techmap gen_mul_61x61 rtl 24
+module techmap gen_mult_pipe 24
+arch techmap gen_mult_pipe simple 24
+module techmap gen_iddr_reg 23
+arch techmap gen_iddr_reg rtl 23
+module techmap gen_oddr_reg 23
+arch techmap gen_oddr_reg rtl 23
+module techmap generic_syncram 22
+arch techmap generic_syncram behavioral 22
+module techmap generic_syncram_reg 22
+arch techmap generic_syncram_reg behavioral 22
+module techmap generic_syncram_2p 22
+arch techmap generic_syncram_2p behav 22
+module techmap generic_syncram_2p_reg 22
+arch techmap generic_syncram_2p_reg behav 22
+module techmap generic_regfile_3p 22
+arch techmap generic_regfile_3p rtl 22
+module techmap generic_regfile_4p 22
+arch techmap generic_regfile_4p rtl 22
+module grlib synciotest 19
+arch grlib synciotest rtl 19
+module grlib ahbmst 17
+arch grlib ahbmst rtl 17
+module grlib dma2ahb 16
+arch grlib dma2ahb rtl 16
+module grlib ahbctrl 14
+arch grlib ahbctrl rtl 14
+module grlib apbctrlsp 13
+arch grlib apbctrlsp struct 13
+module grlib apbctrldp 12
+arch grlib apbctrldp struct 12
+module grlib apbctrlx 11
+arch grlib apbctrlx rtl 11
+module grlib apbctrl 10
+arch grlib apbctrl struct 10
+module grlib ahbdefmst 9
+arch grlib ahbdefmst rtl 9
+module grlib flipflop 6
+arch grlib flipflop flipflop 6
+module grlib pp_low 6
+arch grlib pp_low pp_low 6
+module grlib pp_middle 6
+arch grlib pp_middle pp_middle 6
+module grlib pp_high 6
+arch grlib pp_high pp_high 6
+module grlib r_gate 6
+arch grlib r_gate r_gate 6
+module grlib decoder 6
+arch grlib decoder decoder 6
+module grlib full_adder 6
+arch grlib full_adder full_adder 6
+module grlib half_adder 6
+arch grlib half_adder half_adder 6
+module grlib invblock 6
+arch grlib invblock invblock_regular 6
+module grlib xxor1 6
+arch grlib xxor1 xxor_regular 6
+module grlib block0 6
+arch grlib block0 block0_regular 6
+module grlib block1 6
+arch grlib block1 block1_regular 6
+module grlib block2 6
+arch grlib block2 block2_regular 6
+module grlib block1a 6
+arch grlib block1a block1a_regular 6
+module grlib block2a 6
+arch grlib block2a block2a_regular 6
+module grlib prestage_64 6
+arch grlib prestage_64 prestage 6
+module grlib dblc_0_64 6
+arch grlib dblc_0_64 dblc_0 6
+module grlib dblc_1_64 6
+arch grlib dblc_1_64 dblc_1 6
+module grlib dblc_2_64 6
+arch grlib dblc_2_64 dblc_2 6
+module grlib dblc_3_64 6
+arch grlib dblc_3_64 dblc_3 6
+module grlib dblc_4_64 6
+arch grlib dblc_4_64 dblc_4 6
+module grlib dblc_5_64 6
+arch grlib dblc_5_64 dblc_5 6
+module grlib xorstage_64 6
+arch grlib xorstage_64 xorstage 6
+module grlib dblctree_64 6
+arch grlib dblctree_64 dblctree 6
+module grlib dblcadder_64_64 6
+arch grlib dblcadder_64_64 dblcadder 6
+module grlib xxor2 6
+arch grlib xxor2 xxor_true 6
+module grlib dblc_0_32 6
+arch grlib dblc_0_32 dblc_0 6
+module grlib dblc_1_32 6
+arch grlib dblc_1_32 dblc_1 6
+module grlib dblc_2_32 6
+arch grlib dblc_2_32 dblc_2 6
+module grlib dblc_3_32 6
+arch grlib dblc_3_32 dblc_3 6
+module grlib dblc_4_32 6
+arch grlib dblc_4_32 dblc_4 6
+module grlib xorstage_32 6
+arch grlib xorstage_32 xorstage 6
+module grlib prestage_32 6
+arch grlib prestage_32 prestage 6
+module grlib dblctree_32 6
+arch grlib dblctree_32 dblctree 6
+module grlib dblcadder_32_32 6
+arch grlib dblcadder_32_32 dblcadder 6
+module grlib prestage_128 6
+arch grlib prestage_128 prestage 6
+module grlib dblc_0_128 6
+arch grlib dblc_0_128 dblc_0 6
+module grlib dblc_1_128 6
+arch grlib dblc_1_128 dblc_1 6
+module grlib dblc_2_128 6
+arch grlib dblc_2_128 dblc_2 6
+module grlib dblc_3_128 6
+arch grlib dblc_3_128 dblc_3 6
+module grlib dblc_4_128 6
+arch grlib dblc_4_128 dblc_4 6
+module grlib dblc_5_128 6
+arch grlib dblc_5_128 dblc_5 6
+module grlib dblc_6_128 6
+arch grlib dblc_6_128 dblc_6 6
+module grlib xorstage_128 6
+arch grlib xorstage_128 xorstage 6
+module grlib dblctree_128 6
+arch grlib dblctree_128 dblctree 6
+module grlib dblcadder_128_128 6
+arch grlib dblcadder_128_128 dblcadder 6
+module grlib boothcoder_18_18 6
+arch grlib boothcoder_18_18 boothcoder 6
+module grlib wallace_18_18 6
+arch grlib wallace_18_18 wallace 6
+module grlib multiplier_18_18 6
+arch grlib multiplier_18_18 multiplier 6
+module grlib boothcoder_34_10 6
+arch grlib boothcoder_34_10 boothcoder 6
+module grlib wallace_34_10 6
+arch grlib wallace_34_10 wallace 6
+module grlib multiplier_34_10 6
+arch grlib multiplier_34_10 multiplier 6
+module grlib mul_33_9 6
+arch grlib mul_33_9 a 6
+module grlib boothcoder_34_18 6
+arch grlib boothcoder_34_18 boothcoder 6
+module grlib wallace_34_18 6
+arch grlib wallace_34_18 wallace 6
+module grlib multiplier_34_18 6
+arch grlib multiplier_34_18 multiplier 6
+module grlib mul_33_17 6
+arch grlib mul_33_17 a 6
+module grlib boothcoder_34_34 6
+arch grlib boothcoder_34_34 boothcoder 6
+module grlib wallace_34_34 6
+arch grlib wallace_34_34 wallace 6
+module grlib multiplier_34_34 6
+arch grlib multiplier_34_34 multiplier 6
+module grlib mul_33_33 6
+arch grlib mul_33_33 a 6
+module grlib add32 6
+arch grlib add32 a 6
+module grlib mul_17_17 6
+arch grlib mul_17_17 a 6

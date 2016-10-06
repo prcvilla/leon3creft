@@ -1,0 +1,881 @@
+#Build: Synplify Pro G-2012.09A-SP4 , Build 019R, Feb 25 2013
+#install: /opt/microsemi/Libero_v9.2/Synplify
+#OS: Linux 
+#Hostname: pvilla-V131
+
+#Implementation: synplify
+
+$ Start of Compile
+#Fri Mar 11 16:32:54 2016
+
+Synopsys HDL Compiler, version comp201209rcp1, Build 251R, built Feb 25 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+Synopsys VHDL Compiler, version comp201209rcp1, Build 251R, built Feb 25 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N: CD720 :"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":44:7:44:13|Top entity is set to leon3mp.
+VHDL syntax check successful!
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+# Fri Mar 11 16:32:55 2016
+
+###########################################################]
+Synopsys Verilog Compiler, version comp201209rcp1, Build 251R, built Feb 25 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@I::"/opt/microsemi/Libero_v9.2/Synplify/lib/proasic/proasic3e.v"
+@I::"/opt/microsemi/Libero_v9.2/Synplify/lib/vlog/umr_capim.v"
+@I::"/opt/microsemi/Libero_v9.2/Synplify/lib/vlog/scemi_objects.v"
+@I::"/opt/microsemi/Libero_v9.2/Synplify/lib/vlog/scemi_pipes.svh"
+@I::"/opt/microsemi/Libero_v9.2/Synplify/lib/vlog/hypermods.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/clean_rst.v"
+@I:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/clean_rst.v":"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/timescale.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/decoder_8b10b.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/encoder_8b10b.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_constants.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_regs.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_test.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_an.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_mdio.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_rx.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_sync.v"
+@I::"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/opencores/ge_1000baseX/ge_1000baseX_tx.v"
+Verilog syntax check successful!
+# Fri Mar 11 16:32:56 2016
+
+###########################################################]
+@N: CD720 :"/opt/microsemi/Libero_v9.2/Synplify/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":44:7:44:13|Top entity is set to leon3mp.
+VHDL syntax check successful!
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":44:7:44:13|Synthesizing work.leon3mp.rtl 
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clk8x of entity techmap.clkgen is unconnected
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clkc of entity techmap.clkgen is unconnected
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clkb of entity techmap.clkgen is unconnected
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clk2xu of entity techmap.clkgen is unconnected
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clk1xu of entity techmap.clkgen is unconnected
+@W: CD326 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":188:2:188:8|Port clk4x of entity techmap.clkgen is unconnected
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":121:7:121:10|Signal memi.edac is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":121:7:121:10|Signal memi.scb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":121:7:121:10|Signal memi.cb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":121:7:121:10|Signal memi.sd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":121:7:121:10|Signal memi.data is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.rs_edac_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.sdram_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.ce is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.svcdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.vcdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.scb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.cb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.sa is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.read is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.svbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.vbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.bdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.wrn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.writen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.oen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.romsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.iosn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.mben is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.romn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.ramn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.ramoen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.ramsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.sddata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.data is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":122:7:122:10|Signal memo.address is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":123:7:123:9|Signal wpo.wprothit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":124:7:124:9|Signal sdi.datavalid is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":124:7:124:9|Signal sdi.regrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":124:7:124:9|Signal sdi.cb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":124:7:124:9|Signal sdi.data is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":124:7:124:9|Signal sdi.wprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.dqm is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.casn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.rasn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.sdwen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.sdcsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":125:7:125:9|Signal sdo.sdcke is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.regwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.regwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.read_pend is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cbcal_inc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cbcal_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cbdqm is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.dqs_gate is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.vcbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.oct is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.conf is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.odt is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cal_rst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cal_pll is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cal_inc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cal_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.moben is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.sdck is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.ba is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.ce is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.cb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.data is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.address is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.vbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.nbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.qdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.bdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.dqm is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.casn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.rasn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.sdwen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.xsdcsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.sdcsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:7:126:10|Signal sdo2.sdcke is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.regwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.regwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.read_pend is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cbcal_inc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cbcal_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cbdqm is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.dqs_gate is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.vcbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.oct is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.conf is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.odt is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cal_rst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cal_pll is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cal_inc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cal_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.moben is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.sdck is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.ba is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.ce is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.cb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.data is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.address is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.vbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.nbdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.qdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.bdrive is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.dqm is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.casn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.rasn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.sdwen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.xsdcsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.sdcsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":126:13:126:16|Signal sdo3.sdcke is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_0.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_0.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_0.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_0.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_0.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_4.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_4.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_4.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_4.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_4.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_5.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_5.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_5.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_5.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_5.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_6.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_6.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_6.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_6.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_6.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_8.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_8.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_8.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_8.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_8.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_9.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_9.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_9.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_9.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_9.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_10.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_10.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_10.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_10.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_10.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_12.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_12.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_12.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_12.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_12.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_13.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_13.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_13.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_13.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_13.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_14.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_14.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_14.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_14.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_14.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_15.pindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_15.pconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_15.pconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_15.pirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":129:7:129:10|Signal apbo_15.prdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_15.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_14.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_13.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_12.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_11.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_10.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_9.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_6.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_5.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_4.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_3.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hsplit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hrdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hresp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":131:7:131:11|Signal ahbso_0.hready is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_15.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_14.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_13.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_12.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_11.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_10.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_9.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_8.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_7.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_6.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_5.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_4.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_3.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hindex is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_0 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_1 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_2 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_3 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_4 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_5 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_6 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hconfig_7 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hirq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hwdata is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hprot is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hburst is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hsize is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hwrite is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.haddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.htrans is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hlock is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":133:7:133:11|Signal ahbmo_2.hbusreq is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":136:7:136:9|Signal cgi.clksel is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":136:7:136:9|Signal cgi.pllref is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":138:12:138:14|Signal u2i.extclk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":138:12:138:14|Signal u2i.ctsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":138:12:138:14|Signal u2i.rxd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":138:17:138:19|Signal dui.extclk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":138:17:138:19|Signal dui.ctsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.rxen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.flow is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.txen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.scaler is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.txd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":139:12:139:14|Signal u2o.rtsn is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.edcldisable is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.edclsepahb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.edcladdr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.phyrstaddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.mdint is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.mdio_i is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_crs is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_col is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rxd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.tx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.tx_clk_90 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.rmii_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:7:150:10|Signal ethi.gtx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.edcldisable is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.edclsepahb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.edcladdr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.phyrstaddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.mdint is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.mdio_i is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_crs is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_col is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rxd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.tx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.tx_clk_90 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.rmii_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:13:150:17|Signal ethi1.gtx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.edcldisable is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.edclsepahb is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.edcladdr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.phyrstaddr is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.mdint is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.mdio_i is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_crs is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_col is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rxd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.tx_dv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.tx_clk_90 is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.rmii_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":150:20:150:24|Signal ethi2.gtx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.speed is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.gbit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.mdio_oe is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.mdio_o is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.mdc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.tx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.tx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.txd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:7:151:10|Signal etho.reset is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.speed is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.gbit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.mdio_oe is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.mdio_o is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.mdc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.tx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.tx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.txd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:13:151:17|Signal etho1.reset is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.speed is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.gbit is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.mdio_oe is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.mdio_o is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.mdc is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.tx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.tx_er is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.tx_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.txd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":151:20:151:24|Signal etho2.reset is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":153:7:153:10|Signal gpti.latchd is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":153:7:153:10|Signal gpti.latchv is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":153:7:153:10|Signal gpti.wdogen is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Signal gpioi.sig_en is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Signal gpioi.sig_in is undriven 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 7 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 8 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 9 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 10 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 11 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 12 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 13 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 14 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 15 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 16 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 17 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 18 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 19 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 20 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 21 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 22 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 23 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 24 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 25 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 26 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 27 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 28 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 29 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 30 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":156:7:156:11|Bit 31 of signal gpioi.din is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":158:16:158:22|Signal can_ltx is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":160:13:160:20|Signal letx_clk is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":163:23:163:30|Signal spw_clkl is undriven 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd":39:7:39:12|Synthesizing gaisler.ahbram.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncrambw.vhd":38:7:38:15|Synthesizing techmap.syncrambw.rtl 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncrambw.vhd":55:19:55:24|Signal databp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncrambw.vhd":55:27:55:34|Signal testdata is undriven 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":36:7:36:13|Synthesizing techmap.syncram.rtl 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":52:9:52:12|Signal rena is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":52:15:52:18|Signal wena is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":53:19:53:24|Signal databp is undriven 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/syncram.vhd":53:27:53:34|Signal testdata is undriven 
+Post processing for techmap.syncram.rtl
+Post processing for techmap.syncrambw.rtl
+Post processing for gaisler.ahbram.rtl
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd":259:4:259:5|Pruning register r.pready  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd":259:4:259:5|Pruning register r.pwrite  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/ahbram.vhd":259:4:259:5|Pruning register r.prdata(0)  
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/inpad.vhd":33:7:33:11|Synthesizing techmap.inpad.rtl 
+Post processing for techmap.inpad.rtl
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad.vhd":33:7:33:12|Synthesizing techmap.outpad.rtl 
+@W: CD638 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/outpad.vhd":41:7:41:10|Signal padx is undriven 
+Post processing for techmap.outpad.rtl
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/techmap/maps/iopad.vhd":33:7:33:11|Synthesizing techmap.iopad.rtl 
+Post processing for techmap.iopad.rtl
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":41:7:41:12|Synthesizing gaisler.grgpio.rtl 
+Post processing for gaisler.grgpio.rtl
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.pulse(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.inpen(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.iflag(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_6(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_5(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_4(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_3(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_2(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_1(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.irqmap_0(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.bypass(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.ilat(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.edge(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.level(6 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/grgpio.vhd":445:4:445:5|Pruning register r.imask(6 downto 0)  
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":56:7:56:13|Synthesizing gaisler.gptimer.rtl 
+Post processing for gaisler.gptimer.rtl
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.setdel  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.seten  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.extclk(2 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.extclken  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.latchdel  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.latchen  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.latchsel(31 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.elatchen  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.latchdis  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r2.setdis  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r.wdogwcr(15 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r.wdogwc(15 downto 0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Pruning register r.wdognmi  
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/misc/gptimer.vhd":569:4:569:5|Register bit r.wdogdis is always 0, optimizing ...
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/irqmp/irqmp.vhd":40:7:40:11|Synthesizing gaisler.irqmp.rtl 
+Post processing for gaisler.irqmp.rtl
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Pruning register r.imap_0(0)  
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Pruning register r.ibroadcast(15 downto 1)  
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":43:7:43:13|Synthesizing gaisler.apbuart.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":73:15:73:16|Using sequential encoding for type txfsmtype
+@N: CD231 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":72:15:72:16|Using onehot encoding for type rxfsmtype (idle="10000")
+Post processing for gaisler.apbuart.rtl
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":560:4:560:5|Register bit r.rwaddr(0) is always 0, optimizing ...
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":560:4:560:5|Register bit r.tcnt(1) is always 0, optimizing ...
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":560:4:560:5|Register bit r.rcnt(1) is always 0, optimizing ...
+@W: CL260 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":560:4:560:5|Pruning register bit 1 of r.tcnt(1 downto 0)  
+@W: CL260 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/gaisler/uart/apbuart.vhd":560:4:560:5|Pruning register bit 1 of r.rcnt(1 downto 0)  
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrl.vhd":35:7:35:13|Synthesizing grlib.apbctrl.struct 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":39:7:39:14|Synthesizing grlib.apbctrlx.rtl 
+@W: CD434 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":137:29:137:30|Signal wp in the sensitivity list is not used in the process
+@W: CD434 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":137:33:137:35|Signal wpv in the sensitivity list is not used in the process
+Post processing for grlib.apbctrlx.rtl
+@W: CL169 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Pruning register r.p_0.hmaster(3 downto 0)  
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Register bit r.p_0.hresp(0) is always 0, optimizing ...
+@W: CL189 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Register bit r.p_0.hresp(1) is always 0, optimizing ...
+Post processing for grlib.apbctrl.struct
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd":26:7:26:12|Synthesizing work.ahbrom.rtl 
+@E: CD403 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd":59:7:59:7|hcache is not a member of type ahb_slv_out_type
+# Fri Mar 11 16:32:57 2016
+
+###########################################################]
+@E::Errors, while synthesis of top - leon3mp.
+@END
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Mar 11 16:32:57 2016
+
+###########################################################]

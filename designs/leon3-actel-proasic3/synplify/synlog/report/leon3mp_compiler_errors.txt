@@ -1,0 +1,3 @@
+@E: CD403 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd":59:7:59:7|hcache is not a member of type ahb_slv_out_type
+@E::Errors, while synthesis of top - leon3mp.
+

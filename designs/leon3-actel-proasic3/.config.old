@@ -1,0 +1,201 @@
+#
+# Automatically generated make config: don't edit
+#
+
+#
+# Synthesis      
+#
+# CONFIG_SYN_INFERRED is not set
+# CONFIG_SYN_STRATIX is not set
+# CONFIG_SYN_STRATIXII is not set
+# CONFIG_SYN_STRATIXIII is not set
+# CONFIG_SYN_CYCLONEIII is not set
+# CONFIG_SYN_ALTERA is not set
+# CONFIG_SYN_AXCEL is not set
+# CONFIG_SYN_PROASIC is not set
+# CONFIG_SYN_PROASICPLUS is not set
+CONFIG_SYN_PROASIC3=y
+# CONFIG_SYN_UT025CRH is not set
+# CONFIG_SYN_ATC18 is not set
+# CONFIG_SYN_ATC18RHA is not set
+# CONFIG_SYN_CUSTOM1 is not set
+# CONFIG_SYN_EASIC90 is not set
+# CONFIG_SYN_IHP25 is not set
+# CONFIG_SYN_IHP25RH is not set
+# CONFIG_SYN_LATTICE is not set
+# CONFIG_SYN_ECLIPSE is not set
+# CONFIG_SYN_PEREGRINE is not set
+# CONFIG_SYN_RH_LIB18T is not set
+# CONFIG_SYN_RHUMC is not set
+# CONFIG_SYN_SMIC13 is not set
+# CONFIG_SYN_SPARTAN2 is not set
+# CONFIG_SYN_SPARTAN3 is not set
+# CONFIG_SYN_SPARTAN3E is not set
+# CONFIG_SYN_VIRTEX is not set
+# CONFIG_SYN_VIRTEXE is not set
+# CONFIG_SYN_VIRTEX2 is not set
+# CONFIG_SYN_VIRTEX4 is not set
+# CONFIG_SYN_VIRTEX5 is not set
+# CONFIG_SYN_UMC is not set
+# CONFIG_SYN_TSMC90 is not set
+# CONFIG_SYN_INFER_RAM is not set
+CONFIG_SYN_INFER_PADS=y
+# CONFIG_SYN_NO_ASYNC is not set
+# CONFIG_SYN_SCAN is not set
+
+#
+# Clock generation
+#
+# CONFIG_CLK_INFERRED is not set
+# CONFIG_CLK_HCLKBUF is not set
+# CONFIG_CLK_ALTDLL is not set
+# CONFIG_CLK_LATDLL is not set
+CONFIG_CLK_PRO3PLL=y
+# CONFIG_CLK_LIB18T is not set
+# CONFIG_CLK_RHUMC is not set
+# CONFIG_CLK_CLKDLL is not set
+# CONFIG_CLK_DCM is not set
+CONFIG_CLK_MUL=45
+CONFIG_CLK_DIV=9
+CONFIG_OCLK_DIV=8
+# CONFIG_PCI_SYSCLK is not set
+CONFIG_LEON3=y
+CONFIG_PROC_NUM=1
+
+#
+# Processor            
+#
+
+#
+# Integer unit                                           
+#
+CONFIG_IU_NWINDOWS=8
+# CONFIG_IU_V8MULDIV is not set
+CONFIG_IU_SVT=y
+CONFIG_IU_LDELAY=1
+CONFIG_IU_WATCHPOINTS=0
+CONFIG_PWD=y
+CONFIG_IU_RSTADDR=00000
+
+#
+# Floating-point unit
+#
+# CONFIG_FPU_ENABLE is not set
+
+#
+# Cache system
+#
+# CONFIG_ICACHE_ENABLE is not set
+# CONFIG_ICACHE_LRAM is not set
+# CONFIG_DCACHE_ENABLE is not set
+# CONFIG_DCACHE_LRAM is not set
+
+#
+# MMU
+#
+# CONFIG_MMU_ENABLE is not set
+
+#
+# Debug Support Unit        
+#
+CONFIG_DSU_ENABLE=y
+# CONFIG_DSU_ITRACE is not set
+# CONFIG_DSU_ATRACE is not set
+
+#
+# Fault-tolerance  
+#
+
+#
+# VHDL debug settings       
+#
+# CONFIG_IU_DISAS is not set
+# CONFIG_DEBUG_PC32 is not set
+
+#
+# AMBA configuration
+#
+CONFIG_AHB_DEFMST=0
+CONFIG_AHB_RROBIN=y
+# CONFIG_AHB_SPLIT is not set
+CONFIG_AHB_IOADDR=FFF
+CONFIG_APB_HADDR=800
+# CONFIG_AHB_MON is not set
+
+#
+# Debug Link           
+#
+CONFIG_DSU_UART=y
+# CONFIG_DSU_JTAG is not set
+
+#
+# Memory controllers             
+#
+
+#
+# Leon2 memory controller        
+#
+# CONFIG_MCTRL_LEON2 is not set
+
+#
+# Synchronous SRAM controller   
+#
+# CONFIG_SSCTRL is not set
+
+#
+# Peripherals             
+#
+
+#
+# On-chip RAM/ROM                 
+#
+CONFIG_AHBROM_ENABLE=y
+CONFIG_AHBROM_START=000
+# CONFIG_AHBROM_PIPE is not set
+CONFIG_AHBRAM_ENABLE=y
+# CONFIG_AHBRAM_SZ1 is not set
+# CONFIG_AHBRAM_SZ2 is not set
+CONFIG_AHBRAM_SZ4=y
+# CONFIG_AHBRAM_SZ8 is not set
+# CONFIG_AHBRAM_SZ16 is not set
+# CONFIG_AHBRAM_SZ32 is not set
+# CONFIG_AHBRAM_SZ64 is not set
+CONFIG_AHBRAM_START=A00
+
+#
+# Ethernet             
+#
+# CONFIG_GRETH_ENABLE is not set
+
+#
+# CAN                     
+#
+# CONFIG_CAN_ENABLE is not set
+
+#
+# UARTs, timers and irq control         
+#
+CONFIG_UART1_ENABLE=y
+CONFIG_UA1_FIFO1=y
+# CONFIG_UA1_FIFO2 is not set
+# CONFIG_UA1_FIFO4 is not set
+# CONFIG_UA1_FIFO8 is not set
+# CONFIG_UA1_FIFO16 is not set
+# CONFIG_UA1_FIFO32 is not set
+CONFIG_IRQ3_ENABLE=y
+# CONFIG_IRQ3_SEC is not set
+CONFIG_GPT_ENABLE=y
+CONFIG_GPT_NTIM=2
+CONFIG_GPT_SW=8
+CONFIG_GPT_TW=32
+CONFIG_GPT_IRQ=8
+CONFIG_GPT_SEPIRQ=y
+# CONFIG_GPT_WDOGEN is not set
+CONFIG_GRGPIO_ENABLE=y
+CONFIG_GRGPIO_WIDTH=4
+CONFIG_GRGPIO_IMASK=0000
+
+#
+# VHDL Debugging        
+#
+# CONFIG_DEBUG_UART is not set

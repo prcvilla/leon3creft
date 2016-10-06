@@ -1,0 +1,1647 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1659R, Built Dec 10 2015 09:39:16
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-SP1-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 160MB peak: 160MB)
+
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":102:4:102:6|Tristate driver led_1 on net led[5] has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri31 on net gpioi_tri31 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri30 on net gpioi_tri30 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri29 on net gpioi_tri29 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri28 on net gpioi_tri28 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri27 on net gpioi_tri27 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri26 on net gpioi_tri26 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri25 on net gpioi_tri25 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri24 on net gpioi_tri24 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri23 on net gpioi_tri23 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri22 on net gpioi_tri22 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri21 on net gpioi_tri21 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri20 on net gpioi_tri20 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri19 on net gpioi_tri19 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri18 on net gpioi_tri18 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri17 on net gpioi_tri17 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri16 on net gpioi_tri16 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri15 on net gpioi_tri15 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri14 on net gpioi_tri14 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri13 on net gpioi_tri13 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri12 on net gpioi_tri12 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri11 on net gpioi_tri11 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri10 on net gpioi_tri10 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri9 on net gpioi_tri9 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri8 on net gpioi_tri8 has its enable tied to GND (module leon3mp) 
+@W: MO111 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":469:12:469:23|Tristate driver gpioi_tri7 on net gpioi_tri7 has its enable tied to GND (module leon3mp) 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance r\.cmiss of view:PrimLib.dff(prim) in hierarchy view:gaisler.mmu_icache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":381:4:381:5|Removing sequential instance r\.hcache of view:PrimLib.sdffrse(prim) in hierarchy view:gaisler.mmu_acache(rtl) because there are no references to its outputs 
+@W: MO171 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Sequential instance ua1.uart1.r\.extclk reduced to a combinational gate by constant propagation 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance dcache0.r\.diag_op of view:PrimLib.sdffr(prim) in hierarchy view:gaisler.mmu_cache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance icache0.r\.vaddress[31:2] of view:PrimLib.dff(prim) in hierarchy view:gaisler.mmu_cache(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.asi[3:0] of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.icache0.r\.su of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Sequential instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.r.flushl2 reduced to a combinational gate by constant propagation
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.lock2 of view:PrimLib.sdffre(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r\.hmasterlockd of view:PrimLib.sdffre(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Removing sequential instance l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.asi[4:0] of view:PrimLib.dffe(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.tt[0],  because it is equivalent to instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.trap
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.w\.s\.asr18[31:0] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.clkcount[2:0] of view:PrimLib.dff(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.forceerr[0] of view:PrimLib.sdffr(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.newaddr[31:2] of view:PrimLib.dff(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":461:4:461:5|Removing sequential instance r\.setaddr[0] of view:PrimLib.sdffrse(prim) in hierarchy view:gaisler.irqmp(rtl) because there are no references to its outputs 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 137MB peak: 165MB)
+
+@N:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Found counter in view:work.leon3mp(rtl) inst l3\.dsugen\.dsu0.x0.r\.cnt[2:0]
+@W: MO161 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Register bit l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.icache0.r\.eocl is always 1, optimizing ...
+Encoding state machine apb0.apbx.r\.p_0\.state[0:2] (view:work.leon3mp(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.a0.r\.bo[0:3] (view:work.leon3mp(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":381:4:381:5|No possible illegal states for state machine l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.a0.r\.bo[0:3],safe FSM implementation is disabled
+Encoding state machine l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate[0:5] (view:work.leon3mp(rtl))
+original code -> new code
+   000000001 -> 000000
+   000000010 -> 000011
+   000001000 -> 000101
+   001000000 -> 001001
+   010000000 -> 010001
+   100000000 -> 100001
+Encoding state machine l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.icache0.r\.istate[0:2] (view:work.leon3mp(rtl))
+original code -> new code
+   00 -> 00
+   10 -> 01
+   11 -> 10
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[18] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[19] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[20] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[21] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[22] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[23] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[25] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[26] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[27] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatas[30] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Sequential instance l3.dsugen.dsu0.x0.r.dsuen[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[3] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[4] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[7] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[8] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[9] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[10] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[11] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[15] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[16] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[17] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[18] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[19] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[20] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[21] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[22] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[23] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[25] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[26] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[27] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[28] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[29] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[30] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Sequential instance ahb0.r.hrdatam[31] reduced to a combinational gate by constant propagation
+@W: MO160 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/ahbram.vhd":259:4:259:5|Register bit ocram\.ahbram0.r\.size[2] is always 0, optimizing ...
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Sequential instance l3.dsugen.dsu0.x0.r.dsuen[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Sequential instance l3.dsugen.dsu0.x0.r.dsuen[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1031:4:1031:5|Sequential instance l3.dsugen.dsu0.x0.r.en[0] reduced to a combinational gate by constant propagation
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Removing sequential instance apb0.apbx.r\.p_0\.haddr[0] of view:PrimLib.dff(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Removing sequential instance apb0.apbx.r\.p_0\.haddr[1] of view:PrimLib.dff(prim) in hierarchy view:work.leon3mp(rtl) because there are no references to its outputs 
+@N: BN115 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Removing instance l3\.dsugen\.dsu0.x0.un1_r\.timer_0 of view:VhdlGenLib.ADD__const_cin_w30_0(fbk) because there are no references to its outputs 
+Encoding state machine r\.x\.rstate[0:3] (view:gaisler.iu3(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|No possible illegal states for state machine r\.x\.rstate[0:3],safe FSM implementation is disabled
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_0[29:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_1[29:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un4_fe_npc_2[29:0]'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF179 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":402:9:402:30|Found 4 bit by 4 bit '<' comparator, 'comb\.irq_trap\.op_gt\.un2_irl'
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[5] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[6] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+@N: BN362 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Removing sequential instance r\.m\.dci\.asi[7] of view:PrimLib.dff(prim) in hierarchy view:gaisler.iu3(rtl) because there are no references to its outputs 
+Encoding state machine r\.rxstate[0:3] (view:gaisler.dcom_uart(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":335:4:335:5|No possible illegal states for state machine r\.rxstate[0:3],safe FSM implementation is disabled
+@N: MF179 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":402:9:402:30|Found 14 bit by 14 bit '<' comparator, 'uartop\.op_gt\.v\.brate2'
+Encoding state machine r\.state[0:5] (view:gaisler.dcom(struct))
+original code -> new code
+   000001 -> 000000
+   000010 -> 000011
+   000100 -> 000101
+   001000 -> 001001
+   010000 -> 010001
+   100000 -> 100001
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 6-bit decrementor, 'un5_newlen[5:0]'
+@N: MF238 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":309:28:309:42|Found 30-bit incrementor, 'un5_newaddr[29:0]'
+@N:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Found counter in view:gaisler.apbuart(rtl) inst r\.irqcnt[5:0]
+Encoding state machine r\.txstate[0:3] (view:gaisler.apbuart(rtl))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+@N: MO225 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|No possible illegal states for state machine r\.txstate[0:3],safe FSM implementation is disabled
+Encoding state machine r\.rxstate[0:4] (view:gaisler.apbuart(rtl))
+original code -> new code
+   00001 -> 00000
+   00010 -> 00011
+   00100 -> 00101
+   01000 -> 01001
+   10000 -> 10001
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 12-bit decrementor, 'un4_scaler[11:0]'
+@W: MO129 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Sequential instance ua1.uart1.r.ctsn[0] reduced to a combinational gate by constant propagation
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 9-bit decrementor, 'un6_scaler[8:0]'
+@N: MF239 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":355:28:355:42|Found 32-bit decrementor, 'un11_res[31:0]'
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[29],  because it is equivalent to instance ahb0.r.hrdatas[17]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[17],  because it is equivalent to instance ahb0.r.hrdatas[16]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatam[24],  because it is equivalent to instance ahb0.r.hrdatam[13]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatam[13],  because it is equivalent to instance ahb0.r.hrdatam[12]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatam[6],  because it is equivalent to instance ahb0.r.hrdatam[5]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[31],  because it is equivalent to instance ahb0.r.hrdatas[1]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[9],  because it is equivalent to instance ahb0.r.hrdatas[4]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[11],  because it is equivalent to instance ahb0.r.hrdatas[4]
+@W: BN132 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":698:4:698:5|Removing sequential instance ahb0.r.hrdatas[10],  because it is equivalent to instance ahb0.r.hrdatas[4]
+
+Finished factoring (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 199MB peak: 218MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:16s; Memory used current: 189MB peak: 218MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:23s; CPU Time elapsed 0h:00m:23s; Memory used current: 194MB peak: 243MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 197MB peak: 243MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:01m:16s; CPU Time elapsed 0h:01m:15s; Memory used current: 251MB peak: 252MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:01m:16s; CPU Time elapsed 0h:01m:16s; Memory used current: 248MB peak: 252MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:01m:17s; CPU Time elapsed 0h:01m:17s; Memory used current: 243MB peak: 252MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:01m:21s; CPU Time elapsed 0h:01m:20s; Memory used current: 244MB peak: 281MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                                                       Fanout, notes                  
+----------------------------------------------------------------------------------------------------------------
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.irqo.intack / Y                                   26                             
+apb0.apbx.r.p_0.haddr[2] / Q                                                     63                             
+apb0.apbx.r.p_0.haddr[3] / Q                                                     28                             
+apb0.apbx.r.p_0.haddr[4] / Q                                                     34                             
+apb0.apbx.r.p_0.haddr[5] / Q                                                     25                             
+apb0.apbx.r.p_0.pwdata[3] / Q                                                    26                             
+apb0.apbx.r.p_0.pwdata[4] / Q                                                    26                             
+apb0.apbx.r.p_0.pwdata[5] / Q                                                    25                             
+l3.dsugen.dsu0.x0.un1_v.cnt3_2 / Y                                               32                             
+l3.dsugen.dsu0.x0.comb.v.slv.hready33_0_a2 / Y                                   34                             
+l3.cpu.0.u0.leon3x0.rst / Q                                                      230                            
+l3.cpu.0.u0.leon3x0.vhdl.p0.holdn / Y                                            825                            
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.un1_v.mexc_0_sqmuxa_1 / Y              32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.r.dstate[4] / Q                        56                             
+ahb0.r.hmaster[0] / Q                                                            45                             
+ahb0.r.cfgsel / Q                                                                36                             
+ahb0.r.hslave[0] / Q                                                             38                             
+ahb0.r.hslave[2] / Q                                                             39                             
+ahb0.r.hmasterd[0] / Q                                                           35                             
+ahb0.comb.hready_1_iv / Y                                                        58                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.icache0.r.istate[0] / Q                        42                             
+l3.dsugen.dsu0.x0.v.bmsk_1_sqmuxa_2 / Y                                          36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.hit2_i_o2 / Y                  35                             
+apb0.apbx.comb.v.p_0.prdata_1_0_a2_0_0_a2[25] / Y                                32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.v.wb.data1_1_sqmuxa_i / Y              32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.icache0.ictrl.v.waddress_1_i_o4[9] / Y         32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.r.bo_4643_d_i_i_a4 / Y                      34                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.read_1_i_0 / Y                   32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.edata_0_sqmuxa_i_0 / Y                 35                             
+l3.dsugen.dsu0.x0.comb.v.te9 / Y                                                 31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.wb.data1_1_i_o2[0] / Y         84                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.wb.addr_1_i_a2_4[26] / Y       31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.rdatasel_1_1_i_o2 / Y                  26                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.rdatav_013_i_o2 / Y              34                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.rdatav_0_1s_iv_0_a2_2[3] / Y     26                             
+gpio0.grgpio0.readdata_iv_i_a3_0[1] / Y                                          25                             
+gpt.timer0.r.tsel[0] / Q                                                         37                             
+gpt.timer0.v.timers_2.value_0_sqmuxa_0_a2 / Y                                    32                             
+gpt.timer0.readdata_1_sqmuxa_0_a2_0_a2 / Y                                       32                             
+gpt.timer0.N_1294_i_i_o2 / Y                                                     27                             
+irqctrl.irqctrl0.v.iforce_0_0_sqmuxa_i_o4 / Y                                    35                             
+dcomgen.dcom0.dcom_uart0.uartop.tmp / Y                                          60                             
+dcomgen.dcom0.dcom0.r.state[3] / Q                                               37                             
+dcomgen.dcom0.dcom0.r.state[4] / Q                                               45                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.ctrl.wy_9 / Y                             32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.e.ctrl.wy_12 / Y                            32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_aop2_1_sqmuxa / Y                             36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_241 / Y                            40                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_256 / Y                            32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un3_de_hold_pc / Y                                31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.d.mexc_1_sqmuxa_277 / Y                     33                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.inst[22] / Q                             26                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[21] / Q                                30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[0] / Q                                  37                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[1] / Q                                  64                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[2] / Q                                  94                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel2[0] / Q                                  44                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel2[1] / Q                                  68                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel2[2] / Q                                  97                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[0] / Q                                  74                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[1] / Q                                  44                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[2] / Q                                  72                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.npc[0] / Q                                    36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[30] / Q                                26                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.ldbp2 / Q                                     72                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.invop2 / Q                                    57                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.diagread.un533_dbgunit / Y                   35                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.logic_op.un1_r.e.mulstep / Y                 32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.fpstdata.un8_casaen / Y                      70                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.ldbp1 / Q                                     167                            
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.alu_op.y08 / Y                               32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.mexc_1_sqmuxa / Y                             33                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[12] / Q                                25                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.logic_op.y14 / Y                             32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_0_sqmuxa_0_a2 / Y                       31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_3_sqmuxa_0_a2 / Y                       31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_0_sqmuxa / Y                                 32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_1_sqmuxa / Y                                 32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_1_sqmuxa / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_2_sqmuxa / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_7_sqmuxa_0_a2 / Y                       32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_8_sqmuxa / Y                            25                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_10_sqmuxa / Y                           32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_3_sqmuxa / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.shleft / Q                                    65                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.mresult2_1_sqmuxa / Y                             32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.edata_3_sqmuxa / Y                                32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_0_sqmuxa_133 / Y                             32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_3_sqmuxa_136 / Y                             28                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_4_sqmuxa_137 / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_5_sqmuxa_138 / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.mresult2_2_sqmuxa_152 / Y                         37                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_1_sqmuxa / Y                            32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.xc_trap_address_2_sqmuxa_0_a2 / Y                 30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_2_sqmuxa / Y                            32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.xc_trap_address_1_sqmuxa_0_a2 / Y                 30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.dcache_gen.jump / Y                          30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_bpmiss_1 / Y                              46                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.y_1_sqmuxa_0_0_a2 / Y                       31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.y_2_sqmuxa / Y                              32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_0_s1 / Y                            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_de_branch_273 / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.un6_xc_exception / Y                         30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[1] / Y                            33                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[2] / Y                            35                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[4] / Y                            48                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.npc_gen.xc_result_sn_m3_0_a3 / Y             29                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.npc_gen.xc_result_sn_m4_0_a2 / Y             26                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.lock_gen.call_hold5_0_o2 / Y                 36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.e.jmpl_i_o2 / Y                             30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.rdata_6_sqmuxa_i_a2_0 / Y                         36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.vir.addr_1_iv_0_0_o4_0_o2[15] / Y            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aop2_2_sqmuxa_i_i_a2 / Y                          30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10961_i_i / Y                                   38                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10860_i_i_a2 / Y                                36                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.icc_0_sqmuxa_263_i_a2_0_i_o2 / Y            67                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_11373_i_0_a2 / Y                                30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ra_bpmiss_1_0_o2 / Y                         29                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.v.w.s.tba_1_sn_m2_i_o2_i_a2_i / Y            31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_12_sqmuxa_i / Y                         28                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10216_1_i_i_0_o2 / Y                            39                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.s.y_1_sqmuxa_162_0_0_a2_i_o2 / Y                  31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_145_0_0_a2_0_a4_i_o2 / Y           30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.npc_1_sqmuxa_160_0_a2_0_a4_i_o2 / Y               30                             
+resetn_pad / Y                                                                   229 : 14 asynchronous set/reset
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.un1_m7 / Y                             41                             
+l3.dsugen.dsu0.x0.v.slv.hwrite_0_sqmuxa / Y                                      29                             
+dcomgen.dcom0.dcom0.un1_r.state_3_i_0 / Y                                        31                             
+dcomgen.dcom0.dcom0.comb.v.addr_1_0_i_m3[31] / Y                                 29                             
+apb0.apbx.v.p_0.pwdata_1_sqmuxa_i / Y                                            32                             
+l3.dsugen.dsu0.x0.v.timer_1_sqmuxa / Y                                           31                             
+dcomgen.dcom0.dcom0.un1_v.data_0_sqmuxa_0 / Y                                    32                             
+dcomgen.dcom0.dcom_uart0.v.brate_0_sqmuxa / Y                                    55                             
+gpt.timer0.v.timers_1.value_2_sqmuxa_i_0 / Y                                     32                             
+gpt.timer0.v.timers_1.value_2_sqmuxa_i_0_o2 / Y                                  35                             
+gpt.timer0.comb.v.timers_1.value_1_i_m2_i_a2_3[11] / Y                           28                             
+gpt.timer0.comb.v.timers_1.value_1_i_m2_i_a2_2[11] / Y                           28                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.f.pc4 / Y                                       31                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_de_hold_pc_271 / Y                            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_2_s3 / Y                            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_3_s4 / Y                            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.comb.nbo_5_iv[0] / Y                        27                             
+l3.cpu.0.u0.leon3x0.vhdl.rf0.s1.rhu.s1.dp.x1.rwcol0.comb.domux1_1 / Y            32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aop1_1_sqmuxa_i / Y                               34                             
+ua1.uart1.v.brate_1_sqmuxa_0_o2 / Y                                              28                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.comb.nbo_5_iv_0_o2[1] / Y                   26                             
+irqctrl.irqctrl0.prdata_0_sqmuxa_2 / Y                                           33                             
+gpt.timer0.m227 / Y                                                              32                             
+gpt.timer0.comb.v.timers_2.value_1_i_i_o2[0] / Y                                 35                             
+gpt.timer0.comb.v.timers_2.value_1_i_0_a2_2[11] / Y                              25                             
+gpt.timer0.comb.v.timers_2.value_1_i_0_a2_3[11] / Y                              25                             
+l3.cpu.0.u0.leon3x0.vhdl.rf0.s1.rhu.s1.dp.x0.rwcol0.comb.domux1_1 / Y            32                             
+gpt.timer0.v.timers_1.reload_1_sqmuxa_0_a2_1_a2 / Y                              32                             
+gpt.timer0.v.timers_2.reload_1_sqmuxa_0_a2_0_a2 / Y                              32                             
+gpio0.grgpio0.un1_v.dout30_0_o5 / Y                                              29                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.pc_1024_e / Y                                 30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[3] / Y                            39                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_sari_1_1_i / Y                            30                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.misc_op.bpdata6_0_a2 / Y                     32                             
+l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.un1_r.x.ctrl.ld_0_o2 / Y                     32                             
+================================================================================================================
+
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.holdn on CLKINT  I_960 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.rst on CLKINT  I_961 
+@N: FP130 |Promoting Net resetn_c on CLKINT  I_962 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1 on CLKINT  I_963 
+@N: FP130 |Promoting Net l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rsel2[2] on CLKINT  I_964 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:22s; Memory used current: 244MB peak: 281MB)
+
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.un1_r.x.ctrl.ld_0_o2, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.misc_op.bpdata6_0_a2, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_sari_1_1_i, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[3], fanout 39 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.pc_1024_e, fanout 30 segments 2
+Replicating Combinational Instance gpio0.grgpio0.un1_v.dout30_0_o5, fanout 29 segments 2
+Replicating Combinational Instance gpt.timer0.v.timers_2.reload_1_sqmuxa_0_a2_0_a2, fanout 32 segments 2
+Replicating Combinational Instance gpt.timer0.v.timers_1.reload_1_sqmuxa_0_a2_1_a2, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.rf0.s1.rhu.s1.dp.x0.rwcol0.comb.domux1_1, fanout 32 segments 2
+Replicating Combinational Instance gpt.timer0.comb.v.timers_2.value_1_i_0_a2_3[11], fanout 25 segments 2
+Replicating Combinational Instance gpt.timer0.comb.v.timers_2.value_1_i_0_a2_2[11], fanout 25 segments 2
+Replicating Combinational Instance gpt.timer0.comb.v.timers_2.value_1_i_i_o2[0], fanout 37 segments 2
+Replicating Combinational Instance gpt.timer0.m227, fanout 32 segments 2
+Replicating Combinational Instance irqctrl.irqctrl0.prdata_0_sqmuxa_2, fanout 33 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.comb.nbo_5_iv_0_o2[1], fanout 26 segments 2
+Replicating Combinational Instance ua1.uart1.v.brate_1_sqmuxa_0_o2, fanout 28 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aop1_1_sqmuxa_i, fanout 34 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.rf0.s1.rhu.s1.dp.x1.rwcol0.comb.domux1_1, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.comb.nbo_5_iv[0], fanout 27 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_3_s4, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_2_s3, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_de_hold_pc_271, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.f.pc4, fanout 31 segments 2
+Replicating Combinational Instance gpt.timer0.comb.v.timers_1.value_1_i_m2_i_a2_2[11], fanout 28 segments 2
+Replicating Combinational Instance gpt.timer0.comb.v.timers_1.value_1_i_m2_i_a2_3[11], fanout 28 segments 2
+Replicating Combinational Instance gpt.timer0.v.timers_1.value_2_sqmuxa_i_0_o2, fanout 37 segments 2
+Replicating Combinational Instance gpt.timer0.v.timers_1.value_2_sqmuxa_i_0, fanout 32 segments 2
+Replicating Combinational Instance dcomgen.dcom0.dcom_uart0.v.brate_0_sqmuxa, fanout 55 segments 3
+Replicating Combinational Instance dcomgen.dcom0.dcom0.un1_v.data_0_sqmuxa_0, fanout 32 segments 2
+Replicating Combinational Instance l3.dsugen.dsu0.x0.v.timer_1_sqmuxa, fanout 31 segments 2
+Replicating Combinational Instance apb0.apbx.v.p_0.pwdata_1_sqmuxa_i, fanout 32 segments 2
+Replicating Combinational Instance dcomgen.dcom0.dcom0.comb.v.addr_1_0_i_m3[31], fanout 29 segments 2
+Replicating Combinational Instance dcomgen.dcom0.dcom0.un1_r.state_3_i_0, fanout 31 segments 2
+Replicating Combinational Instance l3.dsugen.dsu0.x0.v.slv.hwrite_0_sqmuxa, fanout 29 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.un1_m7, fanout 41 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.npc_1_sqmuxa_160_0_a2_0_a4_i_o2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_145_0_0_a2_0_a4_i_o2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.s.y_1_sqmuxa_162_0_0_a2_i_o2, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10216_1_i_i_0_o2, fanout 39 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_12_sqmuxa_i, fanout 28 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.v.w.s.tba_1_sn_m2_i_o2_i_a2_i, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ra_bpmiss_1_0_o2, fanout 29 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_11373_i_0_a2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.icc_0_sqmuxa_263_i_a2_0_i_o2, fanout 69 segments 3
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10860_i_i_a2, fanout 36 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.N_10961_i_i, fanout 38 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aop2_2_sqmuxa_i_i_a2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.vir.addr_1_iv_0_0_o4_0_o2[15], fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.rdata_6_sqmuxa_i_a2_0, fanout 36 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.e.jmpl_i_o2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.lock_gen.call_hold5_0_o2, fanout 36 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.npc_gen.xc_result_sn_m4_0_a2, fanout 26 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.npc_gen.xc_result_sn_m3_0_a3, fanout 29 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[4], fanout 48 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[2], fanout 35 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_shcnt_1[1], fanout 33 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.un6_xc_exception, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_de_branch_273, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un4_fe_npcsel_0_s1, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.y_2_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.v.w.s.y_1_sqmuxa_0_0_a2, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.ex_bpmiss_1, fanout 47 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.dcache_gen.jump, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.xc_trap_address_1_sqmuxa_0_a2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_2_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.xc_trap_address_2_sqmuxa_0_a2, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_1_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.mresult2_2_sqmuxa_152, fanout 37 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_5_sqmuxa_138, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_4_sqmuxa_137, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_3_sqmuxa_136, fanout 28 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_0_sqmuxa_133, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.edata_3_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.mresult2_1_sqmuxa, fanout 32 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.shleft, fanout 65 segments 3
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_3_sqmuxa, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_10_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_8_sqmuxa, fanout 25 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_7_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_2_sqmuxa, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.vir.addr_1_sqmuxa, fanout 30 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_1_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.data_0_sqmuxa, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_3_sqmuxa_0_a2, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.aluresult_0_sqmuxa_0_a2, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.logic_op.y14, fanout 32 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[12], fanout 25 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.mexc_1_sqmuxa, fanout 33 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.alu_op.y08, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.fpstdata.un8_casaen, fanout 72 segments 3
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.logic_op.un1_r.e.mulstep, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.comb.diagread.un533_dbgunit, fanout 35 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.invop2, fanout 57 segments 3
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.ldbp2, fanout 76 segments 4
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[30], fanout 27 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.npc[0], fanout 39 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[2], fanout 73 segments 4
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[1], fanout 44 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.e.aluop[0], fanout 74 segments 4
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel2[1], fanout 68 segments 3
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel2[0], fanout 44 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[2], fanout 94 segments 4
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[1], fanout 64 segments 3
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.rsel1[0], fanout 37 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.d.inst_0[21], fanout 30 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.ctrl.inst[22], fanout 26 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.d.mexc_1_sqmuxa_277, fanout 33 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un3_de_hold_pc, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_256, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.rstate_241, fanout 40 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_aop2_1_sqmuxa, fanout 36 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.e.ctrl.wy_12, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.un1_r.x.ctrl.wy_9, fanout 32 segments 2
+Replicating Sequential Instance dcomgen.dcom0.dcom0.r.state[4], fanout 45 segments 2
+Replicating Sequential Instance dcomgen.dcom0.dcom0.r.state[3], fanout 37 segments 2
+Replicating Combinational Instance dcomgen.dcom0.dcom_uart0.uartop.tmp, fanout 60 segments 3
+Replicating Combinational Instance irqctrl.irqctrl0.v.iforce_0_0_sqmuxa_i_o4, fanout 35 segments 2
+Replicating Combinational Instance gpt.timer0.N_1294_i_i_o2, fanout 27 segments 2
+Replicating Combinational Instance gpt.timer0.readdata_1_sqmuxa_0_a2_0_a2, fanout 32 segments 2
+Replicating Combinational Instance gpt.timer0.v.timers_2.value_0_sqmuxa_0_a2, fanout 32 segments 2
+Replicating Sequential Instance gpt.timer0.r.tsel[0], fanout 37 segments 2
+Replicating Combinational Instance gpio0.grgpio0.readdata_iv_i_a3_0[1], fanout 25 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.rdatav_0_1s_iv_0_a2_2[3], fanout 26 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.rdatav_013_i_o2, fanout 34 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.rdatasel_1_1_i_o2, fanout 26 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.wb.addr_1_i_a2_4[26], fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.wb.data1_1_i_o2[0], fanout 85 segments 4
+Replicating Combinational Instance l3.dsugen.dsu0.x0.comb.v.te9, fanout 31 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.edata_0_sqmuxa_i_0, fanout 35 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.read_1_i_0, fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.a0.r.bo_4643_d_i_i_a4, fanout 34 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.icache0.ictrl.v.waddress_1_i_o4[9], fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.v.wb.data1_1_sqmuxa_i, fanout 32 segments 2
+Replicating Combinational Instance apb0.apbx.comb.v.p_0.prdata_1_0_a2_0_0_a2[25], fanout 32 segments 2
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.dctrl.v.hit2_i_o2, fanout 35 segments 2
+Replicating Combinational Instance l3.dsugen.dsu0.x0.v.bmsk_1_sqmuxa_2, fanout 36 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.icache0.r.istate[0], fanout 42 segments 2
+Replicating Combinational Instance ahb0.comb.hready_1_iv, fanout 59 segments 3
+Replicating Sequential Instance ahb0.r.hmasterd[0], fanout 35 segments 2
+Replicating Sequential Instance ahb0.r.hslave[2], fanout 39 segments 2
+Replicating Sequential Instance ahb0.r.hslave[0], fanout 38 segments 2
+Replicating Sequential Instance ahb0.r.cfgsel, fanout 36 segments 2
+Replicating Sequential Instance ahb0.r.hmaster[0], fanout 46 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.r.dstate[4], fanout 57 segments 3
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.un1_v.mexc_0_sqmuxa_1, fanout 32 segments 2
+Replicating Combinational Instance l3.dsugen.dsu0.x0.comb.v.slv.hready33_0_a2, fanout 34 segments 2
+Replicating Combinational Instance l3.dsugen.dsu0.x0.un1_v.cnt3_2, fanout 32 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.pwdata[5], fanout 25 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.pwdata[4], fanout 26 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.pwdata[3], fanout 26 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.haddr[5], fanout 25 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.haddr[4], fanout 35 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.haddr[3], fanout 30 segments 2
+Replicating Sequential Instance apb0.apbx.r.p_0.haddr[2], fanout 67 segments 3
+Replicating Combinational Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.irqo.intack, fanout 26 segments 2
+Replicating Combinational Instance apb0.apbx.v.p_0.hready_0_sqmuxa_0_a3, fanout 26 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.rstate[1], fanout 28 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.x.rstate[0], fanout 29 segments 2
+Replicating Sequential Instance l3.cpu.0.u0.leon3x0.vhdl.p0.c0mmu.dcache0.r.dstate_i[5], fanout 25 segments 2
+
+Added 0 Buffers
+Added 180 Cells via replication
+	Added 50 Sequential Cells via replication
+	Added 130 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:01m:23s; CPU Time elapsed 0h:01m:23s; Memory used current: 248MB peak: 281MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 2060 clock pin(s) of sequential element(s)
+0 instances converted, 2060 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================== Gated/Generated Clocks =====================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance             Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       clkgen0.Core        PLL                    2060       ocram.ahbram0.r.size[1]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:01m:24s; CPU Time elapsed 0h:01m:23s; Memory used current: 205MB peak: 281MB)
+
+Writing Analyst data base /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:01m:25s; CPU Time elapsed 0h:01m:25s; Memory used current: 221MB peak: 281MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-SP1-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:01m:26s; CPU Time elapsed 0h:01m:26s; Memory used current: 228MB peak: 281MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:01m:27s; CPU Time elapsed 0h:01m:27s; Memory used current: 222MB peak: 281MB)
+
+@W: MT246 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd":183:4:183:5|Blackbox proasic3_syncram_work_leon3mp_rtl_0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd":183:4:183:5|Blackbox proasic3_syncram_work_leon3mp_rtl_1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_2p.vhd":215:4:215:5|Blackbox proasic3_syncram_2p_work_leon3mp_rtl_0 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock mainPLL|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clkgen0.GLA"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Mar 11 18:31:47 2016
+#
+
+
+Top view:               leon3mp
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -22.358
+
+                               Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                 Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------------------
+mainPLL|GLA_inferred_clock     100.0 MHz     30.9 MHz      10.000        32.358        -22.358     inferred     Inferred_clkgroup_0
+System                         100.0 MHz     140.4 MHz     10.000        7.120         2.880       system       system_clkgroup    
+===================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                  |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                    Ending                      |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------
+System                      System                      |  10.000      2.880    |  No paths    -      |  No paths    -      |  No paths    -    
+System                      mainPLL|GLA_inferred_clock  |  10.000      -2.812   |  No paths    -      |  No paths    -      |  No paths    -    
+mainPLL|GLA_inferred_clock  System                      |  10.000      -19.094  |  No paths    -      |  No paths    -      |  No paths    -    
+mainPLL|GLA_inferred_clock  mainPLL|GLA_inferred_clock  |  10.000      -22.358  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: mainPLL|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                            Starting                                                           Arrival            
+Instance                                                    Reference                      Type       Pin     Net              Time        Slack  
+                                                            Clock                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1              mainPLL|GLA_inferred_clock     DFN1E1     Q       ldbp1_0          0.737       -22.358
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[8]          mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0_0[8]      0.737       -22.301
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1[8]             mainPLL|GLA_inferred_clock     DFN1E1     Q       op1[8]           0.737       -21.939
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[16]         mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0[16]       0.737       -21.649
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[9]          mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0[9]        0.737       -21.547
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.inst[20]     mainPLL|GLA_inferred_clock     DFN1E1     Q       inst_1[20]       0.737       -21.543
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[15]         mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0_0[15]     0.737       -21.383
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[18]         mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0_0[18]     0.737       -21.336
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[11]         mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0_0[11]     0.737       -21.211
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[10]         mainPLL|GLA_inferred_clock     DFN1E0     Q       data_0_0[10]     0.737       -21.173
+==================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                   Starting                                                          Required            
+Instance                                                           Reference                      Type     Pin     Net               Time         Slack  
+                                                                   Clock                                                                                 
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15]     mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[15]     9.461        -22.358
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[26]     mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[26]     9.427        -22.141
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[28]     mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[28]     9.427        -22.141
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[31]     mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[31]     9.427        -22.141
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[2]      mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[2]      9.461        -22.075
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[3]      mainPLL|GLA_inferred_clock     DFN1     D       data1_RNO[3]      9.461        -22.075
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.addr[26]      mainPLL|GLA_inferred_clock     DFN1     D       addr_RNO[26]      9.461        -21.832
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.addr[30]      mainPLL|GLA_inferred_clock     DFN1     D       N_169             9.461        -21.832
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.icache0.r\.holdn             mainPLL|GLA_inferred_clock     DFN1     D       holdn_RNO         9.427        -21.543
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.lock          mainPLL|GLA_inferred_clock     DFN1     D       lock_RNO          9.461        -21.522
+=========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      31.819
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -22.358
+
+    Number of logic level(s):                23
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1 / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15] / D
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1                                    DFN1E1     Q        Out     0.737     0.737       -         
+ldbp1_0                                                                           Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     A        In      -         1.058       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     Y        Out     0.348     1.406       -         
+ldbp1                                                                             Net        -        -       1.601     -           168       
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        S        In      -         3.007       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        Y        Out     0.396     3.403       -         
+ex_op1[8]                                                                         Net        -        -       1.994     -           12        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        B        In      -         5.396       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        Y        Out     0.646     6.043       -         
+N422                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        C        In      -         6.849       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        Y        Out     0.666     7.515       -         
+N537                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      B        In      -         8.321       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      Y        Out     0.627     8.949       -         
+I139_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        A        In      -         9.270       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        Y        Out     0.507     9.778       -         
+N602_0                                                                            Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      A        In      -         10.584      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      Y        Out     0.514     11.098      -         
+I191_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        A        In      -         11.420      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        Y        Out     0.507     11.927      -         
+N660                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      A        In      -         12.734      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      Y        Out     0.514     13.248      -         
+I231_un1_Y_0                                                                      Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        A        In      -         13.570      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        Y        Out     0.488     14.058      -         
+N784                                                                              Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       C        In      -         14.379      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       Y        Out     0.985     15.365      -         
+un6_ex_add_res2[22]                                                               Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        A        In      -         15.686      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        Y        Out     0.579     16.265      -         
+eaddress[21]                                                                      Net        -        -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       B        In      -         17.449      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       Y        Out     0.646     18.095      -         
+un1_addout_21_7                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      A        In      -         18.417      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      Y        Out     0.664     19.081      -         
+un1_addout_21_9                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      C        In      -         19.402      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      Y        Out     0.666     20.068      -         
+un1_addout_21                                                                     Net        -        -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       A        In      -         20.453      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       Y        Out     0.488     20.942      -         
+un1_addout_1_0_0                                                                  Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       B        In      -         21.263      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       Y        Out     0.516     21.779      -         
+un1_addout_1                                                                      Net        -        -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      C        In      -         23.058      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      Y        Out     0.666     23.724      -         
+dstate_RNIU9A8442[3]                                                              Net        -        -       1.423     -           6         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        B        In      -         25.148      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        Y        Out     0.514     25.662      -         
+burst_3_sqmuxa_1_0                                                                Net        -        -       2.381     -           21        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[15]              NOR3A      C        In      -         28.043      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[15]              NOR3A      Y        Out     0.641     28.684      -         
+N_5584                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        C        In      -         29.006      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        Y        Out     0.751     29.757      -         
+N_5522                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       B        In      -         30.078      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       Y        Out     0.610     30.688      -         
+N_4192                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      A        In      -         31.010      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      Y        Out     0.488     31.498      -         
+data1_RNO[15]                                                                     Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15]                    DFN1       D        In      -         31.819      -         
+==============================================================================================================================================
+Total path delay (propagation time + setup) of 32.358 is 14.706(45.4%) logic and 17.652(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      31.783
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -22.322
+
+    Number of logic level(s):                23
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1 / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15] / D
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1                                    DFN1E1     Q        Out     0.737     0.737       -         
+ldbp1_0                                                                           Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     A        In      -         1.058       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     Y        Out     0.348     1.406       -         
+ldbp1                                                                             Net        -        -       1.601     -           168       
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        S        In      -         3.007       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        Y        Out     0.396     3.403       -         
+ex_op1[8]                                                                         Net        -        -       1.994     -           12        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        B        In      -         5.396       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        Y        Out     0.646     6.043       -         
+N422                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        C        In      -         6.849       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        Y        Out     0.666     7.515       -         
+N537                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      B        In      -         8.321       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      Y        Out     0.627     8.949       -         
+I139_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        A        In      -         9.270       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        Y        Out     0.507     9.778       -         
+N602_0                                                                            Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      A        In      -         10.584      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      Y        Out     0.514     11.098      -         
+I191_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        A        In      -         11.420      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        Y        Out     0.507     11.927      -         
+N660                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      A        In      -         12.734      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      Y        Out     0.514     13.248      -         
+I231_un1_Y_0                                                                      Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        A        In      -         13.570      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        Y        Out     0.488     14.058      -         
+N784                                                                              Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       C        In      -         14.379      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       Y        Out     0.985     15.365      -         
+un6_ex_add_res2[22]                                                               Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        A        In      -         15.686      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        Y        Out     0.579     16.265      -         
+eaddress[21]                                                                      Net        -        -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       B        In      -         17.449      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       Y        Out     0.646     18.095      -         
+un1_addout_21_7                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      A        In      -         18.417      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      Y        Out     0.664     19.081      -         
+un1_addout_21_9                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      C        In      -         19.402      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      Y        Out     0.666     20.068      -         
+un1_addout_21                                                                     Net        -        -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       A        In      -         20.453      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       Y        Out     0.488     20.942      -         
+un1_addout_1_0_0                                                                  Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       B        In      -         21.263      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       Y        Out     0.516     21.779      -         
+un1_addout_1                                                                      Net        -        -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      C        In      -         23.058      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      Y        Out     0.666     23.724      -         
+dstate_RNIU9A8442[3]                                                              Net        -        -       1.423     -           6         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        B        In      -         25.148      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        Y        Out     0.514     25.662      -         
+burst_3_sqmuxa_1_0                                                                Net        -        -       2.381     -           21        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_3[15]              NOR3A      C        In      -         28.043      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_3[15]              NOR3A      Y        Out     0.641     28.684      -         
+N_5583                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        B        In      -         29.006      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        Y        Out     0.714     29.720      -         
+N_5522                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       B        In      -         30.042      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       Y        Out     0.610     30.652      -         
+N_4192                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      A        In      -         30.973      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      Y        Out     0.488     31.461      -         
+data1_RNO[15]                                                                     Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15]                    DFN1       D        In      -         31.783      -         
+==============================================================================================================================================
+Total path delay (propagation time + setup) of 32.322 is 14.669(45.4%) logic and 17.652(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      31.762
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -22.301
+
+    Number of logic level(s):                22
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[8] / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15] / D
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[8]                                DFN1E0     Q        Out     0.737     0.737       -         
+data_0_0[8]                                                                       Net        -        -       2.037     -           13        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        B        In      -         2.774       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        Y        Out     0.572     3.346       -         
+ex_op1[8]                                                                         Net        -        -       1.994     -           12        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        B        In      -         5.339       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        Y        Out     0.646     5.986       -         
+N422                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        C        In      -         6.792       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        Y        Out     0.666     7.458       -         
+N537                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      B        In      -         8.264       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      Y        Out     0.627     8.891       -         
+I139_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        A        In      -         9.213       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        Y        Out     0.507     9.720       -         
+N602_0                                                                            Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      A        In      -         10.527      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      Y        Out     0.514     11.041      -         
+I191_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        A        In      -         11.363      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        Y        Out     0.507     11.870      -         
+N660                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      A        In      -         12.676      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      Y        Out     0.514     13.191      -         
+I231_un1_Y_0                                                                      Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        A        In      -         13.512      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        Y        Out     0.488     14.001      -         
+N784                                                                              Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       C        In      -         14.322      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       Y        Out     0.985     15.307      -         
+un6_ex_add_res2[22]                                                               Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        A        In      -         15.629      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        Y        Out     0.579     16.208      -         
+eaddress[21]                                                                      Net        -        -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       B        In      -         17.391      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       Y        Out     0.646     18.038      -         
+un1_addout_21_7                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      A        In      -         18.359      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      Y        Out     0.664     19.023      -         
+un1_addout_21_9                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      C        In      -         19.345      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      Y        Out     0.666     20.010      -         
+un1_addout_21                                                                     Net        -        -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       A        In      -         20.396      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       Y        Out     0.488     20.884      -         
+un1_addout_1_0_0                                                                  Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       B        In      -         21.206      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       Y        Out     0.516     21.722      -         
+un1_addout_1                                                                      Net        -        -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      C        In      -         23.001      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      Y        Out     0.666     23.667      -         
+dstate_RNIU9A8442[3]                                                              Net        -        -       1.423     -           6         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        B        In      -         25.090      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        Y        Out     0.514     25.605      -         
+burst_3_sqmuxa_1_0                                                                Net        -        -       2.381     -           21        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[15]              NOR3A      C        In      -         27.986      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[15]              NOR3A      Y        Out     0.641     28.627      -         
+N_5584                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        C        In      -         28.948      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        Y        Out     0.751     29.699      -         
+N_5522                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       B        In      -         30.021      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       Y        Out     0.610     30.631      -         
+N_4192                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      A        In      -         30.952      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      Y        Out     0.488     31.441      -         
+data1_RNO[15]                                                                     Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15]                    DFN1       D        In      -         31.762      -         
+==============================================================================================================================================
+Total path delay (propagation time + setup) of 32.301 is 14.534(45.0%) logic and 17.767(55.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      31.726
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -22.264
+
+    Number of logic level(s):                22
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[8] / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15] / D
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[8]                                DFN1E0     Q        Out     0.737     0.737       -         
+data_0_0[8]                                                                       Net        -        -       2.037     -           13        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        B        In      -         2.774       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        Y        Out     0.572     3.346       -         
+ex_op1[8]                                                                         Net        -        -       1.994     -           12        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        B        In      -         5.339       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        Y        Out     0.646     5.986       -         
+N422                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        C        In      -         6.792       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        Y        Out     0.666     7.458       -         
+N537                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      B        In      -         8.264       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      Y        Out     0.627     8.891       -         
+I139_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        A        In      -         9.213       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        Y        Out     0.507     9.720       -         
+N602_0                                                                            Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      A        In      -         10.527      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      Y        Out     0.514     11.041      -         
+I191_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        A        In      -         11.363      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        Y        Out     0.507     11.870      -         
+N660                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      A        In      -         12.676      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      Y        Out     0.514     13.191      -         
+I231_un1_Y_0                                                                      Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        A        In      -         13.512      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        Y        Out     0.488     14.001      -         
+N784                                                                              Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       C        In      -         14.322      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       Y        Out     0.985     15.307      -         
+un6_ex_add_res2[22]                                                               Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        A        In      -         15.629      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        Y        Out     0.579     16.208      -         
+eaddress[21]                                                                      Net        -        -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       B        In      -         17.391      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       Y        Out     0.646     18.038      -         
+un1_addout_21_7                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      A        In      -         18.359      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      Y        Out     0.664     19.023      -         
+un1_addout_21_9                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      C        In      -         19.345      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      Y        Out     0.666     20.010      -         
+un1_addout_21                                                                     Net        -        -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       A        In      -         20.396      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       Y        Out     0.488     20.884      -         
+un1_addout_1_0_0                                                                  Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       B        In      -         21.206      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       Y        Out     0.516     21.722      -         
+un1_addout_1                                                                      Net        -        -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      C        In      -         23.001      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      Y        Out     0.666     23.667      -         
+dstate_RNIU9A8442[3]                                                              Net        -        -       1.423     -           6         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        B        In      -         25.090      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62[3]             OR2        Y        Out     0.514     25.605      -         
+burst_3_sqmuxa_1_0                                                                Net        -        -       2.381     -           21        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_3[15]              NOR3A      C        In      -         27.986      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_3[15]              NOR3A      Y        Out     0.641     28.627      -         
+N_5583                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        B        In      -         28.948      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[15]              OR3        Y        Out     0.714     29.663      -         
+N_5522                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       B        In      -         29.984      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[15]              MX2B       Y        Out     0.610     30.594      -         
+N_4192                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      A        In      -         30.916      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[15]                NOR2B      Y        Out     0.488     31.404      -         
+data1_RNO[15]                                                                     Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[15]                    DFN1       D        In      -         31.726      -         
+==============================================================================================================================================
+Total path delay (propagation time + setup) of 32.264 is 14.497(44.9%) logic and 17.767(55.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      31.567
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -22.141
+
+    Number of logic level(s):                23
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1 / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[26] / D
+    The start point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1                                    DFN1E1     Q        Out     0.737     0.737       -         
+ldbp1_0                                                                           Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     A        In      -         1.058       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp1_RNI72B9                            CLKINT     Y        Out     0.348     1.406       -         
+ldbp1                                                                             Net        -        -       1.601     -           168       
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        S        In      -         3.007       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.op1_RNIRUL61[8]                          MX2        Y        Out     0.396     3.403       -         
+ex_op1[8]                                                                         Net        -        -       1.994     -           12        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        B        In      -         5.396       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I9_P0N         OR2        Y        Out     0.646     6.043       -         
+N422                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        C        In      -         6.849       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I78_Y          OA1        Y        Out     0.666     7.515       -         
+N537                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      B        In      -         8.321       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_un1_Y     NOR2B      Y        Out     0.627     8.949       -         
+I139_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        A        In      -         9.270       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I139_Y         OR2        Y        Out     0.507     9.778       -         
+N602_0                                                                            Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      A        In      -         10.584      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_un1_Y     NOR2B      Y        Out     0.514     11.098      -         
+I191_un1_Y                                                                        Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        A        In      -         11.420      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I191_Y         OR2        Y        Out     0.507     11.927      -         
+N660                                                                              Net        -        -       0.806     -           3         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      A        In      -         12.734      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I231_un1_Y     NOR2B      Y        Out     0.514     13.248      -         
+I231_un1_Y_0                                                                      Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        A        In      -         13.570      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I269_Y         OR3        Y        Out     0.488     14.058      -         
+N784                                                                              Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       C        In      -         14.379      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.un6_ex_add_res_0.ADD_33x33_fast_I312_Y         XOR3       Y        Out     0.985     15.365      -         
+un6_ex_add_res2[22]                                                               Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        A        In      -         15.686      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI0BCHC6                        MX2        Y        Out     0.579     16.265      -         
+eaddress[21]                                                                      Net        -        -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       B        In      -         17.449      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI07VMQC                        NOR2       Y        Out     0.646     18.095      -         
+un1_addout_21_7                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      A        In      -         18.417      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNI1TEBBP                        NOR3A      Y        Out     0.664     19.081      -         
+un1_addout_21_9                                                                   Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      C        In      -         19.402      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.e\.ldbp2_2_RNIU9CBUJ1                       NOR3C      Y        Out     0.666     20.068      -         
+un1_addout_21                                                                     Net        -        -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       A        In      -         20.453      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0_0             AND2       Y        Out     0.488     20.942      -         
+un1_addout_1_0_0                                                                  Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       B        In      -         21.263      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.comb\.alu_select\.un1_addout_1_0               AND2       Y        Out     0.516     21.779      -         
+un1_addout_1                                                                      Net        -        -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      C        In      -         23.058      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNIU9A8442[3]             NOR3C      Y        Out     0.666     23.724      -         
+dstate_RNIU9A8442[3]                                                              Net        -        -       1.423     -           6         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62_0[3]           OR2        B        In      -         25.148      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.dstate_RNISVEKO62_0[3]           OR2        Y        Out     0.514     25.662      -         
+burst_3_sqmuxa_1                                                                  Net        -        -       2.353     -           20        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[26]              NOR2A      A        In      -         28.015      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_4[26]              NOR2A      Y        Out     0.516     28.531      -         
+N_5256                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[26]              OR3        C        In      -         28.853      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_1[26]              OR3        Y        Out     0.683     29.536      -         
+N_5212                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[26]              MX2B       B        In      -         29.857      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO_0[26]              MX2B       Y        Out     0.553     30.410      -         
+N_4203                                                                            Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[26]                NOR2B      A        In      -         30.731      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1_RNO[26]                NOR2B      Y        Out     0.514     31.246      -         
+data1_RNO[26]                                                                     Net        -        -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data1[26]                    DFN1       D        In      -         31.567      -         
+==============================================================================================================================================
+Total path delay (propagation time + setup) of 32.141 is 14.516(45.2%) logic and 17.625(54.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                             Starting                                                                               Arrival           
+Instance                                                     Reference     Type                                    Pin             Net              Time        Slack 
+                                                             Clock                                                                                                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[7]      hrdata[31]       0.000       -2.812
+ocram\.ahbram0.aram.nosbw\.rx\.2\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[7]      hrdata[23]       0.000       -2.624
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[7]      hrdata[15]       0.000       -2.287
+ocram\.ahbram0.aram.nosbw\.rx\.0\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[7]      hrdata[7]        0.000       -1.300
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[23]     ldataout[23]     0.000       -0.822
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[2]      hrdata[10]       0.000       -0.497
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[3]      hrdata[11]       0.000       -0.188
+ocram\.ahbram0.aram.nosbw\.rx\.1\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[5]      hrdata[13]       0.000       0.028 
+l3\.cpu\.0\.u0.leon3x0.vhdl\.cmem0.ld0\.ldata0.proa3\.x0     System        proasic3_syncram_work_leon3mp_rtl_1     dataout[31]     ldataout[31]     0.000       0.655 
+ocram\.ahbram0.aram.nosbw\.rx\.0\.x0.proa3\.x0               System        proasic3_syncram_work_leon3mp_rtl_0     dataout[4]      hrdata[4]        0.000       0.695 
+======================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                        Starting                                          Required           
+Instance                                                Reference     Type       Pin     Net              Time         Slack 
+                                                        Clock                                                                
+-----------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[16]     System        DFN1E0     D       data_0_1[16]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[17]     System        DFN1E0     D       data_0_1[17]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[19]     System        DFN1E0     D       data_0_1[19]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[20]     System        DFN1E0     D       data_0_1[20]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[21]     System        DFN1E0     D       data_0_1[21]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[23]     System        DFN1E0     D       data_0_1[23]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[25]     System        DFN1E0     D       data_0_1[25]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[28]     System        DFN1E0     D       data_0_1[28]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[30]     System        DFN1E0     D       data_0_1[30]     9.427        -2.812
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[31]     System        DFN1E0     D       data_0_1[31]     9.427        -2.812
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      12.238
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -2.812
+
+    Number of logic level(s):                9
+    Starting point:                          ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0 / dataout[7]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[16] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                      Pin            Pin               Arrival     No. of    
+Name                                                                        Type                                    Name           Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                              proasic3_syncram_work_leon3mp_rtl_0     dataout[7]     Out     0.000     0.000       -         
+hrdata[31]                                                                  Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     B              In      -         0.322       -         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     Y              Out     0.572     0.893       -         
+N_3989                                                                      Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   A              In      -         1.215       -         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   Y              Out     0.514     1.729       -         
+un34_hready[34]                                                             Net                                     -              -       0.322     -           1         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     A              In      -         2.051       -         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     Y              Out     0.579     2.629       -         
+hrdata_2[31]                                                                Net                                     -              -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    B              In      -         3.909       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    Y              Out     0.598     4.506       -         
+rdatav_0_1s_iv_0_0[31]                                                      Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     A              In      -         4.828       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     Y              Out     0.507     5.335       -         
+data_0[31]                                                                  Net                                     -              -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   A              In      -         6.519       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   Y              Out     0.514     7.033       -         
+rdata_4[8]                                                                  Net                                     -              -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   B              In      -         7.419       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   Y              Out     0.607     8.026       -         
+rdata_4_m_9[8]                                                              Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     B              In      -         8.347       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     Y              Out     0.646     8.994       -         
+data_0_1_4[16]                                                              Net                                     -              -       2.172     -           16        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[16]                     OR3                                     C              In      -         11.166      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[16]                     OR3                                     Y              Out     0.751     11.917      -         
+data_0_1[16]                                                                Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[16]                         DFN1E0                                  D              In      -         12.238      -         
+===========================================================================================================================================================================
+Total path delay (propagation time + setup) of 12.812 is 5.862(45.8%) logic and 6.950(54.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      12.238
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -2.812
+
+    Number of logic level(s):                9
+    Starting point:                          ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0 / dataout[7]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[28] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                      Pin            Pin               Arrival     No. of    
+Name                                                                        Type                                    Name           Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                              proasic3_syncram_work_leon3mp_rtl_0     dataout[7]     Out     0.000     0.000       -         
+hrdata[31]                                                                  Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     B              In      -         0.322       -         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     Y              Out     0.572     0.893       -         
+N_3989                                                                      Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   A              In      -         1.215       -         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   Y              Out     0.514     1.729       -         
+un34_hready[34]                                                             Net                                     -              -       0.322     -           1         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     A              In      -         2.051       -         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     Y              Out     0.579     2.629       -         
+hrdata_2[31]                                                                Net                                     -              -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    B              In      -         3.909       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    Y              Out     0.598     4.506       -         
+rdatav_0_1s_iv_0_0[31]                                                      Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     A              In      -         4.828       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     Y              Out     0.507     5.335       -         
+data_0[31]                                                                  Net                                     -              -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   A              In      -         6.519       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   Y              Out     0.514     7.033       -         
+rdata_4[8]                                                                  Net                                     -              -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   B              In      -         7.419       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   Y              Out     0.607     8.026       -         
+rdata_4_m_9[8]                                                              Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     B              In      -         8.347       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     Y              Out     0.646     8.994       -         
+data_0_1_4[16]                                                              Net                                     -              -       2.172     -           16        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[28]                     OR3                                     C              In      -         11.166      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[28]                     OR3                                     Y              Out     0.751     11.917      -         
+data_0_1[28]                                                                Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[28]                         DFN1E0                                  D              In      -         12.238      -         
+===========================================================================================================================================================================
+Total path delay (propagation time + setup) of 12.812 is 5.862(45.8%) logic and 6.950(54.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      12.238
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -2.812
+
+    Number of logic level(s):                9
+    Starting point:                          ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0 / dataout[7]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[20] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                      Pin            Pin               Arrival     No. of    
+Name                                                                        Type                                    Name           Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                              proasic3_syncram_work_leon3mp_rtl_0     dataout[7]     Out     0.000     0.000       -         
+hrdata[31]                                                                  Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     B              In      -         0.322       -         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     Y              Out     0.572     0.893       -         
+N_3989                                                                      Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   A              In      -         1.215       -         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   Y              Out     0.514     1.729       -         
+un34_hready[34]                                                             Net                                     -              -       0.322     -           1         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     A              In      -         2.051       -         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     Y              Out     0.579     2.629       -         
+hrdata_2[31]                                                                Net                                     -              -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    B              In      -         3.909       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    Y              Out     0.598     4.506       -         
+rdatav_0_1s_iv_0_0[31]                                                      Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     A              In      -         4.828       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     Y              Out     0.507     5.335       -         
+data_0[31]                                                                  Net                                     -              -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   A              In      -         6.519       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   Y              Out     0.514     7.033       -         
+rdata_4[8]                                                                  Net                                     -              -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   B              In      -         7.419       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   Y              Out     0.607     8.026       -         
+rdata_4_m_9[8]                                                              Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     B              In      -         8.347       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     Y              Out     0.646     8.994       -         
+data_0_1_4[16]                                                              Net                                     -              -       2.172     -           16        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[20]                     OR3                                     C              In      -         11.166      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[20]                     OR3                                     Y              Out     0.751     11.917      -         
+data_0_1[20]                                                                Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[20]                         DFN1E0                                  D              In      -         12.238      -         
+===========================================================================================================================================================================
+Total path delay (propagation time + setup) of 12.812 is 5.862(45.8%) logic and 6.950(54.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      12.238
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -2.812
+
+    Number of logic level(s):                9
+    Starting point:                          ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0 / dataout[7]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[17] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                      Pin            Pin               Arrival     No. of    
+Name                                                                        Type                                    Name           Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                              proasic3_syncram_work_leon3mp_rtl_0     dataout[7]     Out     0.000     0.000       -         
+hrdata[31]                                                                  Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     B              In      -         0.322       -         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     Y              Out     0.572     0.893       -         
+N_3989                                                                      Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   A              In      -         1.215       -         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   Y              Out     0.514     1.729       -         
+un34_hready[34]                                                             Net                                     -              -       0.322     -           1         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     A              In      -         2.051       -         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     Y              Out     0.579     2.629       -         
+hrdata_2[31]                                                                Net                                     -              -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    B              In      -         3.909       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    Y              Out     0.598     4.506       -         
+rdatav_0_1s_iv_0_0[31]                                                      Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     A              In      -         4.828       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     Y              Out     0.507     5.335       -         
+data_0[31]                                                                  Net                                     -              -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   A              In      -         6.519       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   Y              Out     0.514     7.033       -         
+rdata_4[8]                                                                  Net                                     -              -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   B              In      -         7.419       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   Y              Out     0.607     8.026       -         
+rdata_4_m_9[8]                                                              Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     B              In      -         8.347       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     Y              Out     0.646     8.994       -         
+data_0_1_4[16]                                                              Net                                     -              -       2.172     -           16        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[17]                     OR3                                     C              In      -         11.166      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[17]                     OR3                                     Y              Out     0.751     11.917      -         
+data_0_1[17]                                                                Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[17]                         DFN1E0                                  D              In      -         12.238      -         
+===========================================================================================================================================================================
+Total path delay (propagation time + setup) of 12.812 is 5.862(45.8%) logic and 6.950(54.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.427
+
+    - Propagation time:                      12.238
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -2.812
+
+    Number of logic level(s):                9
+    Starting point:                          ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0 / dataout[7]
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[19] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            mainPLL|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                                                      Pin            Pin               Arrival     No. of    
+Name                                                                        Type                                    Name           Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ocram\.ahbram0.aram.nosbw\.rx\.3\.x0.proa3\.x0                              proasic3_syncram_work_leon3mp_rtl_0     dataout[7]     Out     0.000     0.000       -         
+hrdata[31]                                                                  Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     B              In      -         0.322       -         
+ahb0.r\.hslave_RNI66UB1[2]                                                  MX2                                     Y              Out     0.572     0.893       -         
+N_3989                                                                      Net                                     -              -       0.322     -           1         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   A              In      -         1.215       -         
+ahb0.r\.hslave_RNI1D0O2[2]                                                  NOR2B                                   Y              Out     0.514     1.729       -         
+un34_hready[34]                                                             Net                                     -              -       0.322     -           1         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     A              In      -         2.051       -         
+ahb0.r\.cfgsel_RNIJGPH3                                                     MX2                                     Y              Out     0.579     2.629       -         
+hrdata_2[31]                                                                Net                                     -              -       1.279     -           5         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    B              In      -         3.909       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.wb\.data2_RNITP36G[31]     AO1A                                    Y              Out     0.598     4.506       -         
+rdatav_0_1s_iv_0_0[31]                                                      Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     A              In      -         4.828       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.c0mmu.dcache0.r\.lramrd_RNIQNDT11           OR2                                     Y              Out     0.507     5.335       -         
+data_0[31]                                                                  Net                                     -              -       1.184     -           4         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   A              In      -         6.519       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIR26JD1              NOR2B                                   Y              Out     0.514     7.033       -         
+rdata_4[8]                                                                  Net                                     -              -       0.386     -           2         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   B              In      -         7.419       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNICGRA33              NOR3B                                   Y              Out     0.607     8.026       -         
+rdata_4_m_9[8]                                                              Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     B              In      -         8.347       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.dci\.signed_RNIVB0PBC_0            OR2                                     Y              Out     0.646     8.994       -         
+data_0_1_4[16]                                                              Net                                     -              -       2.172     -           16        
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[19]                     OR3                                     C              In      -         11.166      -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0_RNO[19]                     OR3                                     Y              Out     0.751     11.917      -         
+data_0_1[19]                                                                Net                                     -              -       0.322     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.data_0[19]                         DFN1E0                                  D              In      -         12.238      -         
+===========================================================================================================================================================================
+Total path delay (propagation time + setup) of 12.812 is 5.862(45.8%) logic and 6.950(54.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:01m:27s; CPU Time elapsed 0h:01m:27s; Memory used current: 222MB peak: 281MB)
+
+
+Finished timing report (Real Time elapsed 0h:01m:27s; CPU Time elapsed 0h:01m:27s; Memory used current: 222MB peak: 281MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3PE1500_PQFP208_STD
+Report for cell leon3mp.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2   198      1.0      198.0
+             AND2A     5      1.0        5.0
+              AND3   179      1.0      179.0
+             AND3A     1      1.0        1.0
+               AO1   973      1.0      973.0
+              AO12     1      1.0        1.0
+              AO13     7      1.0        7.0
+              AO14    59      1.0       59.0
+              AO16     1      1.0        1.0
+              AO17     2      1.0        2.0
+              AO18     1      1.0        1.0
+              AO1A   329      1.0      329.0
+              AO1B    23      1.0       23.0
+              AO1C    24      1.0       24.0
+              AO1D    36      1.0       36.0
+              AOI1    27      1.0       27.0
+             AOI1A     8      1.0        8.0
+             AOI1B    47      1.0       47.0
+               AX1     4      1.0        4.0
+              AX1A     2      1.0        2.0
+              AX1B    14      1.0       14.0
+              AX1C     4      1.0        4.0
+              AX1D    32      1.0       32.0
+              AXO1     1      1.0        1.0
+              AXO2     7      1.0        7.0
+              AXO5     1      1.0        1.0
+             AXOI4     2      1.0        2.0
+             AXOI5     6      1.0        6.0
+             AXOI7     1      1.0        1.0
+            CLKINT     5      0.0        0.0
+               GND    37      0.0        0.0
+               INV     7      1.0        7.0
+              MAJ3    21      1.0       21.0
+               MX2  1791      1.0     1791.0
+              MX2A   159      1.0      159.0
+              MX2B   117      1.0      117.0
+              MX2C    79      1.0       79.0
+              NOR2   314      1.0      314.0
+             NOR2A  1424      1.0     1424.0
+             NOR2B  2300      1.0     2300.0
+              NOR3   158      1.0      158.0
+             NOR3A   321      1.0      321.0
+             NOR3B   384      1.0      384.0
+             NOR3C   327      1.0      327.0
+               OA1   195      1.0      195.0
+              OA1A    75      1.0       75.0
+              OA1B    75      1.0       75.0
+              OA1C    78      1.0       78.0
+              OAI1     8      1.0        8.0
+               OR2   546      1.0      546.0
+              OR2A   216      1.0      216.0
+              OR2B    91      1.0       91.0
+               OR3   915      1.0      915.0
+              OR3A    74      1.0       74.0
+              OR3B    22      1.0       22.0
+              OR3C     2      1.0        2.0
+               PLL     1      0.0        0.0
+               VCC    37      0.0        0.0
+               XA1    48      1.0       48.0
+              XA1A    15      1.0       15.0
+              XA1B    14      1.0       14.0
+              XA1C    41      1.0       41.0
+              XAI1     3      1.0        3.0
+             XAI1A     1      1.0        1.0
+             XNOR2   122      1.0      122.0
+             XNOR3    11      1.0       11.0
+               XO1     8      1.0        8.0
+              XO1A     1      1.0        1.0
+              XOR2   372      1.0      372.0
+              XOR3    33      1.0       33.0
+             ZOR3I     1      1.0        1.0
+   proasic3_syncram_2p_work_leon3mp_rtl_0     2      0.0        0.0
+   proasic3_syncram_work_leon3mp_rtl_0     4      0.0        0.0
+   proasic3_syncram_work_leon3mp_rtl_1     1      0.0        0.0
+
+
+              DFN1   576      1.0      576.0
+            DFN1E0   275      1.0      275.0
+          DFN1E0C1    14      1.0       14.0
+            DFN1E1  1195      1.0     1195.0
+                   -----          ----------
+             TOTAL 14511             14424.0
+
+
+  IO Cell usage:
+              cell count
+             BIBUF     7
+             INBUF     5
+            OUTBUF    57
+           TRIBUFF     1
+                   -----
+             TOTAL    70
+
+
+Core Cells         : 14424 of 38400 (38%)
+IO Cells           : 70
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:01m:27s; CPU Time elapsed 0h:01m:27s; Memory used current: 77MB peak: 281MB)
+
+Process took 0h:01m:27s realtime, 0h:01m:27s cputime
+# Fri Mar 11 18:31:47 2016
+
+###########################################################]

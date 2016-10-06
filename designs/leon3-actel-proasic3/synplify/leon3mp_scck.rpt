@@ -1,0 +1,18 @@
+# Synospys Constraint Checker(syntax only), version map201209sp1actp1, Build 006R, built Sep 30 2013
+# Copyright (C) 1994-2012, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+# Written on Fri Mar 11 16:38:40 2016
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "leon3mp"
+Constraint File(s):      "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/boards/a3pe-proto-kit/default.sdc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+

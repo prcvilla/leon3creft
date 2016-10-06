@@ -1,0 +1,73 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":44:7:44:13|Top entity is set to leon3mp.
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":44:7:44:13|Synthesizing work.leon3mp.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/ahbram.vhd":39:7:39:12|Synthesizing gaisler.ahbram.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncrambw.vhd":38:7:38:15|Synthesizing techmap.syncrambw.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd":36:7:36:13|Synthesizing techmap.syncram.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmem.vhd":86:12:86:27|Synthesizing techmap.proasic3_syncram_work_leon3mp_rtl_0.syn_black_box 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/iopad.vhd":33:7:33:11|Synthesizing techmap.iopad.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/grgpio.vhd":41:7:41:12|Synthesizing gaisler.grgpio.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/gptimer.vhd":56:7:56:13|Synthesizing gaisler.gptimer.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":40:7:40:11|Synthesizing gaisler.irqmp.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":43:7:43:13|Synthesizing gaisler.apbuart.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":73:15:73:16|Using sequential encoding for type txfsmtype
+@N: CD231 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":72:15:72:16|Using onehot encoding for type rxfsmtype (idle="10000")
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrl.vhd":35:7:35:13|Synthesizing grlib.apbctrl.struct 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":39:7:39:14|Synthesizing grlib.apbctrlx.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/ahbrom.vhd":26:7:26:12|Synthesizing work.ahbrom.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/outpad.vhd":33:7:33:12|Synthesizing techmap.outpad.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/inpad.vhd":33:7:33:11|Synthesizing techmap.inpad.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/ahbuart.vhd":38:7:38:13|Synthesizing gaisler.ahbuart.struct 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom.vhd":38:7:38:10|Synthesizing gaisler.dcom.struct 
+@N: CD231 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom.vhd":52:21:52:22|Using onehot encoding for type dcom_state_type (idle="100000")
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":42:7:42:15|Synthesizing gaisler.dcom_uart.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":69:15:69:16|Using sequential encoding for type txfsmtype
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":68:15:68:16|Using sequential encoding for type rxfsmtype
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbmst.vhd":36:7:36:12|Synthesizing grlib.ahbmst.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3.vhd":38:7:38:10|Synthesizing gaisler.dsu3.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":40:7:40:11|Synthesizing gaisler.dsu3x.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3s.vhd":36:7:36:12|Synthesizing gaisler.leon3s.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3x.vhd":43:7:43:12|Synthesizing gaisler.leon3x.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/cachemem.vhd":38:7:38:14|Synthesizing gaisler.cachemem.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd":36:7:36:13|Synthesizing techmap.syncram.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmem.vhd":86:12:86:27|Synthesizing techmap.proasic3_syncram_work_leon3mp_rtl_1.syn_black_box 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/regfile_3p_l3.vhd":34:7:34:19|Synthesizing gaisler.regfile_3p_l3.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/regfile_3p.vhd":33:7:33:16|Synthesizing techmap.regfile_3p.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_2p.vhd":37:7:37:16|Synthesizing techmap.syncram_2p.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmem.vhd":97:12:97:30|Synthesizing techmap.proasic3_syncram_2p_work_leon3mp_rtl_0.syn_black_box 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":32:7:32:14|Synthesizing techmap.memrwcol.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/proc3.vhd":44:7:44:11|Synthesizing gaisler.proc3.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_cache.vhd":42:7:42:15|Synthesizing gaisler.mmu_cache.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":42:7:42:16|Synthesizing gaisler.mmu_acache.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":45:7:45:16|Synthesizing gaisler.mmu_dcache.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD231 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":147:18:147:19|Using onehot encoding for type dstatetype (idle="100000000")
+@N: CD231 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":131:17:131:18|Using onehot encoding for type rdatatype (dtag="100000000")
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":44:7:44:16|Synthesizing gaisler.mmu_icache.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":174:18:174:19|Using sequential encoding for type istatetype
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":100:17:100:18|Using sequential encoding for type rdatatype
+@N: CD364 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":713:4:713:9|Removed redundant assignment
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":47:7:47:9|Synthesizing gaisler.iu3.rtl 
+@N: CD233 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":312:23:312:24|Using sequential encoding for type exception_state
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":40:7:40:13|Synthesizing grlib.ahbctrl.rtl 
+@N: CD630 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/mainPLL.vhd":8:7:8:13|Synthesizing work.mainpll.def_arch 
+@N: CD630 :"/opt/microsemi/Libero_v11.7/Synplify/lib/proasic/proasic3e.vhd":3976:10:3976:12|Synthesizing proasic3e.pll.syn_black_box 
+@N: CD630 :"/opt/microsemi/Libero_v11.7/Synplify/lib/proasic/proasic3e.vhd":2999:10:2999:12|Synthesizing proasic3e.vcc.syn_black_box 
+@N: CD630 :"/opt/microsemi/Libero_v11.7/Synplify/lib/proasic/proasic3e.vhd":1894:10:1894:12|Synthesizing proasic3e.gnd.syn_black_box 
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Trying to extract state machine for register r.d.cnt
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":4635:4:4635:5|Trying to extract state machine for register r.x.rstate
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":781:4:781:5|Trying to extract state machine for register r.istate
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1664:6:1664:7|Trying to extract state machine for register r.dstate
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":381:4:381:5|Trying to extract state machine for register r.bo
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":335:4:335:5|Trying to extract state machine for register r.rxstate
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom.vhd":157:4:157:5|Trying to extract state machine for register r.state
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":344:4:344:5|Trying to extract state machine for register r.p_0.state
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Trying to extract state machine for register r.txstate
+@N: CL201 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":560:4:560:5|Trying to extract state machine for register r.rxstate
+@N|Running in 64-bit mode
+

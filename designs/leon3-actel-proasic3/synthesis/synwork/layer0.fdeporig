@@ -1,0 +1,692 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_comp.srs|-top|work.leon3mp|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|work|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|grlib|-lib|gaisler|-lib|grlib|-lib|grlib|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|grlib|-lib|grlib|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|work|-lib|gaisler|-lib|gaisler|-lib|esa|-lib|esa|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|work|-lib|work"
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/linux_a_64/c_vhdl":1449250484
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/location.map":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/snps_haps_pkg.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/std1164.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/numeric.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/umr_capim.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/arith.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/unsigned.vhd":1449250476
+#CUR:"/opt/microsemi/Libero_v11.7/Synplify/lib/vhd/hyperents.vhd":1449250476
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/config_types.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/config.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/version.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/amba.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/devices.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/util/util.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/gencomp/gencomp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allclkgen.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grgates.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/inferred/memory_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmem.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncrambw.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/ahbram.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/ahbrom.vhd":1457730339
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/misc.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/uart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/libdcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbmst.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/ahbuart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram64.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3/leon3.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/tbufmem.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/clkand.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/gptimer.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/grgpio.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allpads.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/inpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/iopad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/cmvalidbits.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_2p.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_dp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/arith.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libfpu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libiu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuiface.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libcache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/cachemem.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/regfile_3p.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/regfile_3p_l3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grfpw_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libleon3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/gencomp/netcomp.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grfpwx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grfpwxsh.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grlfpw_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grlfpwx.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/div32.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/sparc/sparc.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdio.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/testlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/sparc/sparc_disas.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmulrue.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmulru.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/libmmu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutlbcam.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutlb.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutw.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmu.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_cache.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/inferred/mul_inferred.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/modgen/leaves.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/modgen/multlib.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmul.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/techmult.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/mul32.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/proc3.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/tbufmem_2p.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/leon3_net.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3x.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3s.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/mainPLL.vhd":1457729058
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/memctrl/memctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/memctrl/sdmctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/esa/memoryctrl/memoryctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/esa/memoryctrl/mctrl.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/outpad.vhd":1453473917
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/can/can.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/jtag/jtag.vhd":1453473916
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/net/net.vhd":1453473915
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/config.vhd":1457731214
+#CUR:"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd":1457731646
+0 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/config_types.vhd" vhdl
+1 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/config.vhd" vhdl
+2 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/version.vhd" vhdl
+3 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdlib.vhd" vhdl
+4 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/amba.vhd" vhdl
+5 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/devices.vhd" vhdl
+6 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbctrl.vhd" vhdl
+7 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/util/util.vhd" vhdl
+8 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/gencomp/gencomp.vhd" vhdl
+9 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allclkgen.vhd" vhdl
+10 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grgates.vhd" vhdl
+11 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/inferred/memory_inferred.vhd" vhdl
+12 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmem.vhd" vhdl
+13 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram.vhd" vhdl
+14 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncrambw.vhd" vhdl
+15 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/ahbram.vhd" vhdl
+16 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/ahbrom.vhd" vhdl
+17 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/misc.vhd" vhdl
+18 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/uart.vhd" vhdl
+19 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/libdcom.vhd" vhdl
+20 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom.vhd" vhdl
+21 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/dcom_uart.vhd" vhdl
+22 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/ahbmst.vhd" vhdl
+23 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/ahbuart.vhd" vhdl
+24 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrlx.vhd" vhdl
+25 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/amba/apbctrl.vhd" vhdl
+26 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/uart/apbuart.vhd" vhdl
+27 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram64.vhd" vhdl
+28 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3/leon3.vhd" vhdl
+29 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/tbufmem.vhd" vhdl
+30 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/clkand.vhd" vhdl
+31 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3x.vhd" vhdl
+32 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/dsu3.vhd" vhdl
+33 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/gptimer.vhd" vhdl
+34 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/misc/grgpio.vhd" vhdl
+35 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allpads.vhd" vhdl
+36 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/inpad.vhd" vhdl
+37 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/iopad.vhd" vhdl
+38 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/irqmp/irqmp.vhd" vhdl
+39 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/cmvalidbits.vhd" vhdl
+40 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/memrwcol.vhd" vhdl
+41 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_2p.vhd" vhdl
+42 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/syncram_dp.vhd" vhdl
+43 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/arith.vhd" vhdl
+44 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libfpu.vhd" vhdl
+45 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuconfig.vhd" vhdl
+46 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libiu.vhd" vhdl
+47 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmuiface.vhd" vhdl
+48 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libcache.vhd" vhdl
+49 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/cachemem.vhd" vhdl
+50 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/regfile_3p.vhd" vhdl
+51 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/regfile_3p_l3.vhd" vhdl
+52 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grfpw_net.vhd" vhdl
+53 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/libleon3.vhd" vhdl
+54 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/gencomp/netcomp.vhd" vhdl
+55 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grfpwx.vhd" vhdl
+56 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grfpwxsh.vhd" vhdl
+57 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/grlfpw_net.vhd" vhdl
+58 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/grlfpwx.vhd" vhdl
+59 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/div32.vhd" vhdl
+60 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/sparc/sparc.vhd" vhdl
+61 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/stdio.vhd" vhdl
+62 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/stdlib/testlib.vhd" vhdl
+63 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/sparc/sparc_disas.vhd" vhdl
+64 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/iu3.vhd" vhdl
+65 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmulrue.vhd" vhdl
+66 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmulru.vhd" vhdl
+67 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/libmmu.vhd" vhdl
+68 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutlbcam.vhd" vhdl
+69 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutlb.vhd" vhdl
+70 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmutw.vhd" vhdl
+71 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/srmmu/mmu.vhd" vhdl
+72 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_acache.vhd" vhdl
+73 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_dcache.vhd" vhdl
+74 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_icache.vhd" vhdl
+75 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/mmu_cache.vhd" vhdl
+76 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/inferred/mul_inferred.vhd" vhdl
+77 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/modgen/leaves.vhd" vhdl
+78 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/grlib/modgen/multlib.vhd" vhdl
+79 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/allmul.vhd" vhdl
+80 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/techmult.vhd" vhdl
+81 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/arith/mul32.vhd" vhdl
+82 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/proc3.vhd" vhdl
+83 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/tbufmem_2p.vhd" vhdl
+84 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/leon3_net.vhd" vhdl
+85 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3x.vhd" vhdl
+86 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/leon3v3/leon3s.vhd" vhdl
+87 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/hdl/mainPLL.vhd" vhdl
+88 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/memctrl/memctrl.vhd" vhdl
+89 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/memctrl/sdmctrl.vhd" vhdl
+90 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/esa/memoryctrl/memoryctrl.vhd" vhdl
+91 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/esa/memoryctrl/mctrl.vhd" vhdl
+92 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/techmap/maps/outpad.vhd" vhdl
+93 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/can/can.vhd" vhdl
+94 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/jtag/jtag.vhd" vhdl
+95 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/../../lib/gaisler/net/net.vhd" vhdl
+96 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/config.vhd" vhdl
+97 "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/leon3mp.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 -1
+3 2 
+4 0 1 3 
+5 4 
+6 3 4 0 1 5 62 
+7 3 
+8 1 0 
+9 8 
+10 9 8 
+11 3 
+12 -1
+13 10 11 1 0 3 8 12 
+14 10 13 8 12 1 0 3 
+15 14 0 1 4 3 5 8 
+16 4 3 5 
+17 4 5 3 8 
+18 4 
+19 4 3 18 17 
+20 0 1 4 3 17 19 
+21 0 1 4 3 5 19 18 
+22 0 1 4 3 5 
+23 22 21 20 4 3 5 17 18 19 
+24 0 1 4 3 5 
+25 24 0 1 4 3 
+26 0 1 4 3 5 18 
+27 13 8 12 1 0 3 
+28 4 8 
+29 27 13 28 8 3 
+30 8 9 
+31 30 29 4 0 1 3 5 28 8 
+32 31 4 3 5 28 8 
+33 0 1 4 3 5 17 
+34 0 1 4 3 5 17 
+35 8 
+36 35 8 
+37 35 8 
+38 0 1 4 3 5 28 
+39 -1
+40 8 
+41 40 11 8 12 1 0 3 
+42 40 8 12 1 0 3 
+43 -1
+44 28 8 
+45 3 
+46 8 28 44 43 45 
+47 4 3 45 8 
+48 4 3 8 46 45 47 
+49 13 42 41 39 46 48 45 3 8 
+50 11 41 8 12 
+51 50 8 3 
+52 8 
+53 4 8 28 46 48 44 47 
+54 4 8 
+55 52 51 8 54 28 53 44 
+56 51 8 28 53 44 
+57 8 
+58 57 51 3 28 53 44 8 54 
+59 0 1 3 43 
+60 -1
+61 -1
+62 61 3 
+63 3 60 62 
+64 0 1 60 3 8 28 46 44 43 63 
+65 0 1 4 3 45 47 
+66 65 0 1 4 3 45 47 
+67 3 8 45 47 
+68 0 1 4 3 45 47 67 
+69 68 13 66 0 1 4 3 8 45 47 67 
+70 0 1 4 3 45 47 67 
+71 69 70 0 1 3 8 45 47 67 
+72 0 1 4 3 5 46 48 28 45 47 
+73 8 0 1 4 60 3 46 48 67 45 47 
+74 4 0 1 3 8 46 48 45 47 28 
+75 74 73 72 71 4 3 8 46 48 53 45 47 67 
+76 3 
+77 -1
+78 -1
+79 -1
+80 77 76 3 78 79 8 
+81 80 0 1 3 78 43 8 
+82 64 81 59 75 4 3 8 28 46 48 43 53 44 
+83 41 28 8 3 
+84 4 3 5 8 
+85 82 51 49 29 83 56 55 58 84 4 3 8 54 28 46 48 53 44 43 
+86 85 4 8 28 
+87 -1
+88 4 3 8 
+89 4 3 88 
+90 4 88 
+91 89 4 5 3 88 90 
+92 35 8 
+93 4 8 
+94 4 8 
+95 4 8 
+96 8 
+97 87 6 86 32 36 23 91 92 16 25 26 38 33 34 37 15 4 3 8 88 28 18 17 95 93 94 90 96 
+
+# Dependency Lists (Users Of)
+0 81 74 73 72 71 70 69 68 66 65 64 59 42 41 38 34 33 31 27 26 25 24 22 21 20 15 14 13 8 6 4 1 
+1 81 74 73 72 71 70 69 68 66 65 64 59 42 41 38 34 33 31 27 26 25 24 22 21 20 15 14 13 8 6 4 
+2 3 
+3 97 91 89 88 85 84 83 82 81 80 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 59 58 51 49 48 47 45 42 41 38 34 33 32 31 29 27 26 25 24 23 22 21 20 19 17 16 15 14 13 11 7 6 4 
+4 97 95 94 93 91 90 89 88 86 85 84 82 75 74 73 72 70 69 68 66 65 54 53 48 47 38 34 33 32 31 28 26 25 24 23 22 21 20 19 18 17 16 15 6 5 
+5 91 84 72 38 34 33 32 31 26 24 23 22 21 17 16 15 6 
+6 97 
+7 -1
+8 97 96 95 94 93 92 88 86 85 84 83 82 81 80 75 74 73 71 69 67 64 58 57 56 55 54 53 52 51 50 49 48 47 46 44 42 41 40 37 36 35 32 31 30 29 28 27 17 15 14 13 10 9 
+9 30 10 
+10 14 13 
+11 50 41 13 
+12 50 42 41 27 14 13 
+13 69 49 29 27 14 
+14 15 
+15 97 
+16 97 
+17 97 34 33 23 20 19 
+18 97 26 23 21 19 
+19 23 21 20 
+20 23 
+21 23 
+22 23 
+23 97 
+24 25 
+25 97 
+26 97 
+27 29 
+28 97 86 85 83 82 74 72 64 58 56 55 53 46 44 38 32 31 29 
+29 85 31 
+30 31 
+31 32 
+32 97 
+33 97 
+34 97 
+35 92 37 36 
+36 97 
+37 97 
+38 97 
+39 49 
+40 42 41 
+41 83 50 49 
+42 49 
+43 85 82 81 64 59 46 
+44 85 82 64 58 56 55 53 46 
+45 75 74 73 72 71 70 69 68 67 66 65 49 48 47 46 
+46 85 82 75 74 73 72 64 53 49 48 
+47 75 74 73 72 71 70 69 68 67 66 65 53 48 
+48 85 82 75 74 73 72 53 49 
+49 85 
+50 51 
+51 85 58 56 55 
+52 55 
+53 85 82 75 58 56 55 
+54 85 58 55 
+55 85 
+56 85 
+57 58 
+58 85 
+59 82 
+60 73 64 63 
+61 62 
+62 63 6 
+63 64 
+64 82 
+65 66 
+66 69 
+67 75 73 71 70 69 68 
+68 69 
+69 71 
+70 71 
+71 75 
+72 75 
+73 75 
+74 75 
+75 82 
+76 80 
+77 80 
+78 81 80 
+79 80 
+80 81 
+81 82 
+82 85 
+83 85 
+84 85 
+85 86 
+86 97 
+87 97 
+88 97 91 90 89 
+89 91 
+90 97 91 
+91 97 
+92 97 
+93 97 
+94 97 
+95 97 
+96 97 
+97 -1
+
+# Design Unit to File Association
+arch grlib ahbctrl rtl 6
+module grlib ahbctrl 6
+arch grlib report_design beh 7
+arch grlib report_version beh 7
+arch techmap grnand2 rtl 10
+module techmap grnand2 10
+arch techmap grand12 rtl 10
+module techmap grand12 10
+arch techmap gror2 rtl 10
+module techmap gror2 10
+arch techmap grdff rtl 10
+module techmap grdff 10
+arch techmap grmux2v rtl 10
+module techmap grmux2v 10
+arch techmap grmux2 rtl 10
+module techmap grmux2 10
+arch techmap generic_regfile_4p rtl 11
+module techmap generic_regfile_4p 11
+arch techmap generic_regfile_3p rtl 11
+module techmap generic_regfile_3p 11
+arch techmap generic_syncram_2p_reg behav 11
+module techmap generic_syncram_2p_reg 11
+arch techmap generic_syncram_2p behav 11
+module techmap generic_syncram_2p 11
+arch techmap generic_syncram_reg behavioral 11
+module techmap generic_syncram_reg 11
+arch techmap generic_syncram behavioral 11
+module techmap generic_syncram 11
+arch techmap syncram rtl 13
+module techmap syncram 13
+arch techmap syncrambw rtl 14
+module techmap syncrambw 14
+arch gaisler ahbram rtl 15
+module gaisler ahbram 15
+arch work ahbrom rtl 16
+module work ahbrom 16
+arch gaisler dcom struct 20
+module gaisler dcom 20
+arch gaisler dcom_uart rtl 21
+module gaisler dcom_uart 21
+arch grlib ahbmst rtl 22
+module grlib ahbmst 22
+arch gaisler ahbuart struct 23
+module gaisler ahbuart 23
+arch grlib apbctrlx rtl 24
+module grlib apbctrlx 24
+arch grlib apbctrl struct 25
+module grlib apbctrl 25
+arch gaisler apbuart rtl 26
+module gaisler apbuart 26
+arch techmap syncram64 rtl 27
+module techmap syncram64 27
+arch gaisler tbufmem rtl 29
+module gaisler tbufmem 29
+arch techmap clkrand rtl 30
+module techmap clkrand 30
+arch techmap clkand rtl 30
+module techmap clkand 30
+arch gaisler dsu3x rtl 31
+module gaisler dsu3x 31
+arch gaisler dsu3 rtl 32
+module gaisler dsu3 32
+arch gaisler gptimer rtl 33
+module gaisler gptimer 33
+arch gaisler grgpio rtl 34
+module gaisler grgpio 34
+arch techmap inpadv rtl 36
+module techmap inpadv 36
+arch techmap inpad rtl 36
+module techmap inpad 36
+arch techmap iopadvv rtl 37
+module techmap iopadvv 37
+arch techmap iopadv rtl 37
+module techmap iopadv 37
+arch techmap iopad rtl 37
+module techmap iopad 37
+arch gaisler irqmp rtl 38
+module gaisler irqmp 38
+arch gaisler cmvalidbits rtl 39
+module gaisler cmvalidbits 39
+arch techmap memrwcol rtl 40
+module techmap memrwcol 40
+arch techmap syncram_2p rtl 41
+module techmap syncram_2p 41
+arch techmap syncram_dp rtl 42
+module techmap syncram_dp 42
+arch gaisler cachemem rtl 49
+module gaisler cachemem 49
+arch techmap regfile_3p rtl 50
+module techmap regfile_3p 50
+arch gaisler regfile_3p_l3 rtl 51
+module gaisler regfile_3p_l3 51
+arch techmap grfpw_net rtl 52
+module techmap grfpw_net 52
+arch gaisler grfpwx rtl 55
+module gaisler grfpwx 55
+arch gaisler grfpwxsh rtl 56
+module gaisler grfpwxsh 56
+arch techmap grlfpw_net rtl 57
+module techmap grlfpw_net 57
+arch gaisler grlfpwx rtl 58
+module gaisler grlfpwx 58
+arch gaisler div32 rtl 59
+module gaisler div32 59
+arch gaisler iu3 rtl 64
+module gaisler iu3 64
+arch gaisler mmulrue rtl 65
+module gaisler mmulrue 65
+arch gaisler mmulru rtl 66
+module gaisler mmulru 66
+arch gaisler mmutlbcam rtl 68
+module gaisler mmutlbcam 68
+arch gaisler mmutlb rtl 69
+module gaisler mmutlb 69
+arch gaisler mmutw rtl 70
+module gaisler mmutw 70
+arch gaisler mmu rtl 71
+module gaisler mmu 71
+arch gaisler mmu_acache rtl 72
+module gaisler mmu_acache 72
+arch gaisler mmu_dcache rtl 73
+module gaisler mmu_dcache 73
+arch gaisler mmu_icache rtl 74
+module gaisler mmu_icache 74
+arch gaisler mmu_cache rtl 75
+module gaisler mmu_cache 75
+arch techmap gen_mult_pipe simple 76
+module techmap gen_mult_pipe 76
+arch techmap gen_mul_61x61 rtl 76
+module techmap gen_mul_61x61 76
+arch grlib mul_17_17 a 77
+module grlib mul_17_17 77
+arch grlib add32 a 77
+module grlib add32 77
+arch grlib mul_33_33 a 77
+module grlib mul_33_33 77
+arch grlib multiplier_34_34 multiplier 77
+module grlib multiplier_34_34 77
+arch grlib wallace_34_34 wallace 77
+module grlib wallace_34_34 77
+arch grlib boothcoder_34_34 boothcoder 77
+module grlib boothcoder_34_34 77
+arch grlib mul_33_17 a 77
+module grlib mul_33_17 77
+arch grlib multiplier_34_18 multiplier 77
+module grlib multiplier_34_18 77
+arch grlib wallace_34_18 wallace 77
+module grlib wallace_34_18 77
+arch grlib boothcoder_34_18 boothcoder 77
+module grlib boothcoder_34_18 77
+arch grlib mul_33_9 a 77
+module grlib mul_33_9 77
+arch grlib multiplier_34_10 multiplier 77
+module grlib multiplier_34_10 77
+arch grlib wallace_34_10 wallace 77
+module grlib wallace_34_10 77
+arch grlib boothcoder_34_10 boothcoder 77
+module grlib boothcoder_34_10 77
+arch grlib multiplier_18_18 multiplier 77
+module grlib multiplier_18_18 77
+arch grlib wallace_18_18 wallace 77
+module grlib wallace_18_18 77
+arch grlib boothcoder_18_18 boothcoder 77
+module grlib boothcoder_18_18 77
+arch grlib dblcadder_128_128 dblcadder 77
+module grlib dblcadder_128_128 77
+arch grlib dblctree_128 dblctree 77
+module grlib dblctree_128 77
+arch grlib xorstage_128 xorstage 77
+module grlib xorstage_128 77
+arch grlib dblc_6_128 dblc_6 77
+module grlib dblc_6_128 77
+arch grlib dblc_5_128 dblc_5 77
+module grlib dblc_5_128 77
+arch grlib dblc_4_128 dblc_4 77
+module grlib dblc_4_128 77
+arch grlib dblc_3_128 dblc_3 77
+module grlib dblc_3_128 77
+arch grlib dblc_2_128 dblc_2 77
+module grlib dblc_2_128 77
+arch grlib dblc_1_128 dblc_1 77
+module grlib dblc_1_128 77
+arch grlib dblc_0_128 dblc_0 77
+module grlib dblc_0_128 77
+arch grlib prestage_128 prestage 77
+module grlib prestage_128 77
+arch grlib dblcadder_32_32 dblcadder 77
+module grlib dblcadder_32_32 77
+arch grlib dblctree_32 dblctree 77
+module grlib dblctree_32 77
+arch grlib prestage_32 prestage 77
+module grlib prestage_32 77
+arch grlib xorstage_32 xorstage 77
+module grlib xorstage_32 77
+arch grlib dblc_4_32 dblc_4 77
+module grlib dblc_4_32 77
+arch grlib dblc_3_32 dblc_3 77
+module grlib dblc_3_32 77
+arch grlib dblc_2_32 dblc_2 77
+module grlib dblc_2_32 77
+arch grlib dblc_1_32 dblc_1 77
+module grlib dblc_1_32 77
+arch grlib dblc_0_32 dblc_0 77
+module grlib dblc_0_32 77
+arch grlib xxor2 xxor_true 77
+module grlib xxor2 77
+arch grlib dblcadder_64_64 dblcadder 77
+module grlib dblcadder_64_64 77
+arch grlib dblctree_64 dblctree 77
+module grlib dblctree_64 77
+arch grlib xorstage_64 xorstage 77
+module grlib xorstage_64 77
+arch grlib dblc_5_64 dblc_5 77
+module grlib dblc_5_64 77
+arch grlib dblc_4_64 dblc_4 77
+module grlib dblc_4_64 77
+arch grlib dblc_3_64 dblc_3 77
+module grlib dblc_3_64 77
+arch grlib dblc_2_64 dblc_2 77
+module grlib dblc_2_64 77
+arch grlib dblc_1_64 dblc_1 77
+module grlib dblc_1_64 77
+arch grlib dblc_0_64 dblc_0 77
+module grlib dblc_0_64 77
+arch grlib prestage_64 prestage 77
+module grlib prestage_64 77
+arch grlib block2a block2a_regular 77
+module grlib block2a 77
+arch grlib block1a block1a_regular 77
+module grlib block1a 77
+arch grlib block2 block2_regular 77
+module grlib block2 77
+arch grlib block1 block1_regular 77
+module grlib block1 77
+arch grlib block0 block0_regular 77
+module grlib block0 77
+arch grlib xxor1 xxor_regular 77
+module grlib xxor1 77
+arch grlib invblock invblock_regular 77
+module grlib invblock 77
+arch grlib half_adder half_adder 77
+module grlib half_adder 77
+arch grlib full_adder full_adder 77
+module grlib full_adder 77
+arch grlib decoder decoder 77
+module grlib decoder 77
+arch grlib r_gate r_gate 77
+module grlib r_gate 77
+arch grlib pp_high pp_high 77
+module grlib pp_high 77
+arch grlib pp_middle pp_middle 77
+module grlib pp_middle 77
+arch grlib pp_low pp_low 77
+module grlib pp_low 77
+arch grlib flipflop flipflop 77
+module grlib flipflop 77
+arch techmap techmult rtl 80
+module techmap techmult 80
+arch gaisler mul32 rtl 81
+module gaisler mul32 81
+arch gaisler proc3 rtl 82
+module gaisler proc3 82
+arch gaisler tbufmem_2p rtl 83
+module gaisler tbufmem_2p 83
+arch techmap leon3_net rtl 84
+module techmap leon3_net 84
+arch gaisler leon3x rtl 85
+module gaisler leon3x 85
+arch gaisler leon3s rtl 86
+module gaisler leon3s 86
+arch work mainpll def_arch 87
+module work mainpll 87
+arch gaisler sdmctrl rtl 89
+module gaisler sdmctrl 89
+arch esa mctrl rtl 91
+module esa mctrl 91
+arch techmap outpadv rtl 92
+module techmap outpadv 92
+arch techmap outpad rtl 92
+module techmap outpad 92
+arch work leon3mp rtl 97
+module work leon3mp 97

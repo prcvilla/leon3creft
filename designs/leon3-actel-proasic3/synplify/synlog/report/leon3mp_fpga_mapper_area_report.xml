@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the area information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="1" name="Area Summary">
+<report_link name="Detailed report">
+<data>/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/synlog/report/leon3mp_fpga_mapper_resourceusage.rpt</data>
+</report_link>
+<parameter tooltip="Total Core Cells used" name="Core Cells">
+<data>12302</data>
+</parameter>
+<parameter tooltip="Total IO Cells used" name="IO Cells">
+<data>69</data>
+</parameter>
+<parameter tooltip="Total Block RAMs used" name="Block RAMs">
+<data>0</data>
+</parameter>
+</report_table>

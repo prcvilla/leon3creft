@@ -1,0 +1,138 @@
+m255
+K4
+z0
+13
+cModel Technology
+Z0 d/home/pvilla/phd/4-cr_mod
+Pcomponents
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1464193540
+R0
+8../../lib/micron/sdram/components.vhd
+F../../lib/micron/sdram/components.vhd
+l0
+L25
+Vb39b@k]lemF^j04c_IgWa2
+!s100 Q^]ZAOkObONUNdAAMbL`n0
+Z4 OV;C;10.3d;59
+31
+Z5 !s110 1465931804
+!i10b 1
+!s108 1465931804.300752
+!s90 -quiet|-explicit|-93|-work|micron|../../lib/micron/sdram/components.vhd|
+!s107 ../../lib/micron/sdram/components.vhd|
+!i113 1
+Z6 o-quiet -explicit -93 -work micron
+Z7 tShow_source 1 Show_Warning1 0 Show_Warning5 0 Explicit 1 Quiet 1
+vmobile_sdr
+R5
+!i10b 1
+!s100 YaP9STm3FaN@YE@ETI_CF1
+ISC@W28[BI7PWECj]YX<iF3
+V`JN@9S9cnhjKRR_L]QIcM3
+R0
+R3
+8../../lib/micron/sdram/mobile_sdr.v
+F../../lib/micron/sdram/mobile_sdr.v
+L0 70
+OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1465931804.208816
+!s107 ../../lib/micron/sdram/mobile_sdr.v|
+!s90 -quiet|-work|micron|../../lib/micron/sdram/mobile_sdr.v|
+!i113 1
+o-quiet -work micron
+tQuiet 1
+Emt48lc16m16a2
+R3
+Z8 DPx5 grlib 5 stdio 0 22 kToN;Q]_aAAze1Lhl;K8d3
+Z9 DPx5 grlib 7 version 0 22 Z:R_8;>LQJz7LC95mOXc13
+Z10 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z11 DPx5 grlib 6 stdlib 0 22 Nf?1UicA<WfjC]ZZ^b]bT2
+Z12 DPx4 work 7 mti_pkg 0 22 d9j9H5R`6OLA;iFY0YJjM2
+R2
+R1
+R0
+Z13 8../../lib/micron/sdram/mt48lc16m16a2.vhd
+Z14 F../../lib/micron/sdram/mt48lc16m16a2.vhd
+l0
+L205
+VFJ[8EaViN02`Om:MDKfHo3
+!s100 VOk9mjCRR1dnZFQfA`H5a0
+R4
+31
+R5
+!i10b 1
+Z15 !s108 1465931804.348830
+Z16 !s90 -quiet|-explicit|-93|-work|micron|../../lib/micron/sdram/mt48lc16m16a2.vhd|
+Z17 !s107 ../../lib/micron/sdram/mt48lc16m16a2.vhd|
+!i113 1
+R6
+R7
+Abehave
+R8
+R9
+R10
+R11
+R12
+R2
+R1
+DEx4 work 13 mt48lc16m16a2 0 22 FJ[8EaViN02`Om:MDKfHo3
+l278
+L252
+VL[I;2IT>0z6G=@9n[:26S1
+!s100 Cin8n74992:bUJHKg]X]O0
+R4
+31
+R5
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R6
+R7
+Pmti_pkg
+R1
+R2
+R3
+R0
+R13
+R14
+l0
+L17
+Vd9j9H5R`6OLA;iFY0YJjM2
+!s100 9Y8P`aM997PTd1K@kDjlI1
+R4
+31
+b1
+R5
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R6
+R7
+Bbody
+R12
+R1
+R2
+l0
+L28
+V@KbHQfQV92>FDW3bOfiF<2
+!s100 >Fk:0nXc;LQZ1dGZ>IE<M3
+R4
+31
+R5
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R6
+R7
+nbody

@@ -1,0 +1,282 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Mar 11 16:39:31 2016
+#
+
+
+Top view:               leon3mp
+Operating conditions:   PA3.COMWC-2
+Requested Frequency:    30.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    /home/pvilla/phd/grlib-gpl-1.5.0-b4164/boards/a3pe-proto-kit/default.sdc
+                       
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 1.839
+
+                                                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                            Frequency     Frequency     Period        Period        Slack      Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+clk                                                       40.0 MHz      NA            25.000        NA            NA         declared     sys_group          
+clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     30.0 MHz      28.2 MHz      33.333        35.462        -2.129     inferred     Inferred_clkgroup_0
+clkm                                                      30.0 MHz      NA            33.333        NA            NA         declared     sysm_group         
+System                                                    30.0 MHz      56.7 MHz      33.333        17.647        4.657      system       system_clkgroup    
+=============================================================================================================================================================
+@W: MT511 :"/home/pvilla/phd/grlib-gpl-1.5.0-b4164/boards/a3pe-proto-kit/default.sdc":10:0:10:0|Clock source clkm not found in netlist: define_clock {clkm} -name {clkm} -freq {30} -clockgroup {sysm_group} 
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                               Ending                                                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                 System                                                 |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                 clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock  System                                                 |  0.000       1.839  |  No paths    -      |  No paths    -      |  No paths    -    
+clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock  clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port         Starting      User           Arrival     Required          
+Name         Reference     Constraint     Time        Time         Slack
+             Clock                                                      
+------------------------------------------------------------------------
+can_rxd      NA            NA             NA          NA           NA   
+clk          NA            NA             NA          NA           NA   
+data[0]      NA            NA             NA          NA           NA   
+data[1]      NA            NA             NA          NA           NA   
+data[2]      NA            NA             NA          NA           NA   
+data[3]      NA            NA             NA          NA           NA   
+data[4]      NA            NA             NA          NA           NA   
+data[5]      NA            NA             NA          NA           NA   
+data[6]      NA            NA             NA          NA           NA   
+data[7]      NA            NA             NA          NA           NA   
+data[8]      NA            NA             NA          NA           NA   
+data[9]      NA            NA             NA          NA           NA   
+data[10]     NA            NA             NA          NA           NA   
+data[11]     NA            NA             NA          NA           NA   
+data[12]     NA            NA             NA          NA           NA   
+data[13]     NA            NA             NA          NA           NA   
+data[14]     NA            NA             NA          NA           NA   
+data[15]     NA            NA             NA          NA           NA   
+data[16]     NA            NA             NA          NA           NA   
+data[17]     NA            NA             NA          NA           NA   
+data[18]     NA            NA             NA          NA           NA   
+data[19]     NA            NA             NA          NA           NA   
+data[20]     NA            NA             NA          NA           NA   
+data[21]     NA            NA             NA          NA           NA   
+data[22]     NA            NA             NA          NA           NA   
+data[23]     NA            NA             NA          NA           NA   
+data[24]     NA            NA             NA          NA           NA   
+data[25]     NA            NA             NA          NA           NA   
+data[26]     NA            NA             NA          NA           NA   
+data[27]     NA            NA             NA          NA           NA   
+data[28]     NA            NA             NA          NA           NA   
+data[29]     NA            NA             NA          NA           NA   
+data[30]     NA            NA             NA          NA           NA   
+data[31]     NA            NA             NA          NA           NA   
+dsubre       NA            NA             NA          NA           NA   
+dsurx        NA            NA             NA          NA           NA   
+emdio        NA            NA             NA          NA           NA   
+erx_clk      NA            NA             NA          NA           NA   
+erx_col      NA            NA             NA          NA           NA   
+erx_crs      NA            NA             NA          NA           NA   
+erx_dv       NA            NA             NA          NA           NA   
+erx_er       NA            NA             NA          NA           NA   
+erxd[0]      NA            NA             NA          NA           NA   
+erxd[1]      NA            NA             NA          NA           NA   
+erxd[2]      NA            NA             NA          NA           NA   
+erxd[3]      NA            NA             NA          NA           NA   
+etx_clk      NA            NA             NA          NA           NA   
+gpio[0]      NA            NA             NA          NA           NA   
+gpio[1]      NA            NA             NA          NA           NA   
+gpio[2]      NA            NA             NA          NA           NA   
+gpio[3]      NA            NA             NA          NA           NA   
+gpio[4]      NA            NA             NA          NA           NA   
+gpio[5]      NA            NA             NA          NA           NA   
+gpio[6]      NA            NA             NA          NA           NA   
+resetn       NA            NA             NA          NA           NA   
+rxd1         NA            NA             NA          NA           NA   
+tck          NA            NA             NA          NA           NA   
+tdi          NA            NA             NA          NA           NA   
+tms          NA            NA             NA          NA           NA   
+trst         NA            NA             NA          NA           NA   
+========================================================================
+
+
+Output Ports: 
+
+Port            Starting                                                           User           Arrival     Required          
+Name            Reference                                                          Constraint     Time        Time         Slack
+                Clock                                                                                                           
+--------------------------------------------------------------------------------------------------------------------------------
+address[0]      NA                                                                 NA             NA          NA           NA   
+address[1]      NA                                                                 NA             NA          NA           NA   
+address[2]      NA                                                                 NA             NA          NA           NA   
+address[3]      NA                                                                 NA             NA          NA           NA   
+address[4]      NA                                                                 NA             NA          NA           NA   
+address[5]      NA                                                                 NA             NA          NA           NA   
+address[6]      NA                                                                 NA             NA          NA           NA   
+address[7]      NA                                                                 NA             NA          NA           NA   
+address[8]      NA                                                                 NA             NA          NA           NA   
+address[9]      NA                                                                 NA             NA          NA           NA   
+address[10]     NA                                                                 NA             NA          NA           NA   
+address[11]     NA                                                                 NA             NA          NA           NA   
+address[12]     NA                                                                 NA             NA          NA           NA   
+address[13]     NA                                                                 NA             NA          NA           NA   
+address[14]     NA                                                                 NA             NA          NA           NA   
+address[15]     NA                                                                 NA             NA          NA           NA   
+address[16]     NA                                                                 NA             NA          NA           NA   
+address[17]     NA                                                                 NA             NA          NA           NA   
+address[18]     NA                                                                 NA             NA          NA           NA   
+can_txd         NA                                                                 NA             NA          NA           NA   
+dsuact          clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.480       0.000        3.480
+dsutx           clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+emdc            NA                                                                 NA             NA          NA           NA   
+errorn          clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             4.709       0.000        4.709
+etx_en          NA                                                                 NA             NA          NA           NA   
+etx_er          NA                                                                 NA             NA          NA           NA   
+etxd[0]         NA                                                                 NA             NA          NA           NA   
+etxd[1]         NA                                                                 NA             NA          NA           NA   
+etxd[2]         NA                                                                 NA             NA          NA           NA   
+etxd[3]         NA                                                                 NA             NA          NA           NA   
+flash_byten     NA                                                                 NA             NA          NA           NA   
+flash_rpn       clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             4.948       0.000        4.948
+gpio[0]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[1]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[2]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[3]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[4]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[5]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+gpio[6]         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.820       0.000        3.820
+iosn            NA                                                                 NA             NA          NA           NA   
+led[0]          NA                                                                 NA             NA          NA           NA   
+led[1]          clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             4.709       0.000        4.709
+led[2]          NA                                                                 NA             NA          NA           NA   
+led[3]          clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             4.414       0.000        4.414
+led[4]          clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.480       0.000        3.480
+led[5]          System (rising)                                                    NA             2.945       0.000        2.945
+oen             NA                                                                 NA             NA          NA           NA   
+ramben[0]       NA                                                                 NA             NA          NA           NA   
+ramben[1]       NA                                                                 NA             NA          NA           NA   
+ramben[2]       NA                                                                 NA             NA          NA           NA   
+ramben[3]       NA                                                                 NA             NA          NA           NA   
+ramclk          NA                                                                 NA             NA          NA           NA   
+ramoen          NA                                                                 NA             NA          NA           NA   
+ramsn           NA                                                                 NA             NA          NA           NA   
+romsn           NA                                                                 NA             NA          NA           NA   
+rwen            NA                                                                 NA             NA          NA           NA   
+sram_adsc       NA                                                                 NA             NA          NA           NA   
+sram_adsp       NA                                                                 NA             NA          NA           NA   
+sram_adv        NA                                                                 NA             NA          NA           NA   
+sram_gwen       NA                                                                 NA             NA          NA           NA   
+sram_pwrdwn     NA                                                                 NA             NA          NA           NA   
+tdo             NA                                                                 NA             NA          NA           NA   
+txd1            clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock (rising)     NA             3.525       0.000        3.525
+writen          NA                                                                 NA             NA          NA           NA   
+================================================================================================================================
+
+
+
+====================================
+Detailed Report for Clock: clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                         Starting                                                                                    Arrival          
+Instance                                                 Reference                                                 Type       Pin     Net            Time        Slack
+                                                         Clock                                                                                                        
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe1            clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rfe1           0.737       2.032
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe2            clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rfe2           0.737       2.032
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[0]     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rd_1[0]        0.580       2.292
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[1]     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rd_1[1]        0.580       2.292
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[2]     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rd_3[2]        0.580       2.292
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.x\.ctrl\.rd[3]     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       rd_1[3]        0.580       2.292
+dcomgen\.dcom0.dcom0.r\.data[30]                         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       hwdata[30]     0.580       2.358
+dcomgen\.dcom0.dcom0.r\.data[31]                         clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E1     Q       hwdata[31]     0.580       2.358
+ocram\.ahbram0.r\.addr[2]                                clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E0     Q       addr[2]        0.580       2.671
+ocram\.ahbram0.r\.addr[3]                                clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     DFN1E0     Q       addr[3]        0.580       2.671
+======================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                  Starting                                                                                                                           Required          
+Instance                                                          Reference                                                 Type                                       Pin          Net              Time         Slack
+                                                                  Clock                                                                                                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     rena         de_ren2_1_iv     0.000        1.839
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     rena         de_ren1_1_iv     0.000        1.839
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[0]     waddr[0]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[0]     waddr[0]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[1]     waddr[1]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[1]     waddr[1]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[2]     waddr[2]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[2]     waddr[2]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[3]     waddr[3]         0.000        1.935
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x1.proa3\.x0     clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock     proasic3_syncram_2p_work_leon3mp_rtl_0     waddr[3]     waddr[3]         0.000        1.935
+=======================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.839
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     1.839
+
+    Number of logic level(s):                1
+    Starting point:                          l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe1 / Q
+    Ending point:                            l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0 / rena
+    The start point is clocked by            clkgen_work_leon3mp_rtl_0layer0|ramclk_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                                                               Pin      Pin               Arrival     No. of    
+Name                                                              Type                                       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe1                     DFN1E1                                     Q        Out     0.737     0.737       -         
+rfe1                                                              Net                                        -        -       0.225     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe1_RNIV9HP03           OA1C                                       B        In      -         0.962       -         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.p0.iu.r\.a\.rfe1_RNIV9HP03           OA1C                                       Y        Out     0.652     1.614       -         
+de_ren1_1_iv                                                      Net                                        -        -       0.225     -           1         
+l3\.cpu\.0\.u0.leon3x0.vhdl\.rf0.s1\.rhu.s1\.dp\.x0.proa3\.x0     proasic3_syncram_2p_work_leon3mp_rtl_0     rena     In      -         1.839       -         
+==============================================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

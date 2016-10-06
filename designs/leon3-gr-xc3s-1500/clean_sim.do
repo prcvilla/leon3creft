@@ -1,0 +1,3 @@
+abort
+nowhen *
+restart -sim

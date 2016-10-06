@@ -1,0 +1,80 @@
+
+Starting:    /opt/microsemi/Libero_v9.2/Synplify/linux_a_64/mbin/synplify
+Install:     /opt/microsemi/Libero_v9.2/Synplify
+Date:        Fri Mar 11 16:33:22 2016
+Version:     G-2012.09A-SP4 
+
+Arguments:   -product synplify_pro leon3mp_synplify.prj
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel from server localhost 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+"pipe" is unrecognized option for current device
+Unrecognized part "A3PE1500" specified for device "PROASIC3E" in leon3mp_synplify:synplify
+
+Copied /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr to /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/backup/leon3mp.srr
+log file: "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr"
+
+Running leon3mp_synplify|synplify
+Running Compile on leon3mp_synplify|synplify
+Running Compile Process on leon3mp_synplify|synplify
+Running Compile Input on leon3mp_synplify|synplify
+compiler exited with errors
+Job: "compiler" terminated with error status: 2.
+See log file: "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr"
+Return Code: 2
+Run Time:00h:00m:03s
+
+Job Compile Process completed on leon3mp_synplify|synplify
+Job Compile completed on leon3mp_synplify|synplify
+Job Logic Synthesis completed on leon3mp_synplify|synplify
+log file: "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr"
+
+Running leon3mp_synplify|synplify
+Running Compile on leon3mp_synplify|synplify
+Running Compile Process on leon3mp_synplify|synplify
+Running Compile Input on leon3mp_synplify|synplify
+compiler exited with errors
+Job: "compiler" terminated with error status: 2.
+See log file: "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr"
+Return Code: 2
+Run Time:00h:00m:03s
+
+Job Compile Process completed on leon3mp_synplify|synplify
+Job Compile completed on leon3mp_synplify|synplify
+Job Logic Synthesis completed on leon3mp_synplify|synplify
+Opening object source file /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/ahbrom.vhd
+log file: "/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srr"
+
+Running leon3mp_synplify|synplify
+Running Compile on leon3mp_synplify|synplify
+Running Compile Process on leon3mp_synplify|synplify
+Running Compile Input on leon3mp_synplify|synplify
+Copied /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/synwork/leon3mp_compiler.srs to /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synplify/leon3mp.srs
+compiler Completed
+Return Code: 0
+Run Time:00h:00m:27s
+
+Job Compile Process completed on leon3mp_synplify|synplify
+Running Premap on leon3mp_synplify|synplify
+premap Completed with warnings
+Return Code: 1
+Run Time:00h:00m:03s
+
+Job Compile completed on leon3mp_synplify|synplify
+Running Map on leon3mp_synplify|synplify
+Running Map & Optimize on leon3mp_synplify|synplify
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:00h:00m:49s
+
+Job Map completed on leon3mp_synplify|synplify
+Job Logic Synthesis completed on leon3mp_synplify|synplify
+exit status=0
+
+License checkin: synplifypro_actel

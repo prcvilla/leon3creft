@@ -1,0 +1,104 @@
+Target Part: A3PE1500_PQFP208_STD
+Report for cell leon3mp.rtl
+  Core Cell usage:
+              cell count     area count*area
+              AND2   198      1.0      198.0
+             AND2A     5      1.0        5.0
+              AND3   179      1.0      179.0
+             AND3A     1      1.0        1.0
+               AO1   973      1.0      973.0
+              AO12     1      1.0        1.0
+              AO13     7      1.0        7.0
+              AO14    59      1.0       59.0
+              AO16     1      1.0        1.0
+              AO17     2      1.0        2.0
+              AO18     1      1.0        1.0
+              AO1A   329      1.0      329.0
+              AO1B    23      1.0       23.0
+              AO1C    24      1.0       24.0
+              AO1D    36      1.0       36.0
+              AOI1    27      1.0       27.0
+             AOI1A     8      1.0        8.0
+             AOI1B    47      1.0       47.0
+               AX1     4      1.0        4.0
+              AX1A     2      1.0        2.0
+              AX1B    14      1.0       14.0
+              AX1C     4      1.0        4.0
+              AX1D    32      1.0       32.0
+              AXO1     1      1.0        1.0
+              AXO2     7      1.0        7.0
+              AXO5     1      1.0        1.0
+             AXOI4     2      1.0        2.0
+             AXOI5     6      1.0        6.0
+             AXOI7     1      1.0        1.0
+            CLKINT     5      0.0        0.0
+               GND    37      0.0        0.0
+               INV     7      1.0        7.0
+              MAJ3    21      1.0       21.0
+               MX2  1791      1.0     1791.0
+              MX2A   159      1.0      159.0
+              MX2B   117      1.0      117.0
+              MX2C    79      1.0       79.0
+              NOR2   314      1.0      314.0
+             NOR2A  1424      1.0     1424.0
+             NOR2B  2300      1.0     2300.0
+              NOR3   158      1.0      158.0
+             NOR3A   321      1.0      321.0
+             NOR3B   384      1.0      384.0
+             NOR3C   327      1.0      327.0
+               OA1   195      1.0      195.0
+              OA1A    75      1.0       75.0
+              OA1B    75      1.0       75.0
+              OA1C    78      1.0       78.0
+              OAI1     8      1.0        8.0
+               OR2   546      1.0      546.0
+              OR2A   216      1.0      216.0
+              OR2B    91      1.0       91.0
+               OR3   915      1.0      915.0
+              OR3A    74      1.0       74.0
+              OR3B    22      1.0       22.0
+              OR3C     2      1.0        2.0
+               PLL     1      0.0        0.0
+               VCC    37      0.0        0.0
+               XA1    48      1.0       48.0
+              XA1A    15      1.0       15.0
+              XA1B    14      1.0       14.0
+              XA1C    41      1.0       41.0
+              XAI1     3      1.0        3.0
+             XAI1A     1      1.0        1.0
+             XNOR2   122      1.0      122.0
+             XNOR3    11      1.0       11.0
+               XO1     8      1.0        8.0
+              XO1A     1      1.0        1.0
+              XOR2   372      1.0      372.0
+              XOR3    33      1.0       33.0
+             ZOR3I     1      1.0        1.0
+   proasic3_syncram_2p_work_leon3mp_rtl_0     2      0.0        0.0
+   proasic3_syncram_work_leon3mp_rtl_0     4      0.0        0.0
+   proasic3_syncram_work_leon3mp_rtl_1     1      0.0        0.0
+
+
+              DFN1   576      1.0      576.0
+            DFN1E0   275      1.0      275.0
+          DFN1E0C1    14      1.0       14.0
+            DFN1E1  1195      1.0     1195.0
+                   -----          ----------
+             TOTAL 14511             14424.0
+
+
+  IO Cell usage:
+              cell count
+             BIBUF     7
+             INBUF     5
+            OUTBUF    57
+           TRIBUFF     1
+                   -----
+             TOTAL    70
+
+
+Core Cells         : 14424 of 38400 (38%)
+IO Cells           : 70
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 60 (0%)
+

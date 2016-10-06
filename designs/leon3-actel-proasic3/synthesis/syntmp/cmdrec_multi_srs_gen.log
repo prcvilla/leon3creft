@@ -1,0 +1,8 @@
+/opt/microsemi/Libero_v11.7/Synplify/bin/syn_nfilter  -link  -top  work.leon3mp  -multisrs  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_comp.srs  -osyn  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_mult.srs  -log  /home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synlog/leon3mp_multi_srs_gen.srr 
+rc:0 success:1
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_comp.srs|i|1457731813|613454
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synwork/leon3mp_mult.srs|o|1457731815|108361
+/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-actel-proasic3/synthesis/synlog/leon3mp_multi_srs_gen.srr|o|1457731815|500
+/opt/microsemi/Libero_v11.7/Synplify/linux_a_64/syn_nfilter|i|1449250484|8820528
+/opt/microsemi/Libero_v11.7/Synplify/linux/syn_nfilter|i|1449250470|8227536
+/opt/microsemi/Libero_v11.7/Synplify/bin/syn_nfilter|i|1449250470|366
