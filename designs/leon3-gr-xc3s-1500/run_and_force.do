@@ -3,21 +3,21 @@ run 3000ns
 
 echo "var initialization..."
 set i 0
-set forcetime 4300
+set forcetime 4075
 
-when { sim:/testbench/cpu/pio(8) } {
+when -label progerr { sim:/testbench/cpu/pio(8) } {
   if { [exam sim:/testbench/cpu/pio(8)] == 1 } {
     echo "ERROR, try again."
     stop
   }
 }
-when { sim:/testbench/cpu/pio(7) } {
+when -label progfin { sim:/testbench/cpu/pio(7) } {
   if { [exam sim:/testbench/cpu/pio(7)] == 1 } {
     echo "prog fin."
     stop
   }
 }
-when { sim:/testbench/cpu/pio(6) } {
+when -label iteration { sim:/testbench/cpu/pio(6) } {
   if { [exam sim:/testbench/cpu/pio(6)] == 1 } {
     set i [expr {$i + 1}]
     echo $now " iteration no:" $i
@@ -34,7 +34,7 @@ when { sim:/testbench/cpu/pio(6) } {
   }
 }
 
-when { $now >= @645000ns } {
+when -label timelimit { $now >= @800000ns } {
   echo "time limit reached..."
   stop
 }

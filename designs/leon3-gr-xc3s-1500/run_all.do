@@ -4,20 +4,20 @@ run 3000ns
 echo "var initialization..."
 set i 0
 
-when { sim:/testbench/cpu/pio(7) } {
+when -label progfin { sim:/testbench/cpu/pio(7) } {
   if { [exam sim:/testbench/cpu/pio(7)] == 1 } {
     echo "prog fin."
     stop
   }
 }
-when { sim:/testbench/cpu/pio(6) } {
+when -label iteration { sim:/testbench/cpu/pio(6) } {
   if { [exam sim:/testbench/cpu/pio(6)] == 1 } {
     set i [expr {$i + 1}]
     echo $now " iteration no:" $i
   }
 }
 
-when { $now >= @645000ns } {
+when -label timelimit { $now >= @725000ns } {
   echo "time limit reached..."
   stop
 }

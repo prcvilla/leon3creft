@@ -1,0 +1,3 @@
+. /opt/Xilinx/14.7/ISE_DS/settings64.sh 
+export PATH=/opt/altera/16.0/modelsim_ase/linuxaloem/:$PATH
+
