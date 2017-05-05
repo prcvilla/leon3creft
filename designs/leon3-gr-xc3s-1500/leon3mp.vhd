@@ -249,6 +249,27 @@ attribute syn_keep of video_clk : signal is true;
 attribute syn_preserve of video_clk : signal is true;
 attribute keep of video_clk : signal is true;
 
+--pvilla mod
+
+signal stp_req : std_ulogic;
+signal stp_grt : std_ulogic;
+
+component ahbdmastop is
+ generic (
+    hindex  : integer := 0
+  );
+  port (
+    rstn    : in  std_ulogic;
+    clk     : in  std_ulogic;
+    stp_req : in  std_ulogic;
+    holdn   : in  std_ulogic;
+    stp_grt : out std_ulogic;
+    ahbi    : in  ahb_mst_in_type;
+    ahbo    : out ahb_mst_out_type );
+end component;
+
+--end pvilla mod
+
 begin
 
 ----------------------------------------------------------------------
@@ -282,6 +303,16 @@ begin
 	rrobin => CFG_RROBIN, ioaddr => CFG_AHBIO,
 	ioen => IOAEN, nahbm => maxahbm, nahbs => 8)
   port map (rstn, clkm, ahbmi, ahbmo, ahbsi, ahbso);
+
+--pvilla mod
+----------------------------------------------------------------------
+---  AHB DMA STOPPER -------------------------------------------------
+----------------------------------------------------------------------
+
+  ahb1 : ahbdmastop
+  generic map (hindex => 3)
+  port map (rstn, clkm, stp_req, '0', stp_grt, ahbmi, ahbmo(3));
+--end pvilla mod
 
 ----------------------------------------------------------------------
 ---  LEON3 processor and DSU -----------------------------------------
