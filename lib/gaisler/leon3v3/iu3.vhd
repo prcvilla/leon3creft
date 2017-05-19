@@ -3763,11 +3763,11 @@ end;
 --pvilla mod
   signal checkpoint_enable : std_ulogic;
 
-  signal r_chkp : registers;
-  signal wpr_chkp : watchpoint_registers;
-  signal dsur_chkp : dsu_registers;
-  signal ir_chkp : irestart_register;
-  signal rp_chkp : pwd_register_type;
+  signal r_chkp, rin_chkp : registers;
+  signal wpr_chkp, wprin_chkp : watchpoint_registers;
+  signal dsur_chkp, dsuin_chkp : dsu_registers;
+  signal ir_chkp, irin_chkp : irestart_register;
+  signal rp_chkp, rpin_chkp : pwd_register_type;
 
 --procedure decode_checkpoint_enable(inst : word; chkp_en : out std_ulogic) is
 --  variable op : std_logic_vector(1 downto 0);
@@ -4572,13 +4572,20 @@ begin
 -----------------------------------------------------------------------
 -- OUTPUTS
 -----------------------------------------------------------------------
-
+    --pvilla mod
     if recovn='0' then -- added by me, lol
-      rin <= r_chkp;
-    else
-      rin <= v; --original
+      rin <= rin_chkp;
+      wprin <= wprin_chkp;
+      dsuin <= dsuin_chkp;
+      irin <= irin_chkp;
+    else --original
+      rin <= v;
+      wprin <= vwpr;
+      dsuin <= vdsu;
+      irin <= vir;
     end if;
-    wprin <= vwpr; dsuin <= vdsu; irin <= vir;
+    --end pvilla mod
+
     muli.start <= r.a.mulstart and not r.a.ctrl.annul and 
         not r.a.ctrl.trap and not ra_bpannul;
     muli.signed <= r.e.ctrl.inst(19);
@@ -4694,9 +4701,6 @@ begin
     if rising_edge(clk) then
       if (holdn = '1') then
         r <= rin;
---pvilla mod
-        -- checkpoint was here
---end pvilla mod
       else
         r.x.ipend <= rin.x.ipend;
         r.m.werr <= rin.m.werr;
@@ -4712,11 +4716,11 @@ begin
       end if;
 --pvilla mod
       if (checkpoint_enable = '1') then
-        r_chkp <= rin; -- save the register
+        r_chkp <= r; -- modifying to save the registers accordingly
+        rin_chkp <= rin;
       end if;
       if (recovn = '0') then
         r <= r_chkp;
-        --rin <= r_chkp;
       end if;
 --end pvilla mod
       if rstn = '0' then
@@ -4785,16 +4789,16 @@ begin
       if rising_edge(clk) then 
         if holdn = '1' then
           dsur <= dsuin;
-          if (checkpoint_enable = '1') then --pvilla mod
-            dsur_chkp <= dsuin;
-          end if;
         else
           dsur.crdy <= dsuin.crdy;
         end if;
 --pvilla mod
+        if (checkpoint_enable = '1') then --pvilla mod
+          dsur_chkp <= dsur;
+          dsuin_chkp <= dsuin;
+        end if;
         if recovn = '0' then
           dsur <= dsur_chkp;
-          --dsuin <= dsur_chkp;
         end if;
 --end pvilla mod
         if rstn = '0' then
@@ -4822,14 +4826,14 @@ begin
       if rising_edge(clk) then 
         if holdn = '1' then 
           ir <= irin;
-          if (checkpoint_enable = '1') then --pvilla mod
-            ir_chkp <= irin;
-          end if;
         end if;
 --pvilla mod
+        if (checkpoint_enable = '1') then --pvilla mod
+          ir_chkp <= ir;
+          irin_chkp <= irin;
+        end if;
         if recovn = '0' then
           ir <= ir_chkp;
-          --irin <= ir_chkp;
         end if;
 --end pvilla mod
         if RESET_ALL and rstn = '0' then ir <= IRES; end if;
@@ -4848,14 +4852,14 @@ begin
         if rising_edge(clk) then
           if holdn = '1' then 
             wpr(i) <= wprin(i);
-            if (checkpoint_enable = '1') then --pvilla mod
-              wpr_chkp(i) <= wprin(i);
-            end if;
           end if;
 --pvilla mod
+          if (checkpoint_enable = '1') then --pvilla mod
+            wpr_chkp(i) <= wpr(i);
+            wprin_chkp(i) <= wprin(i);
+          end if;
           if recovn = '0' then
             wpr(i) <= wpr_chkp(i);
-            --wprin(i) <= wpr_chkp(i);
           end if;
 --end pvilla mod
           if rstn = '0' then

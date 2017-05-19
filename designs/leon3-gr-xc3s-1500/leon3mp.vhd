@@ -251,8 +251,8 @@ attribute keep of video_clk : signal is true;
 
 --pvilla mod
 
-signal stp_req : std_ulogic;
-signal stp_grt : std_ulogic;
+signal stp_req : std_ulogic := '0';
+signal stp_grt : std_ulogic := '0';
 
 component ahbdmastop is
  generic (

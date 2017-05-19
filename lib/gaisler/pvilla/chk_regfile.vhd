@@ -14,10 +14,11 @@ entity chk_regfile is
     rec_waddr  : out  std_logic_vector((abits -1) downto 0);
     rec_wdata  : out  std_logic_vector((dbits -1) downto 0);
     rec_we     : out  std_ulogic;
-    rec_holdn  : out std_ulogic;
+
 
     chkp   : in  std_ulogic;
-    recovn : in  std_ulogic
+    recovn : in  std_ulogic;
+    recovdone  : out std_ulogic
   );
 end;
 
@@ -26,14 +27,11 @@ architecture beh of chk_regfile is
 	signal regfile_data : regfile_t;
 	signal regfile_bkp : regfile_t;
 
-	type states is (sidle, sinit, saddr, scnt, sfin);
+	type states is (sidle, sinit, saddr, scnt, sfin, sdone);
 	signal CS, NS : states;
 
 	signal addr : unsigned((abits-1) downto 0);
-	signal holdn : std_ulogic;
 begin
-
-	rec_holdn <= holdn;
 
 	process(wclk)
 	begin
@@ -63,13 +61,16 @@ begin
 					when scnt =>
 						addr <= addr - 1;
 					when sfin =>
+						
+					when sdone =>
+						
 				end case;
 			end if;
 		end if;
 	end process;
 
 
-	holdn <= '1' when (CS=sidle or CS=sinit) else '0';
+	recovdone <= '1' when (CS=sdone) else '0';
 	rec_we <= '1' when CS=saddr else '0';
 	rec_waddr <= STD_LOGIC_VECTOR(addr);
 	rec_wdata <= regfile_bkp(to_integer(addr));
@@ -87,8 +88,11 @@ begin
 			when scnt =>
 				NS <= sfin;
 			when sfin =>
-				if (addr=0) then NS <= sidle;
+				if (addr=0) then NS <= sdone;
 				else NS <= saddr; end if;
+			when sdone =>
+				if (recovn='0') then NS <= sdone;
+				else NS <= sidle; end if;
 			when others =>
 				NS <= sidle;
 		end case;

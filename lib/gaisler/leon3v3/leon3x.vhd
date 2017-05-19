@@ -165,6 +165,7 @@ signal gnd, vcc : std_logic;
 attribute sync_set_reset : string;
 attribute sync_set_reset of rst : signal is "true";
 
+signal recovdone_pin : std_ulogic := '0';
 signal recov_pin : std_ulogic := '1';
 signal chkp_pin : std_ulogic := '1';
 signal ahbo_sig  : ahb_mst_out_type;
@@ -190,17 +191,17 @@ component chk_regfile
     rec_waddr  : out  std_logic_vector((IRFBITS-1) downto 0);
     rec_wdata  : out  std_logic_vector(31 downto 0);
     rec_we     : out  std_ulogic;
-    rec_holdn  : out std_ulogic;
 
     chkp   : in  std_ulogic;
-    recovn : in  std_ulogic
+    recovn : in  std_ulogic;
+    recovdone  : out std_ulogic
   );
 end component;
 
    signal waddr_mux, rec_waddr : std_logic_vector((IRFBITS-1) downto 0);
    signal wdata_mux, rec_wdata : std_logic_vector(31 downto 0);
    signal we_mux, rec_we    : std_ulogic;
-   signal rec_holdn : std_ulogic;
+
 
 begin
 
@@ -218,7 +219,7 @@ begin
          ilramstart, dlram, dlramsize, dlramstart, mmuen, itlbnum, dtlbnum,
          tlb_type, tlb_rep, lddel, disas, tbuf, pwd, svt, rstaddr, smp,
          cached, clk2x, scantest, mmupgsz, bp, npasi, pwrpsr, rex, altwin)
-       port map (gclk2, rst, holdn, rec_holdn, recov_pin, chkp_pin, -- pvilla mod
+       port map (gclk2, rst, holdn, recov_pin, chkp_pin, -- pvilla mod
                  ahbi, ahbo_sig, ahbsi, ahbso, rfi, rfo, crami, cramo, 
                  tbi, tbo, tbi_2p, tbo_2p, fpi, fpo, cpi, cpo, irqi, irqo, dbgi, dbgo, clk, clk2, clken
                  );
@@ -232,13 +233,13 @@ begin
        port map (
                  rstn, gclk2,
                  rfi.waddr(IRFBITS-1 downto 0), rfi.wdata, rfi.wren,
-                 rec_waddr, rec_wdata, rec_we, rec_holdn,
-                 chkp_pin, recov_pin
+                 rec_waddr, rec_wdata, rec_we,
+                 chkp_pin, recov_pin, recovdone_pin
                 );
 
-     waddr_mux <= rfi.waddr(IRFBITS-1 downto 0) when rec_holdn='1' else rec_waddr;
-     wdata_mux <= rfi.wdata when rec_holdn='1' else rec_wdata;
-     we_mux <= rfi.wren when rec_holdn='1' else rec_we;
+     waddr_mux <= rfi.waddr(IRFBITS-1 downto 0) when recov_pin='1' else rec_waddr;
+     wdata_mux <= rfi.wdata when recov_pin='1' else rec_wdata;
+     we_mux <= rfi.wren when recov_pin='1' else rec_we;
 
      -- IU register file
      rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
