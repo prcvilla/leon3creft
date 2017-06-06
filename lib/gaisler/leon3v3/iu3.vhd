@@ -4572,17 +4572,16 @@ begin
 -----------------------------------------------------------------------
 -- OUTPUTS
 -----------------------------------------------------------------------
+    rin <= v;
+    wprin <= vwpr;
+    dsuin <= vdsu;
+    irin <= vir;
     --pvilla mod
-    if recovn='0' then -- added by me, lol
-      rin <= rin_chkp;
-      wprin <= wprin_chkp;
-      dsuin <= dsuin_chkp;
-      irin <= irin_chkp;
-    else --original
-      rin <= v;
-      wprin <= vwpr;
-      dsuin <= vdsu;
-      irin <= vir;
+    if (checkpoint_enable = '1') then
+      rin_chkp <= rin;
+      wprin_chkp <= wprin;
+      dsuin_chkp <= dsuin;
+      irin_chkp <= irin;
     end if;
     --end pvilla mod
 
@@ -4607,6 +4606,11 @@ begin
     else dsign := r.e.ctrl.inst(19); end if;
     divi.y <= (r.m.y(31) and dsign) & r.m.y;
     rpin <= vp;
+    --pvilla mod
+    if (checkpoint_enable = '1') then
+      rpin_chkp <= rpin;
+    end if;
+    --end pvilla mod
 
     if DBGUNIT then
       dbgo.dsu <= '1'; dbgo.dsumode <= r.x.debug; dbgo.crdy <= dsur.crdy(2);
@@ -4665,7 +4669,13 @@ begin
       fpi <= vfpi;
       cpi <= vfpi;      -- dummy, just to kill some warnings ...
     end if;
-
+    if recovn='0' then
+      rin <= rin_chkp;
+      wprin <= wprin_chkp;
+      dsuin <= dsuin_chkp;
+      irin <= irin_chkp;
+      rpin <= rpin_chkp;
+    end if;
   end process;
 
   checkpoint_enable <= chkp;
@@ -4676,7 +4686,7 @@ begin
       rp <= rpin;
 --pvilla mod
       if (checkpoint_enable = '1') then
-        rp_chkp <= rpin;
+        rp_chkp <= rp;
       end if;
       if recovn = '0' then
         rp <= rp_chkp;
@@ -4714,15 +4724,7 @@ begin
           r.x.set <= rin.x.set;
         end if;
       end if;
---pvilla mod
-      if (checkpoint_enable = '1') then
-        r_chkp <= r; -- modifying to save the registers accordingly
-        rin_chkp <= rin;
-      end if;
-      if (recovn = '0') then
-        r <= r_chkp;
-      end if;
---end pvilla mod
+
       if rstn = '0' then
         if RESET_ALL then
           r <= RRES;
@@ -4780,6 +4782,15 @@ begin
         r.d.stwin <= RRES.d.stwin;
         r.d.cwpmax <= RRES.d.cwpmax;
       end if;
+--pvilla mod
+      if (checkpoint_enable = '1') then
+        r_chkp <= r; -- modifying to save the registers accordingly
+        --rin_chkp <= rin;
+      end if;
+      if (recovn = '0') then
+        r <= r_chkp;
+      end if;
+--end pvilla mod
     end if;
   end process;
 
@@ -4792,15 +4803,7 @@ begin
         else
           dsur.crdy <= dsuin.crdy;
         end if;
---pvilla mod
-        if (checkpoint_enable = '1') then --pvilla mod
-          dsur_chkp <= dsur;
-          dsuin_chkp <= dsuin;
-        end if;
-        if recovn = '0' then
-          dsur <= dsur_chkp;
-        end if;
---end pvilla mod
+
         if rstn = '0' then
           if RESET_ALL then
             dsur <= DRES;
@@ -4809,6 +4812,15 @@ begin
             dsur.asi <= (others => '0'); dsur.crdy <= (others => '0');
           end if;
         end if;
+--pvilla mod
+        if (checkpoint_enable = '1') then --pvilla mod
+          dsur_chkp <= dsur;
+          --dsuin_chkp <= dsuin;
+        end if;
+        if recovn = '0' then
+          dsur <= dsur_chkp;
+        end if;
+--end pvilla mod
       end if;
     end process;
   end generate;
@@ -4827,16 +4839,17 @@ begin
         if holdn = '1' then 
           ir <= irin;
         end if;
+
+        if RESET_ALL and rstn = '0' then ir <= IRES; end if;
 --pvilla mod
         if (checkpoint_enable = '1') then --pvilla mod
           ir_chkp <= ir;
-          irin_chkp <= irin;
+          --irin_chkp <= irin;
         end if;
         if recovn = '0' then
           ir <= ir_chkp;
         end if;
 --end pvilla mod
-        if RESET_ALL and rstn = '0' then ir <= IRES; end if;
       end if;
     end process;
   end generate;
@@ -4853,15 +4866,7 @@ begin
           if holdn = '1' then 
             wpr(i) <= wprin(i);
           end if;
---pvilla mod
-          if (checkpoint_enable = '1') then --pvilla mod
-            wpr_chkp(i) <= wpr(i);
-            wprin_chkp(i) <= wprin(i);
-          end if;
-          if recovn = '0' then
-            wpr(i) <= wpr_chkp(i);
-          end if;
---end pvilla mod
+
           if rstn = '0' then
             if RESET_ALL then
               wpr(i) <= wpr_none;
@@ -4869,6 +4874,15 @@ begin
               wpr(i).exec <= '0'; wpr(i).load <= '0'; wpr(i).store <= '0';
             end if;
           end if;
+--pvilla mod
+          if (checkpoint_enable = '1') then --pvilla mod
+            wpr_chkp(i) <= wpr(i);
+            --wprin_chkp(i) <= wprin(i);
+          end if;
+          if recovn = '0' then
+            wpr(i) <= wpr_chkp(i);
+          end if;
+--end pvilla mod
         end if;
       end process;
     end generate;
