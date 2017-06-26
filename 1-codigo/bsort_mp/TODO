@@ -1,0 +1,3 @@
+arrumar questao do mutex
+pthread_mutex falha na simulacao
+usar test_and_set ?

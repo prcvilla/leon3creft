@@ -1,0 +1,3 @@
+export PATH=/opt/rtems-4.11/bin/:$PATH
+export LD_LIBRARY_PATH=/usr/lib/i386-linux-gnu/
+export RTEMS_MAKEFILE_PATH=/opt/rtems-4.11/sparc-rtems/leon3smp

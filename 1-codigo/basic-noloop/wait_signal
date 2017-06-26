@@ -1,0 +1,4 @@
+when {/some_signal == '1'} {
+    stop
+}
+run 200 ns

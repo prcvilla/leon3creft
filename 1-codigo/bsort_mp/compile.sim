@@ -1,0 +1,10 @@
+CC=sparc-elf-gcc
+OBJCPY=sparc-elf-objcopy
+
+CFLAGS=-qsvt -qnoambapp -msoft-float
+DEFINES=
+
+
+
+sparc-elf-gcc -DLEON -DBSIZE=20 -qsvt -qnoambapp -msoft-float -o main.exe bubblesort.c main.c
+sparc-elf-objcopy -O srec --gap-fill 0 main.exe ram.srec
