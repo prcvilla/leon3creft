@@ -1,1 +1,0 @@
-vlib modelsim
