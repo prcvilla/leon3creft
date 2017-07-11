@@ -16,7 +16,7 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 -----------------------------------------------------------------------------
 -- Entity:      proc3
 -- File:        proc3.vhd
@@ -174,16 +174,16 @@ begin
 
 -- cache controller
 
-  c0mmu : mmu_cache 
+  c0mmu : mmu_cache
     generic map (
       hindex, fabtech, memtech, dsu, icen, irepl, isets, ilinesize, isetsize,
       isetlock, dcen, drepl, dsets, dlinesize, dsetsize, dsetlock,
       dsnoop, ilram, ilramsize, ilramstart, dlram, dlramsize, dlramstart,
       itlbnum, dtlbnum, tlb_type, tlb_rep, cached,
       clk2x, scantest, mmupgsz, smp, mmuen)
-    port map (rstn, clk, ici, ico, dci, dco, ahbi, ahbo, ahbsi, ahbso,
-              crami, cramo, pholdn, hclk, sclk, hclken
+    port map (rstn, clk, recovn, chkp, -- rtravessini mod
+              ici, ico, dci, dco, ahbi, ahbo, ahbsi, ahbso, crami, cramo,
+              pholdn, hclk, sclk, hclken
               );
 
 end;
-

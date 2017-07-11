@@ -16,7 +16,7 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 -----------------------------------------------------------------------------
 -- Entity:      libcache
 -- File:        libcache.vhd
@@ -97,7 +97,7 @@ package libcache is
       (s210, s201, s102),                   -- dummy
       (s210, s201, s102)                    -- dummy
       );
-  
+
   type lru_4set_table_vector_type is array(0 to 3) of std_logic_vector(4 downto 0);
   type lru_4set_table_type is array(0 to 31) of lru_4set_table_vector_type;
 
@@ -274,14 +274,14 @@ package libcache is
   type memory_ic_out_type is record
      data             : std_logic_vector(31 downto 0); -- memory data
      ready            : std_ulogic;                            -- cycle ready
-     grant            : std_ulogic;                            -- 
-     retry            : std_ulogic;                            -- 
+     grant            : std_ulogic;                            --
+     retry            : std_ulogic;                            --
      mexc             : std_ulogic;                            -- memory exception
      cache            : std_ulogic;                -- cacheable data
   end record;
 
   type memory_dc_in_type is record
-     address          : std_logic_vector(31 downto 0); 
+     address          : std_logic_vector(31 downto 0);
      data             : std_logic_vector(31 downto 0);
      asi              : std_logic_vector(3 downto 0); -- ASI for load/store
      size             : std_logic_vector(1 downto 0);
@@ -405,6 +405,8 @@ package libcache is
     port (
       rst       : in  std_logic;
       clk       : in  std_logic;
+      recovn    : in  std_ulogic; -- rtravessini mod
+      chkp      : in  std_ulogic; -- rtravessini mod
       ici       : in  icache_in_type;
       ico       : out icache_out_type;
       dci       : in  dcache_in_type;
@@ -503,6 +505,8 @@ package libcache is
     port (
       rst        : in  std_ulogic;
       clk        : in  std_ulogic;
+      recovn     : in  std_ulogic; -- rtravessini mod
+      chkp       : in  std_ulogic; -- rtravessini mod
       ici        : in  icache_in_type;
       ico        : out icache_out_type;
       dci        : in  dcache_in_type;
@@ -545,11 +549,11 @@ package libcache is
       mcdi          : in  memory_dc_in_type;
       mcdo          : in  memory_dc_out_type;
       mmreq         : in  std_ulogic;
-      mmgrant       : in  std_ulogic;    
+      mmgrant       : in  std_ulogic;
       hclken        : in std_ulogic
       );
   end component;
-  
+
   function cache_cfg(repl, sets, linesize, setsize, lock, snoop,
     lram, lramsize, lramstart, mmuen : integer) return std_logic_vector;
 
@@ -559,7 +563,7 @@ package body libcache is
 
   function cache_cfg(repl, sets, linesize, setsize, lock, snoop,
                      lram, lramsize, lramstart, mmuen : integer)
-    return std_logic_vector is 
+    return std_logic_vector is
     variable cfg : std_logic_vector(31 downto 0);
   begin
     cfg := (others => '0');
@@ -578,4 +582,3 @@ package body libcache is
     return(cfg);
   end;
 end;
-

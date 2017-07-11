@@ -16,14 +16,14 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
------------------------------------------------------------------------------   
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+-----------------------------------------------------------------------------
 -- Entity:      mmu_icache
 -- File:        mmu_icache.vhd
 -- Author:      Jiri Gaisler - Gaisler Research
 -- Modified:    Edvin Catovic - Gaisler Research
 -- Description: This unit implements the instruction cache controller.
-------------------------------------------------------------------------------  
+------------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -53,10 +53,12 @@ entity mmu_icache is
     lram      : integer range 0 to 2 := 0;
     lramsize  : integer range 1 to 512 := 1;
     lramstart : integer range 0 to 255 := 16#8e#;
-    mmuen     : integer range 0 to 1 := 0);    
+    mmuen     : integer range 0 to 1 := 0);
   port (
     rst : in  std_ulogic;
     clk : in  std_ulogic;
+    recovn : in  std_ulogic; -- rtravessini mod
+    chkp : in  std_ulogic; -- rtravessini mod
     ici : in  icache_in_type;
     ico : out icache_out_type;
     dci : in  dcache_in_type;
@@ -72,7 +74,7 @@ entity mmu_icache is
 );
 
 
-end; 
+end;
 
 architecture rtl of mmu_icache is
 
@@ -113,15 +115,15 @@ architecture rtl of mmu_icache is
   begin
 
     set := (others => '0'); xlru := (others => '0'); xset := (others => '0');
-    xlru(ILRUBITS-1 downto 0) := lru; 
-  
-    if isetlock = 1 then 
+    xlru(ILRUBITS-1 downto 0) := lru;
+
+    if isetlock = 1 then
       unlocked := ISETS-1;
       for i in ISETS-1 downto 0 loop
         if lock(i) = '0' then unlocked := i; end if;
       end loop;
     end if;
-    
+
     case ISETS is
       when 2 =>
         if isetlock = 1 then
@@ -141,7 +143,7 @@ architecture rtl of mmu_icache is
           -- xset := conv_std_logic_vector(lru4_repl_table(conv_integer(xlru)) (0), 2);
           xset := xlru(4 downto 3);
         end if;
-      when others => 
+      when others =>
     end case;
     set := xset(SETBITS-1 downto 0);
     return(set);
@@ -158,14 +160,14 @@ architecture rtl of mmu_icache is
     new_lru := (others => '0'); xnew_lru := (others => '0');
     xlru := (others => '0'); xlru(ILRUBITS-1 downto 0) := lru;
     case ISETS is
-      when 2 => 
+      when 2 =>
         if set = 0 then xnew_lru(0) := '1'; else xnew_lru(0) := '0'; end if;
       when 3 =>
-        xnew_lru(2 downto 0) := lru_3set_table(conv_integer(lru))(set); 
-      when 4 => 
+        xnew_lru(2 downto 0) := lru_3set_table(conv_integer(lru))(set);
+      when 4 =>
         xnew_lru(4 downto 0) := lru_4set_table(conv_integer(lru))(set);
         xnew_lru(SETBITS-1 downto 0) := vset;
-      when others => 
+      when others =>
     end case;
     new_lru := xnew_lru(ILRUBITS-1 downto 0);
     return(new_lru);
@@ -248,13 +250,18 @@ architecture rtl of mmu_icache is
     set   => (others => '0'),
     lru   => (others => (others => '0'))
     );
-    
+
   signal r, c : icache_control_type;      -- r is registers, c is combinational
   signal rl, cl : lru_reg_type;           -- rl is registers, cl is combinational
 
+-- rtravessini mod
+  signal r_chkp : icache_control_type;
+  signal rl_chkp : lru_reg_type;
+-- end rtravessini mod
+
   constant LRAM_EN : integer := conv_integer(conv_std_logic(lram /= 0));
 
-  constant icfg : std_logic_vector(31 downto 0) := 
+  constant icfg : std_logic_vector(31 downto 0) :=
         cache_cfg(irepl, isets, ilinesize, isetsize, isetlock, 0,
                   LRAM_EN, lramsize, lramstart, mmuen);
 
@@ -305,10 +312,10 @@ begin
     vl.waddr := r.waddress(OFFSET_HIGH downto OFFSET_LOW);
     v.cmiss := '0'; mhold := '0';
     mds := '1'; dwrite := '0'; twrite := '0'; diagen := '0'; error := '0';
-    write := mcio.ready; v.diagrdy := '0'; v.holdn := '1'; 
+    write := mcio.ready; v.diagrdy := '0'; v.holdn := '1';
 
     if icen /= 0 then
-      cacheon := dco.icdiag.cctrl.ics(0) and not (r.flush 
+      cacheon := dco.icdiag.cctrl.ics(0) and not (r.flush
       );
     else cacheon := '0'; end if;
     enable := '1'; branch := '0';
@@ -318,7 +325,7 @@ begin
     ddatain := mcio.data;       -- load full word from memory
     wtag(TAG_HIGH downto TAG_LOW) := r.vaddress(TAG_HIGH downto TAG_LOW);
     wlrr := r.lrr; wlock := r.lock;
-    
+
     set := 0; ctwrite := (others => '0'); cdwrite := (others => '0');
     vdiagset := 0; rdiagset := 0; lock := (others => '0'); ilramwr := '0';
     lramacc := '0'; lramcs := '0'; iladdr := (others => '0');
@@ -328,30 +335,30 @@ begin
     v.trans_op := r.trans_op and (not mmuico.grant);
     mmuici_trans_op := r.trans_op;
     mmuici_su := ici.su;
-    
+
 -- random replacement counter
     if ISETS > 1 then
       if conv_integer(r.rndcnt) = (ISETS - 1) then v.rndcnt := (others => '0');
       else v.rndcnt := r.rndcnt + 1; end if;
     end if;
-    
+
 
 -- generate lock bits
-    if isetlock = 1 then 
+    if isetlock = 1 then
       for i in 0 to ISETS-1 loop lock(i) := icramo.tag(i)(CTAG_LOCKPOS); end loop;
     end if;
-    
+
     --local ram access
     if (lram /= 0) and (ici.fpc(31 downto 24) = LRAM_START) then lramacc := '1'; end if;
-    
--- generate cache hit and valid bits    
+
+-- generate cache hit and valid bits
     hit := '0';
     if irepl = dir then
       set := conv_integer(ici.fpc(OFFSET_HIGH + SETBITS downto OFFSET_HIGH+1));
       if (icramo.tag(set)(TAG_HIGH downto TAG_LOW) = ici.fpc(TAG_HIGH downto TAG_LOW))
           and ((icramo.ctx(set) = mmudci.mmctrl1.ctx) or (mmudci.mmctrl1.e = '0') or not M_EN)
       then hit := not r.flush; end if;
-      validv(set) := genmux(ici.fpc(LINE_HIGH downto LINE_LOW), 
+      validv(set) := genmux(ici.fpc(LINE_HIGH downto LINE_LOW),
                           icramo.tag(set)(ilinesize -1 downto 0));
     else
       for i in ISETS-1 downto 0 loop
@@ -367,10 +374,10 @@ begin
       shtag(ilinesize-2 downto 0) := icramo.tag(i)(ilinesize-1 downto 1);
       nvalidv(i) := genmux(ici.fpc(LINE_HIGH downto LINE_LOW), shtag);
     end loop;
-      
+
 
     if (lramacc = '1') and (ISETS > 1) then set := 1; end if;
-    
+
     if ici.fpc(LINE_HIGH downto LINE_LOW) = lline then lastline := '1';
     else lastline := '0'; end if;
 
@@ -386,19 +393,19 @@ begin
     nvalid := nvalidv(set);
     xaddr_inc := r.waddress(LINE_HIGH downto LINE_LOW) + 1;
 
-    if mcio.ready = '1' then 
+    if mcio.ready = '1' then
       v.waddress(LINE_HIGH downto LINE_LOW) := xaddr_inc;
     end if;
 
     xaddr_inc := r.vaddress(LINE_HIGH downto LINE_LOW) + 1;
 
-    if mcio.ready = '1' then 
+    if mcio.ready = '1' then
       v.vaddress(LINE_HIGH downto LINE_LOW) := xaddr_inc;
     end if;
 
     taddr := ici.rpc(TAG_HIGH downto LINE_LOW);
 
-    
+
 -- main state machine
 
     case r.istate is
@@ -409,9 +416,9 @@ begin
       --v.hit := '0';
       v.hit := hit;
       v.su := ici.su;
-      
---      if (ici.inull or eholdn)  = '0' then 
-      if eholdn  = '0' then 
+
+--      if (ici.inull or eholdn)  = '0' then
+      if eholdn  = '0' then
         taddr := ici.fpc(TAG_HIGH downto LINE_LOW);
       else taddr := ici.rpc(TAG_HIGH downto LINE_LOW); end if;
       v.burst := dco.icdiag.cctrl.burst and not lastline;
@@ -419,18 +426,18 @@ begin
       if (eholdn and not (ici.inull or lramacc)) = '1' then
         v.bpmiss := not (cacheon and hit and valid) and ici.nobpmiss;
         v.eocl := not nvalid;
-        if not (cacheon and hit and valid) = '1' and ici.nobpmiss='0' then  
-          v.istate := streaming;  
+        if not (cacheon and hit and valid) = '1' and ici.nobpmiss='0' then
+          v.istate := streaming;
           v.holdn := '0'; v.overrun := '1'; v.cmiss := '1';
-          
-          if M_EN and (mmudci.mmctrl1.e = '1') then 
-            v.istate := trans; 
+
+          if M_EN and (mmudci.mmctrl1.e = '1') then
+            v.istate := trans;
             mmuici_trans_op := '1';
             v.trans_op := not mmuico.grant;
             v.cache := '0';
             --v.req := '0';
-          else                          
-            v.req := '1'; 
+          else
+            v.req := '1';
             v.cache := '1';
           end if;
         else
@@ -446,14 +453,14 @@ begin
       ddatain := dci.maddress;
       if (ISETS > 1) then
         if (irepl = lru) then
-          vl.set := conv_std_logic_vector(set, SETBITS); 
+          vl.set := conv_std_logic_vector(set, SETBITS);
           vl.waddr := ici.fpc(OFFSET_HIGH downto OFFSET_LOW);
         end if;
         v.setrepl := conv_std_logic_vector(set, SETBITS);
         if (((not hit) and (not r.flush)) = '1') then
           case irepl is
           when rnd =>
-            if isetlock = 1 then 
+            if isetlock = 1 then
               if lock(conv_integer(r.rndcnt)) = '0' then v.setrepl := r.rndcnt;
               else
                 v.setrepl := conv_std_logic_vector(ISETS-1, SETBITS);
@@ -482,8 +489,8 @@ begin
             end if;
             if v.setrepl(0) = '0' then v.lrr := not icramo.tag(0)(CTAG_LRRPOS);
             else v.lrr := icramo.tag(0)(CTAG_LRRPOS); end if;
-          end case;  
-        end if;  
+          end case;
+        end if;
         if (isetlock = 1) then
           if (hit and lock(set)) = '1' then v.lock := '1';
           else v.lock := '0'; end if;
@@ -500,7 +507,7 @@ begin
           else
             v.cache := mmuico.transdata.cache;
             v.waddress := mmuico.transdata.data(31 downto 2);
-            v.istate := streaming; v.req := '1'; 
+            v.istate := streaming; v.req := '1';
           end if;
        end if;
        mhold := '1';
@@ -510,25 +517,25 @@ begin
       taddr(TAG_HIGH downto LINE_LOW) := r.vaddress(TAG_HIGH downto LINE_LOW);
       branch := (ici.fbranch and r.overrun) or
                       (ici.rbranch and (not r.overrun));
-      v.underrun := r.underrun or 
+      v.underrun := r.underrun or
         (write and ((ici.inull or not eholdn) and (mcio.ready and not (r.overrun and not r.underrun))));
-      v.overrun := (r.overrun or (eholdn and not ici.inull)) and 
+      v.overrun := (r.overrun or (eholdn and not ici.inull)) and
                     not (write or r.underrun);
       if mcio.ready = '1' then
 --        mds := not (v.overrun and not r.underrun);
         mds := not (r.overrun and not r.underrun);
---        v.req := r.burst; 
+--        v.req := r.burst;
         v.burst := v.req and not (nnlastline and mcio.ready);
       end if;
-      if mcio.grant = '1' then 
-        v.req := dco.icdiag.cctrl.burst and r.burst and 
+      if mcio.grant = '1' then
+        v.req := dco.icdiag.cctrl.burst and r.burst and
                  (not (nnlastline and mcio.ready)) and (dco.icdiag.cctrl.burst or (not branch)) and
                  not (v.underrun and not cacheon);
         v.burst := v.req and not (nnlastline and mcio.ready);
       end if;
       v.underrun := (v.underrun or branch) and not v.overrun;
-      v.holdn := not (v.overrun or v.underrun); 
-      if (mcio.ready = '1') and (r.req = '0') then --(v.burst = '0') then        
+      v.holdn := not (v.overrun or v.underrun);
+      if (mcio.ready = '1') and (r.req = '0') then --(v.burst = '0') then
         v.underrun := '0'; v.overrun := '0';
         v.istate := stop; v.holdn := '0';
       end if;
@@ -548,7 +555,7 @@ begin
       end if;
     end if;
 
-    
+
 -- Generate new valid bits write strobe
 
     vmaskraw := decode(r.waddress(LINE_HIGH downto LINE_LOW));
@@ -565,8 +572,8 @@ begin
         if r.hit = '1' then vmask(i) := r.valid(i) or vmaskraw;
         else vmask(i) := vmaskraw; end if;
       end loop;
-    end if; 
-    if (mcio.mexc or not mcio.cache) = '1' then 
+    end if;
+    if (mcio.mexc or not mcio.cache) = '1' then
       twrite := '0'; dwrite := '0';
     else dwrite := twrite; end if;
     if twrite = '1' then
@@ -580,11 +587,11 @@ begin
     end if;
 
 -- cache write signals
-    
+
     if ISETS > 1 then setrepl := r.setrepl; else setrepl := (others => '0'); end if;
     if twrite = '1' then ctwrite(conv_integer(setrepl)) := '1'; end if;
     if dwrite = '1' then cdwrite(conv_integer(setrepl)) := '1'; end if;
-    
+
 -- diagnostic cache access
 
     if diagen = '1' then
@@ -596,7 +603,7 @@ begin
        end if;
      end if;
     end if;
-     
+
     case ISETS is
       when 1 =>
         vdiagset := 0; rdiagset := 0;
@@ -604,10 +611,10 @@ begin
         if conv_integer(v.diagset) < 3 then vdiagset := conv_integer(v.diagset); end if;
         if conv_integer(r.diagset) < 3 then rdiagset := conv_integer(r.diagset); end if;
       when others =>
-        vdiagset := conv_integer(v.diagset); 
-        rdiagset := conv_integer(r.diagset); 
+        vdiagset := conv_integer(v.diagset);
+        rdiagset := conv_integer(r.diagset);
     end case;
-    
+
     diagdata := icramo.data(rdiagset);
     if diagen = '1' then -- diagnostic or local ram access
       taddr(TAG_HIGH downto LINE_LOW) := dco.icdiag.addr(TAG_HIGH downto LINE_LOW);
@@ -630,13 +637,13 @@ begin
       v.diagrdy := '1';
     end if;
 
-    
+
 -- select data to return on read access
 
     rdata := icramo.data;
     case rdatasel is
     when memory => rdata(0) := mcio.data; set := 0;
-    when others => 
+    when others =>
     end case;
 
     if MUXDATA then
@@ -646,7 +653,7 @@ begin
 -- cache flush
 
     if ((ici.flush or
-         dco.icdiag.flush) = '1') and (icen /= 0) 
+         dco.icdiag.flush) = '1') and (icen /= 0)
     then
       v.flush := '1'; v.flush2 := '1'; v.faddr := (others => '0');
       v.pflush := dco.icdiag.pflush; wtag := (others => '0');
@@ -665,7 +672,7 @@ begin
         ) = '1' then
         v.flush2 := '0';
       end if;
-     
+
       -- precise flush, ASI_FLUSH_PAGE & ASI_FLUSH_CTX
       if M_EN then
         if r.pflush = '1' then
@@ -686,10 +693,10 @@ begin
       end if;
     end if;
 
-    
+
 -- reset
 
-    if (not RESET_ALL) and (rst = '0') then 
+    if (not RESET_ALL) and (rst = '0') then
       v.istate := idle; v.req := '0'; v.burst := '0'; v.holdn := '1';
       v.flush := '0'; v.flush2 := '0'; v.overrun := '0'; v.underrun := '0';
       v.rndcnt := (others => '0'); v.lrr := '0'; v.setrepl := (others => '0');
@@ -700,10 +707,10 @@ begin
       v.bpmiss := '0';
     end if;
 
-    if (not RESET_ALL and rst = '0') or (r.flush = '1') then  
+    if (not RESET_ALL and rst = '0') or (r.flush = '1') then
       vl.lru := (others => (others => '0'));
     end if;
-    
+
 -- Drive signals
 
     c  <= v;       -- register inputs
@@ -724,7 +731,7 @@ begin
     icrami.twrite    <= ctwrite;
     icrami.flush    <= r.flush2;
     icrami.ctx      <= mmudci.mmctrl1.ctx;
- 
+
     -- data ram inputs
     icrami.denable  <= enable;
     icrami.address  <= taddr(19+LINE_LOW downto LINE_LOW);
@@ -736,7 +743,7 @@ begin
     icrami.ldramin.enable <= (dco.icdiag.ilramen or lramcs or lramacc);
     icrami.ldramin.read  <= dco.icdiag.ilramen or lramacc;
     icrami.ldramin.write <= ilramwr;
-    
+
     -- memory controller inputs
     mcii.address(31 downto 2)  <= r.waddress(31 downto 2);
     mcii.address(1 downto 0)  <= "00";
@@ -770,7 +777,7 @@ begin
     ico.cstat.tmiss <= mmuico.tlbmiss;
     ico.cstat.cmiss <= r.cmiss;
     if r.istate = idle then ico.idle <= '1'; else  ico.idle <= '0'; end if;
-    
+
   end process;
 
 -- Local registers
@@ -785,6 +792,14 @@ begin
         r.waddress <= ici.fpc(31 downto 2);
         r.vaddress <= ici.fpc(31 downto 2);
       end if;
+-- rtravessini mod
+      if (chkp = '1') then
+        r_chkp <= r;
+      end if;
+      if (recovn = '0') then
+        r <= r_chkp;
+      end if;
+-- end rtravessini mod
     end if;
   end process;
 
@@ -796,6 +811,14 @@ begin
         if RESET_ALL and (rst = '0') then
           rl <= LRES;
         end if;
+-- rtravessini mod
+        if (chkp = '1') then
+          rl_chkp <= rl;
+        end if;
+        if (recovn = '0') then
+          rl <= rl_chkp;
+        end if;
+-- end rtravessini mod
       end if;
     end process;
   end generate;
@@ -814,6 +837,5 @@ begin
     wait;
   end process;
 -- pragma translate_on
-      
-end ;
 
+end ;

@@ -16,7 +16,7 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 -----------------------------------------------------------------------------
 -- Entity:      mmu_cache
 -- File:        mmu_cache.vhd
@@ -78,6 +78,8 @@ entity mmu_cache is
   port (
     rst        : in  std_ulogic;
     clk        : in  std_ulogic;
+    recovn     : in  std_ulogic; -- rtravessini mod
+    chkp       : in  std_ulogic; -- rtravessini mod
     ici        : in  icache_in_type;
     ico        : out icache_out_type;
     dci        : in  dcache_in_type;
@@ -94,7 +96,7 @@ entity mmu_cache is
   );
 
 
-end; 
+end;
 
 architecture rtl of mmu_cache is
 
@@ -127,13 +129,14 @@ begin
 
   gndv <= (others => '0');
 
-  icache0 : mmu_icache 
+  icache0 : mmu_icache
     generic map (fabtech, icen, irepl, isets, ilinesize, isetsize, isetlock, ilram,
                  ilramsize, ilramstart,
                  mmuen)
-    port map (rst, clk, ici, icol, dci, dcol, mcii, mcio, 
-              crami.icramin, cramo.icramo, fpuholdn, mmudci, mmuici, mmuico);
-  dcache0 : mmu_dcache 
+    port map (rst, clk, recovn, chkp, -- rtravessini mod
+              ici, icol, dci, dcol, mcii, mcio, crami.icramin, cramo.icramo,
+              fpuholdn, mmudci, mmuici, mmuico);
+  dcache0 : mmu_dcache
     generic map (dsu, dcen, drepl, dsets, dlinesize, dsetsize,  dsetlock, dsnoop,
                  dlram, dlramsize, dlramstart, ilram, ilramstart,
                  itlbnum, dtlbnum, tlb_type,
@@ -167,12 +170,11 @@ begin
       port map (rst, hclk, clk, ahbi, ahbi2, ahbo2, ahbo, ahbsi, ahbsi2,
                 mcii, mcdi, mcdo, mcmmi.req, mcmmo.grant, hclken);
   end generate;
-     
+
   noclk2x : if clk2x = 0 generate
     ahbsi2 <= ahbsi;
     ahbi2  <= ahbi;
     ahbo   <= ahbo2;
   end generate;
-  
-end;
 
+end;
