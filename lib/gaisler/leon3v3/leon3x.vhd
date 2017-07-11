@@ -16,7 +16,7 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 ------------------------------------------------------------------------------
 -- Entity:      leon3x
 -- File:        leon3x.vhd
@@ -121,7 +121,7 @@ entity leon3x is
     );
 
 
-end; 
+end;
 
 architecture rtl of leon3x is
 
@@ -165,6 +165,7 @@ signal gnd, vcc : std_logic;
 attribute sync_set_reset : string;
 attribute sync_set_reset of rst : signal is "true";
 
+--pvilla mod
 signal recovdone_pin : std_ulogic := '0';
 signal recov_pin : std_ulogic := '1';
 signal chkp_pin : std_ulogic := '1';
@@ -201,7 +202,7 @@ end component;
    signal waddr_mux, rec_waddr : std_logic_vector((IRFBITS-1) downto 0);
    signal wdata_mux, rec_wdata : std_logic_vector(31 downto 0);
    signal we_mux, rec_we    : std_ulogic;
-
+--end pvilla mod
 
 begin
 
@@ -220,11 +221,13 @@ begin
          tlb_type, tlb_rep, lddel, disas, tbuf, pwd, svt, rstaddr, smp,
          cached, clk2x, scantest, mmupgsz, bp, npasi, pwrpsr, rex, altwin)
        port map (gclk2, rst, holdn, recov_pin, chkp_pin, -- pvilla mod
-                 ahbi, ahbo_sig, ahbsi, ahbso, rfi, rfo, crami, cramo, 
+                 ahbi, ahbo_sig, ahbsi, ahbso, rfi, rfo, crami, cramo, --pvilla mod
                  tbi, tbo, tbi_2p, tbo_2p, fpi, fpo, cpi, cpo, irqi, irqo, dbgi, dbgo, clk, clk2, clken
                  );
+
+     -- pvilla mod
      -- checkpoint controller
-     chkp0 : chk_control 
+     chkp0 : chk_control
        port map (
                  rstn, gclk2, ahbo_sig.hwrite, open--chkp_pin
                 );
@@ -241,12 +244,13 @@ begin
      waddr_mux <= rfi.waddr(IRFBITS-1 downto 0) when recov_pin='1' else rec_waddr;
      wdata_mux <= rfi.wdata when recov_pin='1' else rec_wdata;
      we_mux <= rfi.wren when recov_pin='1' else rec_we;
+     -- end pvilla mod
 
      -- IU register file
      rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
                                       scantest)
        port map (
-                 gclk2, waddr_mux, wdata_mux, we_mux,
+                 gclk2, waddr_mux, wdata_mux, we_mux, --pvilla mod
                  gclk2, rfi.raddr1(IRFBITS-1 downto 0), rfi.ren1, rfo.data1,
                  rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
                  ahbi.testin
@@ -309,7 +313,7 @@ begin
                         fpunet, hindex, scantest)
            port map (rst, gfclk2, holdn, fpi, fpo, ahbi.testin
                      );
-       end generate;  
+       end generate;
 
        grlfpc1gen : if (fpuarch >=8) and (fpuarch < 15) generate
          fpu0 : grlfpwx
@@ -317,10 +321,10 @@ begin
                         (fpuarch-8), fpunet, hindex, scantest)
            port map (rst, gfclk2, holdn, fpi, fpo, ahbi.testin
                      );
-       end generate;    
+       end generate;
        fpui <= grfpu_in_none;
-     end generate;    
-  
+     end generate;
+
      -- CP
      cpo <= fpc_out_none;
 
@@ -414,8 +418,8 @@ begin
          dbgi_dbreak       => dbgi.dbreak,
          dbgi_step         => dbgi.step,
          dbgi_halt         => dbgi.halt,
-         dbgi_reset        => dbgi.reset, 
-         dbgi_dwrite       => dbgi.dwrite, 
+         dbgi_reset        => dbgi.reset,
+         dbgi_dwrite       => dbgi.dwrite,
          dbgi_daddr        => dbgi.daddr,
          dbgi_ddata        => dbgi.ddata,
          dbgi_btrapa       => dbgi.btrapa,
@@ -432,7 +436,7 @@ begin
          dbgo_error        => dbgo.error,
          dbgo_halt         => dbgo.halt,
          dbgo_pwd          => dbgo.pwd,
-         dbgo_idle         => dbgo.idle, 
+         dbgo_idle         => dbgo.idle,
          dbgo_ipend        => dbgo.ipend,
          dbgo_icnt         => dbgo.icnt,
          dbgo_fcnt         => dbgo.fcnt,
@@ -452,9 +456,9 @@ begin
          --fpuo       => fpuo,
          clken      => clken);
    end generate ntl;
-   
+
 -- pragma translate_off
-   bootmsg : report_version 
+   bootmsg : report_version
      generic map (
        "leon3_" & tost(hindex) & ": LEON3 SPARC V8 processor rev " & tost(LEON3_VERSION)
        & ": iuft: " & tost(iuft) & ", fpft: " & tost(fpft) & ", cacheft: " & tost(cmft)
@@ -464,4 +468,3 @@ begin
 -- pragma translate_on
 
 end;
-
