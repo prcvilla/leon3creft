@@ -1,11 +1,17 @@
+when -label dummywhen { sim:/testbench/clk == 0} {
+	stop
+}
+restart -sim -force
+nowhen *
+
 echo "var initialization..."
 set i 0
 
 # Stop execution after simulation time has exceeded timelimit
-when -label timelimit { $now >= @5000000ns } {
-	echo "time limit reached..."
-	stop
-}
+#when -label timelimit { $now >= @5000000ns } {
+#	echo "time limit reached..."
+#	stop
+#}
 
 # Stop execution when GPIO 8 is set (Wrong behaviour)
 when -label progerr { sim:/testbench/cpu/pio(8) } {
@@ -61,6 +67,7 @@ when -label recovdone { sim:/testbench/cpu/l3/cpu(0)/u0/leon3x0/recovdone_pin } 
     force -deposit sim:/testbench/cpu/stp_req 0 45
     # Generate the time for the next recovery execution
     set nextrecov [expr {20000 + int(rand()*50000)}]
+    echo "next recovery: " $nextrecov
     # Start next recovery routine
     force -deposit sim:/testbench/cpu/stp_req 1 [expr {$nextrecov}]
   }

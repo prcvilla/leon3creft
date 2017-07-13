@@ -19,7 +19,8 @@ begin
 
 	clk <= wclk;
 
-	chkp_en <= '1' when CS=schkpen else '0';
+	--chkp_en <= '1' when CS=schkpen else '0';
+	chkp_en <= '1' when CS=swriteon else '0';
 
 	process(clk)
 	begin

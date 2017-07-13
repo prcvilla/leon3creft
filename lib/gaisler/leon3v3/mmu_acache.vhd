@@ -50,6 +50,8 @@ entity mmu_acache is
   port (
     rst    : in  std_logic;
     clk    : in  std_logic;
+    recovn : in  std_ulogic; -- pvilla mod
+    chkp : in  std_ulogic; -- pvilla mod
     mcii   : in  memory_ic_in_type;
     mcio   : out memory_ic_out_type;
     mcdi   : in  memory_dc_in_type;
@@ -121,6 +123,11 @@ architecture rtl of mmu_acache is
 
   signal r, rin : reg_type;
   signal r2, r2in : reg2_type;
+
+--pvilla mod
+  signal r_chkp, rin_chkp : reg_type;
+  signal r2_chkp, r2in_chkp : reg2_type;
+--end pvilla mod
 
 begin
 
@@ -366,8 +373,18 @@ begin
     mcmmo.werr    <= r.werr;
     mcmmo.cache   <= mmhcache;
 
-    rin <= v; r2in <= v2;
-
+    rin <= v;
+    r2in <= v2;
+-- pvilla mod
+    if (chkp = '1') then
+      rin_chkp <= rin;
+      r2in_chkp <= r2in;
+    end if;
+    if (recovn = '0') then
+      rin <= rin_chkp;
+      r2in <= r2in_chkp;
+    end if;
+-- end pvilla mod
   end process;
 
   mcio.data  <= ahbreadword(ahbi.hrdata);
@@ -381,6 +398,14 @@ begin
     if rising_edge(clk) then
       r <= rin;
       if RESET_ALL and (rst = '0') then r <= RRES; end if;
+-- pvilla mod
+      if (chkp = '1') then
+        r_chkp <= r;
+      end if;
+      if (recovn = '0') then
+        r <= r_chkp;
+      end if;
+-- end pvilla mod
     end if;
   end process;
 
@@ -390,6 +415,14 @@ begin
       if rising_edge(clk) then
         r2 <= r2in;
         if RESET_ALL and (rst = '0') then r2 <= R2RES; end if;
+-- pvilla mod
+      if (chkp = '1') then
+        r2_chkp <= r2;
+      end if;
+      if (recovn = '0') then
+        r2 <= r2_chkp;
+      end if;
+-- end pvilla mod
       end if;
     end process;  
   end generate;

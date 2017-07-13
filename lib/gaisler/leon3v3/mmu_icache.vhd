@@ -254,10 +254,10 @@ architecture rtl of mmu_icache is
   signal r, c : icache_control_type;      -- r is registers, c is combinational
   signal rl, cl : lru_reg_type;           -- rl is registers, cl is combinational
 
--- rtravessini mod
-  signal r_chkp : icache_control_type;
-  signal rl_chkp : lru_reg_type;
--- end rtravessini mod
+-- rtravessini and pvilla  mod
+  signal r_chkp, c_chkp : icache_control_type;
+  signal rl_chkp, cl_chkp : lru_reg_type;
+-- end rtravessini and pvill a mod
 
   constant LRAM_EN : integer := conv_integer(conv_std_logic(lram /= 0));
 
@@ -715,6 +715,13 @@ begin
 
     c  <= v;       -- register inputs
     cl <= vl;  -- lru register inputs
+-- pvilla mod
+    if (chkp = '1') then
+        c_chkp <= c;
+        cl_chkp <= cl;
+    end if;
+-- end pvilla mod
+
 
 -- tag ram inputs
     enable := enable;
@@ -777,7 +784,12 @@ begin
     ico.cstat.tmiss <= mmuico.tlbmiss;
     ico.cstat.cmiss <= r.cmiss;
     if r.istate = idle then ico.idle <= '1'; else  ico.idle <= '0'; end if;
-
+--pvilla mod
+    if (recovn = '0') then
+        c <= c_chkp;
+        cl <= cl_chkp;
+    end if;
+--end pvilla mod
   end process;
 
 -- Local registers

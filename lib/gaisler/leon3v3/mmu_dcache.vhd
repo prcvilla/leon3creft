@@ -69,6 +69,8 @@ entity mmu_dcache is
   port (
     rst        : in  std_ulogic;
     clk        : in  std_ulogic;
+    recovn : in  std_ulogic; -- pvilla mod
+    chkp : in  std_ulogic; -- pvilla mod
     dci        : in  dcache_in_type;
     dco        : out dcache_out_type;
     ico        : in  icache_out_type;
@@ -373,7 +375,11 @@ architecture rtl of mmu_dcache is
   signal r, c : dcache_control_type;      -- r is registers, c is combinational
   signal rs, cs : snoop_reg_type;         -- rs is registers, cs is combinational
   signal rl, cl : lru_reg_type;           -- rl is registers, cl is combinational
-
+--pvilla mod
+  signal r_chkp, c_chkp : dcache_control_type;      -- r is registers, c is combinational
+  signal rs_chkp, cs_chkp : snoop_reg_type;         -- rs is registers, cs is combinational
+  signal rl_chkp, cl_chkp : lru_reg_type;           -- rl is registers, cl is combinational
+--end pvilla mod
 begin
 
   dctrl : process(rst, r, rs, rl, dci, mcdo, ico, dcramo, ahbsi, fpuholdn, mmudco, ahbso)
@@ -1551,10 +1557,16 @@ begin
     if icen=0 then v.cctrl.ics := "00"; end if;
 
 -- Drive signals
-    c <= v; cs <= vs;   -- register inputs
+    c <= v;
+    cs <= vs;   -- register inputs
     cl <= vl;
-
-    
+--pvilla mod
+    if (chkp = '1') then
+        c_chkp <= c;
+        cs_chkp <= cs;
+        cl_chkp <= cl;
+    end if;
+--end pvilla mod
     -- tag ram inputs
     senable := senable and not scanen; enable := enable and not scanen;
 
@@ -1655,6 +1667,13 @@ begin
     mmudci.fsread <= mmudci_fsread;
     mmudci.mmctrl1 <= r.mmctrl1;
 
+--pvilla mod
+    if (recovn = '0') then
+        c <= c_chkp;
+        cs <= cs_chkp;
+        cl <= cl_chkp;
+    end if;
+--end pvilla mod
   end process;
 
 -- Local registers
@@ -1664,6 +1683,14 @@ begin
       if rising_edge(clk) then
         r <= c;
         if RESET_ALL and (rst = '0') then r <= RRES; end if;
+--pvilla mod
+        if (chkp = '1') then
+          r_chkp <= r;
+        end if;
+        if (recovn = '0') then
+          r <= r_chkp;
+        end if;
+--end pvilla mod
       end if;
     end process;
 
@@ -1673,6 +1700,14 @@ begin
         if rising_edge(sclk) then
           rs <= cs;
           if RESET_ALL and (rst = '0') then rs <= SRES; end if;
+--pvilla mod
+        if (chkp = '1') then
+          rs_chkp <= rs;
+        end if;
+        if (recovn = '0') then
+          rs <= rs_chkp;
+        end if;
+--end pvilla mod
         end if;
       end process;
     end generate;
@@ -1688,6 +1723,14 @@ begin
         if rising_edge(clk) then
           rl <= cl;
           if RESET_ALL and (rst = '0') then rl <= LRES; end if;
+--pvilla mod
+        if (chkp = '1') then
+          rl_chkp <= rl;
+        end if;
+        if (recovn = '0') then
+          rl <= rl_chkp;
+        end if;
+--end pvilla mod
         end if;
       end process;
     end generate;   

@@ -375,6 +375,8 @@ package libcache is
     port (
       rst       : in  std_logic;
       clk       : in  std_logic;
+      recovn : in  std_ulogic; -- pvilla mod
+      chkp : in  std_ulogic; -- pvilla mod
       mcii      : in  memory_ic_in_type;
       mcio      : out memory_ic_out_type;
       mcdi      : in  memory_dc_in_type;
@@ -450,6 +452,8 @@ package libcache is
     port (
       rst        : in  std_logic;
       clk        : in  std_logic;
+      recovn : in  std_ulogic; -- pvilla mod
+      chkp : in  std_ulogic; -- pvilla mod
       dci        : in  dcache_in_type;
       dco        : out dcache_out_type;
       ico        : in  icache_out_type;

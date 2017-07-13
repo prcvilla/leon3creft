@@ -141,14 +141,16 @@ begin
                  dlram, dlramsize, dlramstart, ilram, ilramstart,
                  itlbnum, dtlbnum, tlb_type,
                  MEMTECH_MOD, cached, mmupgsz, smp, mmuen, icen)
-    port map (rst, clk, dci, dcol, icol, mcdi, mcdo, ahbsi2,
+    port map (rst, clk, recovn, chkp, -- pvilla mod
+              dci, dcol, icol, mcdi, mcdo, ahbsi2,
               crami.dcramin, cramo.dcramo, fpuholdn, mmudci, mmudco, sclk, ahbso);
 
 -- AMBA AHB interface
   a0 : mmu_acache
     generic map (hindex, ilinesize, cached, clk2x, scantest
                  )
-    port map (rst, sclk, mcii, mcio, mcdi, mcdo, mcmmi, mcmmo, ahbi2, ahbo2, ahbso, hclken);
+    port map (rst, sclk, recovn, chkp, -- pvilla mod
+              mcii, mcio, mcdi, mcdo, mcmmi, mcmmo, ahbi2, ahbo2, ahbso, hclken);
 
   -- MMU
   mmugen : if mmuen = 1 generate

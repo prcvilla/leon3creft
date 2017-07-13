@@ -229,9 +229,9 @@ begin
      -- checkpoint controller
      chkp0 : chk_control
        port map (
-                 rstn, gclk2, ahbo_sig.hwrite, open--chkp_pin
+                 rstn, gclk2, ahbo_sig.hwrite, chkp_pin
                 );
-     chkp_pin <= ahbo_sig.hwrite;
+--     chkp_pin <= ahbo_sig.hwrite;
      chkregfile0 : chk_regfile
        generic map ( IRFBITS, 32 )
        port map (
