@@ -10,7 +10,7 @@ DEFINES=-DBSIZE=10
 TARGET=main
 SOURCES=bubblesort.c main.c
 OBJECTS=$(SOURCES:.c=.o)
-DEST=/home/pvilla/phd/leon3creft/designs/leon3-gr-xc3s-1500/
+DEST=../../designs/leon3-gr-xc3s-1500/
 #target: dependecies
 #(tab) commands
 all: comp

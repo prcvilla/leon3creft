@@ -13,7 +13,7 @@ TARGET=main
 SOURCES=mutex.c bubblesort.c main.c
 OBJECTS=$(SOURCES:.c=.o)
 #DEST=/home/pvilla/phd/grlib-gpl-1.4.1-b4156/designs/leon3mp/
-DEST=/home/pvilla/phd/grlib-gpl-1.5.0-b4164/designs/leon3-gr-xc3s-1500/
+DEST=../../designs/leon3-gr-xc3s-1500/
 #target: dependecies
 #(tab) commands
 all: comp

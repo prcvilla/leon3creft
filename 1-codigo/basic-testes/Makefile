@@ -10,7 +10,7 @@ DEFINES=-DLEON
 TARGET=main
 SOURCES=main.c
 OBJECTS=$(SOURCES:.c=.o)
-DEST=/opt/leon3creft/designs/leon3-gr-xc3s-1500/
+DEST=../../designs/leon3-gr-xc3s-1500/
 #target: dependecies
 #(tab) commands
 all: comp
