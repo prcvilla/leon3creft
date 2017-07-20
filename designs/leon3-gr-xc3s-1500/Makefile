@@ -28,6 +28,9 @@ DIRSKIP = b1553 pci/pcif leon2 leon2ft crypto satcan pci leon3ft ambatest ddr \
 	leon4v0 l2cache gr1553b iommu ascs slink pwm ge_1000baseX
 FILESKIP = grcan.vhd adapters/sgmii.vhd
 
+ifdef DOFILE
+VSIMOPT+= $(SIMTOP) < $(DOFILE)#run_periodic_recovery_flow.do
+endif
 include $(GRLIB)/bin/Makefile
 include $(GRLIB)/software/leon3/Makefile
 

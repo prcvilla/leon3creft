@@ -1,3 +1,5 @@
+PATH:= ../../../sparc-elf-4.4.2/bin/:$(PATH)
+
 CC=sparc-elf-gcc
 SIZE=sparc-elf-size
 OBJCPY=sparc-elf-objcopy
@@ -5,7 +7,7 @@ OBJDMP=sparc-elf-objdump
 
 CFLAGS=-msoft-float -Wall -O0
 LDFLAGS=-qsvt -qnoambapp -lsmall
-DEFINES=-DLEON
+DEFINES=-DIRUNS=10
 
 TARGET=main
 SOURCES=main.c
