@@ -13,6 +13,21 @@ proc cleanup {} {
 	restart -force
 }
 
+set fd "unknown.log"
+#create log file
+proc createlog {} {
+	global fd
+	set timeExec [clock seconds]
+	set fn [clock format $timeExec -format seu_logs/FlowRun-%Y-%m-%dT%H-%M-%S.log]
+	set fd [open $fn "w+"]
+}
+
+proc echolog {msg} {
+	global fd
+	echo $msg
+	puts $fd $msg
+}
+
 #progstatus is used to inform the return of execution
 #-1 = gpio error signal activated
 # 0 = default - not set anywhere else
@@ -24,37 +39,39 @@ proc msgprogstatus {} {
 	global progstatus
 	global iter
 	global now
-	echo "======================================"
-	echo "======================================"
+	echolog "======================================"
+	echolog "progstatus: $progstatus"
 	switch $progstatus {
+		-2 {
+			echolog "time limit!"
+		}
 		-1 {
-			echo "program error!"
+			echolog "program error!"
 		}
 		 0 {
-			echo "progstatus default value, probably error!"
+			echolog "progstatus default value, probably error!"
 		}
 		 1 {
-			echo "program execution success!"
-			echo "total iterations: $iter"
+			echolog "program execution success!"
+			echolog "total iterations: $iter"
 		}
 		default {
-			echo "Unknown progstatus: $progstatus"
+			echolog "Unknown progstatus: $progstatus"
 		}
 	}
-	echo "======================================"
-	echo ">>>>>>>>>>>>>>> $now"
-	echo "======================================"
+	echolog ">>>>>>>>>>>>>>> $now"
+	echolog "======================================"
 }
 
 
 proc testforce {val} {
 	if { [string first \{ $val] == -1 } {
 		set old $val
-		echo "oldval = $old"
+		echolog "oldval = $old"
 		set pos1 [string last 1 $val]
 		set pos0 [string last 0 $val]
 		set posU [string last U $val]
-		echo "pos1: $pos1   pos0: $pos0 posU: $posU"
+		echolog "pos1: $pos1 pos0: $pos0 posU: $posU"
 		if {$pos1 != -1} {
 			set nval [string replace $val $pos1 $pos1 0]
 		} elseif {$pos0 != -1}  {
@@ -62,9 +79,9 @@ proc testforce {val} {
 		} else {
 			set nval [string replace $val $posU $posU 1]
 		}
-		echo "newval = $nval"
+		echolog "newval = $nval"
 	} else {
-		echo "This signal cannot be modified!"
+		echolog "This signal cannot be modified!"
 		set nval -1
 	}
 	return $nval
@@ -72,63 +89,95 @@ proc testforce {val} {
 
 # Stop execution when GPIO 7 is set (Program finished)
 when -label progfin { sim:/testbench/cpu/pio(7)'event && sim:/testbench/cpu/pio(7) == 1 } {
-	echo $now ">> prog fin."
+	echolog "$now >> prog fin."
 	set progstatus 1
 	stop
 }
 # Stop execution when GPIO 8 is set (Wrong behaviour)
 when -label progerr { sim:/testbench/cpu/pio(8)'event && sim:/testbench/cpu/pio(8) == 1 } {
-	echo $now ">> prog exec ERROR."
+	echolog "$now >> prog exec ERROR."
 	set progstatus -1
 	stop
 }
 # Print current iteration number each time GPIO 6 is set
 when -label progiter { sim:/testbench/cpu/pio(6)'event && sim:/testbench/cpu/pio(6) == 1 } {
-	echo $now ">> iteration no:" $iter
+	echolog "$now >> iteration no: $iter"
 	set iter [expr {$iter + 1}]
 }
 
-#when recovery
-# flowerr = 1
-# >> force ahbstop
-# >> force rollback
-# >> release
+# Add time limit
+#when
+when -label timelimit { $now >= @800000ns } {
+	echolog "$now >> time limit reached..."
+	set progstatus -2
+	stop
+}
+
+# When error is detected by flowcontrol start the recovery routine
+when -label ahbreq { sim:/testbench/cpu/flowcontrol_error'event && sim:/testbench/cpu/flowcontrol_error == 1} {
+	# Stop the processor execution throught an AHB request
+	echolog "$now >> Requesting for the AHB bus..."
+	force -deposit sim:/testbench/cpu/stp_req 1 0
+	#nowhen ahbreq
+}
+
+# When the stop request is granted, start the recovery routine on both processors
+when -label ahbgranted { sim:/testbench/cpu/ahb1/stp_grt'event && sim:/testbench/cpu/ahb1/stp_grt == 1 } {
+	echolog "$now >> AHB granted, starting recovery..."
+	force -deposit sim:/testbench/cpu/l3/u0/leon3x0/recov_pin 0 45
+	#flowprocessor
+	force -deposit sim:/testbench/cpu/l3/u1/leon3x0/recov_pin 0 45
+}
+
+# Finish current recovery routine
+when -label recovdone { sim:/testbench/cpu/l3/u0/leon3x0/recovdone_pin'event && sim:/testbench/cpu/l3/u0/leon3x0/recovdone_pin == 1 } {
+	echolog "$now >> Recovery done, continuing..."
+	force -deposit sim:/testbench/cpu/l3/u0/leon3x0/recov_pin 1 0
+	#flowprocessor
+	force -deposit sim:/testbench/cpu/l3/u1/leon3x0/recov_pin 1 0
+	force -deposit sim:/testbench/cpu/stp_req 0 45
+}
+
 
 ####################################
 ## script commands begin
 ####################################
-cleanup
 
-foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/*] {
+foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.*.*] {
+
+	createlog
+
+	# Signal Under Test
+	echolog "Test signal = $i"
+
 	set value [examine -value $i]
 	set nvalue [testforce $value]
 	if { $nvalue == -1 } {
-		echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-		echo "skipping signal $i"
-		echo "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+		echolog "skipping signal $i"
+		close $fd
 		continue
 	}
 
+	cleanup
+
 	#replace this with 'when pc>=0x40000000' >> testbench/cpu/l3/cpu/u0/leon3x0/vhdl/p0/iu/r.f.pc
-	run 550000ns
+	run 564215ns
 
-	# Signal Under Test
-	echo "Test signal = $i"
-	
-	# Get the value of the signal under test	
+	# Get the value of the signal under test
 	set value [examine -value $i]
-	echo "Signal value: $value"
+	echolog "Signal value: $value"
 
-	#runt pseudorandon time here
-	set faultinj [expr {20000 + int(rand()*50000)}]
+	#run pseudorandon time here
+	set faultinj [expr {16275 + int(rand()*140000)}]
 
 	#Force the SEU in the signal until it get overwritten
 	#not sure if needed to test for -1 again
 	set nvalue [testforce $value]
 	if { $nvalue != -1 } {
-		echo "force -deposit $i $nvalue [expr {$faultinj}]"
+		echolog "force in $faultinj"
+		force -deposit $i $nvalue [expr {$faultinj}]
 	} else {
-		echo "skipping signal..."
+		echolog "skipping signal..."
 	}
 
 	#run until fin or error
@@ -137,6 +186,8 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/*] {
 	#maybe test here for progstatus==0
 
 	msgprogstatus
-
-	cleanup
+	close $fd
 }
+
+echo "===================TEST END======================="
+
