@@ -1,0 +1,66 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.set
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 371872
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+669165000 >> iteration no: 9
+678590000 >> iteration no: 10
+688165000 >> iteration no: 11
+697590000 >> iteration no: 12
+707190000 >> iteration no: 13
+716615000 >> iteration no: 14
+726215000 >> iteration no: 15
+735615000 >> iteration no: 16
+745215000 >> iteration no: 17
+754640000 >> iteration no: 18
+764215000 >> iteration no: 19
+773640000 >> iteration no: 20
+783240000 >> iteration no: 21
+792665000 >> iteration no: 22
+802240000 >> iteration no: 23
+811665000 >> iteration no: 24
+821240000 >> iteration no: 25
+830665000 >> iteration no: 26
+840265000 >> iteration no: 27
+849690000 >> iteration no: 28
+859290000 >> iteration no: 29
+868715000 >> iteration no: 30
+878240000 >> iteration no: 31
+887665000 >> iteration no: 32
+897215000 >> iteration no: 33
+906640000 >> iteration no: 34
+916215000 >> iteration no: 35
+925640000 >> iteration no: 36
+935065000 >> iteration no: 37
+944590000 >> iteration no: 38
+954015000 >> iteration no: 39
+963590000 >> iteration no: 40
+973015000 >> iteration no: 41
+982590000 >> iteration no: 42
+992015000 >> iteration no: 43
+1001615000 >> iteration no: 44
+1011040000 >> iteration no: 45
+1020640000 >> iteration no: 46
+1030040000 >> iteration no: 47
+1039640000 >> iteration no: 48
+1049065000 >> iteration no: 49
+1058215000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1058215000
+======================================

@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rsel1
+oldval = 101
+pos1: 2 pos0: 1 posU: -1
+newval = 100
+Signal value: 101
+oldval = 101
+pos1: 2 pos0: 1 posU: -1
+newval = 100
+force in 81100
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+645640000 >> Requesting for the AHB bus...
+645940000 >> Requesting for the AHB bus...
+646565000 >> AHB granted, starting recovery...
+665765000 >> Recovery done, continuing...
+679590000 >> iteration no: 7
+689015000 >> iteration no: 8
+698615000 >> iteration no: 9
+708040000 >> iteration no: 10
+717465000 >> iteration no: 11
+726990000 >> iteration no: 12
+736415000 >> iteration no: 13
+745990000 >> iteration no: 14
+755415000 >> iteration no: 15
+764990000 >> iteration no: 16
+774415000 >> iteration no: 17
+784015000 >> iteration no: 18
+793440000 >> iteration no: 19
+803040000 >> iteration no: 20
+812440000 >> iteration no: 21
+822040000 >> iteration no: 22
+831465000 >> iteration no: 23
+841040000 >> iteration no: 24
+850465000 >> iteration no: 25
+860040000 >> iteration no: 26
+869465000 >> iteration no: 27
+879040000 >> iteration no: 28
+888465000 >> iteration no: 29
+898040000 >> iteration no: 30
+907465000 >> iteration no: 31
+917065000 >> iteration no: 32
+926490000 >> iteration no: 33
+936090000 >> iteration no: 34
+945515000 >> iteration no: 35
+955040000 >> iteration no: 36
+964465000 >> iteration no: 37
+974015000 >> iteration no: 38
+983440000 >> iteration no: 39
+993015000 >> iteration no: 40
+1002440000 >> iteration no: 41
+1011865000 >> iteration no: 42
+1021390000 >> iteration no: 43
+1030815000 >> iteration no: 44
+1040390000 >> iteration no: 45
+1049815000 >> iteration no: 46
+1059390000 >> iteration no: 47
+1068815000 >> iteration no: 48
+1077990000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 49
+>>>>>>>>>>>>>>> 1077990000
+======================================

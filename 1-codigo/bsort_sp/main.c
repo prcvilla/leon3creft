@@ -10,18 +10,18 @@ volatile int i=0;
 uint8_t bsArray0[BSIZE];
 
 int main(){
-	int i;
 	GPIO_SET_OUTPUTS;
 	GPIO_WRITE(0x0);
-	while(i<10){
+	while(i<IRUNS){
 		GPIO_SETPIN(CALC);
-		
+
 		fillArray(bsArray0);
 		bubblesort(bsArray0);
 
 		if(checkarr(bsArray0)!=0){
 			GPIO_SETPIN(ERR);
 		}
+
 		GPIO_WRITE(0x0);
 		i++;
 	}

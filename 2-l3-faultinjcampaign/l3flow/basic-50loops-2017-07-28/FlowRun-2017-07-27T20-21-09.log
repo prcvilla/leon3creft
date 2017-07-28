@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.werr
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 98469
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+662690000 >> Requesting for the AHB bus...
+663265000 >> AHB granted, starting recovery...
+682465000 >> Recovery done, continuing...
+691990000 >> iteration no: 9
+701565000 >> iteration no: 10
+710990000 >> iteration no: 11
+720515000 >> iteration no: 12
+729940000 >> iteration no: 13
+739515000 >> iteration no: 14
+748940000 >> iteration no: 15
+758515000 >> iteration no: 16
+767940000 >> iteration no: 17
+777540000 >> iteration no: 18
+786965000 >> iteration no: 19
+796565000 >> iteration no: 20
+805965000 >> iteration no: 21
+815565000 >> iteration no: 22
+824990000 >> iteration no: 23
+834565000 >> iteration no: 24
+843990000 >> iteration no: 25
+853590000 >> iteration no: 26
+863015000 >> iteration no: 27
+872590000 >> iteration no: 28
+882015000 >> iteration no: 29
+891615000 >> iteration no: 30
+901040000 >> iteration no: 31
+910640000 >> iteration no: 32
+920065000 >> iteration no: 33
+929665000 >> iteration no: 34
+939090000 >> iteration no: 35
+948615000 >> iteration no: 36
+958040000 >> iteration no: 37
+967590000 >> iteration no: 38
+977015000 >> iteration no: 39
+986615000 >> iteration no: 40
+996040000 >> iteration no: 41
+1005465000 >> iteration no: 42
+1014990000 >> iteration no: 43
+1024415000 >> iteration no: 44
+1033990000 >> iteration no: 45
+1043415000 >> iteration no: 46
+1052990000 >> iteration no: 47
+1062415000 >> iteration no: 48
+1072015000 >> iteration no: 49
+1081015000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1081015000
+======================================

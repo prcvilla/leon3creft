@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.step
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 103535
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+667915000 >> Requesting for the AHB bus...
+668490000 >> AHB granted, starting recovery...
+687690000 >> Recovery done, continuing...
+690290000 >> iteration no: 9
+699865000 >> iteration no: 10
+709290000 >> iteration no: 11
+718865000 >> iteration no: 12
+728290000 >> iteration no: 13
+737890000 >> iteration no: 14
+747315000 >> iteration no: 15
+756915000 >> iteration no: 16
+766340000 >> iteration no: 17
+775865000 >> iteration no: 18
+785290000 >> iteration no: 19
+794840000 >> iteration no: 20
+804265000 >> iteration no: 21
+813840000 >> iteration no: 22
+823265000 >> iteration no: 23
+832690000 >> iteration no: 24
+842215000 >> iteration no: 25
+851640000 >> iteration no: 26
+861215000 >> iteration no: 27
+870640000 >> iteration no: 28
+880215000 >> iteration no: 29
+889640000 >> iteration no: 30
+899240000 >> iteration no: 31
+908665000 >> iteration no: 32
+918265000 >> iteration no: 33
+927665000 >> iteration no: 34
+937265000 >> iteration no: 35
+946665000 >> iteration no: 36
+956240000 >> iteration no: 37
+965665000 >> iteration no: 38
+975240000 >> iteration no: 39
+984665000 >> iteration no: 40
+994240000 >> iteration no: 41
+1003665000 >> iteration no: 42
+1013240000 >> iteration no: 43
+1022665000 >> iteration no: 44
+1032265000 >> iteration no: 45
+1041690000 >> iteration no: 46
+1051290000 >> iteration no: 47
+1060715000 >> iteration no: 48
+1070240000 >> iteration no: 49
+1079240000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1079240000
+======================================

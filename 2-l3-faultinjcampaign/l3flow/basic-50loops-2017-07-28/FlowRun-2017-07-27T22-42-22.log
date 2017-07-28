@@ -1,0 +1,24 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.jmpl
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 59656
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+624740000 >> Requesting for the AHB bus...
+625440000 >> AHB granted, starting recovery...
+625490000 >> Requesting for the AHB bus...
+644640000 >> Recovery done, continuing...
+647090000 >> prog exec ERROR.
+======================================
+progstatus: -1
+program error!
+>>>>>>>>>>>>>>> 647090000
+======================================

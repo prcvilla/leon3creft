@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.ldbp1
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 88801
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+653040000 >> Requesting for the AHB bus...
+653665000 >> AHB granted, starting recovery...
+672865000 >> Recovery done, continuing...
+682390000 >> iteration no: 8
+691815000 >> iteration no: 9
+701340000 >> iteration no: 10
+710765000 >> iteration no: 11
+720365000 >> iteration no: 12
+729790000 >> iteration no: 13
+739365000 >> iteration no: 14
+748790000 >> iteration no: 15
+758390000 >> iteration no: 16
+767815000 >> iteration no: 17
+777415000 >> iteration no: 18
+786815000 >> iteration no: 19
+796415000 >> iteration no: 20
+805840000 >> iteration no: 21
+815415000 >> iteration no: 22
+824840000 >> iteration no: 23
+834440000 >> iteration no: 24
+843865000 >> iteration no: 25
+853440000 >> iteration no: 26
+862865000 >> iteration no: 27
+872440000 >> iteration no: 28
+881865000 >> iteration no: 29
+891465000 >> iteration no: 30
+900890000 >> iteration no: 31
+910490000 >> iteration no: 32
+919915000 >> iteration no: 33
+929440000 >> iteration no: 34
+938865000 >> iteration no: 35
+948415000 >> iteration no: 36
+957840000 >> iteration no: 37
+967415000 >> iteration no: 38
+976840000 >> iteration no: 39
+986265000 >> iteration no: 40
+995790000 >> iteration no: 41
+1005215000 >> iteration no: 42
+1014790000 >> iteration no: 43
+1024215000 >> iteration no: 44
+1033790000 >> iteration no: 45
+1043215000 >> iteration no: 46
+1052815000 >> iteration no: 47
+1062240000 >> iteration no: 48
+1071840000 >> iteration no: 49
+1080815000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1080815000
+======================================

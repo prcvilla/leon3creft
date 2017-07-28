@@ -1,0 +1,18 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.wovf
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 24633
+583765000 >> iteration no: 0
+588940000 >> Requesting for the AHB bus...
+589790000 >> AHB granted, starting recovery...
+608990000 >> Recovery done, continuing...
+======================================
+progstatus: 0
+progstatus default value, probably error!
+>>>>>>>>>>>>>>> 624815000
+======================================

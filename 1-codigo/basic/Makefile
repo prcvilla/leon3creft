@@ -7,7 +7,7 @@ OBJDMP=sparc-elf-objdump
 
 CFLAGS=-msoft-float -Wall -O0
 LDFLAGS=-qsvt -qnoambapp -lsmall
-DEFINES=-DIRUNS=10
+DEFINES=-DIRUNS=50
 
 TARGET=main
 SOURCES=main.c

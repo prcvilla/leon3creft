@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.op1
+oldval = 00000000000000000000000000000000
+pos1: -1 pos0: 31 posU: -1
+newval = 00000000000000000000000000000001
+Signal value: 00000000000000000000000000000000
+oldval = 00000000000000000000000000000000
+pos1: -1 pos0: 31 posU: -1
+newval = 00000000000000000000000000000001
+force in 91530
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+655765000 >> Requesting for the AHB bus...
+656340000 >> AHB granted, starting recovery...
+675540000 >> Recovery done, continuing...
+679740000 >> iteration no: 8
+689165000 >> iteration no: 9
+698740000 >> iteration no: 10
+708165000 >> iteration no: 11
+717590000 >> iteration no: 12
+727165000 >> iteration no: 13
+736590000 >> iteration no: 14
+746115000 >> iteration no: 15
+755540000 >> iteration no: 16
+765115000 >> iteration no: 17
+774540000 >> iteration no: 18
+784115000 >> iteration no: 19
+793540000 >> iteration no: 20
+803140000 >> iteration no: 21
+812565000 >> iteration no: 22
+822165000 >> iteration no: 23
+831565000 >> iteration no: 24
+841165000 >> iteration no: 25
+850590000 >> iteration no: 26
+860165000 >> iteration no: 27
+869590000 >> iteration no: 28
+879190000 >> iteration no: 29
+888615000 >> iteration no: 30
+898190000 >> iteration no: 31
+907615000 >> iteration no: 32
+917215000 >> iteration no: 33
+926640000 >> iteration no: 34
+936240000 >> iteration no: 35
+945665000 >> iteration no: 36
+955265000 >> iteration no: 37
+964690000 >> iteration no: 38
+974215000 >> iteration no: 39
+983640000 >> iteration no: 40
+993190000 >> iteration no: 41
+1002615000 >> iteration no: 42
+1012215000 >> iteration no: 43
+1021640000 >> iteration no: 44
+1031065000 >> iteration no: 45
+1040590000 >> iteration no: 46
+1050015000 >> iteration no: 47
+1059590000 >> iteration no: 48
+1069015000 >> iteration no: 49
+1078165000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1078165000
+======================================

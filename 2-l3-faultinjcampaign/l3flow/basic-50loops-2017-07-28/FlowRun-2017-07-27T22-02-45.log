@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.bp
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 38653
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+602990000 >> Requesting for the AHB bus...
+603565000 >> AHB granted, starting recovery...
+622765000 >> Recovery done, continuing...
+632290000 >> iteration no: 3
+641890000 >> iteration no: 4
+651315000 >> iteration no: 5
+660915000 >> iteration no: 6
+670340000 >> iteration no: 7
+679865000 >> iteration no: 8
+689290000 >> iteration no: 9
+698840000 >> iteration no: 10
+708265000 >> iteration no: 11
+717840000 >> iteration no: 12
+727265000 >> iteration no: 13
+736690000 >> iteration no: 14
+746215000 >> iteration no: 15
+755640000 >> iteration no: 16
+765215000 >> iteration no: 17
+774640000 >> iteration no: 18
+784215000 >> iteration no: 19
+793640000 >> iteration no: 20
+803240000 >> iteration no: 21
+812665000 >> iteration no: 22
+822265000 >> iteration no: 23
+831665000 >> iteration no: 24
+841265000 >> iteration no: 25
+850665000 >> iteration no: 26
+860240000 >> iteration no: 27
+869665000 >> iteration no: 28
+879240000 >> iteration no: 29
+888665000 >> iteration no: 30
+898240000 >> iteration no: 31
+907665000 >> iteration no: 32
+917240000 >> iteration no: 33
+926665000 >> iteration no: 34
+936265000 >> iteration no: 35
+945690000 >> iteration no: 36
+955290000 >> iteration no: 37
+964715000 >> iteration no: 38
+974240000 >> iteration no: 39
+983665000 >> iteration no: 40
+993215000 >> iteration no: 41
+1002640000 >> iteration no: 42
+1012215000 >> iteration no: 43
+1021640000 >> iteration no: 44
+1031065000 >> iteration no: 45
+1040590000 >> iteration no: 46
+1050015000 >> iteration no: 47
+1059590000 >> iteration no: 48
+1069015000 >> iteration no: 49
+1078165000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1078165000
+======================================

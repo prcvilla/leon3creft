@@ -53,3 +53,15 @@ designs/leon3-gr-xc3s-1500/libs.do
 designs/leon3-gr-xc3s-1500/hdl.var
 designs/leon3-gr-xc3s-1500/ghdl.path
 designs/leon3-gr-xc3s-1500/cds.lib
+1-codigo/basic/main.dump
+1-codigo/basic/main.exe
+1-codigo/basic/main.o
+1-codigo/basic/ram.srec
+1-codigo/bsort_sp/main.dump
+1-codigo/bsort_sp/main.exe
+1-codigo/bsort_sp/main.o
+1-codigo/bsort_sp/ram.srec
+designs/leon3-gr-xc3s-1500/currentsigs.tmp
+designs/leon3-gr-xc3s-1500/leon3mp.rc
+designs/leon3-gr-xc3s-1500/leon3mp.xst
+designs/leon3-gr-xc3s-1500/leon3mp_synplify.prj

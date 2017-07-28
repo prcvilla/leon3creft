@@ -1,0 +1,71 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rsel2
+oldval = 101
+pos1: 2 pos0: 1 posU: -1
+newval = 100
+Signal value: 000
+oldval = 000
+pos1: -1 pos0: 2 posU: -1
+newval = 001
+force in 44729
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+609090000 >> Requesting for the AHB bus...
+609390000 >> Requesting for the AHB bus...
+610040000 >> AHB granted, starting recovery...
+629240000 >> Recovery done, continuing...
+631840000 >> iteration no: 3
+641340000 >> iteration no: 4
+650765000 >> iteration no: 5
+660340000 >> iteration no: 6
+669765000 >> iteration no: 7
+679190000 >> iteration no: 8
+688765000 >> iteration no: 9
+698190000 >> iteration no: 10
+707715000 >> iteration no: 11
+717140000 >> iteration no: 12
+726715000 >> iteration no: 13
+736140000 >> iteration no: 14
+745715000 >> iteration no: 15
+755140000 >> iteration no: 16
+764740000 >> iteration no: 17
+774165000 >> iteration no: 18
+783765000 >> iteration no: 19
+793165000 >> iteration no: 20
+802765000 >> iteration no: 21
+812190000 >> iteration no: 22
+821765000 >> iteration no: 23
+831190000 >> iteration no: 24
+840790000 >> iteration no: 25
+850215000 >> iteration no: 26
+859790000 >> iteration no: 27
+869215000 >> iteration no: 28
+878815000 >> iteration no: 29
+888240000 >> iteration no: 30
+897840000 >> iteration no: 31
+907265000 >> iteration no: 32
+916865000 >> iteration no: 33
+926290000 >> iteration no: 34
+935815000 >> iteration no: 35
+945240000 >> iteration no: 36
+954790000 >> iteration no: 37
+964215000 >> iteration no: 38
+973815000 >> iteration no: 39
+983240000 >> iteration no: 40
+992665000 >> iteration no: 41
+1002190000 >> iteration no: 42
+1011615000 >> iteration no: 43
+1021190000 >> iteration no: 44
+1030615000 >> iteration no: 45
+1040190000 >> iteration no: 46
+1049615000 >> iteration no: 47
+1059215000 >> iteration no: 48
+1068640000 >> iteration no: 49
+1078240000 >> iteration no: 50
+1087215000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 51
+>>>>>>>>>>>>>>> 1087215000
+======================================

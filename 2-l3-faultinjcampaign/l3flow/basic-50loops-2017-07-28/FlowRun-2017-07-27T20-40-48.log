@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.mexc
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 206994
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+669165000 >> iteration no: 9
+678590000 >> iteration no: 10
+688165000 >> iteration no: 11
+697590000 >> iteration no: 12
+707190000 >> iteration no: 13
+716615000 >> iteration no: 14
+726215000 >> iteration no: 15
+735615000 >> iteration no: 16
+745215000 >> iteration no: 17
+754640000 >> iteration no: 18
+764215000 >> iteration no: 19
+771365000 >> Requesting for the AHB bus...
+771940000 >> AHB granted, starting recovery...
+791140000 >> Recovery done, continuing...
+793740000 >> iteration no: 20
+803315000 >> iteration no: 21
+812740000 >> iteration no: 22
+822340000 >> iteration no: 23
+831765000 >> iteration no: 24
+841365000 >> iteration no: 25
+850765000 >> iteration no: 26
+860365000 >> iteration no: 27
+869790000 >> iteration no: 28
+879365000 >> iteration no: 29
+888790000 >> iteration no: 30
+898390000 >> iteration no: 31
+907815000 >> iteration no: 32
+917390000 >> iteration no: 33
+926815000 >> iteration no: 34
+936415000 >> iteration no: 35
+945840000 >> iteration no: 36
+955440000 >> iteration no: 37
+964865000 >> iteration no: 38
+974465000 >> iteration no: 39
+983890000 >> iteration no: 40
+993415000 >> iteration no: 41
+1002840000 >> iteration no: 42
+1012390000 >> iteration no: 43
+1021815000 >> iteration no: 44
+1031415000 >> iteration no: 45
+1040840000 >> iteration no: 46
+1050265000 >> iteration no: 47
+1059790000 >> iteration no: 48
+1069215000 >> iteration no: 49
+1078365000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1078365000
+======================================

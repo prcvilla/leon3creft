@@ -8,12 +8,17 @@ nowhen *
 proc cleanup {} {
 	global progstatus
 	global iter
+	global execerr
+	global latent
 	set progstatus 0
 	set iter 0
+	set execerr 0
+	set latent 0
 	restart -force
 }
 
-set fd "unknown.log"
+set gdfn "seu_logs/FlowRun-golden.txt"
+set fd 0
 #create log file
 proc createlog {} {
 	global fd
@@ -34,13 +39,19 @@ proc echolog {msg} {
 # 1 = gpio finish signal activated
 set progstatus 0
 set iter 0
+set execerr 0
+set latent 0
 
 proc msgprogstatus {} {
 	global progstatus
 	global iter
 	global now
+	global execerr
+	global latent
 	echolog "======================================"
 	echolog "progstatus: $progstatus"
+	echolog "execerr: $execerr"
+	echolog "latent: $latent"
 	switch $progstatus {
 		-2 {
 			echolog "time limit!"
@@ -87,6 +98,20 @@ proc testforce {val} {
 	return $nval
 }
 
+proc comparetogolden {} {
+	global fd
+	global fn
+	set tmpfn "currentsigs.tmp"
+	set tmpfd [open $tmpfn "w"]
+	foreach j [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.*.*] {
+		set v [examine -value $j]
+		puts $tmpfd "$j:$v"
+		puts $fd "$j:$v"
+	}
+	set status [catch {exec diff $gdfn $tmpfn} result]
+	return $status
+}
+
 # Stop execution when GPIO 7 is set (Program finished)
 when -label progfin { sim:/testbench/cpu/pio(7)'event && sim:/testbench/cpu/pio(7) == 1 } {
 	echolog "$now >> prog fin."
@@ -105,13 +130,16 @@ when -label progiter { sim:/testbench/cpu/pio(6)'event && sim:/testbench/cpu/pio
 	set iter [expr {$iter + 1}]
 }
 
-# Add time limit
-#when
-when -label timelimit { $now >= @800000ns } {
+# time limit values
+#basic, 50 loops : 1058215
+echo "program time limit"
+set progtime_limit 1158215
+when -label timelimit "\$now >= $progtime_limit" {
 	echolog "$now >> time limit reached..."
 	set progstatus -2
 	stop
 }
+
 
 # When error is detected by flowcontrol start the recovery routine
 when -label ahbreq { sim:/testbench/cpu/flowcontrol_error'event && sim:/testbench/cpu/flowcontrol_error == 1} {
@@ -121,12 +149,14 @@ when -label ahbreq { sim:/testbench/cpu/flowcontrol_error'event && sim:/testbenc
 	#nowhen ahbreq
 }
 
+
 # When the stop request is granted, start the recovery routine on both processors
 when -label ahbgranted { sim:/testbench/cpu/ahb1/stp_grt'event && sim:/testbench/cpu/ahb1/stp_grt == 1 } {
 	echolog "$now >> AHB granted, starting recovery..."
 	force -deposit sim:/testbench/cpu/l3/u0/leon3x0/recov_pin 0 45
 	#flowprocessor
 	force -deposit sim:/testbench/cpu/l3/u1/leon3x0/recov_pin 0 45
+	incr execerr
 }
 
 # Finish current recovery routine
@@ -143,6 +173,28 @@ when -label recovdone { sim:/testbench/cpu/l3/u0/leon3x0/recovdone_pin'event && 
 ## script commands begin
 ####################################
 
+#start time to main func values:
+#basic, 50 loops: 564215
+echo "program start time:"
+set progstart_time 564215
+
+#after main, how long does it run:
+#basic, 50 loops: 494000
+echo "program total run time:"
+set progtotal_time 494000
+
+echo "# of events to finish fault injection campaign:"
+set events 1
+#3000
+
+
+#detection counter
+set eventcnt 0
+set errdetected 0
+set errcorrected 0
+set latenterr 0
+
+while { $eventcnt < $events } {
 foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.*.*] {
 
 	createlog
@@ -160,15 +212,14 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 
 	cleanup
 
-	#replace this with 'when pc>=0x40000000' >> testbench/cpu/l3/cpu/u0/leon3x0/vhdl/p0/iu/r.f.pc
-	run 564215ns
+	run $progstart_time ns
 
 	# Get the value of the signal under test
 	set value [examine -value $i]
 	echolog "Signal value: $value"
 
 	#run pseudorandon time here
-	set faultinj [expr {16275 + int(rand()*140000)}]
+	set faultinj [expr {int(rand()*$progtotal_time)}]
 
 	#Force the SEU in the signal until it get overwritten
 	#not sure if needed to test for -1 again
@@ -185,9 +236,30 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 
 	#maybe test here for progstatus==0
 
+	set latent [comparetogolden]
 	msgprogstatus
 	close $fd
+
+	incr eventcnt
+	if { $latent != 0 } {
+		incr latenterr
+	}
+	if { $execerr > 0 } {
+		incr errdetected
+	}
+	if { $execerr == 1 } {
+		incr errcorrected
+	}
+
+#debug
+if {$eventcnt >= 10} {break}
+
+}
 }
 
+echo "Total number of faults injected: $eventcnt"
+echo "Total number of latent errors: $latenterr"
+echo "Total number of errors detected: $errdetected"
+echo "Total number of errors corrected: $errcorrected"
 echo "===================TEST END======================="
 

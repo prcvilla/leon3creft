@@ -1,0 +1,28 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.nerror
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 140011
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+669165000 >> iteration no: 9
+678590000 >> iteration no: 10
+688165000 >> iteration no: 11
+697590000 >> iteration no: 12
+704226000 >> Requesting for the AHB bus...
+======================================
+progstatus: 0
+progstatus default value, probably error!
+>>>>>>>>>>>>>>> 704226000
+======================================

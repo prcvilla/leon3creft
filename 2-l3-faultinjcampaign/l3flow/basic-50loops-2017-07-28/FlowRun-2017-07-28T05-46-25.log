@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.step
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 217997
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+659565000 >> iteration no: 8
+669165000 >> iteration no: 9
+678590000 >> iteration no: 10
+688165000 >> iteration no: 11
+697590000 >> iteration no: 12
+707190000 >> iteration no: 13
+716615000 >> iteration no: 14
+726215000 >> iteration no: 15
+735615000 >> iteration no: 16
+745215000 >> iteration no: 17
+754640000 >> iteration no: 18
+764215000 >> iteration no: 19
+773640000 >> iteration no: 20
+783015000 >> Requesting for the AHB bus...
+783590000 >> AHB granted, starting recovery...
+802790000 >> Recovery done, continuing...
+805390000 >> iteration no: 21
+814965000 >> iteration no: 22
+824390000 >> iteration no: 23
+833990000 >> iteration no: 24
+843415000 >> iteration no: 25
+853015000 >> iteration no: 26
+862440000 >> iteration no: 27
+871965000 >> iteration no: 28
+881390000 >> iteration no: 29
+890890000 >> iteration no: 30
+900315000 >> iteration no: 31
+909890000 >> iteration no: 32
+919315000 >> iteration no: 33
+928740000 >> iteration no: 34
+938265000 >> iteration no: 35
+947690000 >> iteration no: 36
+957265000 >> iteration no: 37
+966690000 >> iteration no: 38
+976265000 >> iteration no: 39
+985690000 >> iteration no: 40
+995290000 >> iteration no: 41
+1004715000 >> iteration no: 42
+1014315000 >> iteration no: 43
+1023740000 >> iteration no: 44
+1033340000 >> iteration no: 45
+1042740000 >> iteration no: 46
+1052340000 >> iteration no: 47
+1061765000 >> iteration no: 48
+1071340000 >> iteration no: 49
+1080340000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1080340000
+======================================

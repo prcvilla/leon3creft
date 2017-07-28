@@ -1,0 +1,70 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.wovf
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 92641
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+602765000 >> iteration no: 2
+612190000 >> iteration no: 3
+621615000 >> iteration no: 4
+631190000 >> iteration no: 5
+640615000 >> iteration no: 6
+650140000 >> iteration no: 7
+657665000 >> Requesting for the AHB bus...
+657965000 >> Requesting for the AHB bus...
+658415000 >> AHB granted, starting recovery...
+677615000 >> Recovery done, continuing...
+680390000 >> iteration no: 8
+689815000 >> iteration no: 9
+699415000 >> iteration no: 10
+708840000 >> iteration no: 11
+718365000 >> iteration no: 12
+727790000 >> iteration no: 13
+737290000 >> iteration no: 14
+746715000 >> iteration no: 15
+756290000 >> iteration no: 16
+765715000 >> iteration no: 17
+775140000 >> iteration no: 18
+784665000 >> iteration no: 19
+794090000 >> iteration no: 20
+803665000 >> iteration no: 21
+813090000 >> iteration no: 22
+822665000 >> iteration no: 23
+832090000 >> iteration no: 24
+841690000 >> iteration no: 25
+851115000 >> iteration no: 26
+860715000 >> iteration no: 27
+870140000 >> iteration no: 28
+879740000 >> iteration no: 29
+889140000 >> iteration no: 30
+898740000 >> iteration no: 31
+908165000 >> iteration no: 32
+917740000 >> iteration no: 33
+927165000 >> iteration no: 34
+936765000 >> iteration no: 35
+946190000 >> iteration no: 36
+955765000 >> iteration no: 37
+965190000 >> iteration no: 38
+974790000 >> iteration no: 39
+984215000 >> iteration no: 40
+993815000 >> iteration no: 41
+1003240000 >> iteration no: 42
+1012765000 >> iteration no: 43
+1022190000 >> iteration no: 44
+1031690000 >> iteration no: 45
+1041115000 >> iteration no: 46
+1050690000 >> iteration no: 47
+1060115000 >> iteration no: 48
+1069540000 >> iteration no: 49
+1078640000 >> prog fin.
+======================================
+progstatus: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1078640000
+======================================
