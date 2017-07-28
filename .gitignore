@@ -65,3 +65,6 @@ designs/leon3-gr-xc3s-1500/currentsigs.tmp
 designs/leon3-gr-xc3s-1500/leon3mp.rc
 designs/leon3-gr-xc3s-1500/leon3mp.xst
 designs/leon3-gr-xc3s-1500/leon3mp_synplify.prj
+1-codigo/nmea_checksum/main.dump
+1-codigo/nmea_checksum/main.o
+1-codigo/nmea_checksum/ram.srec
