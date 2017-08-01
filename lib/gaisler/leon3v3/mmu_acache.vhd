@@ -16,13 +16,13 @@
 --
 --  You should have received a copy of the GNU General Public License
 --  along with this program; if not, write to the Free Software
---  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA 
------------------------------------------------------------------------------   
+--  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+-----------------------------------------------------------------------------
 -- Entity:      mmu_acache
 -- File:        mmu_acache.vhd
 -- Author:      Jiri Gaisler - Gaisler Research
 -- Description: Interface module between (MMU,I/D cache controllers) and Amba AHB
-------------------------------------------------------------------------------  
+------------------------------------------------------------------------------
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -105,8 +105,8 @@ architecture rtl of mmu_acache is
   constant R2RES : reg2_type := (
     reqmsk => (others => '0'), hclken2 => '0'
     );
-  
-  constant L3DI :integer := GAISLER_LEON3 
+
+  constant L3DI :integer := GAISLER_LEON3
                             ;
   constant hconfig : ahb_config_type := (
     0 => ahb_device_reg ( VENDOR_GAISLER, L3DI, 0, LEON3_VERSION, 0),
@@ -129,30 +129,34 @@ architecture rtl of mmu_acache is
   signal r2_chkp, r2in_chkp : reg2_type;
 --end pvilla mod
 
+-- rtravessini mod
+  signal ahbo_hwrite : std_ulogic;
+-- end rtravessini mod
+
 begin
 
   comb : process(ahbi, r, rst, mcii, mcdi, mcmmi, ahbso, hclken, r2)
     variable v : reg_type;
-    variable v2 : reg2_type;  
+    variable v2 : reg2_type;
     variable haddr   : std_logic_vector(31 downto 0);   -- address bus
-    variable htrans  : std_logic_vector(1 downto 0);    -- transfer type 
+    variable htrans  : std_logic_vector(1 downto 0);    -- transfer type
     variable hwrite  : std_logic;                       -- read/write
     variable hlock   : std_logic;                       -- bus lock
     variable hsize   : std_logic_vector(2 downto 0);    -- transfer size
     variable hburst  : std_logic_vector(2 downto 0);    -- burst type
     variable hwdata  : std_logic_vector(31 downto 0);   -- write data
     variable hbusreq : std_logic;   -- bus request
-    variable iready, dready, mmready : std_logic;   
-    variable igrant, dgrant, mmgrant : std_logic;   
-    variable iretry, dretry, mmretry : std_logic;   
-    variable ihcache, dhcache, mmhcache, dec_hcache : std_logic;   
+    variable iready, dready, mmready : std_logic;
+    variable igrant, dgrant, mmgrant : std_logic;
+    variable iretry, dretry, mmretry : std_logic;
+    variable ihcache, dhcache, mmhcache, dec_hcache : std_logic;
     variable imexc, dmexc, mmmexc : std_logic;
     variable dreq : std_logic;
     variable nbo : std_logic_vector(1 downto 0);
     variable su, nb, bo_icache : std_ulogic;
     variable scanen : std_ulogic;
     variable vreqmsk: std_ulogic;
-    variable burst : std_ulogic;   
+    variable burst : std_ulogic;
   begin
 
     -- initialisation
@@ -160,17 +164,17 @@ begin
     htrans := HTRANS_IDLE;
     v := r;  v.werr := '0'; v2 := r2;
     iready := '0'; dready := '0'; mmready := '0';
-    igrant := '0'; dgrant := '0'; mmgrant := '0'; 
+    igrant := '0'; dgrant := '0'; mmgrant := '0';
     imexc := '0'; dmexc := '0'; mmmexc := '0'; hlock := '0';
     iretry := '0'; dretry := '0'; mmretry := '0';
     ihcache := '0'; dhcache := '0'; mmhcache := '0'; su := '0';
     if (r.bo = "00") then bo_icache := '1'; else bo_icache := '0'; end if;
-    
+
     haddr := (others => '0');
     hwrite := '0';
     hsize := (others => '0');
-    hlock := '0'; 
-    hburst := (others => '0'); 
+    hlock := '0';
+    hburst := (others => '0');
     if ahbi.hready = '1' then v.lb := '0'; end if;
     v.retry2 := (r.retry or r.retry2) and not (r.ba and not r.retry);
     vreqmsk := orv(r2.reqmsk);
@@ -187,7 +191,7 @@ begin
       nbo := "00";
       hbusreq := '1'; burst := mcii.burst;
       htrans := HTRANS_NONSEQ;
-    elsif (dreq = '1') and ((clk2x = 0) or (r2.reqmsk(1) = '1')) and 
+    elsif (dreq = '1') and ((clk2x = 0) or (r2.reqmsk(1) = '1')) and
       not (( ((r.ba and mcii.req) = '1') and (r.bo = "00")) or
            ( ((r.ba and mcmmi.req) = '1') and (r.bo = "10"))) then
       nbo := "01";
@@ -209,18 +213,18 @@ begin
     end if;
 
     -- dont change bus master on retry
-    if (r.retry2 and not r.ba) = '1' then 
+    if (r.retry2 and not r.ba) = '1' then
       nbo := r.bo; hbusreq := '1'; htrans := HTRANS_NONSEQ;
     end if;
 
     dec_hcache := ahb_slv_dec_cache(mcdi.address, ahbso, cached);
-    
+
     if nbo = "10" then
       haddr := mcmmi.address; hwrite := not mcmmi.read; hsize := '0' & mcmmi.size;
       hlock := mcmmi.lock;
-      htrans := HTRANS_NONSEQ; hburst := HBURST_SINGLE; 
-      if (mcmmi.req and r.bg and ahbi.hready and not r.retry) = '1' 
-      then mmgrant := '1'; v.hcache := dec_fixed(haddr(31 downto 28), cached); end if; 
+      htrans := HTRANS_NONSEQ; hburst := HBURST_SINGLE;
+      if (mcmmi.req and r.bg and ahbi.hready and not r.retry) = '1'
+      then mmgrant := '1'; v.hcache := dec_fixed(haddr(31 downto 28), cached); end if;
     elsif nbo = "00" then
       haddr := mcii.address; hwrite := '0'; hsize := HSIZE_WORD; hlock := '0';
       su := mcii.su;
@@ -230,19 +234,19 @@ begin
           or ((ilinesize = 8) and haddr(4 downto 2) = "110")) and (ahbi.hready = '1')
         then v.lb := '1'; end if;
       end if;
-      if mcii.burst = '1' then hburst := HBURST_INCR; 
+      if mcii.burst = '1' then hburst := HBURST_INCR;
       else hburst := HBURST_SINGLE; end if;
-      if (mcii.req and r.bg and ahbi.hready and not r.retry) = '1' 
-      then igrant := '1'; v.hcache := dec_fixed(haddr(31 downto 28), cached); end if; 
+      if (mcii.req and r.bg and ahbi.hready and not r.retry) = '1'
+      then igrant := '1'; v.hcache := dec_fixed(haddr(31 downto 28), cached); end if;
     elsif nbo = "01" then
       haddr := mcdi.address; hwrite := not mcdi.read; hsize := '0' & mcdi.size;
-      hlock := mcdi.lock; 
+      hlock := mcdi.lock;
       if mcdi.asi /= "1010" then su := '1'; else su := '0'; end if;  --ASI_UDATA
-      if mcdi.burst = '1' then hburst := HBURST_INCR; 
+      if mcdi.burst = '1' then hburst := HBURST_INCR;
       else hburst := HBURST_SINGLE; end if;
-      if ((dreq and r.ba) = '1') and (r.bo = "01") and ((not r.retry) = '1') then 
+      if ((dreq and r.ba) = '1') and (r.bo = "01") and ((not r.retry) = '1') then
         htrans := HTRANS_SEQ; haddr(4 downto 2) := haddr(4 downto 2) +1;
-        hburst := HBURST_INCR; 
+        hburst := HBURST_INCR;
       end if;
       if (dreq and r.bg and ahbi.hready and not r.retry) = '1' then
         dgrant := (not mcdi.lock or r.hlocken) or (r.retry2 and (not r.bo(1) and r.bo(0)));
@@ -254,7 +258,7 @@ begin
       if (r.ba = '1') and ((ahbi.hresp = HRESP_RETRY) or (ahbi.hresp = HRESP_SPLIT))
       then v.retry := not ahbi.hready; else v.retry := '0'; end if;
     end if;
-      
+
     if r.retry = '1' then htrans := HTRANS_IDLE; end if;
 
     if r.bo = "10" then
@@ -263,8 +267,8 @@ begin
         mmhcache := r.hcache;
         if ahbi.hready = '1' then
           case ahbi.hresp is
-          when HRESP_OKAY => mmready := '1'; 
-          when HRESP_RETRY | HRESP_SPLIT=> mmretry := '1'; 
+          when HRESP_OKAY => mmready := '1';
+          when HRESP_RETRY | HRESP_SPLIT=> mmretry := '1';
           when others => mmready := '1'; mmmexc := '1'; v.werr := not mcmmi.read;
           end case;
         end if;
@@ -274,8 +278,8 @@ begin
         ihcache := r.hcache;
         if ahbi.hready = '1' then
           case ahbi.hresp is
-          when HRESP_OKAY => iready := '1'; 
-          when HRESP_RETRY | HRESP_SPLIT=> iretry := '1'; 
+          when HRESP_OKAY => iready := '1';
+          when HRESP_RETRY | HRESP_SPLIT=> iretry := '1';
           when others => iready := '1'; imexc := '1';
           end case;
         end if;
@@ -286,7 +290,7 @@ begin
         if ahbi.hready = '1' then
           case ahbi.hresp is
           when HRESP_OKAY => dready := '1';
-          when HRESP_RETRY | HRESP_SPLIT=> dretry := '1'; 
+          when HRESP_RETRY | HRESP_SPLIT=> dretry := '1';
           when others => dready := '1'; dmexc := '1'; v.werr := not mcdi.read;
           end case;
         end if;
@@ -294,7 +298,7 @@ begin
       hlock := mcdi.lock or ((r.retry or (r.retry2 and not r.ba)) and r.hlocken);
     end if;
 
-    if nbo = "01" and ((hsize = "011") or ((mcdi.read and mcdi.cache) = '1')) then 
+    if nbo = "01" and ((hsize = "011") or ((mcdi.read and mcdi.cache) = '1')) then
       hsize := "010";
     end if;
 
@@ -306,7 +310,7 @@ begin
         v.ba := r.bg;
       else v.ba := '0'; end if;
       v.hlocken := hlock and ahbi.hgrant(hindex);
-      if (clk2x /= 0) then 
+      if (clk2x /= 0) then
         igrant := igrant and vreqmsk;
         dgrant := dgrant and vreqmsk;
         mmgrant := mmgrant and vreqmsk;
@@ -324,10 +328,10 @@ begin
       if hclken = '1' then
         v2.reqmsk := mcii.req & mcdi.req & mcmmi.req;
         if (clk2x > 8) and (r2.hclken2 = '1') then v2.reqmsk := "111"; end if;
-      end if;      
+      end if;
     end if;
-                                                
-    
+
+
     -- reset operation
 
     if (not RESET_ALL) and (rst = '0') then
@@ -337,7 +341,7 @@ begin
     end if;
 
     -- drive ports
-    
+
     ahbo.haddr   <= haddr ;
     ahbo.htrans  <= htrans;
 --    ahbo.hbusreq <= hbusreq and not r.lb and not ((((not bo_icache) and r.ba) or nb) and r.bg);
@@ -345,7 +349,10 @@ begin
     ahbo.hbusreq <= hbusreq and (not r.lb or orv(nbo)) and (burst or not r.bg);
     ahbo.hwdata  <= ahbdrivedata(hwdata);
     ahbo.hlock   <= hlock;
-    ahbo.hwrite  <= hwrite;
+-- rtravessini mod
+    ahbo_hwrite  <= hwrite;
+    ahbo.hwrite  <= '0';
+-- end rtravessini mod
     ahbo.hsize   <= hsize;
     ahbo.hburst  <= hburst;
     ahbo.hindex  <= hindex;
@@ -424,25 +431,11 @@ begin
       end if;
 -- end pvilla mod
       end if;
-    end process;  
+    end process;
   end generate;
 
   noreg2gen : if (clk2x = 0) generate
     r2.reqmsk <= "000";
-  end generate;    
+  end generate;
 
 end;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
