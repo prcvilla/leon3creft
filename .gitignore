@@ -68,3 +68,5 @@ designs/leon3-gr-xc3s-1500/leon3mp_synplify.prj
 1-codigo/nmea_checksum/main.dump
 1-codigo/nmea_checksum/main.o
 1-codigo/nmea_checksum/ram.srec
+1-codigo/hamming/main.dump
+1-codigo/hamming/ram.srec

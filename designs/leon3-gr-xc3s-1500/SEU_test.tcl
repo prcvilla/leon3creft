@@ -108,6 +108,7 @@ proc comparetogolden {} {
 		puts $tmpfd "$j:$v"
 		puts $fd "$j:$v"
 	}
+	close $tmpfd
 	set status [catch {exec diff $gdfn $tmpfn} result]
 	return $status
 }
