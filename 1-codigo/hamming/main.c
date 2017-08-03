@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "gpio.h"
 
 #define CALC 6
@@ -41,6 +40,7 @@ void encode(unsigned char *encoded, const unsigned char *dt){
 volatile int i=0;
 
 int main(void){
+	int x,error=0;
 	GPIO_SET_OUTPUTS;
 	GPIO_WRITE(0x0);
 
@@ -48,10 +48,15 @@ int main(void){
 		GPIO_SETPIN(CALC);
 		encode(msg,data);
 
-		if(memcmp(msg, verify, 7)!=0) {
+		for(x=0;x<7;x++){
+			if(msg[x]!=verify[x]) error=1;
+		}
+		if(error) {
 			GPIO_SETPIN(ERR);
 		}
 
+		for(x=0;x<7;x++) msg[x]=0; //msg initial state
+		error=0;
 		GPIO_WRITE(0x0);
 		i++;
 	}
