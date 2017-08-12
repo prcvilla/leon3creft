@@ -143,8 +143,8 @@ when -label timelimit "\$now >= $progtime_limit" {
 
 
 # When error is detected by TMR voter
+#when -label ahbreq { sim:/testbench/cpu/no_err'event && sim:/testbench/cpu/no_err == 0} {
 when -label ahbreq { sim:/testbench/cpu/voter'event && sim:/testbench/cpu/voter != "00"} {
-	# Stop the processor execution throught an AHB request
 	echolog "$now >> Error detected..."
 	incr execerr
 }
@@ -237,7 +237,7 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 	}
 
 #debug
-if {$eventcnt >= 3} {break}
+#if {$eventcnt >= 3} {break}
 
 }
 }

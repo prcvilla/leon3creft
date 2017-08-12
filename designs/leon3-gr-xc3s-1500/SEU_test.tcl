@@ -214,20 +214,21 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 	cleanup
 
 	run $progstart_time ns
+	
+	#run pseudorandon time here
+	set faultinj [expr {int(rand()*$progtotal_time)}]
+	echolog "force in $faultinj"
+	run $faultinj ns
 
 	# Get the value of the signal under test
 	set value [examine -value $i]
 	echolog "Signal value: $value"
 
-	#run pseudorandon time here
-	set faultinj [expr {int(rand()*$progtotal_time)}]
-
 	#Force the SEU in the signal until it get overwritten
 	#not sure if needed to test for -1 again
 	set nvalue [testforce $value]
 	if { $nvalue != -1 } {
-		echolog "force in $faultinj"
-		force -deposit $i $nvalue [expr {$faultinj}]
+		force -deposit $i $nvalue 0
 	} else {
 		echolog "skipping signal..."
 	}
@@ -238,6 +239,7 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 	#maybe test here for progstatus==0
 
 	set latent [comparetogolden]
+	echolog "compare to golden: $latent"
 	msgprogstatus
 	close $fd
 

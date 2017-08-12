@@ -1,0 +1,224 @@
+Test signal = /testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.cnt
+oldval = 00
+pos1: -1 pos0: 1 posU: -1
+newval = 01
+force in 37341
+583765000 >> iteration no: 0
+593190000 >> iteration no: 1
+Signal value: 00
+oldval = 00
+pos1: -1 pos0: 1 posU: -1
+newval = 01
+601865000 >> Requesting for the AHB bus...
+602740000 >> AHB granted, starting recovery...
+621940000 >> Recovery done, continuing...
+623415000 >> Requesting for the AHB bus...
+623690000 >> Requesting for the AHB bus...
+624165000 >> AHB granted, starting recovery...
+624215000 >> Requesting for the AHB bus...
+643365000 >> Recovery done, continuing...
+645965000 >> iteration no: 2
+645965000 >> Requesting for the AHB bus...
+646690000 >> AHB granted, starting recovery...
+665890000 >> Recovery done, continuing...
+675565000 >> iteration no: 3
+675565000 >> Requesting for the AHB bus...
+676290000 >> AHB granted, starting recovery...
+695490000 >> Recovery done, continuing...
+705165000 >> iteration no: 4
+705165000 >> Requesting for the AHB bus...
+705890000 >> AHB granted, starting recovery...
+725090000 >> Recovery done, continuing...
+734615000 >> iteration no: 5
+734615000 >> Requesting for the AHB bus...
+735340000 >> AHB granted, starting recovery...
+754540000 >> Recovery done, continuing...
+764215000 >> iteration no: 6
+764215000 >> Requesting for the AHB bus...
+764940000 >> AHB granted, starting recovery...
+784140000 >> Recovery done, continuing...
+793665000 >> iteration no: 7
+793665000 >> Requesting for the AHB bus...
+794390000 >> AHB granted, starting recovery...
+813590000 >> Recovery done, continuing...
+823065000 >> iteration no: 8
+823065000 >> Requesting for the AHB bus...
+823790000 >> AHB granted, starting recovery...
+842990000 >> Recovery done, continuing...
+852615000 >> iteration no: 9
+852615000 >> Requesting for the AHB bus...
+853340000 >> AHB granted, starting recovery...
+872540000 >> Recovery done, continuing...
+882065000 >> iteration no: 10
+882065000 >> Requesting for the AHB bus...
+882790000 >> AHB granted, starting recovery...
+901990000 >> Recovery done, continuing...
+911690000 >> iteration no: 11
+911690000 >> Requesting for the AHB bus...
+912415000 >> AHB granted, starting recovery...
+931615000 >> Recovery done, continuing...
+941140000 >> iteration no: 12
+941140000 >> Requesting for the AHB bus...
+941865000 >> AHB granted, starting recovery...
+961065000 >> Recovery done, continuing...
+970590000 >> iteration no: 13
+970590000 >> Requesting for the AHB bus...
+971315000 >> AHB granted, starting recovery...
+990515000 >> Recovery done, continuing...
+1000215000 >> iteration no: 14
+1000215000 >> Requesting for the AHB bus...
+1000940000 >> AHB granted, starting recovery...
+1020140000 >> Recovery done, continuing...
+1029665000 >> iteration no: 15
+1029665000 >> Requesting for the AHB bus...
+1030390000 >> AHB granted, starting recovery...
+1049590000 >> Recovery done, continuing...
+1059290000 >> iteration no: 16
+1059290000 >> Requesting for the AHB bus...
+1060015000 >> AHB granted, starting recovery...
+1079215000 >> Recovery done, continuing...
+1088740000 >> iteration no: 17
+1088740000 >> Requesting for the AHB bus...
+1089615000 >> AHB granted, starting recovery...
+1108815000 >> Recovery done, continuing...
+1118340000 >> iteration no: 18
+1118340000 >> Requesting for the AHB bus...
+1119065000 >> AHB granted, starting recovery...
+1138265000 >> Recovery done, continuing...
+1147965000 >> iteration no: 19
+1147965000 >> Requesting for the AHB bus...
+1148690000 >> AHB granted, starting recovery...
+1158215000 >> time limit reached...
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.wreg:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.irqen:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.icc:1001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ticc:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.step:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.irqen2:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.pc:01000000000000000000001000010100
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.rexpl:{{00000000000000000000000000000000} {00} {0} 0 0 {0000000000000000000} 0 0 0 0 0 0}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.mexc:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.aw:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.ctrl:{{01000000000000000000001000001100} {10000010000100000110001110000000} {00} {10000001} {000000} 0 0 1 0 0 0 1 0 0}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.divstart:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.shleft:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.bp:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.twcwp:000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.jmpl:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.casa:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.werr:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.su:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.et:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ldcheck1:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.stwin:000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ldcheck2:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.intack:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.ctrl:{{01000000000000000000001000001000} {00000011000100000000000000000100} {00} {10000001} {000000} 0 0 1 0 0 0 1 0 0}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.cwp:110
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.sari:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.paw:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.aw:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.awp:000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.ctrl:{{01000000000000000000001000000100} {11000100000000000100000000000000} {00} {10000010} {000000} 0 0 1 0 0 1 1 0 0}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.rexnalign:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.su:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.wcwp:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.divrdy:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.cwp:110
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.except:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.nerror:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.bpimiss:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.nobp:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.rexcnt:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.s:{{110} {1001} {00000000} {01000000000000000000} {00000010} {0000} 0 0 1 1 1 {00000000000000000000000000000000} {UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU} 1 0 0 1 1 1 0 0 {000} {000} {111}}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.pv:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ldchkra:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rfa1:10000001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rfa2:10000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.imm:00000000000000000000000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.wa:10000001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.casaz:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.dci:{0 1 1 0 0 0 {10} {00001011}}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.mac:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.divz:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.inst:{{10000100000000001000000000000001}}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.rfe1:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.wovf:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.rfe2:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.op1:01000000000000000001000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.nalign:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.op2:00000000000000000000001110000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.rexen:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ctrl:{{01000000000000000000001000010000} {11000010000000000100000000000000} {00} {10000001} {000000} 0 0 1 0 0 1 1 0 0}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.ipend:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.ldbp1:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.aluadd:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.set:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.inull:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.ldbp2:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.cnt:00
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.su:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.et:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.mul:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.alusel:10
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.aw:U
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.mac:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.decill:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.icc:1001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.result:01000000000000000001001101111100
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.bp:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rs1:00001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.jmpl:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rsel1:001
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.y:00000000000000000000000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rsel2:101
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.awp:000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.paw:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.data:{{00000000000000000000000000000000}}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.mul:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.rd:UUUUU
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.invop2:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.wawp:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.cwpmax:111
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.f.branch:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.pcheld:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.dci:{0 0 1 0 0 0 {10} {00001011}}
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.paw:U
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.awp:UUU
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.shcnt:00000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.w.result:01000000000000000001001101111100
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.mac:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.y:00000000000000000000000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.cwp:110
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.laddr:00
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.mulstep:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.ymsb:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.rexbuf:00000000000000000000000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.npc:100
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.f.pc:01000000000000000000001000011000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.annul:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.rstate:run
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.set:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.m.result:01000000000000000001000000000000
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.icc:UUUU
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.getpc:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.ldchkex:1
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.mexc:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.mulstart:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.rexpos:10
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.annul_all:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.aluop:010
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.x.debug:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rfe1:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.d.step:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.rfe2:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.e.alucin:0
+/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu/r.a.wunf:0
+compare to golden: 1
+======================================
+progstatus: -2
+execerr: 20
+latent: 1
+time limit!
+>>>>>>>>>>>>>>> 1158215000
+======================================

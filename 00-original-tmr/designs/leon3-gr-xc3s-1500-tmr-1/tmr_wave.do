@@ -11,8 +11,15 @@ add wave -noupdate -label ERR -radix hexadecimal /testbench/cpu/pio(8)
 add wave -noupdate -label FIN -radix hexadecimal /testbench/cpu/pio(7)
 add wave -noupdate -label CALC -radix hexadecimal /testbench/cpu/pio(6)
 add wave -noupdate -divider {TMR bus}
-add wave -noupdate -label voter -radix hexadecimal /testbench/cpu/voter
+add wave -noupdate -label un0un1 /testbench/cpu/un0un1
+add wave -noupdate -label un0un2 /testbench/cpu/un0un2
+add wave -noupdate -label un1un2 /testbench/cpu/un1un2
+add wave -noupdate -label no_err /testbench/cpu/no_err
+add wave -noupdate -label un0err /testbench/cpu/un0err
+add wave -noupdate -label un1err /testbench/cpu/un1err
+add wave -noupdate -label un2err /testbench/cpu/un2err
 add wave -noupdate -label voter_error /testbench/cpu/voter_error
+add wave -noupdate -label voter -radix hexadecimal /testbench/cpu/voter
 add wave -noupdate -label ahbmo -radix hexadecimal /testbench/cpu/ahbmo
 add wave -noupdate -label dbgo -radix hexadecimal /testbench/cpu/dbgo
 add wave -noupdate -label irqo -radix hexadecimal /testbench/cpu/irqo

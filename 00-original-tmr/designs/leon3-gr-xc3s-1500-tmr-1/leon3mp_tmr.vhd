@@ -255,8 +255,11 @@ signal ahbmo_un0, ahbmo_un1, ahbmo_un2 : ahb_mst_out_vector := (others => ahbm_n
 signal irqo_un0, irqo_un1, irqo_un2 : irq_out_vector(0 to CFG_NCPU-1);
 signal dbgo_un0, dbgo_un1, dbgo_un2 : l3_debug_out_vector(0 to CFG_NCPU-1);
 
-signal voter: std_logic_vector(1 downto 0);
-signal voter_error: std_logic;
+signal voter: std_logic_vector(1 downto 0) := "00";
+signal voter_error: std_logic := '0';
+signal un0un1, un1un2, un0un2: std_logic := '1';
+signal no_err : std_logic := '1';
+signal un0err, un1err, un2err : std_logic := '0';
 
 --end pvilla mod
 
@@ -331,34 +334,31 @@ begin
       CFG_MMU_PAGE, CFG_BP, CFG_NP_ASI, CFG_WRPSR)
       port map (clkm, rstn, ahbmi, ahbmo_un2(0), ahbsi, ahbso, irqi(0), irqo_un2(0), dbgi(0), dbgo_un2(0));
 
-	flow: process (clkm, rstn)
-	begin
-		if (rstn = '0') then
-			voter <= "00";
-			voter_error <= '0';
-		elsif (clkm'event and clkm = '1') then
-			-- Nenhum erro encontrado
-			if (( ahbmo_un0(0) = ahbmo_un1(0) and ahbmo_un0(0) = ahbmo_un2(0) ) and
-				( irqo_un0(0) = irqo_un1(0) and irqo_un0(0) = irqo_un2(0) ) and
-				( dbgo_un0(0) = dbgo_un1(0) and dbgo_un0(0) = dbgo_un2(0) )) then
-				-- un0 == un1 && un0 == un2
-				voter <= "00";
-			elsif (( (ahbmo_un0(0) = ahbmo_un1(0) and ahbmo_un0(0) /= ahbmo_un2(0)) or (ahbmo_un0(0) /= ahbmo_un1(0) and ahbmo_un0(0) = ahbmo_un2(0)) ) and
-				   ( (irqo_un0(0) = irqo_un1(0) and irqo_un0(0) /= irqo_un2(0)) or (irqo_un0(0) /= irqo_un1(0) and irqo_un0(0) = irqo_un2(0)) ) and
-				   ( (dbgo_un0(0) = dbgo_un1(0) and dbgo_un0(0) /= dbgo_un2(0)) or (dbgo_un0(0) /= dbgo_un1(0) and dbgo_un0(0) = dbgo_un2(0)) ) ) then
-				-- un0 == un1 && un0 != un2
-				-- un0 != un1 && un0 == un2
-				voter <= "00";
-			elsif ( ahbmo_un1(0) = ahbmo_un2(0) and irqo_un1(0) = irqo_un2(0) and dbgo_un1(0) = dbgo_un2(0) ) then
-				-- un1 == un2
-				voter <= "01";
-			else
-				voter <= "10";
-				voter_error <= '1';
-			end if;
-		end if; 
-	end process;
-	
+
+
+	un0un1 <= '1' when ( ahbmo_un0(0) = ahbmo_un1(0) and irqo_un0(0) = irqo_un1(0) and dbgo_un0(0) = dbgo_un1(0) ) else '0';
+	un1un2 <= '1' when ( ahbmo_un1(0) = ahbmo_un2(0) and irqo_un1(0) = irqo_un2(0) and dbgo_un1(0) = dbgo_un2(0) ) else '0';
+	un0un2 <= '1' when ( ahbmo_un0(0) = ahbmo_un2(0) and irqo_un0(0) = irqo_un2(0) and dbgo_un0(0) = dbgo_un2(0) ) else '0';
+
+-- un0 == un1 && un0 == un2
+	no_err <= ( un0un1 and un1un2 and un0un2 );
+
+-- un1 == un2 && un1 != un0
+	un0err <= ( un1un2 and (not un0un1) and (not un0un2) );
+
+-- un0 == un2 && un0 != un1
+	un1err <= ( un0un2 and (not un0un1) and (not un1un2) );
+
+-- un0 == un1 && un0 != un2
+	un2err <= ( un0un1 and (not un0un2) and (not un1un2) );
+
+	voter <= "00" when (un0un1 or no_err) = '1' else
+			 "01" when un1un2 = '1' else
+			 "11";
+
+	voter_error <= not(un0un1 or un1un2 or un0un2);
+
+
 	ahbmo(0) <= ahbmo_un0(0) when voter = "00" else
 				ahbmo_un1(0) when voter = "01" else
 				ahbmo_un2(0);
