@@ -264,8 +264,7 @@ when -fast -label recovdone { sim:/testbench/cpu/l3/cpu(0)/u0/leon3x0/recovdone_
 ###############################################################################
 
 echo "# of events to finish fault injection campaign:"
-set events 1
-#3000
+set events 3000
 
 #detection counter
 set eventcnt 0
@@ -293,18 +292,19 @@ while { $eventcnt < $events } {
 
 		run $progstart_time ns
 
+		#run pseudorandon time here
+		set faultinj [expr {int(rand()*$progtotal_time)}]
+		echolog "force in $faultinj"
+		run $faultinj
+		
 		# Get the value of the signal under test
 		set value [examine -value $i]
 		echolog "Signal value: $value"
-
-		#run pseudorandon time here
-		set faultinj [expr {int(rand()*$progtotal_time)}]
 
 		#Force the SEU in the signal until it get overwritten
 		#not sure if needed to test for -1 again
 		set nvalue [testforce $value]
 		if { $nvalue != -1 } {
-			echolog "force in $faultinj"
 			force -deposit $i $nvalue [expr {$faultinj}]
 		} else {
 			echolog "skipping signal..."
@@ -312,10 +312,11 @@ while { $eventcnt < $events } {
 
 		#run until fin or error
 		run -all
-
+    
 		#maybe test here for progstatus==0
 
 		set latent [comparetogolden]
+		echolog "compare to golden: $latent"
 		msgprogstatus
 		close $fd
 

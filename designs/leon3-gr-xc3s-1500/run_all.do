@@ -17,9 +17,6 @@ when -label iteration { sim:/testbench/cpu/pio(6) } {
   }
 }
 
-#when -label timelimit { $now >= @725000ns } {
-#  echo "time limit reached..."
-#  stop
-#}
-
 run -all
+
+do create_golden.tcl
