@@ -1,0 +1,4 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.a.nobp
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
