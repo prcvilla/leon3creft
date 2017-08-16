@@ -73,3 +73,5 @@ designs/leon3-gr-xc3s-1500/leon3mp_synplify.prj
 1-codigo/bsort_sp/bubblesort.o
 00-original-tmr/designs/leon3-gr-xc3s-1500-tmr-1/seu_logs/TMR*.log
 00-original-tmr/designs/leon3-gr-xc3s-1500-tmr-1/currentsigs.tmp
+00-original-tmr/designs/leon3-gr-xc3s-1500-tmr-1/compile.asim
+00-original-tmr/designs/leon3-gr-xc3s-1500-tmr-1/make.asim

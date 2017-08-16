@@ -143,14 +143,13 @@ when -label timelimit "\$now >= $progtime_limit" {
 
 
 # When error is detected by TMR voter
-#when -label ahbreq { sim:/testbench/cpu/no_err'event && sim:/testbench/cpu/no_err == 0} {
-when -label ahbreq { sim:/testbench/cpu/voter'event && sim:/testbench/cpu/voter != "00"} {
+when -label noerr { sim:/testbench/cpu/no_err'event && sim:/testbench/cpu/no_err == 0 } {
 	echolog "$now >> Error detected..."
 	incr execerr
 }
 
 # When error in the voter is detected
-when -label ahbreq { sim:/testbench/cpu/voter_error'event && sim:/testbench/cpu/voter_error == 1} {
+when -label votererr { sim:/testbench/cpu/voter_error'event && sim:/testbench/cpu/voter_error == 1} {
 	# Stop the processor execution throught an AHB request
 	echolog "$now >> Voter error detected..."
 	set progstatus -3
@@ -176,7 +175,6 @@ set eventcnt 0
 
 #detection counter
 set errdetected 0
-set errcorrected 0
 set latenterr 0
 
 while { $eventcnt < $events } {
@@ -205,13 +203,14 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 
 	#run pseudorandon time here
 	set faultinj [expr {int(rand()*$progtotal_time)}]
+	echolog "force in $faultinj"
+	run $faultinj ns
 
 	#Force the SEU in the signal until it get overwritten
 	#not sure if needed to test for -1 again
 	set nvalue [testforce $value]
 	if { $nvalue != -1 } {
-		echolog "force in $faultinj"
-		force -deposit $i $nvalue [expr {$faultinj}]
+		force -deposit $i $nvalue 0
 	} else {
 		echolog "skipping signal..."
 	}
@@ -232,9 +231,6 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 	if { $execerr > 0 } {
 		incr errdetected
 	}
-	if { $execerr == 1 } {
-		incr errcorrected
-	}
 
 #debug
 #if {$eventcnt >= 3} {break}
@@ -245,6 +241,5 @@ foreach i [find signals -internal -r sim:/testbench/cpu/l3/u0/leon3x0/vhdl/p0/iu
 echo "Total number of faults injected: $eventcnt"
 echo "Total number of latent errors: $latenterr"
 echo "Total number of errors detected: $errdetected"
-echo "Total number of errors corrected: $errcorrected"
 echo "===================TEST END======================="
 
