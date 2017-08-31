@@ -305,7 +305,7 @@ while { $eventcnt < $events } {
 		#not sure if needed to test for -1 again
 		set nvalue [testforce $value]
 		if { $nvalue != -1 } {
-			force -deposit $i $nvalue [expr {$faultinj}]
+			force -deposit $i $nvalue 0
 		} else {
 			echolog "skipping signal..."
 		}
