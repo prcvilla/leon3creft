@@ -39,6 +39,7 @@ use gaisler.libcache.all;
 use gaisler.libleon3.all;
 use gaisler.libfpu.all;
 use gaisler.arith.all;
+use gaisler.trlib.all; 
 
 entity leon3x is
   generic (
@@ -165,6 +166,14 @@ signal gnd, vcc : std_logic;
 attribute sync_set_reset : string;
 attribute sync_set_reset of rst : signal is "true";
 
+-- rtravessini mod 
+signal trctrl_en  : std_ulogic := '0'; 
+signal trhwrite   : std_ulogic; -- rtravessini mod 
+signal trhwdata   : std_logic_vector(31 downto 0); --rtravessini mod 
+signal trerr      : std_ulogic; -- rtravessini mod 
+signal tro        : tr_out_type; -- rtravessini mod 
+-- end rtravessini mod
+
 --pvilla mod
 signal recovdone_pin : std_ulogic := '0';
 signal recov_pin : std_ulogic := '1';
@@ -220,7 +229,7 @@ begin
          ilramstart, dlram, dlramsize, dlramstart, mmuen, itlbnum, dtlbnum,
          tlb_type, tlb_rep, lddel, disas, tbuf, pwd, svt, rstaddr, smp,
          cached, clk2x, scantest, mmupgsz, bp, npasi, pwrpsr, rex, altwin)
-       port map (gclk2, rst, holdn, recov_pin, chkp_pin, -- pvilla mod
+       port map (gclk2, rst, holdn, recov_pin, chkp_pin, trhwrite, trhwdata, trerr, tro, -- pvilla mod
                  ahbi, ahbo_sig, ahbsi, ahbso, rfi, rfo, crami, cramo, --pvilla mod
                  tbi, tbo, tbi_2p, tbo_2p, fpi, fpo, cpi, cpo, irqi, irqo, dbgi, dbgo, clk, clk2, clken
                  );
@@ -245,6 +254,13 @@ begin
      wdata_mux <= rfi.wdata when recov_pin='1' else rec_wdata;
      we_mux <= rfi.wren when recov_pin='1' else rec_we;
      -- end pvilla mod
+
+     -- rtravessini mod 
+     trctrl0 : trctrl 
+       port map (rstn, gclk2, trctrl_en, trhwrite, trhwdata, recovdone_pin, tro); 
+
+     recov_pin <= tro.recov;
+     -- end rtravessini mod 
 
      -- IU register file
      rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,

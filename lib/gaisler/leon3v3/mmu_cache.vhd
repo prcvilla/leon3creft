@@ -38,6 +38,7 @@ use gaisler.libleon3.all;
 use gaisler.mmuconfig.all;
 use gaisler.mmuiface.all;
 use gaisler.libmmu.all;
+use gaisler.trlib.all; 
 
 entity mmu_cache is
   generic (
@@ -80,6 +81,10 @@ entity mmu_cache is
     clk        : in  std_ulogic;
     recovn     : in  std_ulogic; -- rtravessini mod
     chkp       : in  std_ulogic; -- rtravessini mod
+    trhwrite   : out std_ulogic; -- rtravessini mod 
+    trhwdata   : out std_logic_vector(31 downto 0); --rtravessini mod 
+    trerr      : out std_ulogic; -- rtravessini mod 
+    tro        : in  tr_out_type; -- rtravessini mod 
     ici        : in  icache_in_type;
     ico        : out icache_out_type;
     dci        : in  dcache_in_type;
@@ -125,6 +130,10 @@ architecture rtl of mmu_cache is
 
   signal gndv: std_logic_vector(1 downto 0);
 
+  -- rtravessini mod 
+  signal hready : std_ulogic; 
+  -- end rtravessini mod 
+
 begin
 
   gndv <= (others => '0');
@@ -149,7 +158,7 @@ begin
   a0 : mmu_acache
     generic map (hindex, ilinesize, cached, clk2x, scantest
                  )
-    port map (rst, sclk, recovn, chkp, -- pvilla mod
+    port map (rst, sclk, recovn, chkp, trhwrite, trhwdata, trerr, tro, -- pvilla and rtravessini mod
               mcii, mcio, mcdi, mcdo, mcmmi, mcmmo, ahbi2, ahbo2, ahbso, hclken);
 
   -- MMU
@@ -173,9 +182,21 @@ begin
                 mcii, mcdi, mcdo, mcmmi.req, mcmmo.grant, hclken);
   end generate;
 
+  hready <= ahbi.hready and tro.holdnmem; -- rtravessini mod 
   noclk2x : if clk2x = 0 generate
     ahbsi2 <= ahbsi;
-    ahbi2  <= ahbi;
+    -- rtravessini mod 
+    ahbi2.hgrant  <= ahbi.hgrant; 
+    ahbi2.hready  <= hready;
+    ahbi2.hresp   <= ahbi.hresp;
+    ahbi2.hrdata  <= ahbi.hrdata; 
+    ahbi2.hirq    <= ahbi.hirq;
+    ahbi2.testen  <= ahbi.testen; 
+    ahbi2.testrst <= ahbi.testrst; 
+    ahbi2.scanen  <= ahbi.scanen; 
+    ahbi2.testoen <= ahbi.testoen; 
+    ahbi2.testin  <= ahbi.testin; 
+  -- end rtravessini mod 
     ahbo   <= ahbo2;
   end generate;
 

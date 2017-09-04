@@ -35,6 +35,7 @@ library gaisler;
 use gaisler.libiu.all;
 use gaisler.mmuconfig.all;
 use gaisler.mmuiface.all;
+use gaisler.trlib.all;
 
 package libcache is
 
@@ -375,8 +376,12 @@ package libcache is
     port (
       rst       : in  std_logic;
       clk       : in  std_logic;
-      recovn : in  std_ulogic; -- pvilla mod
-      chkp : in  std_ulogic; -- pvilla mod
+      recovn    : in  std_ulogic; -- pvilla mod
+      chkp      : in  std_ulogic; -- pvilla mod
+      trhwrite  : out std_ulogic; -- rtravessini mod 
+      trhwdata  : out std_logic_vector(31 downto 0); --rtravessini mod 
+      trerr     : out std_ulogic; -- rtravessini mod 
+      tro       : in  tr_out_type; -- rtravessini mod 
       mcii      : in  memory_ic_in_type;
       mcio      : out memory_ic_out_type;
       mcdi      : in  memory_dc_in_type;
@@ -511,6 +516,10 @@ package libcache is
       clk        : in  std_ulogic;
       recovn     : in  std_ulogic; -- rtravessini mod
       chkp       : in  std_ulogic; -- rtravessini mod
+      trhwrite   : out std_ulogic; -- rtravessini mod 
+      trhwdata   : out std_logic_vector(31 downto 0); --rtravessini mod 
+      trerr      : out std_ulogic; -- rtravessini mod 
+      tro        : in  tr_out_type; -- rtravessini mod 
       ici        : in  icache_in_type;
       ico        : out icache_out_type;
       dci        : in  dcache_in_type;

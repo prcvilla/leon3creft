@@ -38,6 +38,7 @@ use gaisler.libcache.all;
 use gaisler.leon3.all;
 use gaisler.mmuconfig.all;
 use gaisler.mmuiface.all;
+use gaisler.trlib.all;
 
 entity mmu_acache is
   generic (
@@ -48,20 +49,24 @@ entity mmu_acache is
     scantest  : integer := 0
     );
   port (
-    rst    : in  std_logic;
-    clk    : in  std_logic;
-    recovn : in  std_ulogic; -- pvilla mod
-    chkp : in  std_ulogic; -- pvilla mod
-    mcii   : in  memory_ic_in_type;
-    mcio   : out memory_ic_out_type;
-    mcdi   : in  memory_dc_in_type;
-    mcdo   : out memory_dc_out_type;
-    mcmmi  : in  memory_mm_in_type;
-    mcmmo  : out memory_mm_out_type;
-    ahbi   : in  ahb_mst_in_type;
-    ahbo   : out ahb_mst_out_type;
-    ahbso  : in  ahb_slv_out_vector;
-    hclken : in  std_ulogic
+    rst       : in  std_logic;
+    clk       : in  std_logic;
+    recovn    : in  std_ulogic; -- pvilla mod
+    chkp      : in  std_ulogic; -- pvilla mod
+    trhwrite  : out std_ulogic; -- rtravessini mod 
+    trhwdata  : out std_logic_vector(31 downto 0); --rtravessini mod 
+    trerr     : out std_ulogic; -- rtravessini mod 
+    tro       : in  tr_out_type; -- rtravessini mod 
+    mcii      : in  memory_ic_in_type;
+    mcio      : out memory_ic_out_type;
+    mcdi      : in  memory_dc_in_type;
+    mcdo      : out memory_dc_out_type;
+    mcmmi     : in  memory_mm_in_type;
+    mcmmo     : out memory_mm_out_type;
+    ahbi      : in  ahb_mst_in_type;
+    ahbo      : out ahb_mst_out_type;
+    ahbso     : in  ahb_slv_out_vector;
+    hclken    : in  std_ulogic
   );
 
 
@@ -350,8 +355,25 @@ begin
     ahbo.hwdata  <= ahbdrivedata(hwdata);
     ahbo.hlock   <= hlock;
 -- rtravessini mod
-    ahbo_hwrite  <= hwrite;
-    ahbo.hwrite  <= '0';
+    trhwdata    <= ahbdrivedata(hwdata); 
+    trhwrite    <= hwrite; 
+    if tro.enabled = '1' then 
+      if tro.wallow = '1' then 
+        if tro.hwdata = ahbdrivedata(hwdata) then 
+          trerr       <= '0'; 
+          ahbo.hwrite <= hwrite; 
+        else 
+          trerr       <= '1'; 
+          ahbo.hwrite <= '0'; 
+        end if; 
+      else 
+        trerr       <= '0'; 
+        ahbo.hwrite <= '0'; 
+      end if; 
+    else 
+      trerr       <= '0'; 
+      ahbo.hwrite <= hwrite; 
+    end if;
 -- end rtravessini mod
     ahbo.hsize   <= hsize;
     ahbo.hburst  <= hburst;

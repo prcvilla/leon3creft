@@ -40,6 +40,7 @@ use gaisler.libcache.all;
 use gaisler.arith.all;
 use gaisler.libleon3.all;
 use gaisler.libfpu.all;
+use gaisler.trlib.all; 
 
 entity proc3 is
   generic (
@@ -100,8 +101,12 @@ entity proc3 is
     clk        : in  std_ulogic;
     rstn       : in  std_ulogic;
     holdn      : out std_ulogic;
-    recovn : in  std_ulogic; -- pvilla mod
-    chkp : in  std_ulogic; -- pvilla mod
+    recovn     : in  std_ulogic; -- pvilla mod
+    chkp       : in  std_ulogic; -- pvilla mod
+    trhwrite   : out std_ulogic; -- rtravessini mod 
+    trhwdata   : out std_logic_vector(31 downto 0); --rtravessini mod 
+    trerr      : out std_ulogic; -- rtravessini mod 
+    tro        : in  tr_out_type; -- rtravessini mod 
     ahbi       : in  ahb_mst_in_type;
     ahbo       : out ahb_mst_out_type;
     ahbsi      : in  ahb_slv_in_type;
@@ -146,8 +151,8 @@ architecture rtl of proc3 is
 
 begin
 
-  holdnx <= ico.hold and dco.hold and fpo.holdn; holdn <= holdnx;
-  pholdn <= fpo.holdn;
+  holdnx <= ico.hold and dco.hold and fpo.holdn and tro.holdnproc; holdn <= holdnx;
+  pholdn <= fpo.holdn and tro.holdnproc;
 
 -- integer unit
 
@@ -181,7 +186,7 @@ begin
       dsnoop, ilram, ilramsize, ilramstart, dlram, dlramsize, dlramstart,
       itlbnum, dtlbnum, tlb_type, tlb_rep, cached,
       clk2x, scantest, mmupgsz, smp, mmuen)
-    port map (rstn, clk, recovn, chkp, -- rtravessini mod
+    port map (rstn, clk, recovn, chkp, trhwrite, trhwdata, trerr, tro, -- rtravessini mod
               ici, ico, dci, dco, ahbi, ahbo, ahbsi, ahbso, crami, cramo,
               pholdn, hclk, sclk, hclken
               );

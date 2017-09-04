@@ -36,6 +36,7 @@ use gaisler.libiu.all;
 use gaisler.libcache.all;
 use gaisler.libfpu.all;
 use gaisler.mmuiface.all;
+use gaisler.trlib.all;
 
 package libleon3 is
 
@@ -98,8 +99,12 @@ package libleon3 is
       clk        : in  std_ulogic;
       rstn       : in  std_ulogic;
       holdn      : out std_ulogic;
-      recovn : in  std_ulogic; -- pvilla mod
-      chkp : in  std_ulogic; -- pvilla mod
+      recovn     : in  std_ulogic; -- pvilla mod
+      chkp       : in  std_ulogic; -- pvilla mod
+      trhwrite   : out std_ulogic; -- rtravessini mod 
+      trhwdata   : out std_logic_vector(31 downto 0); --rtravessini mod 
+      trerr      : out std_ulogic; -- rtravessini mod 
+      tro        : in  tr_out_type; -- rtravessini mod 
       ahbi       : in  ahb_mst_in_type;
       ahbo       : out ahb_mst_out_type;
       ahbsi      : in  ahb_slv_in_type;
