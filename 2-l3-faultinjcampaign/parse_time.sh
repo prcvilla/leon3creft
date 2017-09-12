@@ -48,7 +48,6 @@ DEBUG echo $PROGSTATUS
 
 		if [[ ( $PROGFIN == 0 ) ]]; then
 			NOTRECOVERED+=1
-			echo "nrec;$FILE"
 		fi
 
 		if [[ ( $ERRDET == $RECDONE ) && ( $ITERS != $NITERS ) && ( $PROGFIN == 1 ) ]]; then
@@ -60,7 +59,7 @@ DEBUG echo $PROGSTATUS
 			NDETOK+=1
 		fi
 
-		if [[ ( $PROGFIN == 0 ) ]]; then
+		if [[ ( $PROGFIN == 0 ) || ( $ITERS != $NITERS ) ]]; then
 			NDETNOK+=1
 		fi
 	fi
@@ -69,13 +68,13 @@ DEBUG 	echo "TOTAL:$I NDETOK:$NDETOK NDETNOK:$NDETNOK DET:$DETECTED (REC:$RECOVE
 
 	if (( $DETECTED != ( $RECOVERED + $NOTRECOVERED + $RECOVERR ) )); then
 		echo -n $(basename $FILE)
-		echo "DETECTED MISMATCH!!!!!!!!!"
+		echo "$I;$ITERS;$ERRDET;$RECDONE;$PROGFIN;$PROGSTATUS;DETECTED MISMATCH!!!!!!!!!"
 		break
 	fi
 
 	if (( $I != ( $DETECTED + $NDETOK + $NDETNOK ) )); then
 		echo -n $(basename $FILE)
-		echo "NOT DETECTED MISMATCH!!!!!!!"
+		echo "$I;$ITERS;$ERRDET;$RECDONE;$PROGFIN;$PROGSTATUS;NOT DETECTED MISMATCH!!!!!!!"
 		break
 	fi
 #debug
