@@ -1,10 +1,10 @@
 #!/bin/bash
 
-_DEBUG="off"
+_DEBUG="on"
 
 function DEBUG()
 {
-	 [ "$_DEBUG" == "on" ] &&  $@
+	[ "$_DEBUG" == "on" ] &&  $@
 }
 
 NITERS=$2
@@ -76,7 +76,7 @@ DEBUG echo "TOTAL:$I NDETOK:$NDETOK NDETNOK:$NDETNOK DET:$DETECTED (REC:$RECOVER
 		break
 	fi
 #debug
-#	read
+[ "$_DEBUG" == "on" ] && read
 done
 
 echo "TOTAL:$I NDETOK:$NDETOK NDETNOK:$NDETNOK DET:$DETECTED (REC:$RECOVERED NREC:$NOTRECOVERED RECERR:$RECOVERR)"
