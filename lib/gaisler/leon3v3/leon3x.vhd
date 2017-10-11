@@ -200,7 +200,7 @@ component chk_regfile
 end component;
 
    signal waddr_mux, rec_waddr : std_logic_vector((IRFBITS-1) downto 0);
-   signal wdata_mux, rec_wdata : std_logic_vector(31 downto 0);
+   signal wdata_mux, rec_wdata, chkregfile_data : std_logic_vector(31 downto 0);
    signal we_mux, rec_we    : std_ulogic;
 --end pvilla mod
 
@@ -236,7 +236,7 @@ begin
        generic map ( IRFBITS, 32 )
        port map (
                  rstn, gclk2,
-                 rfi.waddr(IRFBITS-1 downto 0), rfi.wdata, rfi.wren,
+                 rfi.waddr(IRFBITS-1 downto 0), chkregfile_data, rfi.wren,
                  rec_waddr, rec_wdata, rec_we,
                  chkp_pin, recov_pin, recovdone_pin
                 );
@@ -246,15 +246,26 @@ begin
      we_mux <= rfi.wren when recov_pin='1' else rec_we;
      -- end pvilla mod
 
+-- REGFILE IS 4 PORT NOW
      -- IU register file
-     rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
-                                      scantest)
-       port map (
-                 gclk2, waddr_mux, wdata_mux, we_mux, --pvilla mod
-                 gclk2, rfi.raddr1(IRFBITS-1 downto 0), rfi.ren1, rfo.data1,
-                 rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
-                 ahbi.testin
-                 );
+--     rf0 : regfile_3p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
+--                                      scantest)
+--       port map (
+--                 gclk2, waddr_mux, wdata_mux, we_mux, --pvilla mod
+--                 gclk2, rfi.raddr1(IRFBITS-1 downto 0), rfi.ren1, rfo.data1,
+--                 rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
+--                 ahbi.testin
+--                 );
+rf0 : regfile_4p_l3 generic map (memtech, IRFBITS, 32, IRFWT, IREGNUM,
+                                        scantest)
+         port map (gclk2, rfi.waddr(IRFBITS-1 downto 0), rfi.wdata, rfi.wren,
+                   gclk2, rfi.raddr1(IRFBITS-1 downto 0), rfi.ren1, rfo.data1,
+                   rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
+                   rfi.waddr(IRFBITS-1 downto 0), rfi.wren, chkregfile_data,
+                   ahbi.testin
+         );
+
+-- END REGFILE MOD
 
      -- cache memory
      cmem0 : cachemem

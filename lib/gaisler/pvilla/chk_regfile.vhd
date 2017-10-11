@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity chk_regfile is
-  generic (abits : integer := 6; dbits : integer := 8);
+  generic (abits : integer := 8; dbits : integer := 32);
   port (
     rstn   : in  std_ulogic;
     wclk   : in  std_ulogic;
@@ -23,44 +23,68 @@ entity chk_regfile is
 end;
 
 architecture beh of chk_regfile is
-	type regfile_t is array(0 to (2**abits)-1) of std_logic_vector(dbits-1 downto 0);
-	signal regfile_data : regfile_t;
-	signal regfile_bkp : regfile_t;
+	component stack is
+	generic (stsize : integer := 31; abits : integer := 8; dbits : integer := 32);
+	port(	Clk : in std_logic;  --Clock for the stack.
+		Resetn : in std_logic; --Reset signal
+		Flush : in std_logic; --Flush the stack
+		Enable : in std_logic;	--Enable the stack. Otherwise neither push nor pop will happen.
+		Data_In : in std_logic_vector(dbits-1 downto 0);  --Data to be pushed to stack
+		Addr_In : in std_logic_vector(abits-1 downto 0);  --Addr to be pushed to stack
+		Data_Out : out std_logic_vector(dbits-1 downto 0);	--Data popped from the stack.
+		Addr_Out : out std_logic_vector(dbits-1 downto 0);	--Addr popped from the stack.
+		PUSH_barPOP : in std_logic;  --active low for POP and active high for PUSH.
+		Stack_Full : out std_logic;  --Goes high when the stack is full.
+		Stack_Empty : out std_logic  --Goes high when the stack is empty.
+	);
+	end component;
 
-	type states is (sidle, sinit, saddr, scnt, sfin, sdone);
+	type states is (sidle, sinit, spop, swrite, sdone);
 	signal CS, NS : states;
 
-	signal addr : unsigned((abits-1) downto 0);
+	signal flush, push_barpop, stack_en, stack_full, stack_empty : std_logic;
+	signal pop_en, push_en, stackrstn : std_logic;
 begin
+
+	stack0 : stack
+	  generic map(31, abits, dbits)
+	  port map( wclk, stackrstn, flush, stack_en,
+	       wdata, waddr,
+		   rec_wdata, rec_waddr,
+		   push_barpop, stack_full, stack_empty
+	  );
+
+	stack_en <= pop_en OR push_en;
 
 	process(wclk)
 	begin
 		if (wclk'event and wclk='1') then
 			if (rstn='0') then
-				regfile_data <= (others=>(others=>'0'));
-				regfile_bkp <= (others=>(others=>'0'));
-
 				CS <= sidle;
+				stackrstn <= '0';
 			else
 				if (we='1') then
-					regfile_data(to_integer(unsigned(waddr))) <= wdata;
+					push_en <= '1';
+				else
+					push_en <= '0';
 				end if;
 
 				if (chkp='1') then
-					regfile_bkp <= regfile_data;
+					flush <= '1';
+					stackrstn <= '1';
+				else
+					flush <= '0';
 				end if;
 
 				CS <= NS;
 				case(CS) is
 					when sidle =>
-						addr <= (others=>'1');
-					when sinit =>
-						addr <= (others=>'1');
-					when saddr =>
 						
-					when scnt =>
-						addr <= addr - 1;
-					when sfin =>
+					when sinit =>
+						
+					when spop =>
+						
+					when swrite =>
 						
 					when sdone =>
 						
@@ -71,25 +95,23 @@ begin
 
 
 	recovdone <= '1' when (CS=sdone) else '0';
-	rec_we <= '1' when CS=saddr else '0';
-	rec_waddr <= STD_LOGIC_VECTOR(addr);
-	rec_wdata <= regfile_bkp(to_integer(addr));
+	rec_we <= '1' when (CS=swrite) else '0';
+	push_barpop <= '1' when ((CS=sidle)OR(CS=sdone)) else '0';
+	pop_en <= '1' when (CS=spop) else '0';
 
-	process(CS, recovn, addr)
+	process(CS, recovn, stack_empty)
 	begin
 		case(CS) is
 			when sidle =>
 				if (recovn='0') then NS <= sinit;
 				else NS <= sidle; end if;
 			when sinit =>
-				NS <= saddr;
-			when saddr =>
-				NS <= scnt;
-			when scnt =>
-				NS <= sfin;
-			when sfin =>
-				if (addr=0) then NS <= sdone;
-				else NS <= saddr; end if;
+				NS <= spop;
+			when spop =>
+				NS <= swrite;
+			when swrite =>
+				if (stack_empty='1') then NS <= sdone;
+				else NS <= spop; end if;
 			when sdone =>
 				if (recovn='0') then NS <= sdone;
 				else NS <= sidle; end if;
