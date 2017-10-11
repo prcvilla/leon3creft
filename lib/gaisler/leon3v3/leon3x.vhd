@@ -258,7 +258,8 @@ begin
 --                 );
 rf0 : regfile_4p_l3 generic map (memtech, IRFBITS, 32, IRFWT, IREGNUM,
                                         scantest)
-         port map (gclk2, rfi.waddr(IRFBITS-1 downto 0), rfi.wdata, rfi.wren,
+         port map (
+                   gclk2, waddr_mux, wdata_mux, we_mux, --pvilla mod
                    gclk2, rfi.raddr1(IRFBITS-1 downto 0), rfi.ren1, rfo.data1,
                    rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
                    rfi.waddr(IRFBITS-1 downto 0), rfi.wren, chkregfile_data,

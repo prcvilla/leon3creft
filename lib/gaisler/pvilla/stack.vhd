@@ -41,7 +41,7 @@ begin
 			stack_addr <= (others=>(others=>'0'));
 			stack_ptr <= stsize;
 			full <= '0';
-			empty <= '0';
+			empty <= '1';
 			Data_Out <= (others=>'0');
 			Addr_Out <= (others=>'0');
 		else
@@ -50,10 +50,21 @@ begin
 				stack_addr <= (others=>(others=>'0'));
 				stack_ptr <= stsize;
 				full <= '0';
-				empty <= '0';
+				empty <= '1';
 				Data_Out <= (others=>'0');
 				Addr_Out <= (others=>'0');
 			else
+				--setting full and empty flags
+				if(stack_ptr = 0) then
+					full <= '1';
+					empty <= '0';
+				elsif(stack_ptr = stsize) then
+					full <= '0';
+					empty <= '1';
+				else
+					full <= '0';
+					empty <= '0';
+				end if;
 				--PUSH section.
 				if (Enable = '1' and PUSH_barPOP = '1' and full = '0') then
 					 --Data pushed to the current address.
@@ -62,39 +73,15 @@ begin
 					if(stack_ptr /= 0) then
 						stack_ptr <= stack_ptr - 1;
 					end if; 
-					--setting full and empty flags
-					if(stack_ptr = 0) then
-						full <= '1';
-						empty <= '0';
-					elsif(stack_ptr = stsize) then
-						full <= '0';
-						empty <= '1';
-					else
-						full <= '0';
-						empty <= '0';
-					end if;
-					
 				end if;
 				--POP section.
 				if (Enable = '1' and PUSH_barPOP = '0' and empty = '0') then
-				--Data has to be taken from the next highest address(empty descending type stack).
+					--Data has to be taken from the next highest address(empty descending type stack).
 					if(stack_ptr /= stsize) then   
 						Data_Out <= stack_mem(stack_ptr+1); 
 						Addr_Out <= stack_addr(stack_ptr+1); 
 						stack_ptr <= stack_ptr + 1;
 					end if; 
-					--setting full and empty flags
-					if(stack_ptr = 0) then
-						full <= '1';
-						empty <= '0';
-					elsif(stack_ptr = stsize) then
-						full <= '0';
-						empty <= '1';
-					else
-						full <= '0';
-						empty <= '0';
-					end if; 
-					
 				end if;
 			end if;
 		end if;
