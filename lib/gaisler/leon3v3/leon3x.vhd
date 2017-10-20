@@ -256,7 +256,7 @@ begin
 --                 rfi.raddr2(IRFBITS-1 downto 0), rfi.ren2, rfo.data2,
 --                 ahbi.testin
 --                 );
-rf0 : regfile_4p_l3 generic map (memtech, IRFBITS, 32, IRFWT, IREGNUM,
+rf0 : regfile_4p_l3 generic map (MEMTECH_MOD*(1-IURF_INFER), IRFBITS, 32, IRFWT, IREGNUM,
                                         scantest)
          port map (
                    gclk2, waddr_mux, wdata_mux, we_mux, --pvilla mod

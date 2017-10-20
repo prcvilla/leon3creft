@@ -47,7 +47,7 @@ architecture beh of chk_regfile is
 begin
 
 	stack0 : stack
-	  generic map(31, abits, dbits)
+	  generic map(63, abits, dbits)
 	  port map( wclk, stackrstn, flush, stack_en,
 	       wdata, waddr,
 		   rec_wdata, rec_waddr,
@@ -55,7 +55,7 @@ begin
 	  );
 
 	stack_en <= pop_en OR push_en;
-
+	flush <= '1' when chkp='1' else '0';
 	process(wclk)
 	begin
 		if (wclk'event and wclk='1') then
@@ -70,10 +70,10 @@ begin
 				end if;
 
 				if (chkp='1') then
-					flush <= '1';
+					--flush <= '1';
 					stackrstn <= '1';
 				else
-					flush <= '0';
+					--flush <= '0';
 				end if;
 
 				CS <= NS;

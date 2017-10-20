@@ -31,17 +31,30 @@ begin
 
 Stack_Full <= full; 
 Stack_Empty <= empty;
+process(stack_ptr)
+begin
+if(stack_ptr = 0) then
+	full <= '1';
+	empty <= '0';
+elsif(stack_ptr = stsize) then
+	full <= '0';
+	empty <= '1';
+else
+	full <= '0';
+	empty <= '0';
+end if;
+end process;
 
 --PUSH and POP process for the stack.
-PUSH : process(Clk,PUSH_barPOP,Enable)
+PUSH : process(Clk,PUSH_barPOP,Enable,full,empty)
 begin
 	if(rising_edge(Clk)) then
 		if (Resetn = '0') then
 			stack_mem <= (others=>(others=>'0'));
 			stack_addr <= (others=>(others=>'0'));
 			stack_ptr <= stsize;
-			full <= '0';
-			empty <= '1';
+			--full <= '0';
+			--empty <= '1';
 			Data_Out <= (others=>'0');
 			Addr_Out <= (others=>'0');
 		else
@@ -49,22 +62,22 @@ begin
 				stack_mem <= (others=>(others=>'0'));
 				stack_addr <= (others=>(others=>'0'));
 				stack_ptr <= stsize;
-				full <= '0';
-				empty <= '1';
+				--full <= '0';
+				--empty <= '1';
 				Data_Out <= (others=>'0');
 				Addr_Out <= (others=>'0');
 			else
 				--setting full and empty flags
-				if(stack_ptr = 0) then
-					full <= '1';
-					empty <= '0';
-				elsif(stack_ptr = stsize) then
-					full <= '0';
-					empty <= '1';
-				else
-					full <= '0';
-					empty <= '0';
-				end if;
+--				if(stack_ptr = 0) then
+--					full <= '1';
+--					empty <= '0';
+--				elsif(stack_ptr = stsize) then
+--					full <= '0';
+--					empty <= '1';
+--				else
+--					full <= '0';
+--					empty <= '0';
+--				end if;
 				--PUSH section.
 				if (Enable = '1' and PUSH_barPOP = '1' and full = '0') then
 					 --Data pushed to the current address.
