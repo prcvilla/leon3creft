@@ -395,7 +395,7 @@ begin
 	else memarr(conv_integer(ra1));
   rdata2i <= din when (wr = '1') and (wa = ra2) and (wrfst = 1)
 	else memarr(conv_integer(ra2));
-  rdata3i <= din when (wr = '1') and (wa = ra3) and (wrfst = 1)
+  rdata3i <= din when (wr = '1') and (wa = ra3) and (wrfst = 0)
 	else memarr(conv_integer(ra3));
 
   rdata1 <= rdata1i;

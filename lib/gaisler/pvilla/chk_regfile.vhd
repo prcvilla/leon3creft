@@ -44,12 +44,13 @@ architecture beh of chk_regfile is
 
 	signal flush, push_barpop, stack_en, stack_full, stack_empty : std_logic;
 	signal pop_en, push_en, stackrstn : std_logic;
+    signal waddr_r  : std_logic_vector((abits -1) downto 0);
 begin
 
 	stack0 : stack
 	  generic map(63, abits, dbits)
 	  port map( wclk, stackrstn, flush, stack_en,
-	       wdata, waddr,
+	       wdata, waddr_r,
 		   rec_wdata, rec_waddr,
 		   push_barpop, stack_full, stack_empty
 	  );
@@ -64,6 +65,7 @@ begin
 				stackrstn <= '0';
 			else
 				if (we='1') then
+					waddr_r <= waddr;
 					push_en <= '1';
 				else
 					push_en <= '0';
