@@ -12,12 +12,12 @@ set progstart_time 579090
 #after main, how long does it run:
 #basic, 50 loops: (total_run_time - progstart_time)
 echo "program total run time:"
-set progtotal_time [expr {5403615 - 579090}]
+set progtotal_time [expr {1615640 - 579090}]
 
 # time limit value
 #basic, 50 loops : (total_run_time + extra_recovery_time)
 echo "program time limit"
-set progtime_limit [expr {5403615 + 100000}]
+set progtime_limit [expr {$progtotal_time + $progstart_time + 100000}]
 
 #add a dummy when to remove after
 proc cleanup {} {
