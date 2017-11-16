@@ -24,6 +24,7 @@ syncram_2pft.vhd
 syncrambwft.vhd
 syncfifo_2p.vhd
 regfile_3p.vhd
+regfile_4p.vhd
 tap.vhd
 nandtree.vhd
 grspwc_net.vhd

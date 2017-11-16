@@ -1,0 +1,73 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.a.bpimiss
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 430277
+Error detected -> Trying to recover
+Successful recovery -> Returning to normal execution
+596,490 ns >> iteration no: 0
+616,940 ns >> iteration no: 1
+637,240 ns >> iteration no: 2
+657,540 ns >> iteration no: 3
+678,015 ns >> iteration no: 4
+698,640 ns >> iteration no: 5
+719,065 ns >> iteration no: 6
+739,365 ns >> iteration no: 7
+759,565 ns >> iteration no: 8
+780,015 ns >> iteration no: 9
+800,440 ns >> iteration no: 10
+820,965 ns >> iteration no: 11
+841,440 ns >> iteration no: 12
+861,765 ns >> iteration no: 13
+882,065 ns >> iteration no: 14
+902,490 ns >> iteration no: 15
+922,990 ns >> iteration no: 16
+943,440 ns >> iteration no: 17
+963,740 ns >> iteration no: 18
+984,040 ns >> iteration no: 19
+1,004,515 ns >> iteration no: 20
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Error detected -> Trying to recover
+Successful recovery -> Returning to normal execution
+1,029,990 ns >> iteration no: 21
+1,050,615 ns >> iteration no: 22
+1,071,040 ns >> iteration no: 23
+1,091,340 ns >> iteration no: 24
+1,111,540 ns >> iteration no: 25
+1,131,990 ns >> iteration no: 26
+1,152,415 ns >> iteration no: 27
+1,172,940 ns >> iteration no: 28
+1,193,415 ns >> iteration no: 29
+1,213,765 ns >> iteration no: 30
+1,234,065 ns >> iteration no: 31
+1,254,490 ns >> iteration no: 32
+1,274,990 ns >> iteration no: 33
+1,295,440 ns >> iteration no: 34
+1,315,740 ns >> iteration no: 35
+1,336,040 ns >> iteration no: 36
+1,356,515 ns >> iteration no: 37
+1,377,140 ns >> iteration no: 38
+1,397,615 ns >> iteration no: 39
+1,417,915 ns >> iteration no: 40
+1,438,140 ns >> iteration no: 41
+1,458,590 ns >> iteration no: 42
+1,479,065 ns >> iteration no: 43
+1,499,690 ns >> iteration no: 44
+1,519,990 ns >> iteration no: 45
+1,540,265 ns >> iteration no: 46
+1,560,565 ns >> iteration no: 47
+1,580,990 ns >> iteration no: 48
+1,601,465 ns >> iteration no: 49
+1,620,965 ns >> prog fin.
+compare to golden: 1
+======================================
+progstatus: 1
+execerr: 2
+latent: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1620965000
+======================================

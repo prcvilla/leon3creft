@@ -11,6 +11,7 @@ libleon3.vhd
 clk2xsync.vhd
 clk2xqual.vhd
 regfile_3p_l3.vhd
+regfile_4p_l3.vhd
 mmu_acache.vhd
 mmu_icache.vhd
 mmu_dcache.vhd

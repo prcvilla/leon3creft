@@ -196,6 +196,33 @@ package libleon3 is
       testin  : in  std_logic_vector(TESTIN_WIDTH-1 downto 0)
       );
   end component;
+  --MOD regfile 4port pvilla mod
 
+  component regfile_4p_l3
+      generic (
+          tech :     integer := 0;
+          abits   :     integer := 6;
+          dbits   :     integer := 8;
+          wrfst   :     integer := 0;
+          numregs :     integer := 64;
+          testen  :     integer := 0);
+          port (
+              wclk    : in  std_ulogic;
+              waddr   : in  std_logic_vector((abits -1) downto 0);
+              wdata   : in  std_logic_vector((dbits -1) downto 0);
+              we      : in  std_ulogic;
+              rclk    : in  std_ulogic;
+              raddr1  : in  std_logic_vector((abits -1) downto 0);
+              re1     : in  std_ulogic;
+              rdata1  : out std_logic_vector((dbits -1) downto 0);
+              raddr2  : in  std_logic_vector((abits -1) downto 0);
+              re2     : in  std_ulogic;
+              rdata2  : out std_logic_vector((dbits -1) downto 0);
+              raddr3  : in  std_logic_vector((abits -1) downto 0);
+              re3     : in  std_ulogic;
+              rdata3  : out std_logic_vector((dbits -1) downto 0);
+              testin  : in  std_logic_vector(TESTIN_WIDTH-1 downto 0)
+          );
+  end component;
 end;
 

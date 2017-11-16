@@ -1,0 +1,24 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.e.ldbp1
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 519193
+606,240 ns >> iteration no: 0
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+4,038,140 ns >> iteration no: 1
+7,470,515 ns >> iteration no: 2
+10,902,715 ns >> iteration no: 3
+14,334,665 ns >> iteration no: 4
+17,766,140 ns >> prog fin.
+compare to golden: 1
+======================================
+progstatus: 1
+execerr: 0
+latent: 1
+program execution success!
+total iterations: 5
+>>>>>>>>>>>>>>> 17766140000
+======================================

@@ -1,0 +1,69 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.a.bpimiss
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 30987
+596,490 ns >> iteration no: 0
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+617,965 ns >> iteration no: 1
+638,190 ns >> iteration no: 2
+658,640 ns >> iteration no: 3
+679,115 ns >> iteration no: 4
+699,690 ns >> iteration no: 5
+719,990 ns >> iteration no: 6
+740,265 ns >> iteration no: 7
+760,565 ns >> iteration no: 8
+780,990 ns >> iteration no: 9
+801,465 ns >> iteration no: 10
+821,915 ns >> iteration no: 11
+842,190 ns >> iteration no: 12
+862,490 ns >> iteration no: 13
+882,965 ns >> iteration no: 14
+903,590 ns >> iteration no: 15
+924,040 ns >> iteration no: 16
+944,340 ns >> iteration no: 17
+964,565 ns >> iteration no: 18
+985,015 ns >> iteration no: 19
+1,005,490 ns >> iteration no: 20
+1,026,090 ns >> iteration no: 21
+1,046,390 ns >> iteration no: 22
+1,066,665 ns >> iteration no: 23
+1,086,965 ns >> iteration no: 24
+1,107,390 ns >> iteration no: 25
+1,127,865 ns >> iteration no: 26
+1,148,315 ns >> iteration no: 27
+1,168,590 ns >> iteration no: 28
+1,188,890 ns >> iteration no: 29
+1,209,365 ns >> iteration no: 30
+1,229,990 ns >> iteration no: 31
+1,250,440 ns >> iteration no: 32
+1,270,740 ns >> iteration no: 33
+1,290,965 ns >> iteration no: 34
+1,311,415 ns >> iteration no: 35
+1,331,890 ns >> iteration no: 36
+1,352,490 ns >> iteration no: 37
+1,372,790 ns >> iteration no: 38
+1,393,065 ns >> iteration no: 39
+1,413,365 ns >> iteration no: 40
+1,433,790 ns >> iteration no: 41
+1,454,265 ns >> iteration no: 42
+1,474,715 ns >> iteration no: 43
+1,494,990 ns >> iteration no: 44
+1,515,290 ns >> iteration no: 45
+1,535,765 ns >> iteration no: 46
+1,556,390 ns >> iteration no: 47
+1,576,840 ns >> iteration no: 48
+1,597,140 ns >> iteration no: 49
+1,616,440 ns >> prog fin.
+compare to golden: 1
+======================================
+progstatus: 1
+execerr: 0
+latent: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1616440000
+======================================

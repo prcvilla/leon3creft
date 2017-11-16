@@ -1,0 +1,26 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.m.result
+oldval = 00000000000000000000000000000000
+pos1: -1 pos0: 31 posU: -1
+newval = 00000000000000000000000000000001
+force in 2963933
+598,415 ns >> iteration no: 0
+2,670,515 ns >> iteration no: 1
+Signal value: 01000000000000000001111001001011
+oldval = 01000000000000000001111001001011
+pos1: 31 pos0: 29 posU: -1
+newval = 01000000000000000001111001001010
+4,742,690 ns >> iteration no: 2
+Error detected -> Trying to recover
+Successful recovery -> Returning to normal execution
+6,815,390 ns >> iteration no: 3
+8,887,465 ns >> iteration no: 4
+10,959,040 ns >> prog fin.
+compare to golden: 1
+======================================
+progstatus: 1
+execerr: 1
+latent: 1
+program execution success!
+total iterations: 5
+>>>>>>>>>>>>>>> 10959040000
+======================================

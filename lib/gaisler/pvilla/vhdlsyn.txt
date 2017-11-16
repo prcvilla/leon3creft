@@ -1,4 +1,5 @@
 chk_control.vhd
+stack.vhd
 chk_regfile.vhd
 ahbdmastop.vhd
 trlib.vhd 

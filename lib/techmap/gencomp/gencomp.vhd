@@ -605,6 +605,31 @@ constant m010     : integer := 13;
     );
   end component;
 
+-- synchronous 4-port regfile (3 read, 1 write port)
+  component regfile_4p
+      generic (tech : integer := 0; abits : integer := 6; dbits : integer := 8;
+      wrfst : integer := 0; numregs : integer := 64; testen : integer := 0;
+      custombits : integer := 1);
+      port (
+          wclk   : in  std_ulogic;
+          waddr  : in  std_logic_vector((abits -1) downto 0);
+          wdata  : in  std_logic_vector((dbits -1) downto 0);
+          we     : in  std_ulogic;
+          rclk   : in  std_ulogic;
+          raddr1 : in  std_logic_vector((abits -1) downto 0);
+          re1    : in  std_ulogic;
+          rdata1 : out std_logic_vector((dbits -1) downto 0);
+          raddr2 : in  std_logic_vector((abits -1) downto 0);
+          re2    : in  std_ulogic;
+          rdata2 : out std_logic_vector((dbits -1) downto 0);
+          raddr3 : in  std_logic_vector((abits -1) downto 0);
+          re3    : in  std_ulogic;
+          rdata3 : out std_logic_vector((dbits -1) downto 0);
+          testin   : in std_logic_vector(TESTIN_WIDTH-1 downto 0) := testin_none
+      );
+  end component;
+
+
 -- 64-bit synchronous single-port ram with 32-bit write strobe
   component syncram64
   generic (tech : integer := 0; abits : integer := 6; testen : integer := 0;

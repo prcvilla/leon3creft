@@ -1,0 +1,20 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.x.nerror
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 10001680
+606,240 ns >> iteration no: 0
+4,038,140 ns >> iteration no: 1
+7,470,515 ns >> iteration no: 2
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+compare to golden: 1
+======================================
+progstatus: 0
+execerr: 0
+latent: 1
+progstatus default value, probably error!
+>>>>>>>>>>>>>>> 10583295000
+======================================

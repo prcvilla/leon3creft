@@ -1,0 +1,71 @@
+Test signal = /testbench/cpu/l3/cpu(0)/u0/leon3x0/vhdl/p0/iu/r.a.wovf
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+force in 263053
+596,490 ns >> iteration no: 0
+616,940 ns >> iteration no: 1
+637,240 ns >> iteration no: 2
+657,540 ns >> iteration no: 3
+678,015 ns >> iteration no: 4
+698,640 ns >> iteration no: 5
+719,065 ns >> iteration no: 6
+739,365 ns >> iteration no: 7
+759,565 ns >> iteration no: 8
+780,015 ns >> iteration no: 9
+800,440 ns >> iteration no: 10
+820,965 ns >> iteration no: 11
+841,440 ns >> iteration no: 12
+Signal value: 0
+oldval = 0
+pos1: -1 pos0: 0 posU: -1
+newval = 1
+Error detected -> Trying to recover
+Successful recovery -> Returning to normal execution
+879,990 ns >> iteration no: 13
+900,265 ns >> iteration no: 14
+920,565 ns >> iteration no: 15
+940,990 ns >> iteration no: 16
+961,465 ns >> iteration no: 17
+981,915 ns >> iteration no: 18
+1,002,190 ns >> iteration no: 19
+1,022,490 ns >> iteration no: 20
+1,042,965 ns >> iteration no: 21
+1,063,590 ns >> iteration no: 22
+1,084,040 ns >> iteration no: 23
+1,104,340 ns >> iteration no: 24
+1,124,565 ns >> iteration no: 25
+1,145,015 ns >> iteration no: 26
+1,165,490 ns >> iteration no: 27
+1,186,090 ns >> iteration no: 28
+1,206,390 ns >> iteration no: 29
+1,226,665 ns >> iteration no: 30
+1,246,965 ns >> iteration no: 31
+1,267,390 ns >> iteration no: 32
+1,287,865 ns >> iteration no: 33
+1,308,315 ns >> iteration no: 34
+1,328,590 ns >> iteration no: 35
+1,348,890 ns >> iteration no: 36
+1,369,365 ns >> iteration no: 37
+1,389,990 ns >> iteration no: 38
+1,410,440 ns >> iteration no: 39
+1,430,740 ns >> iteration no: 40
+1,450,965 ns >> iteration no: 41
+1,471,415 ns >> iteration no: 42
+1,491,890 ns >> iteration no: 43
+1,512,490 ns >> iteration no: 44
+1,532,790 ns >> iteration no: 45
+1,553,065 ns >> iteration no: 46
+1,573,365 ns >> iteration no: 47
+1,593,790 ns >> iteration no: 48
+1,614,265 ns >> iteration no: 49
+1,633,765 ns >> prog fin.
+compare to golden: 1
+======================================
+progstatus: 1
+execerr: 1
+latent: 1
+program execution success!
+total iterations: 50
+>>>>>>>>>>>>>>> 1633765000
+======================================
