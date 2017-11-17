@@ -3769,6 +3769,9 @@ end;
   signal ir_chkp, irin_chkp : irestart_register;
   signal rp_chkp, rpin_chkp : pwd_register_type;
 
+  attribute keep : string;
+  attribute keep of r_chkp, rin_chkp, wpr_chkp, wprin_chkp, dsur_chkp, dsuin_chkp, ir_chkp, irin_chkp, rp_chkp, rpin_chkp : signal is "true";
+
 --procedure decode_checkpoint_enable(inst : word; chkp_en : out std_ulogic) is
 --  variable op : std_logic_vector(1 downto 0);
 --  variable op3 : std_logic_vector(5 downto 0);
