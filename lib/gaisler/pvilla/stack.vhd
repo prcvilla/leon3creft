@@ -3,7 +3,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity stack is
-generic (stsize : integer := 31; abits : integer := 8; dbits : integer := 32);
+generic (stsize : integer := 63; abits : integer := 8; dbits : integer := 32);
 port(	Clk : in std_logic;  --Clock for the stack.
 		Resetn : in std_logic; --Reset signal
 		Flush : in std_logic; --Flush the stack
@@ -26,6 +26,9 @@ signal stack_mem : mem_type := (others => (others => '0'));
 signal stack_addr : addr_type := (others => (others => '0'));
 signal stack_ptr : integer := stsize;
 signal full,empty : std_logic := '0';
+
+attribute keep : string;
+attribute keep of stack_mem, stack_addr : signal is "true";
 
 begin
 

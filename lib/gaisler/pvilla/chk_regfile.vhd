@@ -24,7 +24,7 @@ end;
 
 architecture beh of chk_regfile is
 	component stack is
-	generic (stsize : integer := 31; abits : integer := 8; dbits : integer := 32);
+	generic (stsize : integer := 63; abits : integer := 8; dbits : integer := 32);
 	port(	Clk : in std_logic;  --Clock for the stack.
 		Resetn : in std_logic; --Reset signal
 		Flush : in std_logic; --Flush the stack
@@ -32,7 +32,7 @@ architecture beh of chk_regfile is
 		Data_In : in std_logic_vector(dbits-1 downto 0);  --Data to be pushed to stack
 		Addr_In : in std_logic_vector(abits-1 downto 0);  --Addr to be pushed to stack
 		Data_Out : out std_logic_vector(dbits-1 downto 0);	--Data popped from the stack.
-		Addr_Out : out std_logic_vector(dbits-1 downto 0);	--Addr popped from the stack.
+		Addr_Out : out std_logic_vector(abits-1 downto 0);	--Addr popped from the stack.
 		PUSH_barPOP : in std_logic;  --active low for POP and active high for PUSH.
 		Stack_Full : out std_logic;  --Goes high when the stack is full.
 		Stack_Empty : out std_logic  --Goes high when the stack is empty.

@@ -257,6 +257,10 @@ architecture rtl of mmu_icache is
 -- rtravessini and pvilla  mod
   signal r_chkp, c_chkp : icache_control_type;
   signal rl_chkp, cl_chkp : lru_reg_type;
+
+  attribute keep : string;
+
+  attribute keep of r_chkp, c_chkp, rl_chkp, cl_chkp : signal is "true";
 -- end rtravessini and pvill a mod
 
   constant LRAM_EN : integer := conv_integer(conv_std_logic(lram /= 0));

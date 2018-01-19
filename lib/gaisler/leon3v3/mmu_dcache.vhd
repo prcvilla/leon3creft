@@ -379,6 +379,10 @@ architecture rtl of mmu_dcache is
   signal r_chkp, c_chkp : dcache_control_type;      -- r is registers, c is combinational
   signal rs_chkp, cs_chkp : snoop_reg_type;         -- rs is registers, cs is combinational
   signal rl_chkp, cl_chkp : lru_reg_type;           -- rl is registers, cl is combinational
+
+  attribute keep : string;
+
+  attribute keep of r_chkp, c_chkp, rs_chkp, cs_chkp, rl_chkp, cl_chkp : signal is "true";
 --end pvilla mod
 begin
 

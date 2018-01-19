@@ -132,6 +132,10 @@ architecture rtl of mmu_acache is
 --pvilla mod
   signal r_chkp, rin_chkp : reg_type;
   signal r2_chkp, r2in_chkp : reg2_type;
+
+  attribute keep : string;
+
+  attribute keep of r_chkp, rin_chkp, r2_chkp, r2in_chkp : signal is "true";
 --end pvilla mod
 
 -- rtravessini mod
