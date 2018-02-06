@@ -1,6 +1,6 @@
 <project name="leon3mp" version="1.1">
     <ProjectDirectory>
-        C:\grlib-old-gpl-1.0.19-b3188\designs\leon3-actel-proasic3\leon3mp
+        C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,17 +9,17 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\grlib-old-gpl-1.0.19-b3188\designs\leon3-actel-proasic3\leon3mp\leon3mp.log
+        C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp\leon3mp.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
     <programmer status="enable" type="FlashPro3" revision="UndefRev" connection="usb2.0">
         <name>
-            52977
+            53083
         </name>
         <id>
-            52977
+            53083
         </id>
     </programmer>
     <configuration>
@@ -72,13 +72,16 @@
                 </ProgrammingMode>
             </FlashPro5>
         </Hardware>
-        <Algo type="unknown">
-            <irlength>
-                0
-            </irlength>
-            <MaxTCK>
-                4000000
-            </MaxTCK>
+        <Algo type="PDB">
+            <filename>
+                C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb
+            </filename>
+            <local>
+                projectData\leon3mp.pdb
+            </local>
+            <SelectedAction>
+                PROGRAM
+            </SelectedAction>
         </Algo>
     </configuration>
 </project>

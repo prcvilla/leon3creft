@@ -593,7 +593,7 @@ LIBRARY="gaisler"
 ENDFILE
 VALUE "<project>\..\..\lib\gaisler\leon3v3\leon3x.vhd,hdl"
 STATE="utd"
-TIME="1517868010"
+TIME="1517872760"
 SIZE="19491"
 LIBRARY="gaisler"
 ENDFILE
@@ -1849,6 +1849,11 @@ STATE="utd"
 TIME="1517870038"
 SIZE="1125"
 ENDFILE
+VALUE "<project>\designer\impl1\leon3mp.pdb,pdb"
+STATE="ood"
+TIME="1517874462"
+SIZE="765193"
+ENDFILE
 VALUE "<project>\designer\impl1\leon3mp_compile_log.rpt,log"
 STATE="utd"
 TIME="1517870294"
@@ -1858,6 +1863,21 @@ VALUE "<project>\designer\impl1\leon3mp_floorplan_log.rpt,log"
 STATE="utd"
 TIME="1509113861"
 SIZE="371"
+ENDFILE
+VALUE "<project>\designer\impl1\leon3mp_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1517874324"
+SIZE="2506"
+ENDFILE
+VALUE "<project>\designer\impl1\leon3mp_prgdata_log.rpt,log"
+STATE="utd"
+TIME="1517874473"
+SIZE="816"
+ENDFILE
+VALUE "<project>\designer\impl1\leon3mp_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1517874398"
+SIZE="1215"
 ENDFILE
 VALUE "<project>\hdl\ahbdmastop.vhd,hdl"
 STATE="utd"
@@ -1907,8 +1927,8 @@ SIZE="20056"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp.edn,syn_edn"
 STATE="ood"
-TIME="1517870031"
-SIZE="8810223"
+TIME="1517872887"
+SIZE="16000992"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp.so,so"
 STATE="utd"
@@ -1917,7 +1937,7 @@ SIZE="249"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1517870031"
+TIME="1517872886"
 SIZE="396"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp_syn.prj,prj"
@@ -2183,10 +2203,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Compile:leon3mp_compile_log.rpt
+ReportsCurrentItem;Generate Programming Data:leon3mp_prgdata_log.rpt
 HDL;..\..\lib\gaisler\leon3v3\proc3.vhd;0
 StartPage;StartPage;0
 HDL;..\..\lib\gaisler\leon3v3\leon3x.vhd;0
+HDL;constraint\leon3mp.pdc;0
 ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
@@ -5434,9 +5455,9 @@ SUBBLOCK "leon3ftsh::gaisler","","FALSE","FALSE"
 SUBBLOCK "leon3s::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3s.vhd","FALSE","FALSE"
 SUBBLOCK "leon3s2x::gaisler","","FALSE","FALSE"
 SUBBLOCK "leon3sh::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3sh.vhd","FALSE","FALSE"
-SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
 SUBBLOCK "tbufmem::gaisler::leon3","..\..\lib\gaisler\leon3v3\tbufmem.vhd","FALSE","FALSE"
 SUBBLOCK "tbufmem_2p::gaisler::leon3","..\..\lib\gaisler\leon3v3\tbufmem_2p.vhd","FALSE","FALSE"
+SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
 ENDLIST
 LIST "leon3cg::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3cg.vhd","FALSE","FALSE"
 SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
@@ -5457,17 +5478,17 @@ SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE"
 ENDLIST
 LIST "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
 SUBBLOCK "cachemem::gaisler::libcache","..\..\lib\gaisler\leon3v3\cachemem.vhd","FALSE","FALSE"
+SUBBLOCK "chk_control::work","hdl\chk_control.vhd","FALSE","FALSE"
+SUBBLOCK "chk_regfile::work","hdl\chk_regfile.vhd","FALSE","FALSE"
 SUBBLOCK "grfpwx::gaisler::libleon3","","FALSE","FALSE"
 SUBBLOCK "grfpwxsh::gaisler::libfpu","","FALSE","FALSE"
 SUBBLOCK "grlfpwx::gaisler::libleon3","..\..\lib\gaisler\leon3v3\grlfpwx.vhd","FALSE","FALSE"
+SUBBLOCK "leon3_net::techmap::netcomp","..\..\lib\techmap\maps\leon3_net.vhd","FALSE","FALSE"
 SUBBLOCK "proc3::gaisler::libleon3","..\..\lib\gaisler\leon3v3\proc3.vhd","FALSE","FALSE"
+SUBBLOCK "regfile_4p_l3::work","hdl\regfile_4p_l3.vhd","FALSE","FALSE"
+SUBBLOCK "report_version::grlib::stdlib","..\..\lib\grlib\util\util.vhd","FALSE","FALSE"
 SUBBLOCK "tbufmem::gaisler::leon3","..\..\lib\gaisler\leon3v3\tbufmem.vhd","FALSE","FALSE"
 SUBBLOCK "tbufmem_2p::gaisler::leon3","..\..\lib\gaisler\leon3v3\tbufmem_2p.vhd","FALSE","FALSE"
-SUBBLOCK "report_version::grlib::stdlib","..\..\lib\grlib\util\util.vhd","FALSE","FALSE"
-SUBBLOCK "leon3_net::techmap::netcomp","..\..\lib\techmap\maps\leon3_net.vhd","FALSE","FALSE"
-SUBBLOCK "chk_control::work","hdl\chk_control.vhd","FALSE","FALSE"
-SUBBLOCK "chk_regfile::work","hdl\chk_regfile.vhd","FALSE","FALSE"
-SUBBLOCK "regfile_4p_l3::work","hdl\regfile_4p_l3.vhd","FALSE","FALSE"
 SUBBLOCK "trctrl::work::trlib","hdl\trctrl.vhd","FALSE","FALSE"
 ENDLIST
 LIST "leon4::gaisler","..\..\lib\gaisler\leon4\leon4.vhd","FALSE","FALSE"
@@ -5501,8 +5522,8 @@ SUBBLOCK "dsu4x::gaisler","","FALSE","FALSE"
 SUBBLOCK "grfpushwx::gaisler::leon3","..\..\lib\gaisler\leon3\grfpushwx.vhd","FALSE","FALSE"
 SUBBLOCK "l3stat::gaisler::leon3","..\..\lib\gaisler\leon3v3\l3stat.vhd","FALSE","FALSE"
 SUBBLOCK "l4stat::gaisler","","FALSE","FALSE"
-SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
 SUBBLOCK "leon4x::gaisler","","FALSE","FALSE"
+SUBBLOCK "leon3x::gaisler::leon3","..\..\lib\gaisler\leon3v3\leon3x.vhd","FALSE","FALSE"
 ENDLIST
 LIST "libcache::gaisler","..\..\lib\gaisler\leon3v3\libcache.vhd","FALSE","FALSE"
 SUBBLOCK "cachemem::gaisler::libcache","..\..\lib\gaisler\leon3v3\cachemem.vhd","FALSE","FALSE"

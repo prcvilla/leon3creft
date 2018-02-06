@@ -19,3 +19,44 @@ Error: Vjtag is disconnected or shorted. Please check the FPGA's Vjtag pin is pr
        connected. Please check that the target board is powered.
 Error: programmer '53083' : Scan Chain FAILED.
 Error: Failed to run Action.
+programmer '53083' : Scan Chain...
+Warning: programmer '53083' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '53083' : Scan Chain PASSED.
+programmer '53083' : Executing action PROGRAM
+programmer '53083' : EXPORT FSN[48] = 914f17605c68
+programmer '53083' : Erase ...
+programmer '53083' : Completed erase
+programmer '53083' : EXPORT CHECKSUM[16] = e4eb
+programmer '53083' : Programming FPGA Array
+programmer '53083' : Verifying FPGA Array
+programmer '53083' :         Verifying FPGA Array -- pass
+programmer '53083' : Finished: Mon Feb 05 21:04:02 2018 (Elapsed time 00:01:07)
+programmer '53083' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+PDB file
+'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb'
+has been loaded successfully.
+DESIGN : leon3mp;  CHECKSUM : 8680;  PDB_VERSION : 1.9
+programmer '53083' : Scan Chain...
+Warning: programmer '53083' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '53083' : Scan Chain PASSED.
+programmer '53083' : Executing action PROGRAM
+programmer '53083' : EXPORT FSN[48] = 914f17605c68
+programmer '53083' : Erase ...
+programmer '53083' : Completed erase
+programmer '53083' : EXPORT CHECKSUM[16] = 8680
+programmer '53083' : Programming FPGA Array
+programmer '53083' : Verifying FPGA Array
+programmer '53083' :         Verifying FPGA Array -- pass
+programmer '53083' : Finished: Mon Feb 05 21:49:30 2018 (Elapsed time 00:01:12)
+programmer '53083' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: Project 'leon3mp' has been modified. Do you want to save it? [YES]
+Project saved.
+Project closed.
