@@ -1,0 +1,36 @@
+@N: CD630 :".\gentmp9932a05572":4:7:4:9|Synthesizing work.top.gen.
+@N: CD630 :"syng0a05572":1366:7:1366:9|Synthesizing work.dec.fdec.
+@W: CD638 :"syng0a05572":1387:9:1387:13|Signal carry is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"syng0a05572":1388:9:1388:12|Signal asup is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"syng0a05572":1388:15:1388:18|Signal ssup is undriven. Either assign the signal a value or remove the signal declaration.
+@N: CD630 :"syng0a05572":357:7:357:22|Synthesizing work.dwact_bl_fincdec.impl1.
+@W: CD280 :"syng0a05572":369:12:369:14|Unbound component INV mapped to black box
+@W: CD796 :"syng0a05572":474:9:474:9|Bit 31 of signal e is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@W: CD796 :"syng0a05572":474:9:474:9|Bit 32 of signal e is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+@N: CD630 :"syng0a05572":191:7:191:20|Synthesizing work.dwact_tl_l2xor.impl1.
+@W: CD280 :"syng0a05572":215:12:215:14|Unbound component OR3 mapped to black box
+@W: CD280 :"syng0a05572":223:12:223:16|Unbound component XNOR2 mapped to black box
+@N: CD630 :"syng0a05572":223:12:223:16|Synthesizing work.xnor2.syn_black_box.
+Post processing for work.xnor2.syn_black_box
+@N: CD630 :"syng0a05572":215:12:215:14|Synthesizing work.or3.syn_black_box.
+Post processing for work.or3.syn_black_box
+Post processing for work.dwact_tl_l2xor.impl1
+@N: CD630 :"syng0a05572":81:7:81:18|Synthesizing work.dwact_tl_or2.impl1.
+@W: CD280 :"syng0a05572":103:10:103:12|Unbound component OR2 mapped to black box
+@N: CD630 :"syng0a05572":103:10:103:12|Synthesizing work.or2.syn_black_box.
+Post processing for work.or2.syn_black_box
+Post processing for work.dwact_tl_or2.impl1
+@N: CD630 :"syng0a05572":155:7:155:18|Synthesizing work.dwact_tl_or3.impl1.
+Post processing for work.dwact_tl_or3.impl1
+@N: CD630 :"syng0a05572":332:7:332:20|Synthesizing work.dwact_bl_xnor2.impl1.
+Post processing for work.dwact_bl_xnor2.impl1
+@N: CD630 :"syng0a05572":369:12:369:14|Synthesizing work.inv.syn_black_box.
+Post processing for work.inv.syn_black_box
+@N: CD630 :"syng0a05572":18:7:18:18|Synthesizing work.dwact_tl_gnd.impl1.
+@W: CD280 :"syng0a05572":38:10:38:12|Unbound component GND mapped to black box
+@N: CD630 :"syng0a05572":38:10:38:12|Synthesizing work.gnd.syn_black_box.
+Post processing for work.gnd.syn_black_box
+Post processing for work.dwact_tl_gnd.impl1
+Post processing for work.dwact_bl_fincdec.impl1
+Post processing for work.dec.fdec
+Post processing for work.top.gen

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>leon3mp</design>
+	<target_edif>C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn</target_edif>
+</SynplifyOutput>

@@ -1,0 +1,119 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":40:7:40:13|Top entity is set to leon3mp.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":40:7:40:13|Synthesizing work.leon3mp.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\ahbram.vhd":39:7:39:12|Synthesizing gaisler.ahbram.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncrambw.vhd":38:7:38:15|Synthesizing techmap.syncrambw.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":36:7:36:13|Synthesizing techmap.syncram.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":32:7:32:21|Synthesizing techmap.generic_syncram.behavioral.
+@N: CL134 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":47:9:47:14|Found RAM memarr, depth=4096, width=8
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\iopad.vhd":33:7:33:11|Synthesizing techmap.iopad.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\grgpio.vhd":41:7:41:12|Synthesizing gaisler.grgpio.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\gptimer.vhd":56:7:56:13|Synthesizing gaisler.gptimer.rtl.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\gptimer.vhd":569:4:569:5|Register bit r.wdogdis is always 0.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\irqmp\irqmp.vhd":40:7:40:11|Synthesizing gaisler.irqmp.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":43:7:43:13|Synthesizing gaisler.apbuart.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":73:15:73:16|Using sequential encoding for type txfsmtype.
+@N: CD231 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":72:15:72:16|Using onehot encoding for type rxfsmtype. For example, enumeration idle is mapped to "10000".
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Register bit r.rwaddr(0) is always 0.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Register bit r.tcnt(1) is always 0.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Register bit r.rcnt(1) is always 0.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrl.vhd":35:7:35:13|Synthesizing grlib.apbctrl.struct.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":39:7:39:14|Synthesizing grlib.apbctrlx.rtl.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":344:4:344:5|Register bit r.p_0.hresp(0) is always 0.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":344:4:344:5|Register bit r.p_0.hresp(1) is always 0.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\ahbrom.vhd":26:7:26:12|Synthesizing work.ahbrom.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\outpad.vhd":33:7:33:12|Synthesizing techmap.outpad.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\inpad.vhd":33:7:33:11|Synthesizing techmap.inpad.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\ahbuart.vhd":38:7:38:13|Synthesizing gaisler.ahbuart.struct.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd":38:7:38:10|Synthesizing gaisler.dcom.struct.
+@N: CD231 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd":52:21:52:22|Using onehot encoding for type dcom_state_type. For example, enumeration idle is mapped to "100000".
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd":143:4:143:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd":42:7:42:15|Synthesizing gaisler.dcom_uart.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd":69:15:69:16|Using sequential encoding for type txfsmtype.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd":68:15:68:16|Using sequential encoding for type rxfsmtype.
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd":291:4:291:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\ahbmst.vhd":36:7:36:12|Synthesizing grlib.ahbmst.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\dsu3.vhd":38:7:38:10|Synthesizing gaisler.dsu3.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\dsu3x.vhd":40:7:40:11|Synthesizing gaisler.dsu3x.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\tbufmem.vhd":36:7:36:13|Synthesizing gaisler.tbufmem.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram64.vhd":38:7:38:15|Synthesizing techmap.syncram64.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":36:7:36:13|Synthesizing techmap.syncram.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":32:7:32:21|Synthesizing techmap.generic_syncram.behavioral.
+@N: CL134 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":47:9:47:14|Found RAM memarr, depth=64, width=32
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3s.vhd":36:7:36:12|Synthesizing gaisler.leon3s.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3x.vhd":44:7:44:12|Synthesizing gaisler.leon3x.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd":38:7:38:14|Synthesizing gaisler.cachemem.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\regfile_4p_l3.vhd":10:7:10:19|Synthesizing work.regfile_4p_l3.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\regfile_4p.vhd":9:7:9:16|Synthesizing work.regfile_4p.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":321:7:321:24|Synthesizing techmap.generic_regfile_4p.rtl.
+@N: CL134 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":352:9:352:14|Found RAM memarr, depth=136, width=32
+@N: CL134 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":352:9:352:14|Found RAM memarr, depth=136, width=32
+@N: CL134 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":352:9:352:14|Found RAM memarr, depth=136, width=32
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":6:7:6:12|Synthesizing work.trctrl.behaviour.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":20:16:20:17|Using sequential encoding for type states.
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":69:12:69:25|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_regfile.vhd":5:7:5:17|Synthesizing work.chk_regfile.beh.
+@N: CD231 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_regfile.vhd":42:13:42:14|Using onehot encoding for type states. For example, enumeration sidle is mapped to "10000".
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_regfile.vhd":120:3:120:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\stack.vhd":5:7:5:11|Synthesizing work.stack.behavioral.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_control.vhd":5:7:5:17|Synthesizing work.chk_control.beh.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_control.vhd":15:13:15:14|Using sequential encoding for type states.
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_control.vhd":47:3:47:16|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\proc3.vhd":45:7:45:11|Synthesizing gaisler.proc3.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_cache.vhd":43:7:43:15|Synthesizing gaisler.mmu_cache.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_acache.vhd":43:7:43:16|Synthesizing gaisler.mmu_acache.rtl.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd":45:7:45:16|Synthesizing gaisler.mmu_dcache.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache.
+@N: CD231 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd":149:18:149:19|Using onehot encoding for type dstatetype. For example, enumeration idle is mapped to "100000000".
+@N: CD231 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd":133:17:133:18|Using onehot encoding for type rdatatype. For example, enumeration dtag is mapped to "100000000".
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd":1216:4:1216:17|OTHERS clause is not synthesized.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd":44:7:44:16|Synthesizing gaisler.mmu_icache.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuconfig.vhd":40:17:40:18|Using sequential encoding for type mmu_idcache.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd":176:18:176:19|Using sequential encoding for type istatetype.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd":102:17:102:18|Using sequential encoding for type rdatatype.
+@N: CD604 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd":549:4:549:17|OTHERS clause is not synthesized.
+@N: CD364 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd":731:4:731:9|Removing redundant assignment.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":47:7:47:9|Synthesizing gaisler.iu3.rtl.
+@N: CD233 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":314:23:314:24|Using sequential encoding for type exception_state.
+@N: CD630 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\ahbctrl.vhd":40:7:40:13|Synthesizing grlib.ahbctrl.rtl.
+@N: CL189 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\ahbctrl.vhd":698:4:698:5|Register bit r.ldefmst is always 0.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":93:4:93:7|Input mulo is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":95:4:95:7|Input divo is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":98:4:98:6|Input cpo is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd":102:4:102:9|Input tbo_2p is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd":85:4:85:7|Input sclk is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_acache.vhd":69:4:69:9|Input hclken is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_cache.vhd":99:4:99:7|Input hclk is unused.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_control.vhd":27:2:27:3|Trying to extract state machine for register CS.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_regfile.vhd":62:2:62:3|Trying to extract state machine for register CS.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":86:6:86:7|Trying to extract state machine for register r.state.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":330:4:330:7|Input rclk is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\regfile_4p.vhd":28:4:28:9|Input testin is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd":62:8:62:10|Input clk is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd":63:8:63:12|Input crami is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd":65:8:65:11|Input sclk is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd":66:8:66:13|Input testin is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3x.vhd":108:4:108:9|Input gfclk2 is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3x.vhd":120:4:120:7|Input fpuo is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":44:4:44:9|Input enable is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":46:4:46:9|Input testin is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\dsu3x.vhd":57:4:57:7|Input hclk is unused.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd":335:4:335:5|Trying to extract state machine for register r.rxstate.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd":157:4:157:5|Trying to extract state machine for register r.state.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd":46:6:46:9|Input ahbi is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\outpad.vhd":37:8:37:11|Input cfgi is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\ahbrom.vhd":35:4:35:6|Input rst is unused.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":344:4:344:5|Trying to extract state machine for register r.p_0.state.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":66:4:66:5|Input wp is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd":67:4:67:6|Input wpv is unused.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Trying to extract state machine for register r.txstate.
+@N: CL201 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Trying to extract state machine for register r.rxstate.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\iopad.vhd":38:8:38:11|Input cfgi is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":44:4:44:9|Input enable is unused.
+@N: CL159 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd":46:4:46:9|Input testin is unused.
+@N|Running in 64-bit mode
+

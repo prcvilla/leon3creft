@@ -1,0 +1,32 @@
+Microsemi Libero Software
+Version: 11.8.1.12
+Release: Libero SoC v11.8 SP1
+
+Info: The design leon3mp.adb was last modified by software version 11.8.1.12.
+Opened an existing Libero design leon3mp.adb.
+'BA_NAME' set to 'leon3mp_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+Wrote timing report to file: leon3mp_maxdelay_timing_report.txt
+
+The Report command succeeded ( 00:00:49 )
+Wrote timing report to file: leon3mp_mindelay_timing_report.txt
+
+The Report command succeeded ( 00:00:09 )
+Wrote timing_violations report to file: leon3mp_maxdelay_timingviolations_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote timing_violations report to file: leon3mp_mindelay_timingviolations_report.txt
+
+The Report command succeeded ( 00:00:01 )
+Design saved to file
+C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.adb.
+
+The Execute Script command succeeded ( 00:01:11 )
+Design closed.
+

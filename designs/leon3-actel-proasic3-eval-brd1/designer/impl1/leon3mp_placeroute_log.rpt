@@ -1,0 +1,85 @@
+Microsemi Libero Software
+Version: 11.8.1.12
+Release: Libero SoC v11.8 SP1
+
+Info: The design leon3mp.adb was last modified by software version 11.8.1.12.
+Opened an existing Libero design leon3mp.adb.
+'BA_NAME' set to 'leon3mp_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Mon Feb 05 21:23:06 2018
+
+Placer Finished: Mon Feb 05 21:34:20 2018
+Total Placer CPU Time:     00:11:14
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: leon3mp                         Started: Mon Feb 05 21:34:59 2018
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: leon3mp                         
+Finished: Mon Feb 05 21:43:47 2018
+Total CPU Time:     00:08:41            Total Elapsed Time: 00:08:48
+Total Memory Usage: 1020.1 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+
+The Layout command succeeded ( 00:21:56 )
+Wrote status report to file: leon3mp_place_and_route_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalnet report to file: leon3mp_globalnet_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalusage report to file: leon3mp_globalusage_report.txt
+
+The Report command succeeded ( 00:00:05 )
+Wrote iobank report to file: leon3mp_iobank_report.txt
+
+The Report command succeeded ( 00:00:07 )
+Wrote pin report to file: leon3mp_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:14 )
+Wrote pin report to file: leon3mp_report_pin_bynumber.txt
+
+The Report command succeeded ( 00:00:01 )
+Design saved to file
+C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.adb.
+
+The Execute Script command succeeded ( 00:22:47 )
+Design closed.
+

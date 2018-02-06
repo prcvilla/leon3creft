@@ -1,0 +1,100 @@
+
+fsm_encoding {4334443446} sequential
+
+fsm_state_encoding {4334443446} 00 {00}
+
+fsm_state_encoding {4334443446} 01 {01}
+
+fsm_state_encoding {4334443446} 10 {10}
+
+fsm_registers {4334443446} {r®p_0®state[1]}  {r®p_0®state[0]} 
+
+fsm_encoding {19272271} sequential
+
+fsm_state_encoding {19272271} sidle {00}
+
+fsm_state_encoding {19272271} swriteon {01}
+
+fsm_state_encoding {19272271} schkpen {10}
+
+fsm_registers {19272271} {CS[1]}  {CS[0]} 
+
+fsm_encoding {93622622} onehot
+
+fsm_state_encoding {93622622} sidle {00000}
+
+fsm_state_encoding {93622622} sinit {00011}
+
+fsm_state_encoding {93622622} spop {00101}
+
+fsm_state_encoding {93622622} swrite {01001}
+
+fsm_state_encoding {93622622} sdone {10001}
+
+fsm_registers {93622622} {CS[0]}  {CS[1]}  {CS[2]}  {CS[3]}  {CS_i[4]} 
+
+fsm_encoding {96866863} sequential
+
+fsm_state_encoding {96866863} 00 {00}
+
+fsm_state_encoding {96866863} 01 {01}
+
+fsm_state_encoding {96866863} 10 {10}
+
+fsm_state_encoding {96866863} 11 {11}
+
+fsm_registers {96866863} {r®state[1]}  {r®state[0]} 
+
+fsm_encoding {4033543354} sequential
+
+fsm_state_encoding {4033543354} 00 {00}
+
+fsm_state_encoding {4033543354} 01 {01}
+
+fsm_state_encoding {4033543354} 10 {10}
+
+fsm_state_encoding {4033543354} 11 {11}
+
+fsm_registers {4033543354} {r®rxstate[1]}  {r®rxstate[0]} 
+
+fsm_encoding {3915741575} onehot
+
+fsm_state_encoding {3915741575} 000001 {000000}
+
+fsm_state_encoding {3915741575} 000010 {000011}
+
+fsm_state_encoding {3915741575} 000100 {000101}
+
+fsm_state_encoding {3915741575} 001000 {001001}
+
+fsm_state_encoding {3915741575} 010000 {010001}
+
+fsm_state_encoding {3915741575} 100000 {100001}
+
+fsm_registers {3915741575} {r®state[0]}  {r®state[1]}  {r®state[2]}  {r®state[3]}  {r®state[4]}  {r®state_i[5]} 
+
+fsm_encoding {4556045607} sequential
+
+fsm_state_encoding {4556045607} 00 {00}
+
+fsm_state_encoding {4556045607} 01 {01}
+
+fsm_state_encoding {4556045607} 10 {10}
+
+fsm_state_encoding {4556045607} 11 {11}
+
+fsm_registers {4556045607} {r®txstate[1]}  {r®txstate[0]} 
+
+fsm_encoding {4556045608} onehot
+
+fsm_state_encoding {4556045608} 00001 {00000}
+
+fsm_state_encoding {4556045608} 00010 {00011}
+
+fsm_state_encoding {4556045608} 00100 {00101}
+
+fsm_state_encoding {4556045608} 01000 {01001}
+
+fsm_state_encoding {4556045608} 10000 {10001}
+
+fsm_registers {4556045608} {r®rxstate[0]}  {r®rxstate[1]}  {r®rxstate[2]}  {r®rxstate[3]}  {r®rxstate_i[4]} 

@@ -1,0 +1,662 @@
+***************************************************************************
+                               Status Report
+                          Mon Feb 05 21:22:25 2018 ***************************************************************************
+
+Product: Designer
+Release: Libero SoC v11.8 SP1
+Version: 11.8.1.12
+File Name: C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.adb
+Design Name: leon3mp  Design State: compile
+Last Saved: Mon Feb 05 20:55:20 2018
+
+***** Device Data **************************************************
+
+Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Speed: Std  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Mon Feb 05 21:21:36 2018:
+        C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn
+        C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\constraint\leon3mp.pdc
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: off
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3E
+Device      : A3PE1500
+Package     : 208 PQFP
+Source      :
+C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn
+
+C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\constraint\leon3mp.pdc
+Format      : EDIF
+Topcell     : leon3mp
+Speed grade : Std
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : No
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/I_1_RD14_4
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/I_1_RD15_4
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/I_1_RD16_4
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/I_1_RD17_4
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/I_1_RD14_5
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/I_1_RD15_5
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/I_1_RD16_5
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/I_1_RD17_5
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/I_1_RD14_2
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/I_1_RD15_2
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/I_1_RD16_2
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/I_1_RD17_2
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/I_1_RD14_3
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/I_1_RD15_3
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/I_1_RD16_3
+         drives no load.
+Warning: CMP201: Net l3_dsugen_dsu0/x0/tb0_mem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/I_1_RD17_3
+         drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_7 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_8 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_0[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_9 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_1[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_10 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_2[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_11 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_3[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_12 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_4[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_13 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_5[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/I_1_RD8_14 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_3_x0/inf_x0/DOUT_SIG_6[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_15 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_16 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_0[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_17 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_1[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_18 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_2[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_19 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_3[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_20 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_4[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_21 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_5[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/I_1_RD8_22 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_0_x0/inf_x0/DOUT_SIG_6[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_23 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_24 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_0[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_25 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_1[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_26 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_2[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_27 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_3[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_28 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_4[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_29 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_5[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/I_1_RD8_30 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_1_x0/inf_x0/DOUT_SIG_6[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_0 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_0[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_1 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_1[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_2 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_2[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_3 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_3[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_4 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_4[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_5 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_5[17] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/I_1_RD8_6 drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[9] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[10] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[11] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[12] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[13] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[14] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[15] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[16] drives no load.
+Warning: CMP201: Net ocram_ahbram0/aram/nosbw_rx_2_x0/inf_x0/DOUT_SIG_6[17] drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD14 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD15 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD16 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD17 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD14_0 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD15_0 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD16_0 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD17_0 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD14_1 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD15_1 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD16_1 drives no load.
+Warning: CMP201: Net l3_cpu_0_u0/leon3x0/vhdl_rf0/s0_inf/s0/I_1_RD17_1 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD14_8 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD15_8 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD16_8 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD17_8 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD14_9 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD15_9 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD16_9 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_1_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD17_9 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD14_6 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD15_6 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD16_6 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x1/inf_x0/\
+         I_1_RD17_6 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD14_7 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD15_7 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD16_7 drives no load.
+Warning: CMP201: Net
+         l3_cpu_0_u0/leon3x0/vhdl_tbmem_gen_tbmem_1p_tbmem0/mem32_0_ram0/nopar_nos64_x0/inf_x0/\
+         I_1_RD17_7 drives no load.
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   1349
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        448
+
+    Total macros optimized  1797
+
+Warning: CMP503: Remapped 14 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+         pin on the enable flip-flop is not being driven by a global net.
+
+There were 0 error(s) and 365 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:  30154  Total:  38400   (78.53%)
+    IO (W/ clocks)             Used:     22  Total:    147   (14.97%)
+    Differential IO            Used:      0  Total:     65   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
+    PLL                        Used:      0  Total:      2   (0.00%)
+    RAM/FIFO                   Used:     54  Total:     60   (90.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 6      | 6  (100.00%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 23470        | 23470
+    SEQ     | 6684         | 6684
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 5             | 0            | 0
+    Output I/O                            | 10            | 0            | 0
+    Bidirectional I/O                     | 7             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 5     | 10     | 7
+
+I/O Placement:
+
+    Locked  :  22 ( 100.00% )
+    Placed  :   0
+    UnPlaced:   0
+
+Net information report:
+=======================
+
+The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
+    EffCnt  Type          Name
+    --------------------------
+    14      INT_NET       Net   : resetn_c_0
+                          Driver: resetn_pad_RNI58G9_0
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    6475    CLK_NET       Net   : clk_c
+                          Driver: clk_pad
+                          Source: NETLIST
+    2608    INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stackrstn
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stackrstn_RNIM6M2
+                          Source: NETLIST
+    1829    INT_NET       Net   : l3.cpu.0.u0/leon3x0/chkp_pin
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]
+                          Source: NETLIST
+    1764    INT_NET       Net   : l3.cpu.0.u0.leon3x0.tro.recov_i_3
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.trctrl0/r.state_RNIJ1KR_0[0]
+                          Source: NETLIST
+    1033    INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr[5]
+                          Driver:
+l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_RNI51U2[5]
+                          Source: NETLIST
+    956     INT_NET       Net   : l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.divstart_2_sqmuxa
+                          Driver: I_2294
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    24      INT_NET       Net   : apbi.pwdata[1]
+                          Driver: apb0/apbx/r.p_0.pwdata[1]
+    24      INT_NET       Net   : ua1.uart1.uartop.rdata54_1
+                          Driver: dcomgen.dcom0/dcom_uart0/v.brate_1_sqmuxa_0
+    24      INT_NET       Net   : resetn_c_0
+                          Driver: resetn_pad_RNI58G9_0
+    24      INT_NET       Net   : resetn_c_1
+                          Driver: resetn_pad_RNI58G9
+    24      INT_NET       Net   : resetn_c_2
+                          Driver: resetn_pad_RNI58G9_1
+    24      INT_NET       Net   : resetn_c_3
+                          Driver: resetn_pad_RNI58G9_7
+    24      INT_NET       Net   : resetn_c_4
+                          Driver: resetn_pad_RNI58G9_4
+    24      INT_NET       Net   : resetn_c_5
+                          Driver: resetn_pad_RNI58G9_9
+    24      INT_NET       Net   : resetn_c_6
+                          Driver: resetn_pad_RNI58G9_8
+    24      INT_NET       Net   : resetn_c_7
+                          Driver: resetn_pad_RNI58G9_3
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    285     INT_NET       Net   : resetn_c
+                          Driver: resetn_pad
+    24      INT_NET       Net   : apbi.pwdata[1]
+                          Driver: apb0/apbx/r.p_0.pwdata[1]
+    24      INT_NET       Net   : ua1.uart1.uartop.rdata54_1
+                          Driver: dcomgen.dcom0/dcom_uart0/v.brate_1_sqmuxa_0
+    24      INT_NET       Net   : ahbsi.hmaster_0[0]
+                          Driver: ahb0/r.hmaster_0_0[0]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluop_1[2]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_1[2]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluop_0[2]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_0[2]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/ex_shcnt_1_0[4]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.shcnt_RNI5KGN[4]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluresult_8_sqmuxa
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_RNI6R7E1[1]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/a0/nbo_5_0[0]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/a0/r.nbo_RNI0HS03_0[0]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_36[4]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_36[4]
+
+

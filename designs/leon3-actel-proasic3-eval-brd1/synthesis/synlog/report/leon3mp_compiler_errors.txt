@@ -1,0 +1,13 @@
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":15:4:15:4|No identifier "tr_out_type" in scope
+@E: CD200 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":74:8:74:10|Misspelled variable, signal or procedure name?
+@E: CD424 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd":92:16:92:16|Expecting architecture identifier
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libcache.vhd":384:33:384:33|No identifier "tr_out_type" in scope
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libleon3.vhd":107:34:107:34|No identifier "tr_out_type" in scope
+@E: CD879 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\grlfpwx.vhd":146:22:146:28|Illegal concurrent statement. Possible missing component declaration for regfile_3p_l3
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_acache.vhd":59:31:59:31|No identifier "tr_out_type" in scope
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_acache.vhd":147:21:147:21|No identifier "ahbi" in scope
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_cache.vhd":87:32:87:32|No identifier "tr_out_type" in scope
+@E: CD879 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_cache.vhd":142:4:142:10|Illegal concurrent statement. Possible missing component declaration for mmu_icache
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\proc3.vhd":109:32:109:32|No identifier "tr_out_type" in scope
+@E: CD255 :"C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\proc3.vhd":109:32:109:32|Too many errors - aborting.
+

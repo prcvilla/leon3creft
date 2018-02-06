@@ -1,0 +1,31 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: Libero SoC v11.8 SP1
+Version: 11.8.1.12
+Date: Mon Feb 05 21:44:49 2018
+Design Name: leon3mp  Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    1764              Net   : l3.cpu.0.u0.leon3x0.tro.recov_i_3
+                      Driver: l3_cpu_0_u0/leon3x0/vhdl_trctrl0/r_state_RNIJ1KR_0[0]/U_GL
+    956               Net   : l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.divstart_2_sqmuxa
+                      Driver: I_2294/U_GL
+    6475              Net   : clk_c
+                      Driver: clk_pad/U0/U1/U_GL
+    1829              Net   : l3.cpu.0.u0/leon3x0/chkp_pin
+                      Driver: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS_RNI9H0F[0]/U_GL
+    2608              Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stackrstn
+                      Driver: l3_cpu_0_u0/leon3x0/vhdl_chkregfile0/stackrstn_RNIM6M2/U_GL
+    1033              Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr[5]
+                      Driver: l3_cpu_0_u0/leon3x0/vhdl_chkregfile0/stack0/stack_ptr_RNI51U2[5]/U_GL
+
+
+
+

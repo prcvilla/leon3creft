@@ -1,0 +1,52 @@
+********************************************************************
+                            I/O Bank Report
+********************************************************************
+  
+Product: Designer
+Release: Libero SoC v11.8 SP1
+Version: 11.8.1.12
+Date: Mon Feb 05 21:44:56 2018
+Design Name: leon3mp  Family: ProASIC3E  Die: A3PE1500  Package: 208 PQFP
+
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 5             | 0            | 0
+    Output I/O                            | 10            | 0            | 0
+    Bidirectional I/O                     | 7             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 5     | 10     | 7
+
+I/O Bank Resource Usage:
+
+          |   Voltages    | Single I/Os  | Diff I/O Pairs |        Vref I/Os
+          |-------|-------|------|-------|-------|--------|------|-------|----------
+          | Vcci  | Vref  | Used | Total | Used  | Total  | Used | Total | Vref Pins
+    ------|-------|-------|------|-------|-------|--------|------|-------|----------
+    Bank0 | 3.30v | N/A   | 5    | 25    | 0     | 12     | N/A  | N/A   | N/A
+    Bank1 | 3.30v | N/A   | 3    | 15    | 0     | 7      | N/A  | N/A   | N/A
+    Bank2 | 3.30v | N/A   | 0    | 17    | 0     | 6      | N/A  | N/A   | N/A
+    Bank3 | 3.30v | N/A   | 4    | 16    | 0     | 7      | N/A  | N/A   | N/A
+    Bank4 | 3.30v | N/A   | 0    | 15    | 0     | 7      | N/A  | N/A   | N/A
+    Bank5 | 3.30v | N/A   | 9    | 22    | 0     | 10     | N/A  | N/A   | N/A
+    Bank6 | 3.30v | N/A   | 1    | 19    | 0     | 9      | N/A  | N/A   | N/A
+    Bank7 | 3.30v | N/A   | 0    | 18    | 0     | 7      | N/A  | N/A   | N/A
+
+I/O Voltage Usage:
+
+       Voltages    |     I/Os
+    -------|-------|------|-------
+     Vcci  | Vref  | Used | Total
+    -------|-------|------|-------
+     3.30v | N/A   | 22   | 147
+

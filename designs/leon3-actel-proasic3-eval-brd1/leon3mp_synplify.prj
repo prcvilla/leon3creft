@@ -1,0 +1,34 @@
+source compile.synp
+add_file -vhdl -lib work config.vhd
+add_file -vhdl -lib work ahbrom.vhd
+add_file -vhdl -lib work leon3mp.vhd
+add_file -constraint  ../../boards/actel-a3pe-a3p-eval-brd1/default.sdc
+
+#implementation: "synplify"
+impl -add synplify
+
+#device options
+set_option -technology PROASIC3
+set_option -part ProASIC3E
+set_option -speed_grade Std
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -symbolic_fsm_compiler 0
+set_option -resource_sharing 0
+
+set_option -write_vhdl 1
+#set_option -disable_io_insertion 0
+
+#map options
+set_option -frequency 50
+
+set_option -top_module leon3mp
+
+#set result format/file last
+project -result_file "synplify/leon3mp.edf"
+
+#implementation attributes
+set_option -package pq208
+set_option -pipe 0; set_option -retiming 0; set_option -write_apr_constraint 0
+impl -active "synplify"

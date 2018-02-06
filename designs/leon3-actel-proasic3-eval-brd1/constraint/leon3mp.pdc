@@ -1,0 +1,53 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.7 11.7.0.119
+
+# Design Name: leon3mp 
+
+# Input Netlist Format: edif 
+
+# Family: ProASIC3E , Die: A3PE1500 , Package: 208 PQFP , Speed grade: Std 
+
+# Date generated: Thu Jun 23 13:45:48 2016 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank7 -vcci 3.30 -fixed no
+set_iobank Bank6 -vcci 3.30 -fixed no
+set_iobank Bank5 -vcci 3.30 -fixed no
+set_iobank Bank4 -vcci 3.30 -fixed no
+set_iobank Bank3 -vcci 3.30 -fixed no
+set_iobank Bank2 -vcci 3.30 -fixed no
+set_iobank Bank1 -vcci 3.30 -fixed no
+set_iobank Bank0 -vcci 3.30 -fixed no
+
+#
+# I/O constraints
+#
+set_io gpio\[0\] -pinname 173 -fixed yes
+set_io gpio\[1\] -pinname 175 -fixed yes
+set_io gpio\[2\] -pinname 177 -fixed yes
+set_io gpio\[3\] -pinname 179 -fixed yes
+set_io gpio\[4\] -pinname 181 -fixed yes
+set_io gpio\[5\] -pinname 183 -fixed yes
+set_io gpio\[6\] -pinname 185 -fixed yes
+set_io clk       -pinname  26 -fixed yes
+set_io dsubre    -pinname  68 -fixed yes
+set_io dsurx     -pinname 117 -fixed yes
+set_io resetn    -pinname 159 -fixed yes
+set_io rxd1      -pinname 115 -fixed yes
+set_io dsutx     -pinname 118 -fixed yes
+set_io txd1      -pinname 116 -fixed yes
+set_io errorn    -pinname  56 -fixed yes
+set_io dsuact    -pinname  55 -fixed yes
+set_io led\[0\]  -pinname  63 -fixed yes
+set_io led\[1\]  -pinname  61 -fixed yes
+set_io led\[2\]  -pinname  60 -fixed yes
+set_io led\[3\]  -pinname  59 -fixed yes
+set_io led\[4\]  -pinname  58 -fixed yes
+set_io led\[5\]  -pinname  57 -fixed yes
+
+

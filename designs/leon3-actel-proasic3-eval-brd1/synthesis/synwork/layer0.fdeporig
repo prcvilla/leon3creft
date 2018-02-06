@@ -1,0 +1,698 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\synthesis\\synwork\\leon3mp_comp.srs|-top|work.leon3mp|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|work|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|grlib|-lib|gaisler|-lib|grlib|-lib|grlib|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|grlib|-lib|grlib|-lib|grlib|-lib|grlib|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|grlib|-lib|grlib|-lib|techmap|-lib|techmap|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|gaisler|-lib|gaisler|-lib|techmap|-lib|gaisler|-lib|esa|-lib|gaisler|-lib|gaisler|-lib|gaisler|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_vhdl.exe":1479989492
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\location.map":1478815188
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\std.vhd":1479820584
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\snps_haps_pkg.vhd":1487952454
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\std1164.vhd":1479820584
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\numeric.vhd":1487952454
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\umr_capim.vhd":1487952454
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\arith.vhd":1479820584
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\unsigned.vhd":1479820584
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vhd\\hyperents.vhd":1487952454
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\config_types.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\config.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\version.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\stdlib.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\amba.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\devices.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\ahbctrl.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\util\\util.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\gencomp\\gencomp.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\allclkgen.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\grgates.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\inferred\\memory_inferred.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\allmem.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\syncram.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\syncrambw.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\misc\\ahbram.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\ahbrom.vhd":1509113861
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\misc\\misc.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\uart.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\libdcom.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\dcom.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\dcom_uart.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\ahbmst.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\ahbuart.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\apbctrlx.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\amba\\apbctrl.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\uart\\apbuart.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\syncram64.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3\\leon3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\tbufmem.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\clkand.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\dsu3x.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\dsu3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\misc\\gptimer.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\misc\\grgpio.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\allpads.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\inpad.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\iopad.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\irqmp\\irqmp.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\cmvalidbits.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\memrwcol.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\syncram_2p.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\syncram_dp.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\arith\\arith.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\libfpu.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmuconfig.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\libiu.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmuiface.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\trlib.vhd":1517867137
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\libcache.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\cachemem.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\regfile_3p.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\regfile_3p_l3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\grlfpw_net.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\libleon3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\gencomp\\netcomp.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\grlfpwx.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\arith\\div32.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\sparc\\sparc.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\stdio.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\stdlib\\testlib.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\sparc\\sparc_disas.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\iu3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmulrue.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmulru.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\libmmu.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmutlbcam.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmutlb.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmutw.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\srmmu\\mmu.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\mmu_acache.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\mmu_dcache.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\mmu_icache.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\mmu_cache.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\inferred\\mul_inferred.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\modgen\\leaves.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\grlib\\modgen\\multlib.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\allmul.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\techmult.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\arith\\mul32.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\proc3.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\tbufmem_2p.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\leon3_net.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\chk_control.vhd":1517865365
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\stack.vhd":1517865365
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\chk_regfile.vhd":1517865365
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\regfile_4p.vhd":1517870434
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\regfile_4p_l3.vhd":1517869924
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\hdl\\trctrl.vhd":1517867957
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\leon3x.vhd":1517872760
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\leon3v3\\leon3s.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\techmap\\maps\\outpad.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\memctrl\\memctrl.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\esa\\memoryctrl\\memoryctrl.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\can\\can.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\jtag\\jtag.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\..\\..\\lib\\gaisler\\net\\net.vhd":1517865104
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\config.vhd":1509113861
+#CUR:"C:\\git\\leon3creft_tr_synth\\designs\\leon3-actel-proasic3-eval-brd1\\leon3mp.vhd":1509113861
+0 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\config_types.vhd" vhdl
+1 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\config.vhd" vhdl
+2 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\version.vhd" vhdl
+3 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\stdlib.vhd" vhdl
+4 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\amba.vhd" vhdl
+5 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\devices.vhd" vhdl
+6 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\ahbctrl.vhd" vhdl
+7 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\util\util.vhd" vhdl
+8 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\gencomp\gencomp.vhd" vhdl
+9 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\allclkgen.vhd" vhdl
+10 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\grgates.vhd" vhdl
+11 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd" vhdl
+12 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\allmem.vhd" vhdl
+13 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram.vhd" vhdl
+14 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncrambw.vhd" vhdl
+15 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\ahbram.vhd" vhdl
+16 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\ahbrom.vhd" vhdl
+17 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\misc.vhd" vhdl
+18 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\uart.vhd" vhdl
+19 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\libdcom.vhd" vhdl
+20 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom.vhd" vhdl
+21 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\dcom_uart.vhd" vhdl
+22 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\ahbmst.vhd" vhdl
+23 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\ahbuart.vhd" vhdl
+24 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrlx.vhd" vhdl
+25 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\amba\apbctrl.vhd" vhdl
+26 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd" vhdl
+27 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram64.vhd" vhdl
+28 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3\leon3.vhd" vhdl
+29 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\tbufmem.vhd" vhdl
+30 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\clkand.vhd" vhdl
+31 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\dsu3x.vhd" vhdl
+32 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\dsu3.vhd" vhdl
+33 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\gptimer.vhd" vhdl
+34 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\misc\grgpio.vhd" vhdl
+35 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\allpads.vhd" vhdl
+36 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\inpad.vhd" vhdl
+37 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\iopad.vhd" vhdl
+38 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\irqmp\irqmp.vhd" vhdl
+39 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cmvalidbits.vhd" vhdl
+40 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\memrwcol.vhd" vhdl
+41 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram_2p.vhd" vhdl
+42 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\syncram_dp.vhd" vhdl
+43 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\arith\arith.vhd" vhdl
+44 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libfpu.vhd" vhdl
+45 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuconfig.vhd" vhdl
+46 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libiu.vhd" vhdl
+47 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmuiface.vhd" vhdl
+48 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trlib.vhd" vhdl
+49 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libcache.vhd" vhdl
+50 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\cachemem.vhd" vhdl
+51 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\regfile_3p.vhd" vhdl
+52 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\regfile_3p_l3.vhd" vhdl
+53 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\grlfpw_net.vhd" vhdl
+54 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\libleon3.vhd" vhdl
+55 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\gencomp\netcomp.vhd" vhdl
+56 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\grlfpwx.vhd" vhdl
+57 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\arith\div32.vhd" vhdl
+58 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\sparc\sparc.vhd" vhdl
+59 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\stdio.vhd" vhdl
+60 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\stdlib\testlib.vhd" vhdl
+61 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\sparc\sparc_disas.vhd" vhdl
+62 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\iu3.vhd" vhdl
+63 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmulrue.vhd" vhdl
+64 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmulru.vhd" vhdl
+65 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\libmmu.vhd" vhdl
+66 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmutlbcam.vhd" vhdl
+67 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmutlb.vhd" vhdl
+68 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmutw.vhd" vhdl
+69 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\srmmu\mmu.vhd" vhdl
+70 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_acache.vhd" vhdl
+71 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_dcache.vhd" vhdl
+72 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_icache.vhd" vhdl
+73 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\mmu_cache.vhd" vhdl
+74 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\mul_inferred.vhd" vhdl
+75 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\modgen\leaves.vhd" vhdl
+76 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\grlib\modgen\multlib.vhd" vhdl
+77 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\allmul.vhd" vhdl
+78 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\techmult.vhd" vhdl
+79 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\arith\mul32.vhd" vhdl
+80 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\proc3.vhd" vhdl
+81 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\tbufmem_2p.vhd" vhdl
+82 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\leon3_net.vhd" vhdl
+83 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_control.vhd" vhdl
+84 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\stack.vhd" vhdl
+85 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\chk_regfile.vhd" vhdl
+86 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\regfile_4p.vhd" vhdl
+87 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\regfile_4p_l3.vhd" vhdl
+88 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\hdl\trctrl.vhd" vhdl
+89 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3x.vhd" vhdl
+90 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\leon3v3\leon3s.vhd" vhdl
+91 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\maps\outpad.vhd" vhdl
+92 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\memctrl\memctrl.vhd" vhdl
+93 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\esa\memoryctrl\memoryctrl.vhd" vhdl
+94 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\can\can.vhd" vhdl
+95 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\jtag\jtag.vhd" vhdl
+96 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\net\net.vhd" vhdl
+97 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\config.vhd" vhdl
+98 "C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 0 
+2 -1
+3 2 
+4 0 1 3 
+5 4 
+6 3 4 0 1 5 60 
+7 3 
+8 1 0 
+9 8 
+10 9 8 
+11 3 
+12 -1
+13 10 11 1 0 3 8 12 
+14 10 13 8 12 1 0 3 
+15 14 7 0 1 4 3 5 8 
+16 7 4 3 5 
+17 4 5 3 8 
+18 4 
+19 4 3 18 17 
+20 0 1 4 3 17 19 
+21 0 1 4 3 5 19 18 
+22 0 1 4 3 5 
+23 22 21 20 7 4 3 5 17 18 19 
+24 0 1 4 3 5 
+25 24 0 1 4 3 
+26 7 0 1 4 3 5 18 
+27 13 8 12 1 0 3 
+28 4 8 
+29 27 13 28 8 3 
+30 8 9 
+31 30 29 7 4 0 1 3 5 28 8 
+32 31 4 3 5 28 8 
+33 7 0 1 4 3 5 17 
+34 7 0 1 4 3 5 17 
+35 8 
+36 35 8 
+37 35 8 
+38 7 0 1 4 3 5 28 
+39 -1
+40 8 
+41 40 11 8 12 1 0 3 
+42 40 8 12 1 0 3 
+43 -1
+44 28 8 
+45 3 
+46 8 28 44 43 45 
+47 4 3 45 8 
+48 -1
+49 4 3 8 46 45 47 48 
+50 13 42 41 39 46 49 45 3 8 
+51 11 41 8 12 
+52 51 8 3 
+53 8 
+54 4 8 28 46 49 44 47 48 
+55 4 8 
+56 53 52 3 28 54 44 8 55 
+57 0 1 3 43 
+58 -1
+59 -1
+60 59 3 
+61 3 58 60 
+62 0 1 58 3 8 28 46 44 43 61 
+63 0 1 4 3 45 47 
+64 63 0 1 4 3 45 47 
+65 3 8 45 47 
+66 0 1 4 3 45 47 65 
+67 66 13 64 0 1 4 3 8 45 47 65 
+68 0 1 4 3 45 47 65 
+69 67 68 0 1 3 8 45 47 65 
+70 0 1 4 3 5 46 49 28 45 47 48 
+71 8 0 1 4 58 3 46 49 65 45 47 
+72 4 0 1 3 8 46 49 45 47 28 
+73 72 71 70 69 4 3 8 46 49 54 45 47 65 48 
+74 3 
+75 -1
+76 -1
+77 -1
+78 75 74 3 76 77 8 
+79 78 0 1 3 76 43 8 
+80 62 79 57 73 4 3 8 28 46 49 43 54 44 48 
+81 41 28 8 3 
+82 4 3 5 8 
+83 -1
+84 -1
+85 84 
+86 11 8 12 
+87 86 8 3 
+88 48 
+89 80 83 85 88 87 50 29 81 56 82 7 4 3 8 55 28 46 49 54 44 43 48 
+90 89 4 8 28 
+91 35 8 
+92 4 3 8 
+93 4 92 
+94 4 8 
+95 4 8 
+96 4 8 
+97 8 
+98 36 6 90 91 32 23 16 25 26 38 33 34 37 15 7 4 3 8 92 28 18 17 96 94 95 93 97 
+
+# Dependency Lists (Users Of)
+0 79 72 71 70 69 68 67 66 64 63 62 57 42 41 38 34 33 31 27 26 25 24 22 21 20 15 14 13 8 6 4 1 
+1 79 72 71 70 69 68 67 66 64 63 62 57 42 41 38 34 33 31 27 26 25 24 22 21 20 15 14 13 8 6 4 
+2 3 
+3 98 92 89 87 82 81 80 79 78 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 57 56 52 50 49 47 45 42 41 38 34 33 32 31 29 27 26 25 24 23 22 21 20 19 17 16 15 14 13 11 7 6 4 
+4 98 96 95 94 93 92 90 89 82 80 73 72 71 70 68 67 66 64 63 55 54 49 47 38 34 33 32 31 28 26 25 24 23 22 21 20 19 18 17 16 15 6 5 
+5 82 70 38 34 33 32 31 26 24 23 22 21 17 16 15 6 
+6 98 
+7 98 89 38 34 33 31 26 23 16 15 
+8 98 97 96 95 94 92 91 90 89 87 86 82 81 80 79 78 73 72 71 69 67 65 62 56 55 54 53 52 51 50 49 47 46 44 42 41 40 37 36 35 32 31 30 29 28 27 17 15 14 13 10 9 
+9 30 10 
+10 14 13 
+11 86 51 41 13 
+12 86 51 42 41 27 14 13 
+13 67 50 29 27 14 
+14 15 
+15 98 
+16 98 
+17 98 34 33 23 20 19 
+18 98 26 23 21 19 
+19 23 21 20 
+20 23 
+21 23 
+22 23 
+23 98 
+24 25 
+25 98 
+26 98 
+27 29 
+28 98 90 89 81 80 72 70 62 56 54 46 44 38 32 31 29 
+29 89 31 
+30 31 
+31 32 
+32 98 
+33 98 
+34 98 
+35 91 37 36 
+36 98 
+37 98 
+38 98 
+39 50 
+40 42 41 
+41 81 51 50 
+42 50 
+43 89 80 79 62 57 46 
+44 89 80 62 56 54 46 
+45 73 72 71 70 69 68 67 66 65 64 63 50 49 47 46 
+46 89 80 73 72 71 70 62 54 50 49 
+47 73 72 71 70 69 68 67 66 65 64 63 54 49 
+48 89 88 80 73 70 54 49 
+49 89 80 73 72 71 70 54 50 
+50 89 
+51 52 
+52 56 
+53 56 
+54 89 80 73 56 
+55 89 56 
+56 89 
+57 80 
+58 71 62 61 
+59 60 
+60 61 6 
+61 62 
+62 80 
+63 64 
+64 67 
+65 73 71 69 68 67 66 
+66 67 
+67 69 
+68 69 
+69 73 
+70 73 
+71 73 
+72 73 
+73 80 
+74 78 
+75 78 
+76 79 78 
+77 78 
+78 79 
+79 80 
+80 89 
+81 89 
+82 89 
+83 89 
+84 85 
+85 89 
+86 87 
+87 89 
+88 89 
+89 90 
+90 98 
+91 98 
+92 98 93 
+93 98 
+94 98 
+95 98 
+96 98 
+97 98 
+98 -1
+
+# Design Unit to File Association
+arch grlib ahbctrl rtl 6
+module grlib ahbctrl 6
+arch grlib report_design beh 7
+module grlib report_design 7
+arch grlib report_version beh 7
+module grlib report_version 7
+arch techmap grnand2 rtl 10
+module techmap grnand2 10
+arch techmap grand12 rtl 10
+module techmap grand12 10
+arch techmap gror2 rtl 10
+module techmap gror2 10
+arch techmap grdff rtl 10
+module techmap grdff 10
+arch techmap grmux2v rtl 10
+module techmap grmux2v 10
+arch techmap grmux2 rtl 10
+module techmap grmux2 10
+arch techmap generic_regfile_4p rtl 11
+module techmap generic_regfile_4p 11
+arch techmap generic_regfile_3p rtl 11
+module techmap generic_regfile_3p 11
+arch techmap generic_syncram_2p_reg behav 11
+module techmap generic_syncram_2p_reg 11
+arch techmap generic_syncram_2p behav 11
+module techmap generic_syncram_2p 11
+arch techmap generic_syncram_reg behavioral 11
+module techmap generic_syncram_reg 11
+arch techmap generic_syncram behavioral 11
+module techmap generic_syncram 11
+arch techmap syncram rtl 13
+module techmap syncram 13
+arch techmap syncrambw rtl 14
+module techmap syncrambw 14
+arch gaisler ahbram rtl 15
+module gaisler ahbram 15
+arch work ahbrom rtl 16
+module work ahbrom 16
+arch gaisler dcom struct 20
+module gaisler dcom 20
+arch gaisler dcom_uart rtl 21
+module gaisler dcom_uart 21
+arch grlib ahbmst rtl 22
+module grlib ahbmst 22
+arch gaisler ahbuart struct 23
+module gaisler ahbuart 23
+arch grlib apbctrlx rtl 24
+module grlib apbctrlx 24
+arch grlib apbctrl struct 25
+module grlib apbctrl 25
+arch gaisler apbuart rtl 26
+module gaisler apbuart 26
+arch techmap syncram64 rtl 27
+module techmap syncram64 27
+arch gaisler tbufmem rtl 29
+module gaisler tbufmem 29
+arch techmap clkrand rtl 30
+module techmap clkrand 30
+arch techmap clkand rtl 30
+module techmap clkand 30
+arch gaisler dsu3x rtl 31
+module gaisler dsu3x 31
+arch gaisler dsu3 rtl 32
+module gaisler dsu3 32
+arch gaisler gptimer rtl 33
+module gaisler gptimer 33
+arch gaisler grgpio rtl 34
+module gaisler grgpio 34
+arch techmap inpadv rtl 36
+module techmap inpadv 36
+arch techmap inpad rtl 36
+module techmap inpad 36
+arch techmap iopadvv rtl 37
+module techmap iopadvv 37
+arch techmap iopadv rtl 37
+module techmap iopadv 37
+arch techmap iopad rtl 37
+module techmap iopad 37
+arch gaisler irqmp rtl 38
+module gaisler irqmp 38
+arch gaisler cmvalidbits rtl 39
+module gaisler cmvalidbits 39
+arch techmap memrwcol rtl 40
+module techmap memrwcol 40
+arch techmap syncram_2p rtl 41
+module techmap syncram_2p 41
+arch techmap syncram_dp rtl 42
+module techmap syncram_dp 42
+arch gaisler cachemem rtl 50
+module gaisler cachemem 50
+arch techmap regfile_3p rtl 51
+module techmap regfile_3p 51
+arch gaisler regfile_3p_l3 rtl 52
+module gaisler regfile_3p_l3 52
+arch techmap grlfpw_net rtl 53
+module techmap grlfpw_net 53
+arch gaisler grlfpwx rtl 56
+module gaisler grlfpwx 56
+arch gaisler div32 rtl 57
+module gaisler div32 57
+arch gaisler iu3 rtl 62
+module gaisler iu3 62
+arch gaisler mmulrue rtl 63
+module gaisler mmulrue 63
+arch gaisler mmulru rtl 64
+module gaisler mmulru 64
+arch gaisler mmutlbcam rtl 66
+module gaisler mmutlbcam 66
+arch gaisler mmutlb rtl 67
+module gaisler mmutlb 67
+arch gaisler mmutw rtl 68
+module gaisler mmutw 68
+arch gaisler mmu rtl 69
+module gaisler mmu 69
+arch gaisler mmu_acache rtl 70
+module gaisler mmu_acache 70
+arch gaisler mmu_dcache rtl 71
+module gaisler mmu_dcache 71
+arch gaisler mmu_icache rtl 72
+module gaisler mmu_icache 72
+arch gaisler mmu_cache rtl 73
+module gaisler mmu_cache 73
+arch techmap gen_mult_pipe simple 74
+module techmap gen_mult_pipe 74
+arch techmap gen_mul_61x61 rtl 74
+module techmap gen_mul_61x61 74
+arch grlib mul_17_17 a 75
+module grlib mul_17_17 75
+arch grlib add32 a 75
+module grlib add32 75
+arch grlib mul_33_33 a 75
+module grlib mul_33_33 75
+arch grlib multiplier_34_34 multiplier 75
+module grlib multiplier_34_34 75
+arch grlib wallace_34_34 wallace 75
+module grlib wallace_34_34 75
+arch grlib boothcoder_34_34 boothcoder 75
+module grlib boothcoder_34_34 75
+arch grlib mul_33_17 a 75
+module grlib mul_33_17 75
+arch grlib multiplier_34_18 multiplier 75
+module grlib multiplier_34_18 75
+arch grlib wallace_34_18 wallace 75
+module grlib wallace_34_18 75
+arch grlib boothcoder_34_18 boothcoder 75
+module grlib boothcoder_34_18 75
+arch grlib mul_33_9 a 75
+module grlib mul_33_9 75
+arch grlib multiplier_34_10 multiplier 75
+module grlib multiplier_34_10 75
+arch grlib wallace_34_10 wallace 75
+module grlib wallace_34_10 75
+arch grlib boothcoder_34_10 boothcoder 75
+module grlib boothcoder_34_10 75
+arch grlib multiplier_18_18 multiplier 75
+module grlib multiplier_18_18 75
+arch grlib wallace_18_18 wallace 75
+module grlib wallace_18_18 75
+arch grlib boothcoder_18_18 boothcoder 75
+module grlib boothcoder_18_18 75
+arch grlib dblcadder_128_128 dblcadder 75
+module grlib dblcadder_128_128 75
+arch grlib dblctree_128 dblctree 75
+module grlib dblctree_128 75
+arch grlib xorstage_128 xorstage 75
+module grlib xorstage_128 75
+arch grlib dblc_6_128 dblc_6 75
+module grlib dblc_6_128 75
+arch grlib dblc_5_128 dblc_5 75
+module grlib dblc_5_128 75
+arch grlib dblc_4_128 dblc_4 75
+module grlib dblc_4_128 75
+arch grlib dblc_3_128 dblc_3 75
+module grlib dblc_3_128 75
+arch grlib dblc_2_128 dblc_2 75
+module grlib dblc_2_128 75
+arch grlib dblc_1_128 dblc_1 75
+module grlib dblc_1_128 75
+arch grlib dblc_0_128 dblc_0 75
+module grlib dblc_0_128 75
+arch grlib prestage_128 prestage 75
+module grlib prestage_128 75
+arch grlib dblcadder_32_32 dblcadder 75
+module grlib dblcadder_32_32 75
+arch grlib dblctree_32 dblctree 75
+module grlib dblctree_32 75
+arch grlib prestage_32 prestage 75
+module grlib prestage_32 75
+arch grlib xorstage_32 xorstage 75
+module grlib xorstage_32 75
+arch grlib dblc_4_32 dblc_4 75
+module grlib dblc_4_32 75
+arch grlib dblc_3_32 dblc_3 75
+module grlib dblc_3_32 75
+arch grlib dblc_2_32 dblc_2 75
+module grlib dblc_2_32 75
+arch grlib dblc_1_32 dblc_1 75
+module grlib dblc_1_32 75
+arch grlib dblc_0_32 dblc_0 75
+module grlib dblc_0_32 75
+arch grlib xxor2 xxor_true 75
+module grlib xxor2 75
+arch grlib dblcadder_64_64 dblcadder 75
+module grlib dblcadder_64_64 75
+arch grlib dblctree_64 dblctree 75
+module grlib dblctree_64 75
+arch grlib xorstage_64 xorstage 75
+module grlib xorstage_64 75
+arch grlib dblc_5_64 dblc_5 75
+module grlib dblc_5_64 75
+arch grlib dblc_4_64 dblc_4 75
+module grlib dblc_4_64 75
+arch grlib dblc_3_64 dblc_3 75
+module grlib dblc_3_64 75
+arch grlib dblc_2_64 dblc_2 75
+module grlib dblc_2_64 75
+arch grlib dblc_1_64 dblc_1 75
+module grlib dblc_1_64 75
+arch grlib dblc_0_64 dblc_0 75
+module grlib dblc_0_64 75
+arch grlib prestage_64 prestage 75
+module grlib prestage_64 75
+arch grlib block2a block2a_regular 75
+module grlib block2a 75
+arch grlib block1a block1a_regular 75
+module grlib block1a 75
+arch grlib block2 block2_regular 75
+module grlib block2 75
+arch grlib block1 block1_regular 75
+module grlib block1 75
+arch grlib block0 block0_regular 75
+module grlib block0 75
+arch grlib xxor1 xxor_regular 75
+module grlib xxor1 75
+arch grlib invblock invblock_regular 75
+module grlib invblock 75
+arch grlib half_adder half_adder 75
+module grlib half_adder 75
+arch grlib full_adder full_adder 75
+module grlib full_adder 75
+arch grlib decoder decoder 75
+module grlib decoder 75
+arch grlib r_gate r_gate 75
+module grlib r_gate 75
+arch grlib pp_high pp_high 75
+module grlib pp_high 75
+arch grlib pp_middle pp_middle 75
+module grlib pp_middle 75
+arch grlib pp_low pp_low 75
+module grlib pp_low 75
+arch grlib flipflop flipflop 75
+module grlib flipflop 75
+arch techmap techmult rtl 78
+module techmap techmult 78
+arch gaisler mul32 rtl 79
+module gaisler mul32 79
+arch gaisler proc3 rtl 80
+module gaisler proc3 80
+arch gaisler tbufmem_2p rtl 81
+module gaisler tbufmem_2p 81
+arch techmap leon3_net rtl 82
+module techmap leon3_net 82
+arch work chk_control beh 83
+module work chk_control 83
+arch work stack behavioral 84
+module work stack 84
+arch work chk_regfile beh 85
+module work chk_regfile 85
+arch work regfile_4p rtl 86
+module work regfile_4p 86
+arch work regfile_4p_l3 rtl 87
+module work regfile_4p_l3 87
+arch work trctrl behaviour 88
+module work trctrl 88
+arch gaisler leon3x rtl 89
+module gaisler leon3x 89
+arch gaisler leon3s rtl 90
+module gaisler leon3s 90
+arch techmap outpadv rtl 91
+module techmap outpadv 91
+arch techmap outpad rtl 91
+module techmap outpad 91
+arch work leon3mp rtl 98
+module work leon3mp 98

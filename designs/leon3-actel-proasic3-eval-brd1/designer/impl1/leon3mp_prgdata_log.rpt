@@ -1,0 +1,22 @@
+Microsemi Libero Software
+Version: 11.8.1.12
+Release: Libero SoC v11.8 SP1
+
+Info: The design
+      C:/git/leon3creft_tr_synth/designs/leon3-actel-proasic3-eval-brd1/designer/impl1/leon3mp.\
+      adb was last modified by software version 11.8.1.12.
+Opened an existing Libero design
+C:/git/leon3creft_tr_synth/designs/leon3-actel-proasic3-eval-brd1/designer/impl1/leon3mp.adb.
+
+The Export-map command succeeded ( 00:00:51 )
+Wrote to the file:
+C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb
+CHECKSUM: 8680
+
+The Generate programming file command succeeded ( 00:00:55 )
+Design saved to file
+C:/git/leon3creft_tr_synth/designs/leon3-actel-proasic3-eval-brd1/designer/impl1/leon3mp.adb.
+
+The Execute Script command succeeded ( 00:01:13 )
+Design closed.
+

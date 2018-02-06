@@ -1,0 +1,5 @@
+
+addfile -vhdl ../../config.vhd
+addfile -vhdl ../../ahbrom.vhd
+addfile -vhdl ../../leon3mp.vhd
+addfile -vhdl ../../testbench.vhd

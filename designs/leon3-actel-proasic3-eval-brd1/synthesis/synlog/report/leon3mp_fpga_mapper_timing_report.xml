@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\leon3mp_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>chk_control|CS_inferred_clock[1]</data>
+<data>100.0 MHz</data>
+<data>135.1 MHz</data>
+<data>2.597</data>
+</row>
+<row>
+<data>leon3mp|clk</data>
+<data>100.0 MHz</data>
+<data>24.4 MHz</data>
+<data>-30.930</data>
+</row>
+</report_table>

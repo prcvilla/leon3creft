@@ -1,0 +1,21 @@
+FlashPro
+Version: 11.8.1.12
+Release: Libero SoC v11.8 SP1
+
+Software Version: 11.8.1.12
+Driver : 3.0.0 build 1
+programmer '53083' : FlashPro3
+Warning: The programmer with id '52977' in the project file cannot be detected and connected.
+Opened 'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp\leon3mp.pro'
+Rescanning for Programmers...
+programmer '53083' : FlashPro3
+Rescanning for Programmers DONE.
+PDB file
+'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb'
+has been loaded successfully.
+DESIGN : leon3mp;  CHECKSUM : E4EB;  PDB_VERSION : 1.9
+programmer '53083' : Scan Chain...
+Error: Vjtag is disconnected or shorted. Please check the FPGA's Vjtag pin is properly
+       connected. Please check that the target board is powered.
+Error: programmer '53083' : Scan Chain FAILED.
+Error: Failed to run Action.

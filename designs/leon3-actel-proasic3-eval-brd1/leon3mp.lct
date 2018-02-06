@@ -1,0 +1,8 @@
+[Device]
+Family = ;
+PartNumber = ProASIC3EStdpq208;
+Package = ;
+PartType = ProASIC3E;
+Speed = Std;
+Operating_condition = COM;
+Status = Production;

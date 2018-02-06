@@ -1,0 +1,34 @@
+*****************************************************************
+Pin Report - Date: Mon Feb 05 21:45:10 2018 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: Libero SoC v11.8 SP1
+Version: 11.8.1.12
+Design Name: leon3mp
+Family: ProASIC3E
+Die: A3PE1500
+Package: 208 PQFP
+*****************************************************************
+Port    |Pin |Fixed |Function         |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+--------|----|------|-----------------|--------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+clk      26   Yes    GFA0/IO190NPB6V2  LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+dsuact   55   Yes    IO166NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+dsubre   68   Yes    IO153PDB5V2       LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+dsurx    117  Yes    GDC1/IO108PDB3V2  LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+dsutx    118  Yes    IO105NDB3V2       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+errorn   56   Yes    GEA2/IO166PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+gpio[0]  173  Yes    IO41PDB1V1        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[1]  175  Yes    IO35PDB1V0        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[2]  177  Yes    IO31PDB0V3        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[3]  179  Yes    IO31NDB0V3        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[4]  181  Yes    IO29NDB0V3        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[5]  183  Yes    IO27NDB0V3        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+gpio[6]  185  Yes    IO23NDB0V2        LVTTL    12                 High  None           No               Off          No    35                No           Yes
+led[0]   63   Yes    IO161PSB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+led[1]   61   Yes    IO163PSB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+led[2]   60   Yes    GEC2/IO164PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+led[3]   59   Yes    IO164NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+led[4]   58   Yes    GEB2/IO165PDB5V3  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+led[5]   57   Yes    IO165NDB5V3       LVTTL    12                 High  None           ---              ---          No    35                No           Yes
+resetn   159  Yes    GBA1/IO57PDB1V3   LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+rxd1     115  Yes    GDB1/IO109PPB3V2  LVTTL    ---                ---   None           No               Off          ---   ---               No           Yes
+txd1     116  Yes    GDC0/IO108NDB3V2  LVTTL    12                 High  None           ---              ---          No    35                No           Yes
