@@ -255,6 +255,7 @@ begin
      we_mux <= rfi.wren when recov_pin='1' else rec_we;
      -- end pvilla mod
 
+     --trctrl_en <= '0' when ahbo_sig.haddr < x"40000000" else '1';
      trctrl_en <= '1';
      -- rtravessini mod 
      trctrl0 : trctrl 

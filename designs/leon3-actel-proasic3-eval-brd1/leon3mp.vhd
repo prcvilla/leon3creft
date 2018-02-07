@@ -1,3 +1,36 @@
+library IEEE;
+    use IEEE.std_logic_1164.all;
+    use IEEE.numeric_std.all;
+
+  library proasic3e;
+  use proasic3e.all;
+
+    entity clk_div4 is
+    port(
+      i_clk         : in  std_logic;
+      i_rst         : in  std_logic;
+      o_clk_div4    : out std_logic);
+    end clk_div4;
+    architecture rtl of clk_div4 is
+    signal clk_divider        : unsigned(1 downto 0);
+     component CLKINT
+    port( A : in    std_logic := 'U';
+           Y : out   std_logic
+         );
+    end component;
+
+    begin
+    p_clk_divider: process(i_rst,i_clk)
+    begin
+      if(i_rst='0') then
+        clk_divider   <= (others=>'0');
+      elsif(rising_edge(i_clk)) then
+        clk_divider   <= clk_divider + 1;
+      end if;
+    end process p_clk_divider;
+    clkbuff: CLKINT port map(clk_divider(1),o_clk_div4);
+    end rtl;
+
 -----------------------------------------------------------------------------
 --  LEON3 Demonstration design
 --  Copyright (C) 2004 Jiri Gaisler, Gaisler Research
@@ -162,6 +195,14 @@ constant IOAEN : integer := CFG_CAN;
 
 constant sysfreq : integer := (CFG_CLKMUL/CFG_CLKDIV)*48000;
 constant boardfreq : integer := 48000;
+
+component clk_div4 is
+ port(
+      i_clk         : in  std_logic;
+      i_rst         : in  std_logic;
+      o_clk_div4    : out std_logic);
+end component;
+
 begin
 
   --flash_byten <= '1';
@@ -180,12 +221,9 @@ begin
 
   --ramclk <= clkm;
   
-  clk_pad : inpad generic map (tech => 0) port map (clk, lclk); 
---  clkgen0 : clkgen  		-- clock generator
---    generic map (clktech, CFG_CLKMUL, CFG_CLKDIV, CFG_MCTRL_SDEN, 
---	CFG_CLK_NOFB, 0, 0, 0, boardfreq, 0, 0, CFG_OCLKDIV)
---    port map (lclk, lclk, clkm, open, clk2x, sdclkl, pciclk, cgi, cgo);
-  clkm <= lclk;
+ clk_pad : inpad generic map (tech => 0) port map (clk, lclk);
+  clk_div : clk_div4 port map(lclk, rstn, clkm);
+  --clkm <= lclk;
     
   resetn_pad : inpad generic map (tech => padtech) port map (resetn, resetnl);
 --  rst0 : rstgen			-- reset generator

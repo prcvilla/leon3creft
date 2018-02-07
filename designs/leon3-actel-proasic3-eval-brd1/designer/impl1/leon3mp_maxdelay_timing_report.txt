@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version Libero SoC v11.8 SP1
 Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
-Date: Mon Feb 05 21:46:11 2018
+Date: Tue Feb 06 23:11:11 2018
 
 
 Design: leon3mp
@@ -24,18 +24,28 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               clk
-Period (ns):                35.625
-Frequency (MHz):            28.070
+Period (ns):                4.000
+Frequency (MHz):            250.000
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
-External Setup (ns):        30.336
-External Hold (ns):         0.449
-Min Clock-To-Out (ns):      2.589
-Max Clock-To-Out (ns):      17.281
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               clk_div/clk_divider[1]:Q
+Period (ns):                36.315
+Frequency (MHz):            27.537
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        23.428
+External Hold (ns):         2.874
+Min Clock-To-Out (ns):      4.674
+Max Clock-To-Out (ns):      22.034
 
 Clock Domain:               l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
-Period (ns):                7.368
-Frequency (MHz):            135.722
+Period (ns):                7.680
+Frequency (MHz):            130.208
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -44,72 +54,54 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
                             Input to Output
-Min Delay (ns):             5.126
-Max Delay (ns):             17.419
+Min Delay (ns):             4.695
+Max Delay (ns):             15.591
 
 END SUMMARY
 -----------------------------------------------------
 
 Clock Domain clk
 
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin clk_pad/U0/U0:PAD
+
 SET Register to Register
 
 Path 1
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:D
-  Delay (ns):                  35.001
+  From:                        clk_div/clk_divider[0]:CLK
+  To:                          clk_div/clk_divider[1]:D
+  Delay (ns):                  1.877
   Slack (ns):
-  Arrival (ns):                37.753
+  Arrival (ns):                4.629
   Required (ns):
-  Setup (ns):                  0.574
-  Minimum Period (ns):         35.625
+  Setup (ns):                  0.713
+  Minimum Period (ns):         3.225
 
 Path 2
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[5]:D
-  Delay (ns):                  35.045
+  From:                        clk_div/clk_divider[1]:CLK
+  To:                          clk_div/clk_divider[1]:D
+  Delay (ns):                  2.276
   Slack (ns):
-  Arrival (ns):                37.797
+  Arrival (ns):                4.393
   Required (ns):
-  Setup (ns):                  0.539
-  Minimum Period (ns):         35.619
+  Setup (ns):                  0.713
+  Minimum Period (ns):         2.989
 
 Path 3
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp1:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[5]:D
-  Delay (ns):                  35.083
+  From:                        clk_div/clk_divider[0]:CLK
+  To:                          clk_div/clk_divider[0]:D
+  Delay (ns):                  1.923
   Slack (ns):
-  Arrival (ns):                37.768
+  Arrival (ns):                4.675
   Required (ns):
-  Setup (ns):                  0.539
-  Minimum Period (ns):         35.590
-
-Path 4
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[11]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:D
-  Delay (ns):                  34.970
-  Slack (ns):
-  Arrival (ns):                37.648
-  Required (ns):
-  Setup (ns):                  0.574
-  Minimum Period (ns):         35.520
-
-Path 5
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[23]:D
-  Delay (ns):                  34.889
-  Slack (ns):
-  Arrival (ns):                37.641
-  Required (ns):
-  Setup (ns):                  0.539
-  Minimum Period (ns):         35.490
+  Setup (ns):                  0.713
+  Minimum Period (ns):         2.636
 
 
 Expanded Path 1
-  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:CLK
-  To: l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:D
+  From: clk_div/clk_divider[0]:CLK
+  To: clk_div/clk_divider[1]:D
   data required time                             N/C
-  data arrival time                          -   37.753
+  data arrival time                          -   4.629
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -121,113 +113,21 @@ Expanded Path 1
                +     1.202          cell: ADLIB:IOPAD_IN
   1.202                        clk_pad/U0/U0:Y (r)
                +     0.000          net: clk_pad/U0/NET1
-  1.202                        clk_pad/U0/U1:A (r)
-               +     0.348          cell: ADLIB:CLKIO
-  1.550                        clk_pad/U0/U1:Y (r)
-               +     1.202          net: clk_c
-  2.752                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:CLK (r)
-               +     0.737          cell: ADLIB:DFN1E0
-  3.489                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[5]:Q (f)
-               +     1.588          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/op1[5]
-  5.077                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1_RNILOL61[5]:A (f)
-               +     0.619          cell: ADLIB:MX2
-  5.696                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1_RNILOL61[5]:Y (f)
-               +     1.283          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/ex_op1[5]
-  6.979                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I6_G0N:B (f)
-               +     0.628          cell: ADLIB:NOR2B
-  7.607                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I6_G0N:Y (f)
-               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N412_1
-  7.941                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I83_Y:C (f)
-               +     0.706          cell: ADLIB:AO1
-  8.647                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I83_Y:Y (f)
-               +     1.196          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N542_1
-  9.843                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I141_Y:A (f)
-               +     0.464          cell: ADLIB:AO1
-  10.307                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I141_Y:Y (f)
-               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N604_2
-  10.630                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I193_un1_Y:C (f)
-               +     0.641          cell: ADLIB:NOR3C
-  11.271                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I193_un1_Y:Y (f)
-               +     0.308          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/I193_un1_Y
-  11.579                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I193_Y:A (f)
-               +     0.508          cell: ADLIB:OR2
-  12.087                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I193_Y:Y (f)
-               +     1.296          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N662
-  13.383                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I246_Y:C (f)
-               +     0.706          cell: ADLIB:AO1
-  14.089                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I246_Y:Y (f)
-               +     0.339          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N805
-  14.428                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I262_un1_Y:C (f)
-               +     0.641          cell: ADLIB:NOR3C
-  15.069                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I262_un1_Y:Y (f)
-               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/I262_un1_Y
-  15.392                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I262_Y:C (f)
-               +     0.751          cell: ADLIB:OR3
-  16.143                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I262_Y:Y (f)
-               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N770
-  16.477                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I319_Y:C (f)
-               +     0.864          cell: ADLIB:XOR3
-  17.341                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_0_ADD_33x33_fast_I319_Y:Y (f)
-               +     1.637          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un6_ex_add_res0[29]
-  18.978                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNIB77VJ7:A (f)
-               +     0.579          cell: ADLIB:MX2
-  19.557                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNIB77VJ7:Y (f)
-               +     0.332          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/ldbp2_RNIB77VJ7
-  19.889                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNI3NPK1P:C (f)
-               +     0.716          cell: ADLIB:NOR3A
-  20.605                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNI3NPK1P:Y (r)
-               +     2.899          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout_18
-  23.504                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNI3NP2EP2:B (r)
-               +     0.624          cell: ADLIB:NOR3C
-  24.128                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNI3NP2EP2:Y (r)
-               +     0.318          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout_26
-  24.446                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNIGK68ES:A (r)
-               +     0.525          cell: ADLIB:NOR3C
-  24.971                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNIGK68ES:Y (r)
-               +     0.328          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout
-  25.299                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.casa_RNIDEQQES:C (r)
-               +     0.360          cell: ADLIB:NOR3B
-  25.659                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.casa_RNIDEQQES:Y (f)
-               +     1.273          net: l3_cpu_0_u0/leon3x0/vhdl_p0/un14_casaen
-  26.932                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.inst_RNIVRQUGT[31]:C (f)
-               +     0.525          cell: ADLIB:OA1B
-  27.457                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.inst_RNIVRQUGT[31]:Y (r)
-               +     0.403          net: l3_cpu_0_u0/leon3x0/vhdl_p0/nullify_i_3
-  27.860                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.nomds_RNI3V5JIT:B (r)
-               +     0.516          cell: ADLIB:OR2B
-  28.376                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.nomds_RNI3V5JIT:Y (f)
-               +     0.639          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/N_10671
-  29.015                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNIR5HTIT[8]:B (f)
-               +     0.647          cell: ADLIB:OR2
-  29.662                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNIR5HTIT[8]:Y (f)
-               +     0.461          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/N_10676
-  30.123                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNI7B97TT_0[8]:C (f)
-               +     0.525          cell: ADLIB:NOR3B
-  30.648                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNI7B97TT_0[8]:Y (r)
-               +     1.077          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/dstate_0_sqmuxa_301
-  31.725                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNING624U:A (r)
-               +     0.488          cell: ADLIB:NOR2B
-  32.213                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNING624U:Y (r)
-               +     0.317          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/dstate_1_sqmuxa_310
-  32.530                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNIUASPTS2:A (r)
-               +     0.464          cell: ADLIB:OR3
-  32.994                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNIUASPTS2:Y (r)
-               +     0.575          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/un1_recovn_346_out
-  33.569                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNIN0H0PP1:B (r)
-               +     0.932          cell: ADLIB:OA1B
-  34.501                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNIN0H0PP1:Y (r)
-               +     1.655          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/dstate_sn_N_2
-  36.156                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/c_chkp.dstate_RNIU0QJVS[0]:S (r)
-               +     0.372          cell: ADLIB:MX2
-  36.528                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/c_chkp.dstate_RNIU0QJVS[0]:Y (f)
-               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/dstate_0[0]
-  36.851                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNO[0]:A (f)
-               +     0.579          cell: ADLIB:MX2
-  37.430                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNO[0]:Y (f)
-               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/dstate_3[0]
-  37.753                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:D (f)
+  1.202                        clk_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.245                        clk_pad/U0/U1:Y (r)
+               +     1.507          net: clk_c
+  2.752                        clk_div/clk_divider[0]:CLK (r)
+               +     0.654          cell: ADLIB:DFN1C1
+  3.406                        clk_div/clk_divider[0]:Q (f)
+               +     0.401          net: clk_div/clk_divider[0]
+  3.807                        clk_div/un3_clk_divider_1_1_SUM1:A (f)
+               +     0.488          cell: ADLIB:XOR2
+  4.295                        clk_div/un3_clk_divider_1_1_SUM1:Y (r)
+               +     0.334          net: clk_div/un3_clk_divider_0_0[1]
+  4.629                        clk_div/clk_divider[1]:D (r)
                                     
-  37.753                       data arrival time
+  4.629                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clk
@@ -238,13 +138,305 @@ Expanded Path 1
                +     1.202          cell: ADLIB:IOPAD_IN
   N/C                          clk_pad/U0/U0:Y (r)
                +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.348          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
   N/C                          clk_pad/U0/U1:Y (r)
-               +     1.152          net: clk_c
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:CLK (r)
-               -     0.574          Library setup time: ADLIB:DFN1
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate[0]:D
+               +     0.872          net: clk_c
+  N/C                          clk_div/clk_divider[1]:CLK (r)
+               -     0.713          Library setup time: ADLIB:DFN1C1
+  N/C                          clk_div/clk_divider[1]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        resetn
+  To:                          clk_div/clk_divider[1]:CLR
+  Delay (ns):                  13.448
+  Slack (ns):
+  Arrival (ns):                13.448
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      11.628
+
+Path 2
+  From:                        resetn
+  To:                          clk_div/clk_divider[0]:CLR
+  Delay (ns):                  13.464
+  Slack (ns):
+  Arrival (ns):                13.464
+  Required (ns):
+  Recovery (ns):               0.297
+  External Recovery (ns):      11.009
+
+
+Expanded Path 1
+  From: resetn
+  To: clk_div/clk_divider[1]:CLR
+  data required time                             N/C
+  data arrival time                          -   13.448
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        resetn (f)
+               +     0.000          net: resetn
+  0.000                        resetn_pad/U0/U0:PAD (f)
+               +     0.889          cell: ADLIB:IOPAD_IN
+  0.889                        resetn_pad/U0/U0:Y (f)
+               +     0.000          net: resetn_pad/U0/NET1
+  0.889                        resetn_pad/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.929                        resetn_pad/U0/U1:Y (f)
+               +     6.813          net: resetn_c
+  7.742                        resetn_pad_RNI58G9:A (f)
+               +     0.537          cell: ADLIB:BUFF
+  8.279                        resetn_pad_RNI58G9:Y (f)
+               +     5.169          net: resetn_c_1
+  13.448                       clk_div/clk_divider[1]:CLR (f)
+                                    
+  13.448                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk
+               +     0.000          Clock source
+  N/C                          clk (r)
+               +     0.000          net: clk
+  N/C                          clk_pad/U0/U0:PAD (r)
+               +     1.202          cell: ADLIB:IOPAD_IN
+  N/C                          clk_pad/U0/U0:Y (r)
+               +     0.000          net: clk_pad/U0/NET1
+  N/C                          clk_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  N/C                          clk_pad/U0/U1:Y (r)
+               +     0.872          net: clk_c
+  N/C                          clk_div/clk_divider[1]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C1
+  N/C                          clk_div/clk_divider[1]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain clk_div/clk_divider[1]:Q
+
+SET Register to Register
+
+Path 1
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[3]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  Delay (ns):                  35.744
+  Slack (ns):
+  Arrival (ns):                44.164
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         36.315
+
+Path 2
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[2]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  Delay (ns):                  35.725
+  Slack (ns):
+  Arrival (ns):                44.132
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         36.283
+
+Path 3
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp1:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  Delay (ns):                  35.668
+  Slack (ns):
+  Arrival (ns):                44.026
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         36.212
+
+Path 4
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.data_0[15]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  Delay (ns):                  35.563
+  Slack (ns):
+  Arrival (ns):                43.916
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         36.102
+
+Path 5
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[8]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  Delay (ns):                  35.422
+  Slack (ns):
+  Arrival (ns):                43.775
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         35.961
+
+
+Expanded Path 1
+  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[3]:CLK
+  To: l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
+  data required time                             N/C
+  data arrival time                          -   44.164
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk_div/clk_divider[1]:Q
+               +     0.000          Clock source
+  0.000                        clk_div/clk_divider[1]:Q (r)
+               +     6.542          net: clk_div/clk_divider[1]
+  6.542                        clk_div/clkbuff:A (r)
+               +     0.718          cell: ADLIB:CLKINT
+  7.260                        clk_div/clkbuff:Y (r)
+               +     1.160          net: clkm
+  8.420                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[3]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1E0
+  9.157                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1[3]:Q (f)
+               +     1.248          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/op1[3]
+  10.405                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1_RNIHKL61[3]:A (f)
+               +     0.619          cell: ADLIB:MX2
+  11.024                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op1_RNIHKL61[3]:Y (f)
+               +     2.588          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/ex_op1[3]
+  13.612                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I4_P0N:B (f)
+               +     0.647          cell: ADLIB:OR2
+  14.259                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I4_P0N:Y (f)
+               +     0.403          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N407_0
+  14.662                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I87_Y:B (f)
+               +     0.636          cell: ADLIB:AO1
+  15.298                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I87_Y:Y (f)
+               +     0.320          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N546_1
+  15.618                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I145_un1_Y:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  16.259                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I145_un1_Y:Y (f)
+               +     0.308          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/I145_un1_Y
+  16.567                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I145_Y:A (f)
+               +     0.508          cell: ADLIB:OR2
+  17.075                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I145_Y:Y (f)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N608_1
+  17.409                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I204_Y:C (f)
+               +     0.706          cell: ADLIB:AO1
+  18.115                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I204_Y:Y (f)
+               +     1.620          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N674_0
+  19.735                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I244_Y:B (f)
+               +     0.598          cell: ADLIB:AO1
+  20.333                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I244_Y:Y (f)
+               +     0.939          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N799_1
+  21.272                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I260_un1_Y:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  21.913                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I260_un1_Y:Y (f)
+               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/I260_un1_Y_1
+  22.236                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I321_Y:A (f)
+               +     0.716          cell: ADLIB:AX1B
+  22.952                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/un6_ex_add_res_1_ADD_33x33_fast_I321_Y:Y (r)
+               +     1.512          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un6_ex_add_res1[31]
+  24.464                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.invop2_1_RNILG9Q15:A (r)
+               +     0.568          cell: ADLIB:MX2
+  25.032                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.invop2_1_RNILG9Q15:Y (r)
+               +     2.755          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/N_22573
+  27.787                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNI75KAR7:B (r)
+               +     0.586          cell: ADLIB:MX2
+  28.373                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNI75KAR7:Y (r)
+               +     0.318          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/ldbp2_RNI75KAR7
+  28.691                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNI0I1MJ41:B (r)
+               +     0.386          cell: ADLIB:NOR2A
+  29.077                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_RNI0I1MJ41:Y (f)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout_24
+  29.411                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNIUJV0SO2:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  30.092                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNIUJV0SO2:Y (f)
+               +     0.308          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout_26
+  30.400                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNII1AKTR:A (f)
+               +     0.464          cell: ADLIB:NOR3C
+  30.864                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ldbp2_2_RNII1AKTR:Y (f)
+               +     0.308          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/un1_addout
+  31.172                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.casa_RNIFRT6UR:C (f)
+               +     0.488          cell: ADLIB:NOR3B
+  31.660                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.casa_RNIFRT6UR:Y (r)
+               +     0.384          net: l3_cpu_0_u0/leon3x0/vhdl_p0/un14_casaen
+  32.044                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNISBDTUR[5]:B (r)
+               +     0.386          cell: ADLIB:NOR2A
+  32.430                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNISBDTUR[5]:Y (f)
+               +     1.207          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/N_8326_i_0_a3_a0_1
+  33.637                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNII9KV2T[8]:A (f)
+               +     0.900          cell: ADLIB:AOI1
+  34.537                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNII9KV2T[8]:Y (r)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/N_8326_i_0_a3_0_3
+  34.871                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNIAGB3IP1[7]:B (r)
+               +     0.624          cell: ADLIB:NOR3B
+  35.495                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNIAGB3IP1[7]:Y (r)
+               +     1.982          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data1_2_sqmuxa
+  37.477                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNINHVIOP1_2:A (r)
+               +     0.516          cell: ADLIB:NOR2A
+  37.993                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.stpend_RNINHVIOP1_2:Y (r)
+               +     1.505          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data1_0_sqmuxa_0
+  39.498                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data2_RNI3LKUOP1[24]:B (r)
+               +     0.591          cell: ADLIB:NOR2B
+  40.089                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data2_RNI3LKUOP1[24]:Y (r)
+               +     0.861          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data2_m[24]
+  40.950                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNIVFMOSK3[24]:A (r)
+               +     0.464          cell: ADLIB:OR3
+  41.414                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNIVFMOSK3[24]:Y (r)
+               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data1_iv_2[24]
+  41.737                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNIMEPD3I[24]:C (r)
+               +     0.768          cell: ADLIB:AO1A
+  42.505                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNIMEPD3I[24]:Y (r)
+               +     0.757          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data1[24]
+  43.262                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNO[24]:A (r)
+               +     0.568          cell: ADLIB:MX2
+  43.830                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1_RNO[24]:Y (r)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/c0mmu/dcache0/data1_3[24]
+  44.164                       l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D (r)
+                                    
+  44.164                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk_div/clk_divider[1]:Q
+               +     0.000          Clock source
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     6.542          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.718          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     1.128          net: clkm
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[24]:D
 
 
 END SET Register to Register
@@ -255,145 +447,105 @@ SET External Setup
 
 Path 1
   From:                        resetn
-  To:                          l3.dsugen.dsu0/x0/r.timer[28]:D
-  Delay (ns):                  32.532
+  To:                          gpt.timer0/r.scaler[3]:D
+  Delay (ns):                  31.253
   Slack (ns):
-  Arrival (ns):                32.532
+  Arrival (ns):                31.253
   Required (ns):
-  Setup (ns):                  0.539
-  External Setup (ns):         30.336
+  Setup (ns):                  0.574
+  External Setup (ns):         23.428
 
 Path 2
   From:                        resetn
-  To:                          l3.dsugen.dsu0/x0/r.timer[29]:D
-  Delay (ns):                  32.124
+  To:                          gpt.timer0/r.scaler[1]:D
+  Delay (ns):                  30.905
   Slack (ns):
-  Arrival (ns):                32.124
+  Arrival (ns):                30.905
   Required (ns):
-  Setup (ns):                  0.539
-  External Setup (ns):         29.984
+  Setup (ns):                  0.574
+  External Setup (ns):         23.069
 
 Path 3
   From:                        resetn
-  To:                          l3.dsugen.dsu0/x0/r.timer[27]:D
-  Delay (ns):                  31.782
+  To:                          gpt.timer0/r.scaler[7]:D
+  Delay (ns):                  30.884
   Slack (ns):
-  Arrival (ns):                31.782
+  Arrival (ns):                30.884
   Required (ns):
-  Setup (ns):                  0.539
-  External Setup (ns):         29.637
+  Setup (ns):                  0.574
+  External Setup (ns):         23.061
 
 Path 4
   From:                        resetn
-  To:                          l3.dsugen.dsu0/x0/r.timer[26]:D
-  Delay (ns):                  31.773
+  To:                          gpt.timer0/r.scaler[6]:D
+  Delay (ns):                  30.652
   Slack (ns):
-  Arrival (ns):                31.773
+  Arrival (ns):                30.652
   Required (ns):
-  Setup (ns):                  0.539
-  External Setup (ns):         29.633
+  Setup (ns):                  0.574
+  External Setup (ns):         22.829
 
 Path 5
   From:                        resetn
-  To:                          l3.dsugen.dsu0/x0/r.timer[19]:D
-  Delay (ns):                  31.388
+  To:                          gpt.timer0/r.scaler[2]:D
+  Delay (ns):                  30.630
   Slack (ns):
-  Arrival (ns):                31.388
+  Arrival (ns):                30.630
   Required (ns):
-  Setup (ns):                  0.539
-  External Setup (ns):         29.246
+  Setup (ns):                  0.574
+  External Setup (ns):         22.794
 
 
 Expanded Path 1
   From: resetn
-  To: l3.dsugen.dsu0/x0/r.timer[28]:D
+  To: gpt.timer0/r.scaler[3]:D
   data required time                             N/C
-  data arrival time                          -   32.532
+  data arrival time                          -   31.253
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        resetn (r)
+  0.000                        resetn (f)
                +     0.000          net: resetn
-  0.000                        resetn_pad/U0/U0:PAD (r)
-               +     1.202          cell: ADLIB:IOPAD_IN
-  1.202                        resetn_pad/U0/U0:Y (r)
+  0.000                        resetn_pad/U0/U0:PAD (f)
+               +     0.889          cell: ADLIB:IOPAD_IN
+  0.889                        resetn_pad/U0/U0:Y (f)
                +     0.000          net: resetn_pad/U0/NET1
-  1.202                        resetn_pad/U0/U1:YIN (r)
-               +     0.043          cell: ADLIB:IOIN_IB
-  1.245                        resetn_pad/U0/U1:Y (r)
-               +     9.121          net: resetn_c
-  10.366                       resetn_pad_RNI58G9:A (r)
-               +     0.466          cell: ADLIB:BUFF
-  10.832                       resetn_pad_RNI58G9:Y (r)
-               +     3.718          net: resetn_c_1
-  14.550                       l3.dsugen.dsu0/x0/tr.timeren_RNISI7P:C (r)
-               +     0.768          cell: ADLIB:AO1A
-  15.318                       l3.dsugen.dsu0/x0/tr.timeren_RNISI7P:Y (r)
-               +     0.318          net: l3_dsugen_dsu0/x0/timer_0_sqmuxa_1_i_0
-  15.636                       l3.dsugen.dsu0/x0/tr.timeren_RNI80PO3:C (r)
-               +     0.487          cell: ADLIB:OA1C
-  16.123                       l3.dsugen.dsu0/x0/tr.timeren_RNI80PO3:Y (f)
-               +     0.385          net: l3_dsugen_dsu0/x0/N_54
-  16.508                       l3.dsugen.dsu0/x0/un1_r.timer_I_1:B (f)
-               +     0.628          cell: ADLIB:AND2
-  17.136                       l3.dsugen.dsu0/x0/un1_r.timer_I_1:Y (f)
-               +     0.387          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_TMP_0[0]
-  17.523                       l3.dsugen.dsu0/x0/un1_r.timer_I_142:A (f)
-               +     0.386          cell: ADLIB:NOR2B
-  17.909                       l3.dsugen.dsu0/x0/un1_r.timer_I_142:Y (f)
-               +     1.430          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_1_0[0]
-  19.339                       l3.dsugen.dsu0/x0/un1_r.timer_I_166:C (f)
-               +     0.681          cell: ADLIB:NOR3C
-  20.020                       l3.dsugen.dsu0/x0/un1_r.timer_I_166:Y (f)
-               +     1.729          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_2_0[0]
-  21.749                       l3.dsugen.dsu0/x0/un1_r.timer_I_138:A (f)
-               +     0.515          cell: ADLIB:NOR2B
-  22.264                       l3.dsugen.dsu0/x0/un1_r.timer_I_138:Y (f)
-               +     1.281          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_3[0]
-  23.545                       l3.dsugen.dsu0/x0/un1_r.timer_I_164:C (f)
-               +     0.681          cell: ADLIB:NOR3C
-  24.226                       l3.dsugen.dsu0/x0/un1_r.timer_I_164:Y (f)
-               +     1.112          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_4[0]
-  25.338                       l3.dsugen.dsu0/x0/un1_r.timer_I_126:C (f)
-               +     0.641          cell: ADLIB:NOR3C
-  25.979                       l3.dsugen.dsu0/x0/un1_r.timer_I_126:Y (f)
-               +     1.215          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_9[0]
-  27.194                       l3.dsugen.dsu0/x0/un1_r.timer_I_163:A (f)
-               +     0.515          cell: ADLIB:NOR2B
-  27.709                       l3.dsugen.dsu0/x0/un1_r.timer_I_163:Y (f)
-               +     1.631          net: l3_dsugen_dsu0/x0/DWACT_ADD_CI_0_g_array_10_2[0]
-  29.340                       l3.dsugen.dsu0/x0/un1_r.timer_I_99:B (f)
-               +     0.987          cell: ADLIB:XOR2
-  30.327                       l3.dsugen.dsu0/x0/un1_r.timer_I_99:Y (f)
-               +     0.323          net: l3_dsugen_dsu0/x0/I_99
-  30.650                       l3.dsugen.dsu0/x0/r.timer_RNO_0[28]:A (f)
-               +     0.579          cell: ADLIB:MX2
-  31.229                       l3.dsugen.dsu0/x0/r.timer_RNO_0[28]:Y (f)
-               +     0.332          net: l3_dsugen_dsu0/x0/N_1365
-  31.561                       l3.dsugen.dsu0/x0/r.timer_RNO[28]:A (f)
-               +     0.628          cell: ADLIB:NOR2A
-  32.189                       l3.dsugen.dsu0/x0/r.timer_RNO[28]:Y (f)
-               +     0.343          net: l3_dsugen_dsu0/x0/timer_1[28]
-  32.532                       l3.dsugen.dsu0/x0/r.timer[28]:D (f)
+  0.889                        resetn_pad/U0/U1:YIN (f)
+               +     0.040          cell: ADLIB:IOIN_IB
+  0.929                        resetn_pad/U0/U1:Y (f)
+               +     6.543          net: resetn_c
+  7.472                        resetn_pad_RNI58G9_6:A (f)
+               +     0.537          cell: ADLIB:BUFF
+  8.009                        resetn_pad_RNI58G9_6:Y (f)
+               +    18.144          net: resetn_c_7
+  26.153                       gpt.timer0/v.scaler_0_sqmuxa_3_i_o2:B (f)
+               +     0.650          cell: ADLIB:OR2A
+  26.803                       gpt.timer0/v.scaler_0_sqmuxa_3_i_o2:Y (f)
+               +     1.149          net: gpt_timer0/N_102
+  27.952                       gpt.timer0/v.scaler_1_sqmuxa_1_i:B (f)
+               +     0.650          cell: ADLIB:OR2
+  28.602                       gpt.timer0/v.scaler_1_sqmuxa_1_i:Y (f)
+               +     1.718          net: gpt_timer0/N_17
+  30.320                       gpt.timer0/r.scaler_RNO[3]:A (f)
+               +     0.607          cell: ADLIB:OA1B
+  30.927                       gpt.timer0/r.scaler_RNO[3]:Y (f)
+               +     0.326          net: gpt_timer0/scaler_1_iv[3]
+  31.253                       gpt.timer0/r.scaler[3]:D (f)
                                     
-  32.532                       data arrival time
+  31.253                       data arrival time
   ________________________________________________________
   Data required time calculation
-  N/C                          clk
+  N/C                          clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  N/C                          clk (r)
-               +     0.000          net: clk
-  N/C                          clk_pad/U0/U0:PAD (r)
-               +     1.202          cell: ADLIB:IOPAD_IN
-  N/C                          clk_pad/U0/U0:Y (r)
-               +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.348          cell: ADLIB:CLKIO
-  N/C                          clk_pad/U0/U1:Y (r)
-               +     1.185          net: clk_c
-  N/C                          l3.dsugen.dsu0/x0/r.timer[28]:CLK (r)
-               -     0.539          Library setup time: ADLIB:DFN1
-  N/C                          l3.dsugen.dsu0/x0/r.timer[28]:D
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     6.542          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.718          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     1.139          net: clkm
+  N/C                          gpt.timer0/r.scaler[3]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1E0
+  N/C                          gpt.timer0/r.scaler[3]:D
 
 
 END SET External Setup
@@ -405,89 +557,85 @@ SET Clock to Output
 Path 1
   From:                        ua1.uart1/r.txd:CLK
   To:                          txd1
-  Delay (ns):                  14.595
+  Delay (ns):                  13.593
   Slack (ns):
-  Arrival (ns):                17.281
+  Arrival (ns):                22.034
   Required (ns):
-  Clock to Out (ns):           17.281
+  Clock to Out (ns):           22.034
 
 Path 2
   From:                        dcomgen.dcom0/dcom_uart0/r.tshift[0]:CLK
   To:                          dsutx
-  Delay (ns):                  13.989
+  Delay (ns):                  12.069
   Slack (ns):
-  Arrival (ns):                16.722
+  Arrival (ns):                20.466
   Required (ns):
-  Clock to Out (ns):           16.722
+  Clock to Out (ns):           20.466
 
 Path 3
   From:                        gpio0.grgpio0/r.dir[0]/U1:CLK
   To:                          gpio[0]
-  Delay (ns):                  10.050
+  Delay (ns):                  11.080
   Slack (ns):
-  Arrival (ns):                12.740
+  Arrival (ns):                19.433
   Required (ns):
-  Clock to Out (ns):           12.740
+  Clock to Out (ns):           19.433
 
 Path 4
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.nerror:CLK
-  To:                          errorn
-  Delay (ns):                  9.693
+  From:                        gpio0.grgpio0/r.dout[0]/U1:CLK
+  To:                          gpio[0]
+  Delay (ns):                  10.431
   Slack (ns):
-  Arrival (ns):                12.382
+  Arrival (ns):                18.814
   Required (ns):
-  Clock to Out (ns):           12.382
+  Clock to Out (ns):           18.814
 
 Path 5
-  From:                        gpio0.grgpio0/r.dout[2]/U1:CLK
-  To:                          gpio[2]
-  Delay (ns):                  9.682
+  From:                        dcomgen.dcom0/dcom_uart0/r.tshift[0]:CLK
+  To:                          led[1]
+  Delay (ns):                  10.087
   Slack (ns):
-  Arrival (ns):                12.372
+  Arrival (ns):                18.484
   Required (ns):
-  Clock to Out (ns):           12.372
+  Clock to Out (ns):           18.484
 
 
 Expanded Path 1
   From: ua1.uart1/r.txd:CLK
   To: txd1
   data required time                             N/C
-  data arrival time                          -   17.281
+  data arrival time                          -   22.034
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        clk
+  0.000                        clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  0.000                        clk (r)
-               +     0.000          net: clk
-  0.000                        clk_pad/U0/U0:PAD (r)
-               +     1.202          cell: ADLIB:IOPAD_IN
-  1.202                        clk_pad/U0/U0:Y (r)
-               +     0.000          net: clk_pad/U0/NET1
-  1.202                        clk_pad/U0/U1:A (r)
-               +     0.348          cell: ADLIB:CLKIO
-  1.550                        clk_pad/U0/U1:Y (r)
-               +     1.136          net: clk_c
-  2.686                        ua1.uart1/r.txd:CLK (r)
+  0.000                        clk_div/clk_divider[1]:Q (r)
+               +     6.542          net: clk_div/clk_divider[1]
+  6.542                        clk_div/clkbuff:A (r)
+               +     0.718          cell: ADLIB:CLKINT
+  7.260                        clk_div/clkbuff:Y (r)
+               +     1.181          net: clkm
+  8.441                        ua1.uart1/r.txd:CLK (r)
                +     0.737          cell: ADLIB:DFN1
-  3.423                        ua1.uart1/r.txd:Q (f)
-               +     9.609          net: txd1_c
-  13.032                       txd1_pad/U0/U1:D (f)
+  9.178                        ua1.uart1/r.txd:Q (f)
+               +     8.607          net: txd1_c
+  17.785                       txd1_pad/U0/U1:D (f)
                +     0.582          cell: ADLIB:IOTRI_OB_EB
-  13.614                       txd1_pad/U0/U1:DOUT (f)
+  18.367                       txd1_pad/U0/U1:DOUT (f)
                +     0.000          net: txd1_pad/U0/NET1
-  13.614                       txd1_pad/U0/U0:D (f)
+  18.367                       txd1_pad/U0/U0:D (f)
                +     3.667          cell: ADLIB:IOPAD_TRI
-  17.281                       txd1_pad/U0/U0:PAD (f)
+  22.034                       txd1_pad/U0/U0:PAD (f)
                +     0.000          net: txd1
-  17.281                       txd1 (f)
+  22.034                       txd1 (f)
                                     
-  17.281                       data arrival time
+  22.034                       data arrival time
   ________________________________________________________
   Data required time calculation
-  N/C                          clk
+  N/C                          clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  N/C                          clk (r)
+  N/C                          clk_div/clk_divider[1]:Q (r)
                                     
   N/C                          txd1 (f)
 
@@ -508,60 +656,60 @@ SET External Recovery
 
 Path 1
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dout[4]/U1:CLR
-  Delay (ns):                  11.117
+  To:                          gpio0.grgpio0/r.dir[4]/U1:CLR
+  Delay (ns):                  18.783
   Slack (ns):
-  Arrival (ns):                11.117
+  Arrival (ns):                18.783
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      8.736
+  External Recovery (ns):      10.697
 
 Path 2
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[5]/U1:CLR
-  Delay (ns):                  10.641
+  To:                          gpio0.grgpio0/r.dir[1]/U1:CLR
+  Delay (ns):                  18.706
   Slack (ns):
-  Arrival (ns):                10.641
+  Arrival (ns):                18.706
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      8.248
+  External Recovery (ns):      10.650
 
 Path 3
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dout[0]/U1:CLR
-  Delay (ns):                  10.641
+  To:                          gpio0.grgpio0/r.dout[1]/U1:CLR
+  Delay (ns):                  18.706
   Slack (ns):
-  Arrival (ns):                10.641
+  Arrival (ns):                18.706
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      8.248
+  External Recovery (ns):      10.620
 
 Path 4
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[0]/U1:CLR
-  Delay (ns):                  10.641
+  To:                          gpio0.grgpio0/r.dir[3]/U1:CLR
+  Delay (ns):                  18.400
   Slack (ns):
-  Arrival (ns):                10.641
+  Arrival (ns):                18.400
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      8.248
+  External Recovery (ns):      10.333
 
 Path 5
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[3]/U1:CLR
-  Delay (ns):                  10.437
+  To:                          gpio0.grgpio0/r.dout[0]/U1:CLR
+  Delay (ns):                  18.106
   Slack (ns):
-  Arrival (ns):                10.437
+  Arrival (ns):                18.106
   Required (ns):
   Recovery (ns):               0.297
-  External Recovery (ns):      8.044
+  External Recovery (ns):      10.020
 
 
 Expanded Path 1
   From: resetn
-  To: gpio0.grgpio0/r.dout[4]/U1:CLR
+  To: gpio0.grgpio0/r.dir[4]/U1:CLR
   data required time                             N/C
-  data arrival time                          -   11.117
+  data arrival time                          -   18.783
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -574,31 +722,27 @@ Expanded Path 1
   0.889                        resetn_pad/U0/U1:YIN (f)
                +     0.040          cell: ADLIB:IOIN_IB
   0.929                        resetn_pad/U0/U1:Y (f)
-               +     6.957          net: resetn_c
-  7.886                        resetn_pad_RNI58G9_0:A (f)
+               +     9.824          net: resetn_c
+  10.753                       resetn_pad_RNI58G9_0:A (f)
                +     0.537          cell: ADLIB:BUFF
-  8.423                        resetn_pad_RNI58G9_0:Y (f)
-               +     2.694          net: resetn_c_0
-  11.117                       gpio0.grgpio0/r.dout[4]/U1:CLR (f)
+  11.290                       resetn_pad_RNI58G9_0:Y (f)
+               +     7.493          net: resetn_c_0
+  18.783                       gpio0.grgpio0/r.dir[4]/U1:CLR (f)
                                     
-  11.117                       data arrival time
+  18.783                       data arrival time
   ________________________________________________________
   Data required time calculation
-  N/C                          clk
+  N/C                          clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  N/C                          clk (r)
-               +     0.000          net: clk
-  N/C                          clk_pad/U0/U0:PAD (r)
-               +     1.202          cell: ADLIB:IOPAD_IN
-  N/C                          clk_pad/U0/U0:Y (r)
-               +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.348          cell: ADLIB:CLKIO
-  N/C                          clk_pad/U0/U1:Y (r)
-               +     1.128          net: clk_c
-  N/C                          gpio0.grgpio0/r.dout[4]/U1:CLK (r)
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     6.542          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.718          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     1.123          net: clkm
+  N/C                          gpio0.grgpio0/r.dir[4]/U1:CLK (r)
                -     0.297          Library recovery time: ADLIB:DFN1C1
-  N/C                          gpio0.grgpio0/r.dout[4]/U1:CLR
+  N/C                          gpio0.grgpio0/r.dir[4]/U1:CLR
 
 
 END SET External Recovery
@@ -618,116 +762,116 @@ Clock Domain l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
 SET Register to Register
 
 Path 1
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:D
-  Delay (ns):                  6.704
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:D
+  Delay (ns):                  7.016
   Slack (ns):
-  Arrival (ns):                11.658
+  Arrival (ns):                10.000
   Required (ns):
   Setup (ns):                  0.664
-  Minimum Period (ns):         7.368
+  Minimum Period (ns):         7.680
 
 Path 2
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[15]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[15]:D
-  Delay (ns):                  6.700
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[28]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[28]:D
+  Delay (ns):                  6.705
   Slack (ns):
-  Arrival (ns):                11.657
+  Arrival (ns):                9.682
   Required (ns):
   Setup (ns):                  0.664
-  Minimum Period (ns):         7.364
+  Minimum Period (ns):         7.369
 
 Path 3
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.x.data_0[0]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.x.data_0[0]:D
-  Delay (ns):                  5.764
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[13]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[13]:D
+  Delay (ns):                  6.691
   Slack (ns):
-  Arrival (ns):                10.714
+  Arrival (ns):                9.677
   Required (ns):
   Setup (ns):                  0.664
-  Minimum Period (ns):         6.428
+  Minimum Period (ns):         7.355
 
 Path 4
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[4]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[4]:D
-  Delay (ns):                  5.824
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[17]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[17]:D
+  Delay (ns):                  6.672
   Slack (ns):
-  Arrival (ns):                10.791
-  Required (ns):
-  Setup (ns):                  0.561
-  Minimum Period (ns):         6.385
-
-Path 5
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[25]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[25]:D
-  Delay (ns):                  5.694
-  Slack (ns):
-  Arrival (ns):                10.668
+  Arrival (ns):                9.656
   Required (ns):
   Setup (ns):                  0.664
-  Minimum Period (ns):         6.358
+  Minimum Period (ns):         7.336
+
+Path 5
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[7]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[7]:D
+  Delay (ns):                  6.667
+  Slack (ns):
+  Arrival (ns):                9.651
+  Required (ns):
+  Setup (ns):                  0.664
+  Minimum Period (ns):         7.331
 
 
 Expanded Path 1
-  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:G
-  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:D
+  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:G
+  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:D
   data required time                             N/C
-  data arrival time                          -   11.658
+  data arrival time                          -   10.000
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
                +     0.000          Clock source
   0.000                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q (f)
-               +     3.073          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
-  3.073                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
+               +     1.104          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
+  1.104                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
                +     0.767          cell: ADLIB:CLKINT
-  3.840                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
-               +     1.114          net: l3_cpu_0_u0/leon3x0/chkp_pin
-  4.954                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:G (f)
+  1.871                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
+               +     1.113          net: l3_cpu_0_u0/leon3x0/chkp_pin
+  2.984                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:G (f)
                +     0.544          cell: ADLIB:DLN1
-  5.498                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:Q (r)
-               +     0.318          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_7[20]
-  5.816                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIH4F21[20]:A (r)
+  3.528                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:Q (r)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_2[30]
+  3.862                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNII6G21[30]:A (r)
                +     0.488          cell: ADLIB:NOR2B
-  6.304                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIH4F21[20]:Y (r)
-               +     0.333          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_m[20]
-  6.637                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIDUHH22[20]:C (r)
+  4.350                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNII6G21[30]:Y (r)
+               +     0.320          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_m_1[30]
+  4.670                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNI9DAEL1[30]:C (r)
                +     0.768          cell: ADLIB:AO1A
-  7.405                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIDUHH22[20]:Y (r)
-               +     0.350          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_0[20]
-  7.755                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIPDQS1E[20]:C (r)
+  5.438                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNI9DAEL1[30]:Y (r)
+               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_0[30]
+  5.772                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNITBMDTE[30]:C (r)
                +     0.655          cell: ADLIB:AO1
-  8.410                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIPDQS1E[20]:Y (r)
-               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_1[20]
-  8.744                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIROF0EO1[20]:C (r)
+  6.427                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNITBMDTE[30]:Y (r)
+               +     0.337          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_1[30]
+  6.764                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIGBGEK33[30]:C (r)
                +     0.655          cell: ADLIB:AO1
-  9.399                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIROF0EO1[20]:Y (r)
-               +     0.334          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_2[20]
-  9.733                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIDD6J2I2[20]:B (r)
+  7.419                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc_RNIGBGEK33[30]:Y (r)
+               +     0.337          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_2[30]
+  7.756                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIFU1GSS3[30]:B (r)
                +     0.641          cell: ADLIB:OR3
-  10.374                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIDD6J2I2[20]:Y (r)
-               +     0.320          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_5[20]
-  10.694                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIQKT0I13[20]:C (r)
+  8.397                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIFU1GSS3[30]:Y (r)
+               +     0.338          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0_0_iv_5[30]
+  8.735                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.bp_RNIMENA5B:C (r)
                +     0.641          cell: ADLIB:OR3
-  11.335                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.d.pc_RNIQKT0I13[20]:Y (r)
-               +     0.323          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_5[20]
-  11.658                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:D (r)
+  9.376                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.bp_RNIMENA5B:Y (r)
+               +     0.624          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_1[30]
+  10.000                       l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:D (r)
                                     
-  11.658                       data arrival time
+  10.000                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
                +     0.000          Clock source
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q (f)
-               +     3.073          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
+               +     1.104          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
                +     0.767          cell: ADLIB:CLKINT
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
-               +     1.114          net: l3_cpu_0_u0/leon3x0/chkp_pin
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:G (f)
+               +     1.113          net: l3_cpu_0_u0/leon3x0/chkp_pin
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:G (f)
                -     0.664          Library setup time: ADLIB:DLN1
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[20]:D
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.f.pc[30]:D
 
 
 END SET Register to Register
@@ -781,17 +925,17 @@ SET Input to Output
 Path 1
   From:                        rxd1
   To:                          led[2]
-  Delay (ns):                  17.419
+  Delay (ns):                  15.591
   Slack (ns):
-  Arrival (ns):                17.419
+  Arrival (ns):                15.591
   Required (ns):
 
 Path 2
   From:                        dsurx
   To:                          led[0]
-  Delay (ns):                  15.462
+  Delay (ns):                  14.352
   Slack (ns):
-  Arrival (ns):                15.462
+  Arrival (ns):                14.352
   Required (ns):
 
 
@@ -799,7 +943,7 @@ Expanded Path 1
   From: rxd1
   To: led[2]
   data required time                             N/C
-  data arrival time                          -   17.419
+  data arrival time                          -   15.591
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -812,22 +956,22 @@ Expanded Path 1
   1.202                        rxd1_pad/U0/U1:YIN (r)
                +     0.043          cell: ADLIB:IOIN_IB
   1.245                        rxd1_pad/U0/U1:Y (r)
-               +    10.690          net: rxd1_c
-  11.935                       led_pad_RNO[2]:A (r)
+               +     7.399          net: rxd1_c
+  8.644                        led_pad_RNO[2]:A (r)
                +     0.466          cell: ADLIB:INV
-  12.401                       led_pad_RNO[2]:Y (f)
-               +     0.692          net: rxd1_c_i
-  13.093                       led_pad[2]/U0/U1:D (f)
+  9.110                        led_pad_RNO[2]:Y (f)
+               +     2.155          net: rxd1_c_i
+  11.265                       led_pad[2]/U0/U1:D (f)
                +     0.659          cell: ADLIB:IOTRI_OB_EB
-  13.752                       led_pad[2]/U0/U1:DOUT (f)
+  11.924                       led_pad[2]/U0/U1:DOUT (f)
                +     0.000          net: led_pad[2]/U0/NET1
-  13.752                       led_pad[2]/U0/U0:D (f)
+  11.924                       led_pad[2]/U0/U0:D (f)
                +     3.667          cell: ADLIB:IOPAD_TRI
-  17.419                       led_pad[2]/U0/U0:PAD (f)
+  15.591                       led_pad[2]/U0/U0:PAD (f)
                +     0.000          net: led[2]
-  17.419                       led[2] (f)
+  15.591                       led[2] (f)
                                     
-  17.419                       data arrival time
+  15.591                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          rxd1 (r)

@@ -106,11 +106,13 @@
 @W: FX107 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":47:9:47:14|RAM tb0\.mem0.mem32\.0\.ram0.nopar\.nos64\.x1.inf\.x0.memarr_tile[17:0] (in view: gaisler.dsu3x(rtl)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: FX107 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\techmap\inferred\memory_inferred.vhd":47:9:47:14|RAM tb0\.mem0.mem32\.0\.ram0.nopar\.nos64\.x1.inf\.x0.memarr_tile_0[17:0] (in view: gaisler.dsu3x(rtl)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
 @W: MO129 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\..\..\lib\gaisler\uart\apbuart.vhd":560:4:560:5|Sequential instance ua1.uart1.r.ctsn[0] is reduced to a combinational gate by constant propagation.
+@W: FP157 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":225:2:225:8|Found instantiated global clock buffer in clock path for net clk_div.clk_divider[1]. Cannot promote clock net with multiple global clock buffers in series.
 @W: BN169 |Cyclic dependency detected among libraries: 
-@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":40:7:40:13|Cyclic dependencies among libraries found.
+@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":73:7:73:13|Cyclic dependencies among libraries found.
 @W: BN169 |Cyclic dependency detected among libraries: 
-@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":40:7:40:13|Cyclic dependencies among libraries found.
+@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":73:7:73:13|Cyclic dependencies among libraries found.
 @W: BN169 |Cyclic dependency detected among libraries: 
-@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":40:7:40:13|Cyclic dependencies among libraries found.
+@W: BN170 :"c:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp.vhd":73:7:73:13|Cyclic dependencies among libraries found.
 @W: MT420 |Found inferred clock leon3mp|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"
 @W: MT420 |Found inferred clock chk_control|CS_inferred_clock[1] with period 10.00ns. Please declare a user-defined clock on object "n:l3\.cpu\.0\.u0.leon3x0.vhdl\.chkp0.CS[1]"
+@W: MT420 |Found inferred clock clk_div4|clk_divider_inferred_clock[1] with period 10.00ns. Please declare a user-defined clock on object "n:clk_div.clk_divider[1]"

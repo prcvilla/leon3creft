@@ -3,22 +3,15 @@ Version: 11.8.1.12
 Release: Libero SoC v11.8 SP1
 
 Software Version: 11.8.1.12
+PDB file 'C:\git\leon3creft_tr_synth\2-testleon3mp\leon3mp-tr1.pdb' has been loaded
+successfully.
+DESIGN : leon3mp;  CHECKSUM : 8680;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '53083' : FlashPro3
-Warning: The programmer with id '52977' in the project file cannot be detected and connected.
 Opened 'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\leon3mp\leon3mp.pro'
-Rescanning for Programmers...
-programmer '53083' : FlashPro3
-Rescanning for Programmers DONE.
-PDB file
-'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb'
-has been loaded successfully.
-DESIGN : leon3mp;  CHECKSUM : E4EB;  PDB_VERSION : 1.9
-programmer '53083' : Scan Chain...
-Error: Vjtag is disconnected or shorted. Please check the FPGA's Vjtag pin is properly
-       connected. Please check that the target board is powered.
-Error: programmer '53083' : Scan Chain FAILED.
-Error: Failed to run Action.
+PDB file 'C:\git\leon3creft_tr_synth\2-testleon3mp\leon3mp-tr1-10mhz.pdb' has been loaded
+successfully.
+DESIGN : leon3mp;  CHECKSUM : D488;  PDB_VERSION : 1.9
 programmer '53083' : Scan Chain...
 Warning: programmer '53083' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
@@ -27,32 +20,11 @@ programmer '53083' : Executing action PROGRAM
 programmer '53083' : EXPORT FSN[48] = 914f17605c68
 programmer '53083' : Erase ...
 programmer '53083' : Completed erase
-programmer '53083' : EXPORT CHECKSUM[16] = e4eb
+programmer '53083' : EXPORT CHECKSUM[16] = d488
 programmer '53083' : Programming FPGA Array
 programmer '53083' : Verifying FPGA Array
 programmer '53083' :         Verifying FPGA Array -- pass
-programmer '53083' : Finished: Mon Feb 05 21:04:02 2018 (Elapsed time 00:01:07)
-programmer '53083' : Executing action PROGRAM PASSED.
-
-                        o - o - o - o - o - o
-
-PDB file
-'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb'
-has been loaded successfully.
-DESIGN : leon3mp;  CHECKSUM : 8680;  PDB_VERSION : 1.9
-programmer '53083' : Scan Chain...
-Warning: programmer '53083' : Vpump has been selected on programmer AND an externally provided
-         Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '53083' : Scan Chain PASSED.
-programmer '53083' : Executing action PROGRAM
-programmer '53083' : EXPORT FSN[48] = 914f17605c68
-programmer '53083' : Erase ...
-programmer '53083' : Completed erase
-programmer '53083' : EXPORT CHECKSUM[16] = 8680
-programmer '53083' : Programming FPGA Array
-programmer '53083' : Verifying FPGA Array
-programmer '53083' :         Verifying FPGA Array -- pass
-programmer '53083' : Finished: Mon Feb 05 21:49:30 2018 (Elapsed time 00:01:12)
+programmer '53083' : Finished: Tue Feb 06 23:14:23 2018 (Elapsed time 00:01:08)
 programmer '53083' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

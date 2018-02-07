@@ -5,7 +5,7 @@ The file contains the optimization information from mapper to be displayed as pa
 *******************************************************************************************-->
 <report_table display_priority="3" name="Optimizations Summary">
 <parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
-<data>1 / 1</data>
+<data>1 / 2</data>
 <report_link name="more">
 <data>C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\report\leon3mp_fpga_mapper_combined_clk.rpt</data>
 <title>START OF CLOCK OPTIMIZATION REPORT</title>

@@ -9,29 +9,29 @@ fsm_state_encoding {4334443446} 10 {10}
 
 fsm_registers {4334443446} {r®p_0®state[1]}  {r®p_0®state[0]} 
 
-fsm_encoding {19272271} sequential
+fsm_encoding {14272271} sequential
 
-fsm_state_encoding {19272271} sidle {00}
+fsm_state_encoding {14272271} sidle {00}
 
-fsm_state_encoding {19272271} swriteon {01}
+fsm_state_encoding {14272271} swriteon {01}
 
-fsm_state_encoding {19272271} schkpen {10}
+fsm_state_encoding {14272271} schkpen {10}
 
-fsm_registers {19272271} {CS[1]}  {CS[0]} 
+fsm_registers {14272271} {CS[1]}  {CS[0]} 
 
-fsm_encoding {93622622} onehot
+fsm_encoding {67622622} onehot
 
-fsm_state_encoding {93622622} sidle {00000}
+fsm_state_encoding {67622622} sidle {00000}
 
-fsm_state_encoding {93622622} sinit {00011}
+fsm_state_encoding {67622622} sinit {00011}
 
-fsm_state_encoding {93622622} spop {00101}
+fsm_state_encoding {67622622} spop {00101}
 
-fsm_state_encoding {93622622} swrite {01001}
+fsm_state_encoding {67622622} swrite {01001}
 
-fsm_state_encoding {93622622} sdone {10001}
+fsm_state_encoding {67622622} sdone {10001}
 
-fsm_registers {93622622} {CS[0]}  {CS[1]}  {CS[2]}  {CS[3]}  {CS_i[4]} 
+fsm_registers {67622622} {CS[0]}  {CS[1]}  {CS[2]}  {CS[3]}  {CS_i[4]} 
 
 fsm_encoding {96866863} sequential
 

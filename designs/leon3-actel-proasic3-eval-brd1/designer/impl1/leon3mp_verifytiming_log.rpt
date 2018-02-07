@@ -14,19 +14,19 @@ Opened an existing Libero design leon3mp.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 Wrote timing report to file: leon3mp_maxdelay_timing_report.txt
 
-The Report command succeeded ( 00:00:49 )
+The Report command succeeded ( 00:00:35 )
 Wrote timing report to file: leon3mp_mindelay_timing_report.txt
 
-The Report command succeeded ( 00:00:09 )
+The Report command succeeded ( 00:00:06 )
 Wrote timing_violations report to file: leon3mp_maxdelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote timing_violations report to file: leon3mp_mindelay_timingviolations_report.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.adb.
 
-The Execute Script command succeeded ( 00:01:11 )
+The Execute Script command succeeded ( 00:00:53 )
 Design closed.
 

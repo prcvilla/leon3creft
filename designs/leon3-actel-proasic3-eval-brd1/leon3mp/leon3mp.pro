@@ -74,10 +74,10 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb
+                C:\git\leon3creft_tr_synth\2-testleon3mp\leon3mp-tr1-10mhz.pdb
             </filename>
             <local>
-                projectData\leon3mp.pdb
+                projectData\leon3mp-tr1-10mhz.pdb
             </local>
             <SelectedAction>
                 PROGRAM

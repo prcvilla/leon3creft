@@ -8,15 +8,15 @@ Info: The design
 Opened an existing Libero design
 C:/git/leon3creft_tr_synth/designs/leon3-actel-proasic3-eval-brd1/designer/impl1/leon3mp.adb.
 
-The Export-map command succeeded ( 00:00:51 )
+The Export-map command succeeded ( 00:00:35 )
 Wrote to the file:
 C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.pdb
-CHECKSUM: 8680
+CHECKSUM: D488
 
-The Generate programming file command succeeded ( 00:00:55 )
+The Generate programming file command succeeded ( 00:00:39 )
 Design saved to file
 C:/git/leon3creft_tr_synth/designs/leon3-actel-proasic3-eval-brd1/designer/impl1/leon3mp.adb.
 
-The Execute Script command succeeded ( 00:01:13 )
+The Execute Script command succeeded ( 00:00:56 )
 Design closed.
 

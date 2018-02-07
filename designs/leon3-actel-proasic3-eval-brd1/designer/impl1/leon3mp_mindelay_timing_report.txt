@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version Libero SoC v11.8 SP1
 Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP1 (Version 11.8.1.12)
-Date: Mon Feb 05 21:46:18 2018
+Date: Tue Feb 06 23:11:17 2018
 
 
 Design: leon3mp
@@ -24,18 +24,28 @@ Scenario for Timing Analysis: Primary
 SUMMARY
 
 Clock Domain:               clk
-Period (ns):                35.625
-Frequency (MHz):            28.070
+Period (ns):                4.000
+Frequency (MHz):            250.000
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
-External Setup (ns):        30.336
-External Hold (ns):         0.449
-Min Clock-To-Out (ns):      2.589
-Max Clock-To-Out (ns):      17.281
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               clk_div/clk_divider[1]:Q
+Period (ns):                36.315
+Frequency (MHz):            27.537
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        23.428
+External Hold (ns):         2.874
+Min Clock-To-Out (ns):      4.674
+Max Clock-To-Out (ns):      22.034
 
 Clock Domain:               l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
-Period (ns):                7.368
-Frequency (MHz):            135.722
+Period (ns):                7.680
+Frequency (MHz):            130.208
 Required Period (ns):       N/A
 Required Frequency (MHz):   N/A
 External Setup (ns):        N/A
@@ -44,66 +54,50 @@ Min Clock-To-Out (ns):      N/A
 Max Clock-To-Out (ns):      N/A
 
                             Input to Output
-Min Delay (ns):             5.126
-Max Delay (ns):             17.419
+Min Delay (ns):             4.695
+Max Delay (ns):             15.591
 
 END SUMMARY
 -----------------------------------------------------
 
 Clock Domain clk
 
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin clk_pad/U0/U0:PAD
+
 SET Register to Register
 
 Path 1
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.y[11]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.y[11]:D
-  Delay (ns):                  0.324
+  From:                        clk_div/clk_divider[0]:CLK
+  To:                          clk_div/clk_divider[0]:D
+  Delay (ns):                  0.584
   Slack (ns):
-  Arrival (ns):                1.250
+  Arrival (ns):                1.525
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ctrl.pc[14]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.e.ctrl.pc[14]:D
-  Delay (ns):                  0.320
+  From:                        clk_div/clk_divider[1]:CLK
+  To:                          clk_div/clk_divider[1]:D
+  Delay (ns):                  0.646
   Slack (ns):
-  Arrival (ns):                1.256
+  Arrival (ns):                1.355
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.result[3]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.result[3]:D
-  Delay (ns):                  0.319
+  From:                        clk_div/clk_divider[0]:CLK
+  To:                          clk_div/clk_divider[1]:D
+  Delay (ns):                  0.579
   Slack (ns):
-  Arrival (ns):                1.252
-  Required (ns):
-  Hold (ns):                   0.000
-
-Path 4
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[19]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[19]:D
-  Delay (ns):                  0.320
-  Slack (ns):
-  Arrival (ns):                1.252
-  Required (ns):
-  Hold (ns):                   0.000
-
-Path 5
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.op2[9]:CLK
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.e.op2[9]:D
-  Delay (ns):                  0.322
-  Slack (ns):
-  Arrival (ns):                1.248
+  Arrival (ns):                1.520
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.y[11]:CLK
-  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.y[11]:D
-  data arrival time                              1.250
+  From: clk_div/clk_divider[0]:CLK
+  To: clk_div/clk_divider[0]:D
+  data arrival time                              1.525
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -116,17 +110,21 @@ Expanded Path 1
                +     0.376          cell: ADLIB:IOPAD_IN
   0.376                        clk_pad/U0/U0:Y (r)
                +     0.000          net: clk_pad/U0/NET1
-  0.376                        clk_pad/U0/U1:A (r)
-               +     0.121          cell: ADLIB:CLKIO
-  0.497                        clk_pad/U0/U1:Y (r)
-               +     0.429          net: clk_c
-  0.926                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.y[11]:CLK (r)
-               +     0.202          cell: ADLIB:DFN1E0
-  1.128                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.y[11]:Q (r)
-               +     0.122          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/y[11]
-  1.250                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.y[11]:D (r)
+  0.376                        clk_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
+  0.391                        clk_pad/U0/U1:Y (r)
+               +     0.550          net: clk_c
+  0.941                        clk_div/clk_divider[0]:CLK (r)
+               +     0.183          cell: ADLIB:DFN1C1
+  1.124                        clk_div/clk_divider[0]:Q (r)
+               +     0.152          net: clk_div/clk_divider[0]
+  1.276                        clk_div/clk_divider_RNO[0]:A (r)
+               +     0.124          cell: ADLIB:INV
+  1.400                        clk_div/clk_divider_RNO[0]:Y (f)
+               +     0.125          net: clk_div/clk_divider_i[0]
+  1.525                        clk_div/clk_divider[0]:D (f)
                                     
-  1.250                        data arrival time
+  1.525                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clk
@@ -137,13 +135,13 @@ Expanded Path 1
                +     0.376          cell: ADLIB:IOPAD_IN
   N/C                          clk_pad/U0/U0:Y (r)
                +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.121          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:YIN (r)
+               +     0.015          cell: ADLIB:IOIN_IB
   N/C                          clk_pad/U0/U1:Y (r)
-               +     0.483          net: clk_c
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.y[11]:CLK (r)
-               +     0.000          Library hold time: ADLIB:DFN1E1
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.x.y[11]:D
+               +     0.550          net: clk_c
+  N/C                          clk_div/clk_divider[0]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1C1
+  N/C                          clk_div/clk_divider[0]:D
 
 
 END SET Register to Register
@@ -152,78 +150,76 @@ END SET Register to Register
 
 SET External Hold
 
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
 Path 1
-  From:                        dsubre
-  To:                          l3.dsugen.dsu0/x0/r.dsubre[0]:D
-  Delay (ns):                  0.721
+  From:                        resetn
+  To:                          clk_div/clk_divider[0]:CLR
+  Delay (ns):                  4.773
   Slack (ns):
-  Arrival (ns):                0.721
+  Arrival (ns):                4.773
   Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          0.449
+  Removal (ns):                0.000
+  External Removal (ns):       -3.592
 
 Path 2
-  From:                        gpio[1]
-  To:                          gpio0.grgpio0/r.din1[1]:D
-  Delay (ns):                  0.976
+  From:                        resetn
+  To:                          clk_div/clk_divider[1]:CLR
+  Delay (ns):                  4.767
   Slack (ns):
-  Arrival (ns):                0.976
+  Arrival (ns):                4.767
   Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          0.180
-
-Path 3
-  From:                        gpio[6]
-  To:                          gpio0.grgpio0/r.din1[6]:D
-  Delay (ns):                  1.103
-  Slack (ns):
-  Arrival (ns):                1.103
-  Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          0.071
-
-Path 4
-  From:                        gpio[0]
-  To:                          gpio0.grgpio0/r.din1[0]:D
-  Delay (ns):                  1.088
-  Slack (ns):
-  Arrival (ns):                1.088
-  Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          0.068
-
-Path 5
-  From:                        gpio[2]
-  To:                          gpio0.grgpio0/r.din1[2]:D
-  Delay (ns):                  1.132
-  Slack (ns):
-  Arrival (ns):                1.132
-  Required (ns):
-  Hold (ns):                   0.000
-  External Hold (ns):          0.033
+  Removal (ns):                0.000
+  External Removal (ns):       -3.877
 
 
 Expanded Path 1
-  From: dsubre
-  To: l3.dsugen.dsu0/x0/r.dsubre[0]:D
-  data arrival time                              0.721
+  From: resetn
+  To: clk_div/clk_divider[0]:CLR
+  data arrival time                              4.773
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        dsubre (f)
-               +     0.000          net: dsubre
-  0.000                        dsubre_pad/U0/U0:PAD (f)
+  0.000                        resetn (f)
+               +     0.000          net: resetn
+  0.000                        resetn_pad/U0/U0:PAD (f)
                +     0.281          cell: ADLIB:IOPAD_IN
-  0.281                        dsubre_pad/U0/U0:Y (f)
-               +     0.000          net: dsubre_pad/U0/NET1
-  0.281                        dsubre_pad/U0/U1:YIN (f)
+  0.281                        resetn_pad/U0/U0:Y (f)
+               +     0.000          net: resetn_pad/U0/NET1
+  0.281                        resetn_pad/U0/U1:YIN (f)
                +     0.014          cell: ADLIB:IOIN_IB
-  0.295                        dsubre_pad/U0/U1:Y (f)
-               +     0.426          net: dsubre_c
-  0.721                        l3.dsugen.dsu0/x0/r.dsubre[0]:D (f)
+  0.295                        resetn_pad/U0/U1:Y (f)
+               +     2.438          net: resetn_c
+  2.733                        resetn_pad_RNI58G9:A (f)
+               +     0.184          cell: ADLIB:BUFF
+  2.917                        resetn_pad_RNI58G9:Y (f)
+               +     1.856          net: resetn_c_1
+  4.773                        clk_div/clk_divider[0]:CLR (f)
                                     
-  0.721                        data arrival time
+  4.773                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          clk
@@ -234,13 +230,206 @@ Expanded Path 1
                +     0.472          cell: ADLIB:IOPAD_IN
   N/C                          clk_pad/U0/U0:Y (r)
                +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.152          cell: ADLIB:CLKIO
+  N/C                          clk_pad/U0/U1:YIN (r)
+               +     0.019          cell: ADLIB:IOIN_IB
   N/C                          clk_pad/U0/U1:Y (r)
-               +     0.546          net: clk_c
-  N/C                          l3.dsugen.dsu0/x0/r.dsubre[0]:CLK (r)
+               +     0.690          net: clk_c
+  N/C                          clk_div/clk_divider[0]:CLK (r)
+               +     0.000          Library removal time: ADLIB:DFN1C1
+  N/C                          clk_div/clk_divider[0]:CLR
+
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain clk_div/clk_divider[1]:Q
+
+SET Register to Register
+
+Path 1
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[9]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[9]:D
+  Delay (ns):                  0.320
+  Slack (ns):
+  Arrival (ns):                3.404
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 2
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[12]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[12]:D
+  Delay (ns):                  0.319
+  Slack (ns):
+  Arrival (ns):                3.393
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 3
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[21]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[21]:D
+  Delay (ns):                  0.319
+  Slack (ns):
+  Arrival (ns):                3.389
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 4
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.wb.data1[28]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r_chkp.wb.data1[28]:D
+  Delay (ns):                  0.319
+  Slack (ns):
+  Arrival (ns):                3.381
+  Required (ns):
+  Hold (ns):                   0.000
+
+Path 5
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.ctrl.tt[0]:CLK
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.e.ctrl.tt[0]:D
+  Delay (ns):                  0.320
+  Slack (ns):
+  Arrival (ns):                3.399
+  Required (ns):
+  Hold (ns):                   0.000
+
+
+Expanded Path 1
+  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[9]:CLK
+  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[9]:D
+  data arrival time                              3.404
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clk_div/clk_divider[1]:Q
+               +     0.000          Clock source
+  0.000                        clk_div/clk_divider[1]:Q (r)
+               +     2.388          net: clk_div/clk_divider[1]
+  2.388                        clk_div/clkbuff:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  2.638                        clk_div/clkbuff:Y (r)
+               +     0.446          net: clkm
+  3.084                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[9]:CLK (r)
+               +     0.202          cell: ADLIB:DFN1E0
+  3.286                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.m.ctrl.pc[9]:Q (r)
+               +     0.118          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/pc_0[9]
+  3.404                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[9]:D (r)
+                                    
+  3.404                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk_div/clk_divider[1]:Q
+               +     0.000          Clock source
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     2.388          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     0.503          net: clkm
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[9]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1E1
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r_chkp.m.ctrl.pc[9]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+Path 1
+  From:                        gpio[1]
+  To:                          gpio0.grgpio0/r.din1[1]:D
+  Delay (ns):                  0.967
+  Slack (ns):
+  Arrival (ns):                0.967
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.874
+
+Path 2
+  From:                        gpio[5]
+  To:                          gpio0.grgpio0/r.din1[5]:D
+  Delay (ns):                  1.117
+  Slack (ns):
+  Arrival (ns):                1.117
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.748
+
+Path 3
+  From:                        gpio[4]
+  To:                          gpio0.grgpio0/r.din1[4]:D
+  Delay (ns):                  1.323
+  Slack (ns):
+  Arrival (ns):                1.323
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.535
+
+Path 4
+  From:                        gpio[6]
+  To:                          gpio0.grgpio0/r.din1[6]:D
+  Delay (ns):                  1.413
+  Slack (ns):
+  Arrival (ns):                1.413
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.505
+
+Path 5
+  From:                        gpio[0]
+  To:                          gpio0.grgpio0/r.din1[0]:D
+  Delay (ns):                  1.679
+  Slack (ns):
+  Arrival (ns):                1.679
+  Required (ns):
+  Hold (ns):                   0.000
+  External Hold (ns):          2.239
+
+
+Expanded Path 1
+  From: gpio[1]
+  To: gpio0.grgpio0/r.din1[1]:D
+  data arrival time                              0.967
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        gpio[1] (f)
+               +     0.000          net: gpio[1]
+  0.000                        gpio_pad[1]/U0/U0:PAD (f)
+               +     0.281          cell: ADLIB:IOPAD_BI
+  0.281                        gpio_pad[1]/U0/U0:Y (f)
+               +     0.000          net: gpio_pad[1]/U0/NET3
+  0.281                        gpio_pad[1]/U0/U1:YIN (f)
+               +     0.014          cell: ADLIB:IOBI_IB_OB_EB
+  0.295                        gpio_pad[1]/U0/U1:Y (f)
+               +     0.672          net: gpio_in[1]
+  0.967                        gpio0.grgpio0/r.din1[1]:D (f)
+                                    
+  0.967                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clk_div/clk_divider[1]:Q
+               +     0.000          Clock source
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     2.996          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.314          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     0.531          net: clkm
+  N/C                          gpio0.grgpio0/r.din1[1]:CLK (r)
                +     0.000          Library hold time: ADLIB:DFN1
-  N/C                          l3.dsugen.dsu0/x0/r.dsubre[0]:D
+  N/C                          gpio0.grgpio0/r.din1[1]:D
 
 
 END SET External Hold
@@ -252,89 +441,85 @@ SET Clock to Output
 Path 1
   From:                        gpt.timer0/r.wdog:CLK
   To:                          led[4]
-  Delay (ns):                  1.643
+  Delay (ns):                  1.588
   Slack (ns):
-  Arrival (ns):                2.589
+  Arrival (ns):                4.674
   Required (ns):
-  Clock to Out (ns):           2.589
+  Clock to Out (ns):           4.674
 
 Path 2
   From:                        l3.dsugen.dsu0/x0/r.act:CLK
   To:                          dsuact
-  Delay (ns):                  2.236
+  Delay (ns):                  2.106
   Slack (ns):
-  Arrival (ns):                3.185
+  Arrival (ns):                5.199
   Required (ns):
-  Clock to Out (ns):           3.185
+  Clock to Out (ns):           5.199
 
 Path 3
-  From:                        gpio0.grgpio0/r.dir[2]/U1:CLK
-  To:                          gpio[2]
-  Delay (ns):                  2.377
+  From:                        ua1.uart1/r.txd:CLK
+  To:                          led[3]
+  Delay (ns):                  2.259
   Slack (ns):
-  Arrival (ns):                3.322
+  Arrival (ns):                5.361
   Required (ns):
-  Clock to Out (ns):           3.322
+  Clock to Out (ns):           5.361
 
 Path 4
-  From:                        gpio0.grgpio0/r.dir[6]/U1:CLK
-  To:                          gpio[6]
-  Delay (ns):                  2.419
+  From:                        gpio0.grgpio0/r.dir[4]/U1:CLK
+  To:                          gpio[4]
+  Delay (ns):                  2.389
   Slack (ns):
-  Arrival (ns):                3.348
+  Arrival (ns):                5.468
   Required (ns):
-  Clock to Out (ns):           3.348
+  Clock to Out (ns):           5.468
 
 Path 5
-  From:                        gpio0.grgpio0/r.dout[5]/U1:CLK
-  To:                          gpio[5]
-  Delay (ns):                  2.569
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.x.nerror:CLK
+  To:                          errorn
+  Delay (ns):                  2.399
   Slack (ns):
-  Arrival (ns):                3.498
+  Arrival (ns):                5.495
   Required (ns):
-  Clock to Out (ns):           3.498
+  Clock to Out (ns):           5.495
 
 
 Expanded Path 1
   From: gpt.timer0/r.wdog:CLK
   To: led[4]
-  data arrival time                              2.589
+  data arrival time                              4.674
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        clk
+  0.000                        clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  0.000                        clk (r)
-               +     0.000          net: clk
-  0.000                        clk_pad/U0/U0:PAD (r)
-               +     0.376          cell: ADLIB:IOPAD_IN
-  0.376                        clk_pad/U0/U0:Y (r)
-               +     0.000          net: clk_pad/U0/NET1
-  0.376                        clk_pad/U0/U1:A (r)
-               +     0.121          cell: ADLIB:CLKIO
-  0.497                        clk_pad/U0/U1:Y (r)
-               +     0.449          net: clk_c
-  0.946                        gpt.timer0/r.wdog:CLK (r)
+  0.000                        clk_div/clk_divider[1]:Q (r)
+               +     2.388          net: clk_div/clk_divider[1]
+  2.388                        clk_div/clkbuff:A (r)
+               +     0.250          cell: ADLIB:CLKINT
+  2.638                        clk_div/clkbuff:Y (r)
+               +     0.448          net: clkm
+  3.086                        gpt.timer0/r.wdog:CLK (r)
                +     0.202          cell: ADLIB:DFN1
-  1.148                        gpt.timer0/r.wdog:Q (r)
-               +     0.333          net: led_c[4]
-  1.481                        led_pad[4]/U0/U1:D (r)
+  3.288                        gpt.timer0/r.wdog:Q (r)
+               +     0.278          net: led_c[4]
+  3.566                        led_pad[4]/U0/U1:D (r)
                +     0.209          cell: ADLIB:IOTRI_OB_EB
-  1.690                        led_pad[4]/U0/U1:DOUT (r)
+  3.775                        led_pad[4]/U0/U1:DOUT (r)
                +     0.000          net: led_pad[4]/U0/NET1
-  1.690                        led_pad[4]/U0/U0:D (r)
+  3.775                        led_pad[4]/U0/U0:D (r)
                +     0.899          cell: ADLIB:IOPAD_TRI
-  2.589                        led_pad[4]/U0/U0:PAD (r)
+  4.674                        led_pad[4]/U0/U0:PAD (r)
                +     0.000          net: led[4]
-  2.589                        led[4] (r)
+  4.674                        led[4] (r)
                                     
-  2.589                        data arrival time
+  4.674                        data arrival time
   ________________________________________________________
   Data required time calculation
-  N/C                          clk
+  N/C                          clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  N/C                          clk (r)
+  N/C                          clk_div/clk_divider[1]:Q (r)
                                     
   N/C                          led[4] (r)
 
@@ -355,59 +540,59 @@ SET External Removal
 
 Path 1
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dout[1]/U1:CLR
-  Delay (ns):                  3.132
+  To:                          gpio0.grgpio0/r.dout[6]/U1:CLR
+  Delay (ns):                  5.572
   Slack (ns):
-  Arrival (ns):                3.132
+  Arrival (ns):                5.572
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.952
+  External Removal (ns):       -1.701
 
 Path 2
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[2]/U1:CLR
-  Delay (ns):                  3.132
+  To:                          gpio0.grgpio0/r.dout[2]/U1:CLR
+  Delay (ns):                  5.696
   Slack (ns):
-  Arrival (ns):                3.132
+  Arrival (ns):                5.696
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.952
+  External Removal (ns):       -1.852
 
 Path 3
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dout[2]/U1:CLR
-  Delay (ns):                  3.132
+  To:                          gpio0.grgpio0/r.dir[0]/U1:CLR
+  Delay (ns):                  5.696
   Slack (ns):
-  Arrival (ns):                3.132
+  Arrival (ns):                5.696
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -1.952
+  External Removal (ns):       -1.852
 
 Path 4
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[1]/U1:CLR
-  Delay (ns):                  3.275
+  To:                          gpio0.grgpio0/r.dout[5]/U1:CLR
+  Delay (ns):                  5.865
   Slack (ns):
-  Arrival (ns):                3.275
+  Arrival (ns):                5.865
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -2.103
+  External Removal (ns):       -1.994
 
 Path 5
   From:                        resetn
-  To:                          gpio0.grgpio0/r.dir[6]/U1:CLR
-  Delay (ns):                  3.275
+  To:                          gpio0.grgpio0/r.dout[4]/U1:CLR
+  Delay (ns):                  5.908
   Slack (ns):
-  Arrival (ns):                3.275
+  Arrival (ns):                5.908
   Required (ns):
   Removal (ns):                0.000
-  External Removal (ns):       -2.115
+  External Removal (ns):       -2.041
 
 
 Expanded Path 1
   From: resetn
-  To: gpio0.grgpio0/r.dout[1]/U1:CLR
-  data arrival time                              3.132
+  To: gpio0.grgpio0/r.dout[6]/U1:CLR
+  data arrival time                              5.572
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -421,31 +606,27 @@ Expanded Path 1
   0.281                        resetn_pad/U0/U1:YIN (f)
                +     0.014          cell: ADLIB:IOIN_IB
   0.295                        resetn_pad/U0/U1:Y (f)
-               +     2.490          net: resetn_c
-  2.785                        resetn_pad_RNI58G9_0:A (f)
+               +     3.517          net: resetn_c
+  3.812                        resetn_pad_RNI58G9_0:A (f)
                +     0.184          cell: ADLIB:BUFF
-  2.969                        resetn_pad_RNI58G9_0:Y (f)
-               +     0.163          net: resetn_c_0
-  3.132                        gpio0.grgpio0/r.dout[1]/U1:CLR (f)
+  3.996                        resetn_pad_RNI58G9_0:Y (f)
+               +     1.576          net: resetn_c_0
+  5.572                        gpio0.grgpio0/r.dout[6]/U1:CLR (f)
                                     
-  3.132                        data arrival time
+  5.572                        data arrival time
   ________________________________________________________
   Data required time calculation
-  N/C                          clk
+  N/C                          clk_div/clk_divider[1]:Q
                +     0.000          Clock source
-  N/C                          clk (r)
-               +     0.000          net: clk
-  N/C                          clk_pad/U0/U0:PAD (r)
-               +     0.472          cell: ADLIB:IOPAD_IN
-  N/C                          clk_pad/U0/U0:Y (r)
-               +     0.000          net: clk_pad/U0/NET1
-  N/C                          clk_pad/U0/U1:A (r)
-               +     0.152          cell: ADLIB:CLKIO
-  N/C                          clk_pad/U0/U1:Y (r)
-               +     0.556          net: clk_c
-  N/C                          gpio0.grgpio0/r.dout[1]/U1:CLK (r)
+  N/C                          clk_div/clk_divider[1]:Q (r)
+               +     2.996          net: clk_div/clk_divider[1]
+  N/C                          clk_div/clkbuff:A (r)
+               +     0.314          cell: ADLIB:CLKINT
+  N/C                          clk_div/clkbuff:Y (r)
+               +     0.561          net: clkm
+  N/C                          gpio0.grgpio0/r.dout[6]/U1:CLK (r)
                +     0.000          Library removal time: ADLIB:DFN1C1
-  N/C                          gpio0.grgpio0/r.dout[1]/U1:CLR
+  N/C                          gpio0.grgpio0/r.dout[6]/U1:CLR
 
 
 END SET External Removal
@@ -465,55 +646,55 @@ Clock Domain l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
 SET Register to Register
 
 Path 1
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:D
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:D
   Delay (ns):                  0.612
   Slack (ns):
-  Arrival (ns):                2.417
+  Arrival (ns):                1.711
   Required (ns):
   Hold (ns):                   0.000
 
 Path 2
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.e.op1[8]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.e.op1[8]:D
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[10]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[10]:D
   Delay (ns):                  0.612
   Slack (ns):
-  Arrival (ns):                2.416
+  Arrival (ns):                1.710
   Required (ns):
   Hold (ns):                   0.000
 
 Path 3
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.err:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.err:D
-  Delay (ns):                  0.624
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[25]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[25]:D
+  Delay (ns):                  0.612
   Slack (ns):
-  Arrival (ns):                2.421
+  Arrival (ns):                1.713
   Required (ns):
   Hold (ns):                   0.000
 
 Path 4
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.d.inst_0[0]:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.d.inst_0[0]:D
-  Delay (ns):                  0.633
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[20]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.imm[20]:D
+  Delay (ns):                  0.612
   Slack (ns):
-  Arrival (ns):                2.440
+  Arrival (ns):                1.713
   Required (ns):
   Hold (ns):                   0.000
 
 Path 5
-  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.tovb:G
-  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.tovb:D
-  Delay (ns):                  0.633
+  From:                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.e.op1[20]:G
+  To:                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.e.op1[20]:D
+  Delay (ns):                  0.614
   Slack (ns):
-  Arrival (ns):                2.439
+  Arrival (ns):                1.708
   Required (ns):
   Hold (ns):                   0.000
 
 
 Expanded Path 1
-  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:G
-  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:D
-  data arrival time                              2.417
+  From: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:G
+  To: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:D
+  data arrival time                              1.711
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -521,35 +702,35 @@ Expanded Path 1
   0.000                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
                +     0.000          Clock source
   0.000                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q (f)
-               +     1.100          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
-  1.100                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
+               +     0.395          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
+  0.395                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
                +     0.262          cell: ADLIB:CLKINT
-  1.362                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
-               +     0.443          net: l3_cpu_0_u0/leon3x0/chkp_pin
-  1.805                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:G (f)
+  0.657                        l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
+               +     0.442          net: l3_cpu_0_u0/leon3x0/chkp_pin
+  1.099                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:G (f)
                +     0.187          cell: ADLIB:DLN1
-  1.992                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:Q (f)
-               +     0.116          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/asi_6[0]
-  2.108                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi_RNIN7529[0]:B (f)
+  1.286                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:Q (f)
+               +     0.116          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/inst_6[2]
+  1.402                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst_RNIQQ3S3[2]:B (f)
                +     0.195          cell: ADLIB:MX2
-  2.303                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi_RNIN7529[0]:Y (f)
-               +     0.114          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/asi_3[0]
-  2.417                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:D (f)
+  1.597                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst_RNIQQ3S3[2]:Y (f)
+               +     0.114          net: l3_cpu_0_u0/leon3x0/vhdl_p0/iu/inst_3[2]
+  1.711                        l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:D (f)
                                     
-  2.417                        data arrival time
+  1.711                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q
                +     0.000          Clock source
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS[0]:Q (f)
-               +     1.100          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
+               +     0.395          net: l3_cpu_0_u0/leon3x0/vhdl_chkp0/CS[0]
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:A (f)
                +     0.262          cell: ADLIB:CLKINT
   N/C                          l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]:Y (f)
-               +     0.443          net: l3_cpu_0_u0/leon3x0/chkp_pin
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:G (f)
+               +     0.442          net: l3_cpu_0_u0/leon3x0/chkp_pin
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:G (f)
                +     0.000          Library hold time: ADLIB:DLN1
-  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/dsuin_chkp.asi[0]:D
+  N/C                          l3.cpu.0.u0/leon3x0/vhdl.p0/iu/rin_chkp.a.ctrl.inst[2]:D
 
 
 END SET Register to Register
@@ -603,24 +784,24 @@ SET Input to Output
 Path 1
   From:                        dsurx
   To:                          led[0]
-  Delay (ns):                  5.126
+  Delay (ns):                  4.695
   Slack (ns):
-  Arrival (ns):                5.126
+  Arrival (ns):                4.695
   Required (ns):
 
 Path 2
   From:                        rxd1
   To:                          led[2]
-  Delay (ns):                  5.832
+  Delay (ns):                  5.182
   Slack (ns):
-  Arrival (ns):                5.832
+  Arrival (ns):                5.182
   Required (ns):
 
 
 Expanded Path 1
   From: dsurx
   To: led[0]
-  data arrival time                              5.126
+  data arrival time                              4.695
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -634,22 +815,22 @@ Expanded Path 1
   0.281                        dsurx_pad/U0/U1:YIN (f)
                +     0.014          cell: ADLIB:IOIN_IB
   0.295                        dsurx_pad/U0/U1:Y (f)
-               +     2.947          net: dsurx_c
-  3.242                        led_pad_RNO[0]:A (f)
+               +     2.673          net: dsurx_c
+  2.968                        led_pad_RNO[0]:A (f)
                +     0.187          cell: ADLIB:INV
-  3.429                        led_pad_RNO[0]:Y (r)
-               +     0.571          net: dsurx_c_i
-  4.000                        led_pad[0]/U0/U1:D (r)
+  3.155                        led_pad_RNO[0]:Y (r)
+               +     0.414          net: dsurx_c_i
+  3.569                        led_pad[0]/U0/U1:D (r)
                +     0.227          cell: ADLIB:IOTRI_OB_EB
-  4.227                        led_pad[0]/U0/U1:DOUT (r)
+  3.796                        led_pad[0]/U0/U1:DOUT (r)
                +     0.000          net: led_pad[0]/U0/NET1
-  4.227                        led_pad[0]/U0/U0:D (r)
+  3.796                        led_pad[0]/U0/U0:D (r)
                +     0.899          cell: ADLIB:IOPAD_TRI
-  5.126                        led_pad[0]/U0/U0:PAD (r)
+  4.695                        led_pad[0]/U0/U0:PAD (r)
                +     0.000          net: led[0]
-  5.126                        led[0] (r)
+  4.695                        led[0] (r)
                                     
-  5.126                        data arrival time
+  4.695                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          dsurx (f)

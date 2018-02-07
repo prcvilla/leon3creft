@@ -21,9 +21,15 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>2.597</data>
 </row>
 <row>
+<data>clk_div4|clk_divider_inferred_clock[1]</data>
+<data>100.0 MHz</data>
+<data>24.9 MHz</data>
+<data>-30.134</data>
+</row>
+<row>
 <data>leon3mp|clk</data>
 <data>100.0 MHz</data>
-<data>24.4 MHz</data>
-<data>-30.930</data>
+<data>342.5 MHz</data>
+<data>7.080</data>
 </row>
 </report_table>

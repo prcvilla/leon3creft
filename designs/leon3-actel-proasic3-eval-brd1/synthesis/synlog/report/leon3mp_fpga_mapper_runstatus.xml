@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>116</data>
+<data>118</data>
 <report_link name="more">
 <data>C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\report\leon3mp_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:01m:14s</data>
+<data>0h:02m:25s</data>
 </info>
 <info name="Real Time">
-<data>0h:01m:15s</data>
+<data>0h:02m:26s</data>
 </info>
 <info name="Peak Memory">
-<data>305MB</data>
+<data>301MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1517872889</data>
+<data type="timestamp">1517963215</data>
 </info>
 </job_info>
 </job_run_status>

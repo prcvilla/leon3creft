@@ -6,19 +6,20 @@
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 6477 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 969 clock pin(s) of sequential element(s)
-0 instances converted, 969 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 2 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 7443 clock pin(s) of sequential element(s)
+0 instances converted, 7443 sequential instances remain driven by gated/generated clocks
 
-================================ Non-Gated/Non-Generated Clocks ================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance         
-------------------------------------------------------------------------------------------------
-@K:CKID0002       clk                 port                   6477       ocram.ahbram0.r.addr[13]
-================================================================================================
+=============================== Non-Gated/Non-Generated Clocks ===============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance       
+----------------------------------------------------------------------------------------------
+@K:CKID0003       clk                 port                   2          clk_div.clk_divider[1]
+==============================================================================================
 ==================================================================================================== Gated/Generated Clocks =====================================================================================================
 Clock Tree ID     Driving Element                          Drive Element Type     Fanout     Sample Instance                                             Explanation                                                             
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       l3.cpu.0.u0.leon3x0.vhdl.chkp0.CS[0]     DFN1                   969        l3.cpu.0.u0.leon3x0.vhdl.p0.iu.rin_chkp.m.ctrl.inst[31]     No generated or derived clock directive on output of sequential instance
+@K:CKID0001       clk_div.clk_divider[1]                   DFN1C1                 6474       ocram.ahbram0.r.addr[13]                                    No generated or derived clock directive on output of sequential instance
+@K:CKID0002       l3.cpu.0.u0.leon3x0.vhdl.chkp0.CS[0]     DFN1                   969        l3.cpu.0.u0.leon3x0.vhdl.p0.iu.rin_chkp.m.ctrl.inst[31]     No generated or derived clock directive on output of sequential instance
 =================================================================================================================================================================================================================================
 
 

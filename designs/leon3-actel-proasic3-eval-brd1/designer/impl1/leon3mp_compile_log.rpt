@@ -13,12 +13,12 @@ Opened an existing Libero design leon3mp.adb.
 'C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 2.0 seconds
+ Netlist Reading Time = 4.0 seconds
 Imported the files:
    C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn
    C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\constraint\leon3mp.pdc
 
-The Import command succeeded ( 00:00:22 )
+The Import command succeeded ( 00:01:13 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -473,13 +473,13 @@ Netlist Optimization Report
 ===========================
 
 Optimized macros:
-  - Dangling net drivers:   1349
+  - Dangling net drivers:   1312
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        448
+  - Logic combining:        464
 
-    Total macros optimized  1797
+    Total macros optimized  1776
 
 Warning: CMP503: Remapped 14 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
@@ -503,7 +503,7 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:  30154  Total:  38400   (78.53%)
+    CORE                       Used:  30147  Total:  38400   (78.51%)
     IO (W/ clocks)             Used:     22  Total:    147   (14.97%)
     Differential IO            Used:      0  Total:     65   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      6  Total:     18   (33.33%)
@@ -528,8 +528,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 23470        | 23470
-    SEQ     | 6684         | 6684
+    COMB    | 23449        | 23449
+    SEQ     | 6698         | 6698
 
 I/O Function:
 
@@ -567,16 +567,16 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    6475    CLK_NET       Net   : clk_c
-                          Driver: clk_pad
+    6472    CLK_NET       Net   : clkm
+                          Driver: clk_div/clkbuff
                           Source: NETLIST
     2608    INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stackrstn
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stackrstn_RNIM6M2
                           Source: NETLIST
-    1829    INT_NET       Net   : l3.cpu.0.u0/leon3x0/chkp_pin
+    1844    INT_NET       Net   : l3.cpu.0.u0/leon3x0/chkp_pin
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.chkp0/CS_RNI9H0F[0]
                           Source: NETLIST
-    1764    INT_NET       Net   : l3.cpu.0.u0.leon3x0.tro.recov_i_3
+    1747    INT_NET       Net   : l3.cpu.0.u0.leon3x0.tro.recov_i_2
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.trctrl0/r.state_RNIJ1KR_0[0]
                           Source: NETLIST
     1033    INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr[5]
@@ -584,7 +584,7 @@ The following nets have been assigned to a chip global resource:
 l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_RNI51U2[5]
                           Source: NETLIST
     956     INT_NET       Net   : l3.cpu.0.u0.leon3x0.vhdl.p0.iu.r.a.divstart_2_sqmuxa
-                          Driver: I_2294
+                          Driver: I_2304
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
@@ -592,8 +592,6 @@ High fanout nets in the post compile netlist:
     --------------------------
     24      INT_NET       Net   : apbi.pwdata[1]
                           Driver: apb0/apbx/r.p_0.pwdata[1]
-    24      INT_NET       Net   : ua1.uart1.uartop.rdata54_1
-                          Driver: dcomgen.dcom0/dcom_uart0/v.brate_1_sqmuxa_0
     24      INT_NET       Net   : resetn_c_0
                           Driver: resetn_pad_RNI58G9_0
     24      INT_NET       Net   : resetn_c_1
@@ -601,53 +599,55 @@ High fanout nets in the post compile netlist:
     24      INT_NET       Net   : resetn_c_2
                           Driver: resetn_pad_RNI58G9_1
     24      INT_NET       Net   : resetn_c_3
-                          Driver: resetn_pad_RNI58G9_7
+                          Driver: resetn_pad_RNI58G9_8
     24      INT_NET       Net   : resetn_c_4
-                          Driver: resetn_pad_RNI58G9_4
+                          Driver: resetn_pad_RNI58G9_2
     24      INT_NET       Net   : resetn_c_5
                           Driver: resetn_pad_RNI58G9_9
     24      INT_NET       Net   : resetn_c_6
-                          Driver: resetn_pad_RNI58G9_8
+                          Driver: resetn_pad_RNI58G9_7
     24      INT_NET       Net   : resetn_c_7
-                          Driver: resetn_pad_RNI58G9_3
+                          Driver: resetn_pad_RNI58G9_6
+    24      INT_NET       Net   : resetn_c_8
+                          Driver: resetn_pad_RNI58G9_10
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    285     INT_NET       Net   : resetn_c
+    284     INT_NET       Net   : resetn_c
                           Driver: resetn_pad
     24      INT_NET       Net   : apbi.pwdata[1]
                           Driver: apb0/apbx/r.p_0.pwdata[1]
-    24      INT_NET       Net   : ua1.uart1.uartop.rdata54_1
-                          Driver: dcomgen.dcom0/dcom_uart0/v.brate_1_sqmuxa_0
-    24      INT_NET       Net   : ahbsi.hmaster_0[0]
-                          Driver: ahb0/r.hmaster_0_0[0]
+    24      INT_NET       Net   : dbgi_0.daddr_0[2]
+                          Driver: l3.dsugen.dsu0/x0/r.slv.haddr_0[2]
+    24      INT_NET       Net   : ahb0/cfgsel
+                          Driver: ahb0/r.cfgsel
+    24      INT_NET       Net   : dcomgen.dcom0/dcom0/state_0[4]
+                          Driver: dcomgen.dcom0/dcom0/r.state_0[4]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/dstate_RNI7D538[8]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/dcache0/r.dstate_RNI7D538[8]
     24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluop_1[2]
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_1[2]
     24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluop_0[2]
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_0[2]
     24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/ex_shcnt_1_0[4]
                           Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.shcnt_RNI5KGN[4]
-    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluresult_8_sqmuxa
-                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop_RNI6R7E1[1]
-    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/a0/nbo_5_0[0]
-                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/c0mmu/a0/r.nbo_RNI0HS03_0[0]
-    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_36[4]
-                          Driver: l3.cpu.0.u0/leon3x0/vhdl.chkregfile0/stack0/stack_ptr_36[4]
+    24      INT_NET       Net   : l3.cpu.0.u0/leon3x0/vhdl.p0/iu/aluop_2[2]
+                          Driver: l3.cpu.0.u0/leon3x0/vhdl.p0/iu/r.e.aluop[2]
 
-The Compile command succeeded ( 00:00:24 )
+The Compile command succeeded ( 00:01:08 )
 Wrote status report to file: leon3mp_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: leon3mp_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:05 )
+The Report command succeeded ( 00:00:12 )
 Wrote pin report to file: leon3mp_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\designer\impl1\leon3mp.adb.
 
-The Execute Script command succeeded ( 00:00:58 )
+The Execute Script command succeeded ( 00:02:54 )
 Design closed.
 

@@ -593,8 +593,8 @@ LIBRARY="gaisler"
 ENDFILE
 VALUE "<project>\..\..\lib\gaisler\leon3v3\leon3x.vhd,hdl"
 STATE="utd"
-TIME="1517872760"
-SIZE="19491"
+TIME="1517959281"
+SIZE="19534"
 LIBRARY="gaisler"
 ENDFILE
 VALUE "<project>\..\..\lib\gaisler\leon3v3\libcache.vhd,hdl"
@@ -1841,42 +1841,37 @@ SIZE="1562"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp.adb,adb"
 STATE="ood"
-TIME="1517868458"
-SIZE="3420160"
+TIME="1517874464"
+SIZE="29199360"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp.ide_des,ide_des"
 STATE="utd"
-TIME="1517870038"
-SIZE="1125"
+TIME="1517874473"
+SIZE="1126"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp.pdb,pdb"
 STATE="ood"
-TIME="1517874462"
-SIZE="765193"
+TIME="1517960763"
+SIZE="757498"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp_compile_log.rpt,log"
 STATE="utd"
-TIME="1517870294"
-SIZE="42260"
-ENDFILE
-VALUE "<project>\designer\impl1\leon3mp_floorplan_log.rpt,log"
-STATE="utd"
-TIME="1509113861"
-SIZE="371"
+TIME="1517957930"
+SIZE="47088"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1517874324"
-SIZE="2506"
+TIME="1517960654"
+SIZE="2505"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1517874473"
+TIME="1517960774"
 SIZE="816"
 ENDFILE
 VALUE "<project>\designer\impl1\leon3mp_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1517874398"
+TIME="1517960713"
 SIZE="1215"
 ENDFILE
 VALUE "<project>\hdl\ahbdmastop.vhd,hdl"
@@ -1932,7 +1927,7 @@ SIZE="16000992"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp.so,so"
 STATE="utd"
-TIME="1517870031"
+TIME="1517872887"
 SIZE="249"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp_sdc.sdc,syn_sdc"
@@ -1942,8 +1937,8 @@ SIZE="396"
 ENDFILE
 VALUE "<project>\synthesis\leon3mp_syn.prj,prj"
 STATE="utd"
-TIME="1517870033"
-SIZE="14377"
+TIME="1517872890"
+SIZE="14490"
 ENDFILE
 VALUE "<project>\testbench.vhd,tb_hdl"
 STATE="utd"
@@ -2203,12 +2198,10 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:leon3mp_prgdata_log.rpt
-HDL;..\..\lib\gaisler\leon3v3\proc3.vhd;0
-StartPage;StartPage;0
+ReportsCurrentItem;Place and Route:leon3mp_place_and_route_report.txt
 HDL;..\..\lib\gaisler\leon3v3\leon3x.vhd;0
-HDL;constraint\leon3mp.pdc;0
-ACTIVEVIEW;Reports
+HDL;leon3mp.vhd;0
+ACTIVEVIEW;leon3mp.vhd
 ENDLIST
 LIST ModuleSubBlockList
 LIST "ahbdmastop::work","hdl\ahbdmastop.vhd","FALSE","FALSE"

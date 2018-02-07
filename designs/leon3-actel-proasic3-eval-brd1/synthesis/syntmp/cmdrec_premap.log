@@ -1,14 +1,14 @@
 C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis   -part A3PE1500  -package PQFP208  -grade Std    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\report\leon3mp_premap.xml  -top_level_module  work.leon3mp  -oedif  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn  -conchk_prepass  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp_cck.rpt   -freq 100.000   C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd  -qsap  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v  -ologparam  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\syntmp\leon3mp.plg  -osyn  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd  -prjdir  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\  -prjname  leon3mp_syn  -log  C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\leon3mp_premap.srr 
-rc:1 success:1 runtime:7
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\scratchproject.prs|io:o|time:1517870449|size:14589|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn|io:o|time:0|size:0|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp_cck.rpt|io:o|time:1517872813|size:24271|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_mult.srs|io:i|time:1517872807|size:26544|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd|io:o|time:1517872812|size:1079613|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.sap|io:o|time:1517872813|size:28925|exec:0
+rc:1 success:1 runtime:13
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\scratchproject.prs|io:o|time:1517959315|size:14589|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.edn|io:o|time:1517959409|size:16234869|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp_cck.rpt|io:o|time:1517963068|size:24551|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_mult.srs|io:i|time:1517963054|size:26657|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd|io:o|time:1517963064|size:1083418|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\leon3mp.sap|io:o|time:1517963068|size:29278|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3e.v|io:i|time:1487952450|size:55760|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\syntmp\leon3mp.plg|io:o|time:1517872807|size:0|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd|io:o|time:1517872812|size:1079613|exec:0
-file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\leon3mp_premap.srr|io:o|time:1517872813|size:19119|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\syntmp\leon3mp.plg|io:o|time:1517963055|size:0|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_prem.srd|io:o|time:1517963064|size:1083418|exec:0
+file:C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synlog\leon3mp_premap.srr|io:o|time:1517963068|size:19599|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479385034|size:10978304|exec:1
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479386440|size:14125056|exec:1

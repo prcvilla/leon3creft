@@ -1,11 +1,12 @@
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
 @N|Running in 64-bit mode
+File C:\git\leon3creft_tr_synth\designs\leon3-actel-proasic3-eval-brd1\synthesis\synwork\leon3mp_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 173MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 171MB peak: 173MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
 
 Process completed successfully.
-# Mon Feb 05 21:20:07 2018
+# Tue Feb 06 22:24:14 2018
 
 ###########################################################]
