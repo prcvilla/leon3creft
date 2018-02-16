@@ -261,6 +261,16 @@ signal un0un1, un1un2, un0un2: std_logic := '1';
 signal no_err : std_logic := '1';
 signal un0err, un1err, un2err : std_logic := '0';
 
+attribute keep of ahbmo_un0, ahbmo_un1, ahbmo_un2,irqo_un0, irqo_un1, irqo_un2,
+	dbgo_un0, dbgo_un1, dbgo_un2,voter,voter_error,un0un1, un1un2, un0un2,
+	no_err, un0err, un1err, un2err : signal is true;
+attribute syn_keep of ahbmo_un0, ahbmo_un1, ahbmo_un2,irqo_un0, irqo_un1, irqo_un2,
+	dbgo_un0, dbgo_un1, dbgo_un2,voter,voter_error,un0un1, un1un2, un0un2,
+	no_err, un0err, un1err, un2err : signal is true;
+attribute syn_preserve of ahbmo_un0, ahbmo_un1, ahbmo_un2,irqo_un0, irqo_un1, irqo_un2,
+	dbgo_un0, dbgo_un1, dbgo_un2,voter,voter_error,un0un1, un1un2, un0un2,
+	no_err, un0err, un1err, un2err : signal is true;
+
 --end pvilla mod
 
 begin

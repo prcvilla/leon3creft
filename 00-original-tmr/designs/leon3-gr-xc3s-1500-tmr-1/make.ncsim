@@ -307,4 +307,4 @@ ncsim:
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work vga_clkgen.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work leon3mp.vhd
 	ncvhdl -nowarn DLCPTH -NOVITALCHECK -linedebug -v93 -nocopyright -work  work testbench.vhd
-	ncelab -timescale 10ps/10ps testbench:behav
+	ncelab -timescale 10ps/10ps testbench:

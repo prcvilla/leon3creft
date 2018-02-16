@@ -15,6 +15,8 @@ declare -i OK=0
 declare -i NOK=0
 declare -i I=0
 
+echo "" > basic-orig-errors
+
 for FILE in $1
 do
 	I+=1
@@ -37,6 +39,7 @@ DEBUG echo $PROGSTATUS
 	fi
 	if [[ ( $ITERS != $NITERS) || ( $PROGFIN != 1 ) || ( $EXECERR == 1 ) ]]; then
 		NOK+=1
+		echo $(head -n 1 $FILE) >> basic-orig-errors
 	fi
 
 DEBUG echo "TOTAL:$I OK:$OK NOK:$NOK"
