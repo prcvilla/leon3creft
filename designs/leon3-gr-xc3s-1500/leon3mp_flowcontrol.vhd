@@ -274,6 +274,10 @@ signal dbgo_test : l3_debug_out_vector(0 to CFG_NCPU-1);
 
 signal flowcontrol_error : std_logic;
 
+attribute keep of ahbmo_test, irqo_test, dbgo_test, flowcontrol_error : signal is true;
+attribute syn_keep of ahbmo_test, irqo_test, dbgo_test, flowcontrol_error : signal is true;
+attribute syn_preserve of ahbmo_test, irqo_test, dbgo_test, flowcontrol_error : signal is true;
+
 --end pvilla mod
 
 begin

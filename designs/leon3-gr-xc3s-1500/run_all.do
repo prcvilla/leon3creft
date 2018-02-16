@@ -23,3 +23,4 @@ when -label iteration { sim:/testbench/cpu/pio(6) } {
 #}
 
 run -all
+echo $now
