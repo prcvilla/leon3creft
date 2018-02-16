@@ -67,6 +67,7 @@ DEBUG echo $PROGSTATUS
 
 		if [[ ( $PROGFIN == 0 ) || ( $ITERS != $NITERS ) ]]; then
 			NDETNOK+=1
+			echo $(head -n 1 $FILE)
 		fi
 	fi
 
